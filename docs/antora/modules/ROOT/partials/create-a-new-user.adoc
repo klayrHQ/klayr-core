@@ -1,6 +1,6 @@
 === Create a new user
 
-To run and manage a Lisk Core node in the future, please create a separate `lisk` user as described below:
+To run and manage a Klayr Core node in the future, please create a separate `klayr` user as described below:
 
 [tabs]
 ====
@@ -9,12 +9,12 @@ Ubuntu::
 --
 [TIP]
 =====
-The `lisk` user itself *does not need* any `sudo` rights to run the Lisk Core.
+The `klayr` user itself *does not need* any `sudo` rights to run the Klayr Core.
 =====
 
 [source,bash]
 ----
-sudo adduser lisk
+sudo adduser klayr
 ----
 
 The above command will create a new user.
@@ -22,7 +22,7 @@ The above command will create a new user.
 MacOS::
 +
 --
-It is not necessarily required to set up a `lisk` user, especially when you are running a local instance for development purposes.
+It is not necessarily required to set up a `klayr` user, especially when you are running a local instance for development purposes.
 
 However, if it is required then it is recommended to https://support.apple.com/en-gb/guide/mac-help/mtusr001/mac[create the user using the MacOS GUI^].
 --

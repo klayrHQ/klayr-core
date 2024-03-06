@@ -1,6 +1,6 @@
 = Binary setup
 Christopher Braithwaite <christopher.braithwaite@lightcurve.io> Mona Bärenfänger <mona@lightcurve.io>
-:description: How to install and set up a Lisk Core (binary distribution).
+:description: How to install and set up a Klayr Core (binary distribution).
 :toc: preamble
 :toclevels: 5
 :sectnums:
@@ -8,15 +8,15 @@ Christopher Braithwaite <christopher.braithwaite@lightcurve.io> Mona Bärenfäng
 
 // External URLs
 :url_set_path: https://opensource.com/article/17/6/set-path-linux
-:url_devnet_passphrase: https://github.com/LiskHQ/lisk-core/blob/development/config/devnet/passphrase.json
+:url_devnet_passphrase: https://github.com/KlayrHQ/klayr-core/blob/development/config/devnet/passphrase.json
 :url_zsch_set_path: https://linuxhint.com/add-a-directory-to-path-in-zsh
 :url_install_docker_mac: https://docs.docker.com/desktop/install/mac-install
 // Project URLs
-:url_run_logging: lisk-docs::run-blockchain/logging.adoc
+:url_run_logging: klayr-docs::run-blockchain/logging.adoc
 :fn: footnote:hdd[These recommendations are derived from the log level settings, in the event that the user needs to increase storage to prevent limited memory access and potential memory-related problems with a node. Furthermore, as more transactions are processed and added to the blockchain, the size of the blockchain increases over time and this directly affects the HDD storage requirements for a blockchain node. Hence, adhering to the above listed requirements is highly recommended.]
-:lisk_core_latest_version: 4.0.0
+:klayr_core_latest_version: 4.0.0
 
-The binary installation offers an easy and automated approach to setting up Lisk Core.
+The binary installation offers an easy and automated approach to setting up Klayr Core.
 
 == Pre-installation
 
@@ -46,8 +46,8 @@ include::partial$firewall-setup.adoc[]
 [[install]]
 == Installation
 
-This section details how to install Lisk Core using pre-built application packages.
-Once completed, you will have a functioning node on the Lisk Network.
+This section details how to install Klayr Core using pre-built application packages.
+Once completed, you will have a functioning node on the Klayr Network.
 
 When using a MAC powered by Apple Silicon, please adhere to the following setup instructions:
 
@@ -187,7 +187,7 @@ Remember to export the nvm path, (this should be performed automatically by the 
 
 === Download and extract the binary executable
 
-Download Lisk Core.
+Download Klayr Core.
 
 [tabs]
 ====
@@ -200,14 +200,14 @@ Mainnet::
 
 [source,bash,subs="attributes"]
 ----
-curl -o lisk-core.tar.gz https://downloads.lisk.com/lisk/mainnet/{lisk_core_latest_version}/lisk-core-v{lisk_core_latest_version}-linux-x64.tar.gz
+curl -o klayr-core.tar.gz https://downloads.klayr.com/klayr/mainnet/{klayr_core_latest_version}/klayr-core-v{klayr_core_latest_version}-linux-x64.tar.gz
 ----
 
 *MacOS:*
 
 [source,bash,subs="attributes"]
 ----
-curl -o lisk-core.tar.gz https://downloads.lisk.com/lisk/mainnet/{lisk_core_latest_version}/lisk-core-v{lisk_core_latest_version}-darwin-x64.tar.gz
+curl -o klayr-core.tar.gz https://downloads.klayr.com/klayr/mainnet/{klayr_core_latest_version}/klayr-core-v{klayr_core_latest_version}-darwin-x64.tar.gz
 ----
 --
 ////
@@ -219,14 +219,14 @@ Testnet::
 
 [source,bash,subs="attributes"]
 ----
-curl -o lisk-core.tar.gz https://downloads.lisk.com/lisk/testnet/{lisk_core_latest_version}/lisk-core-v{lisk_core_latest_version}-linux-x64.tar.gz
+curl -o klayr-core.tar.gz https://downloads.klayr.com/klayr/testnet/{klayr_core_latest_version}/klayr-core-v{klayr_core_latest_version}-linux-x64.tar.gz
 ----
 
 *MacOS:*
 
 [source,bash,subs="attributes"]
 ----
-curl -o lisk-core.tar.gz https://downloads.lisk.com/lisk/testnet/{lisk_core_latest_version}/lisk-core-v{lisk_core_latest_version}-darwin-x64.tar.gz
+curl -o klayr-core.tar.gz https://downloads.klayr.com/klayr/testnet/{klayr_core_latest_version}/klayr-core-v{klayr_core_latest_version}-darwin-x64.tar.gz
 ----
 --
 ====
@@ -235,12 +235,12 @@ Extract and add the executable to the system path, in order to use it in the ter
 
 [source,bash]
 ----
-tar -xf ./lisk-core.tar.gz
-cd lisk-core
-./bin/lisk-core
+tar -xf ./klayr-core.tar.gz
+cd klayr-core
+./bin/klayr-core
 ----
 
-You can make the `lisk-core` command available in the PATH, e.g. by executing the following:
+You can make the `klayr-core` command available in the PATH, e.g. by executing the following:
 
 [tabs]
 =====
@@ -249,12 +249,12 @@ bash::
 --
 [source,bash]
 ----
-export PATH="$PATH:$HOME/lisk-core/bin"
+export PATH="$PATH:$HOME/klayr-core/bin"
 ----
 
 See {url_set_path}[^] for more information.
 
-To make `lisk-core` permanently available in the CLI, add the above snippet to `~/.bashrc`.
+To make `klayr-core` permanently available in the CLI, add the above snippet to `~/.bashrc`.
 
 To reload `.bashrc`, run the following command:
 
@@ -269,12 +269,12 @@ zshrc::
 --
 [source,bash]
 ----
-export PATH="$HOME/lisk-core/bin:$PATH"
+export PATH="$HOME/klayr-core/bin:$PATH"
 ----
 
 See {url_zsch_set_path}[^] for more information.
 
-To make `lisk-core` permanently available in the CLI, add the above snippet to `~/.zshrc`.
+To make `klayr-core` permanently available in the CLI, add the above snippet to `~/.zshrc`.
 
 To reload `.zshrc`, run the following command:
 
@@ -287,7 +287,7 @@ source ~/.zshrc
 
 == Verify successful installation
 
-To verify that your Lisk node is up and running, execute the following command:
+To verify that your Klayr node is up and running, execute the following command:
 
 [tabs]
 ====
@@ -296,7 +296,7 @@ Mainnet::
 --
 [source,bash]
 ----
-lisk-core start --network mainnet
+klayr-core start --network mainnet
 ----
 
 [NOTE]
@@ -318,7 +318,7 @@ Alternatively, start the node with the following flag:
 
 [source,bash]
 ----
-lisk-core start --network mainnet --log=info
+klayr-core start --network mainnet --log=info
 ----
 
 // See the xref:{url_run_logging}[logging] guide for more information about logging.
@@ -330,7 +330,7 @@ Testnet::
 --
 [source,bash]
 ----
-lisk-core start --network testnet
+klayr-core start --network testnet
 ----
 --
 Devnet::
@@ -338,10 +338,10 @@ Devnet::
 --
 [source,bash]
 ----
-lisk-core start --network devnet
+klayr-core start --network devnet
 ----
 --
-NOTE: The passphrase for the genesis account(s) can be found here in the Lisk Core GitHub repository under the following path: {url_devnet_passphrase}[config/devnet/passphrase.json^].
+NOTE: The passphrase for the genesis account(s) can be found here in the Klayr Core GitHub repository under the following path: {url_devnet_passphrase}[config/devnet/passphrase.json^].
 ====
 
 include::partial$core-post-installation.adoc[]

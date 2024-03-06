@@ -1,12 +1,12 @@
-= Lisk Core
+= Klayr Core
 Christopher Braithwaite <christopher.braithwaite@lightcurve.io> Muhammad Talha <muhammad.talha@lightcurve.io>
 // Settings
-:description: References and guides how to setup, update and manage a Lisk Core node using Lisk Core v4.
+:description: References and guides how to setup, update and manage a Klayr Core node using Klayr Core v4.
 :toc: preamble
 :idprefix:
 :idseparator: -
 :docs_general: ROOT::
-:docs_sdk: lisk-sdk::
+:docs_sdk: klayr-sdk::
 :imagesdir: ../assets/images
 
 // External URLs
@@ -17,80 +17,80 @@ Christopher Braithwaite <christopher.braithwaite@lightcurve.io> Muhammad Talha <
 :url_swagger: https://swagger.io
 // Project URLs
 :url_getting_started: setup/npm.adoc
-:url_ref_rpc: {docs_general}api/lisk-node-rpc.adoc#endpoints
-:url_sdk_plugin_httpapi: lisk-sdk::plugins/http-api-plugin.adoc
+:url_ref_rpc: {docs_general}api/klayr-node-rpc.adoc#endpoints
+:url_sdk_plugin_httpapi: klayr-sdk::plugins/http-api-plugin.adoc
 // :url_migration: {docs_general}management/migration.adoc
 
 :url_bft: {docs_general}understand-blockchain/consensus/bft.adoc
 :url_mainchain: {docs_general}understand-blockchain/mainchain.adoc
-:url_mainnet: {url_mainchain}#lisk-mainnet
-:url_testnet: {url_mainchain}#lisk-testnet
-:url_alphanet: {url_mainchain}#lisk-alphanet
-:url_betanet: {url_mainchain}#lisk-betanet
-:url_devnet: {url_mainchain}#lisk-devnet
+:url_mainnet: {url_mainchain}#klayr-mainnet
+:url_testnet: {url_mainchain}#klayr-testnet
+:url_alphanet: {url_mainchain}#klayr-alphanet
+:url_betanet: {url_mainchain}#klayr-betanet
+:url_devnet: {url_mainchain}#klayr-devnet
 :url_cross_chain: {docs_general}understand-blockchain/interoperability/communication.adoc
-// :url_lisk_migrator: {docs_general}migration.adoc#setting-up-the-lisk-migrator
+// :url_klayr_migrator: {docs_general}migration.adoc#setting-up-the-klayr-migrator
 :url_sdk_modules: {docs_sdk}modules/index.adoc
-:url_lisk_api: {docs_general}api/lisk-node-rpc.adoc
+:url_klayr_api: {docs_general}api/klayr-node-rpc.adoc
 
 // Lips
-:url_lip50: https://github.com/LiskHQ/lips/blob/main/proposals/lip-0050.md
-:url_lip46: https://github.com/LiskHQ/lips/blob/main/proposals/lip-0046.md
-:url_lip45: https://github.com/LiskHQ/lips/blob/main/proposals/lip-0045.md
-:url_lip48: https://github.com/LiskHQ/lips/blob/main/proposals/lip-0048.md
-:url_lip44: https://github.com/LiskHQ/lips/blob/main/proposals/lip-0044.md
-:url_lip41: https://github.com/LiskHQ/lips/blob/main/proposals/lip-0041.md
-:url_lip71: https://github.com/LiskHQ/lips/blob/main/proposals/lip-0071.md
-:url_lip40: https://github.com/LiskHQ/lips/blob/main/proposals/lip-0040.md
-:url_lip39: https://github.com/LiskHQ/lips/blob/main/proposals/lip-0039.md
-:url_lip37: https://github.com/LiskHQ/lips/blob/main/proposals/lip-0037.md#chain-identifiers-1
-:url_lip51: https://github.com/LiskHQ/lips/blob/main/proposals/lip-0051.md
-:url_lip70: https://github.com/LiskHQ/lips/blob/main/proposals/lip-0070.md
-:url_lip57: https://github.com/LiskHQ/lips/blob/main/proposals/lip-0057.md
+:url_lip50: https://github.com/KlayrHQ/lips/blob/main/proposals/lip-0050.md
+:url_lip46: https://github.com/KlayrHQ/lips/blob/main/proposals/lip-0046.md
+:url_lip45: https://github.com/KlayrHQ/lips/blob/main/proposals/lip-0045.md
+:url_lip48: https://github.com/KlayrHQ/lips/blob/main/proposals/lip-0048.md
+:url_lip44: https://github.com/KlayrHQ/lips/blob/main/proposals/lip-0044.md
+:url_lip41: https://github.com/KlayrHQ/lips/blob/main/proposals/lip-0041.md
+:url_lip71: https://github.com/KlayrHQ/lips/blob/main/proposals/lip-0071.md
+:url_lip40: https://github.com/KlayrHQ/lips/blob/main/proposals/lip-0040.md
+:url_lip39: https://github.com/KlayrHQ/lips/blob/main/proposals/lip-0039.md
+:url_lip37: https://github.com/KlayrHQ/lips/blob/main/proposals/lip-0037.md#chain-identifiers-1
+:url_lip51: https://github.com/KlayrHQ/lips/blob/main/proposals/lip-0051.md
+:url_lip70: https://github.com/KlayrHQ/lips/blob/main/proposals/lip-0070.md
+:url_lip57: https://github.com/KlayrHQ/lips/blob/main/proposals/lip-0057.md
 :url_sdkv6: {docs_sdk}index.adoc
 
 image:banner_core.png[Core]
 
 // ifeval::[{page-component-version} !== master]
 
-// IMPORTANT: To access the latest Lisk Core version, please xref:master@{page-component-name}::{page-relative}[click here].
+// IMPORTANT: To access the latest Klayr Core version, please xref:master@{page-component-name}::{page-relative}[click here].
 // endif::[]
 
 == Overview
 
-The Lisk Core blockchain client is an implementation of the Lisk protocol that verifies data (blocks and transactions) against the protocol rules and keeps the network secure.
+The Klayr Core blockchain client is an implementation of the Klayr protocol that verifies data (blocks and transactions) against the protocol rules and keeps the network secure.
 
 To provide a high level overview, the main functionalities are listed below:
 
-* The possibility to connect to a subset of peers in the Lisk mainchain's P2P network.
-* To synchronize with the Lisk blockchain including requesting, forwarding and processing of the blocks, which also contain the transactions.
-// => Lisk Core node stores all current account balances and transactions
+* The possibility to connect to a subset of peers in the Klayr mainchain's P2P network.
+* To synchronize with the Klayr blockchain including requesting, forwarding and processing of the blocks, which also contain the transactions.
+// => Klayr Core node stores all current account balances and transactions
 * To maintain the transaction pool, which might contain a subset of unconfirmed transactions.
 * To request and forward the unconfirmed transactions.
 * To possibly generate new blocks when running a validator node.
 
-Furthermore, Lisk Core nodes are able to store all current addresses, balances, and transactions.
+Furthermore, Klayr Core nodes are able to store all current addresses, balances, and transactions.
 
-With the latest version of Lisk Core, there will be new configurable settings and the modules described in the <<Modules>> sub-section will also be used.
+With the latest version of Klayr Core, there will be new configurable settings and the modules described in the <<Modules>> sub-section will also be used.
 
-// NOTE: To migrate from Lisk Core v3 to v4 please follow the migration process as covered in the migration guide.
+// NOTE: To migrate from Klayr Core v3 to v4 please follow the migration process as covered in the migration guide.
 // // Add in link to new migration guide when it is ready.... xref:{migration}[migration guide]
 
 // === Migration overview
 
-// The xref:{url_sdkv6}[Lisk SDK v6] has introduced some new configurable settings, including certain constants that need to be specified for each chain, which must also be specified in Lisk Core v4.
-// A brief overview of the migration process from Lisk Core v3 to Lisk Core v4 is depicted graphically in the illustration below in Figure 1.
+// The xref:{url_sdkv6}[Klayr SDK v6] has introduced some new configurable settings, including certain constants that need to be specified for each chain, which must also be specified in Klayr Core v4.
+// A brief overview of the migration process from Klayr Core v3 to Klayr Core v4 is depicted graphically in the illustration below in Figure 1.
 
 // .Migration process overview
 // image::migration-v3-v4.png[align=center]
 
-// In Figure 1 above, the blocks in pink are generated by the Lisk Core v3 nodes, including the state snapshot.
+// In Figure 1 above, the blocks in pink are generated by the Klayr Core v3 nodes, including the state snapshot.
 // The snapshot block is shown in green, and is generated by the migrator tool.
-// // Add in link for the migrator tool when it is ready xref:{url_lisk_migrator}[migrator tool]
-// Finally, the blocks in yellow are generated by the Lisk Core v4 nodes post migration.
+// // Add in link for the migrator tool when it is ready xref:{url_klayr_migrator}[migrator tool]
+// Finally, the blocks in yellow are generated by the Klayr Core v4 nodes post migration.
 == Networks
 
-After installation, Lisk Core can be connected to the mainchain of the different Lisk blockchain networks.
+After installation, Klayr Core can be connected to the mainchain of the different Klayr blockchain networks.
 
 [start=0]
 . xref:{url_mainnet}[Mainnet]
@@ -99,14 +99,14 @@ After installation, Lisk Core can be connected to the mainchain of the different
 . xref:{url_alphanet}[Alphanet]
 . xref:{url_devnet}[Devnet]
 
-Follow the associated links to learn more about the Lisk blockchain networks and their mainchains.
+Follow the associated links to learn more about the Klayr blockchain networks and their mainchains.
 
 == Modules
 
-The Lisk Core v4 makes full use of the xref:{url_sdk_modules}[modules defined by Lisk SDK v6].
-Apart from the aforementioned modules, Lisk Core has an additional module called the {url_lip50}[Legacy module^].
+The Klayr Core v4 makes full use of the xref:{url_sdk_modules}[modules defined by Klayr SDK v6].
+Apart from the aforementioned modules, Klayr Core has an additional module called the {url_lip50}[Legacy module^].
 
-* The Legacy module maintains all accounts on the Lisk mainchain that received balance transfers to their address in the old 8-byte format, and for which no public key is associated.
+* The Legacy module maintains all accounts on the Klayr mainchain that received balance transfers to their address in the old 8-byte format, and for which no public key is associated.
 The Legacy module also implements a command allowing validators without a BLS key to register one.
 
 
@@ -126,19 +126,19 @@ The Legacy module also implements a command allowing validators without a BLS ke
 // It allows chains to choose the token used to pay the fee, and to define a minimum fee for the transactions to be valid.
 
 // * Interoperability
-// - The {url_lip45}[Interoperability module^] provides basic functionalities to transmit information between interoperable chains in the Lisk ecosystem using xref:{url_cross_chain}[cross-chain messages].
+// - The {url_lip45}[Interoperability module^] provides basic functionalities to transmit information between interoperable chains in the Klayr ecosystem using xref:{url_cross_chain}[cross-chain messages].
 // In addition, it also supports/defines the chain lifecycle.
 
 // * PoS
 // - The {url_lip57}[PoS module, (Proof-of-stake)^] is responsible for handling validator registration, staking, and computing the validator weight.
 
 // * Random
-// - The {url_lip46}[Random module^] handles the validation of the inputs and computation of outputs for the commit and reveal process for a Lisk blockchain.
+// - The {url_lip46}[Random module^] handles the validation of the inputs and computation of outputs for the commit and reveal process for a Klayr blockchain.
 // Hence, it manages the validation of the inputs for the commit and reveal process, as well as the random seeds that are used for delegate ordering in a round, and also for picking standby validators.
 
 // Info on Random process in LIP 0022
 // * Dynamic Block Rewards Module
-// - The {url_lip71}[Dynamic Block Rewards module^] is responsible for providing the base reward system for the Lisk blockchain according to the validator weight.
+// - The {url_lip71}[Dynamic Block Rewards module^] is responsible for providing the base reward system for the Klayr blockchain according to the validator weight.
 // It computes the block rewards according to the validator weight for active validators, and includes specific logic for rewarding the standby validators.
 // The rewards will now be automatically shared using an on-chain reward sharing mechanism, more details on this can be found {url_lip70}[here^].
 
@@ -147,7 +147,7 @@ The Legacy module also implements a command allowing validators without a BLS ke
 
 // TODO: The following content is redundant and should be removed.
 
-// The state of an interoperable chain in the Lisk ecosystem is maintained in a global state store.
+// The state of an interoperable chain in the Klayr ecosystem is maintained in a global state store.
 // // Entries of the state store are inserted in a sparse Merkle tree, the state tree.
 // // The whole state is thus authenticated by the tree Merkle root, the state root.
 // // More details can found here in {url_lip40}[LIP 0040^].
@@ -167,7 +167,7 @@ The Legacy module also implements a command allowing validators without a BLS ke
 // Within the chain each module that is registered defines its own state and the possible state transitions.
 // The state transitions could be induced by the transactions defined within the module or the methods that can be called by other modules.
 
-// Within Lisk core v4 an updated state storage will be used. This new state architecture is now substantially different, as previously, the state of a chain was organized per account rather than per module.
+// Within Klayr core v4 an updated state storage will be used. This new state architecture is now substantially different, as previously, the state of a chain was organized per account rather than per module.
 // For example, a user's balance would be stored together with all the other properties related to that specific user.
 // Alternatively, with the new state model, the balance of a user is stored in the token module's state and is separated from the properties of other modules, (e.g. public keys).
 
@@ -188,7 +188,7 @@ The Legacy module also implements a command allowing validators without a BLS ke
 // // The state root property is calculated at the end of the block processing as the Merkle root of the state tree and included in the block header.
 // // Information from the block header is then used to create a certificate and signed by the chain validators.
 
-// The illustration below in Figure 2 depicts the general structure of the state Sparse Merkle Tree for a Lisk blockchain using two application-specific modules.
+// The illustration below in Figure 2 depicts the general structure of the state Sparse Merkle Tree for a Klayr blockchain using two application-specific modules.
 // The state root is the Merkle root, and as described above each module defines its own module store.
 // The keys of the leaf nodes start with the store prefixes, so that each module subtree is separated from the others. Please note, not all modules are shown in this illustration.
 
@@ -197,7 +197,7 @@ The Legacy module also implements a command allowing validators without a BLS ke
 
 == APIs
 
-.Available APIs for Lisk nodes
+.Available APIs for Klayr nodes
 [cols="1,1,1,1,1,",options="header"]
 |===
 
@@ -212,13 +212,13 @@ The Legacy module also implements a command allowing validators without a BLS ke
 
 |===
 
-The Lisk API documentation can be found xref:{url_lisk_api}[here].
+The Klayr API documentation can be found xref:{url_klayr_api}[here].
 
 // == Custom modules
 
-// Lisk Core includes the `legacyAccount` module which contains the following transaction.
+// Klayr Core includes the `legacyAccount` module which contains the following transaction.
 
-// === LSK Reclaim
+// === KLY Reclaim
 
 // This transaction allows to access the balance that was sent to a legacy address without any associated public key.
 // Legacy addresses, generated from the first eight bytes of the public key, were used in older versions of the protocol.

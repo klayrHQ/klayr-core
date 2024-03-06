@@ -2,8 +2,8 @@
 
 [NOTE]
 ====
-Lisk Core installed by the Lisk Commander currently uses the default ports, incremented by +2.
-In order to change it back to the <<_open-the-necessary-ports, default ports>>, just change the xref:configuration.adoc[config] of your Lisk Core after the installation has been completed.
+Klayr Core installed by the Klayr Commander currently uses the default ports, incremented by +2.
+In order to change it back to the <<_open-the-necessary-ports, default ports>>, just change the xref:configuration.adoc[config] of your Klayr Core after the installation has been completed.
 ====
 
 [IMPORTANT]
@@ -13,7 +13,7 @@ In order to change it back to the <<_open-the-necessary-ports, default ports>>, 
 *Optional:* Open the corresponding HTTP port for your network, in order to ensure your node’s xref:reference/api.adoc[API] is reachable.
 ====
 
-To connect to the desired network with Lisk Core, please ensure that the corresponding ports listed below are open:
+To connect to the desired network with Klayr Core, please ensure that the corresponding ports listed below are open:
 
 [options="header",]
 |===
