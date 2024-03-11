@@ -1,6 +1,6 @@
 = Source code setup
 Mona Bärenfänger <mona@lightcurve.io>
-:description: How to install and setup a Lisk Core node from source.
+:description: How to install and setup a Klayr Core node from source.
 // Settings
 :toc:
 :v_sdk: master
@@ -12,13 +12,13 @@ Mona Bärenfänger <mona@lightcurve.io>
 :url_nvm_instructions: https://github.com/creationix/nvm#install--update-script
 :url_pm2: https://github.com/Unitech/pm2
 :url_xcode: https://developer.apple.com/xcode/
-:url_core_releases: https://github.com/LiskHQ/lisk-core/releases
-:url_readme: https://github.com/LiskHQ/lisk-core/blob/development/README.md#tests
+:url_core_releases: https://github.com/KlayrHQ/klayr-core/releases
+:url_readme: https://github.com/KlayrHQ/klayr-core/blob/development/README.md#tests
 :fn: footnote:hdd[These recommendations are derived from the log level settings, in the event that the user needs to increase storage to prevent limited memory access and potential memory-related problems with a node. Furthermore, as more transactions are processed and added to the blockchain, the size of the blockchain increases over time and this directly affects the HDD storage requirements for a blockchain node. Hence, adhering to the above listed requirements is highly recommended.]
 
-The installation from source code is designed for anyone wishing to develop on the Lisk Core codebase.
+The installation from source code is designed for anyone wishing to develop on the Klayr Core codebase.
 It also comes with an extensive test-suite which is described in the {url_readme}[README.md].
-An installation performed from the source code enables a developer to work on the latest codebase of Lisk Core, which may not have been tagged for a release yet.
+An installation performed from the source code enables a developer to work on the latest codebase of Klayr Core, which may not have been tagged for a release yet.
 
 [[source-pre-install]]
 == Pre-Install
@@ -77,7 +77,7 @@ include::partial$create-a-new-user.adoc[]
 
 === Git
 
-{url_git}[Git^] is used for cloning and updating Lisk as displayed below:
+{url_git}[Git^] is used for cloning and updating Klayr as displayed below:
 
 [tabs]
 ====
@@ -158,21 +158,21 @@ npm install pm2 -g
 
 == Installation
 
-This section details how to install Lisk Core from the source code.
-When completed, a functioning node on the Lisk network will exist.
+This section details how to install Klayr Core from the source code.
+When completed, a functioning node on the Klayr network will exist.
 
-Executing the following commands below will enable you to clone the repository, navigate into the `lisk-core` root folder, check out the latest release tag, and install the dependencies.
+Executing the following commands below will enable you to clone the repository, navigate into the `klayr-core` root folder, check out the latest release tag, and install the dependencies.
 
 .Clone the repository
 [source,bash]
 ----
-git clone https://github.com/LiskHQ/lisk-core.git
+git clone https://github.com/KlayrHQ/klayr-core.git
 ----
 
-.Navigate into the "lisk-core" root folder
+.Navigate into the "klayr-core" root folder
 [source,bash]
 ----
-cd lisk-core
+cd klayr-core
 ----
 
 .Check out the latest release tag
@@ -180,7 +180,7 @@ cd lisk-core
 ----
 git checkout v4.0.0
 ----
-NOTE: Please check for the latest release in {url_core_releases}[Lisk Core releases^].
+NOTE: Please check for the latest release in {url_core_releases}[Klayr Core releases^].
 
 .Install dependencies
 [source,bash]
@@ -192,25 +192,25 @@ yarn install --frozen-lockfile
 ----
 yarn build
 ----
-Set up the `lisk-core` alias: Append the following line to your `~/.profile` file and run `source ~/.profile`.
+Set up the `klayr-core` alias: Append the following line to your `~/.profile` file and run `source ~/.profile`.
 [source,bash]
 ----
-alias lisk-core=/home/lisk/lisk-core/bin/run
+alias klayr-core=/home/klayr/klayr-core/bin/run
 ----
-NOTE: In the command above, please replace `/home/lisk/lisk-core` with the absolute path to your "lisk-core" directory.
-To find the exact path on your system, change to your "lisk-core" directory and run the `pwd` command.
+NOTE: In the command above, please replace `/home/klayr/klayr-core` with the absolute path to your "klayr-core" directory.
+To find the exact path on your system, change to your "klayr-core" directory and run the `pwd` command.
 
-To test that Lisk Core is built and configured correctly, execute the following command below to connect to the network:
+To test that Klayr Core is built and configured correctly, execute the following command below to connect to the network:
 
 [source,bash]
 ----
-lisk-core start --network devnet
+klayr-core start --network devnet
 ----
 From another terminal, execute the following command:
 
 [source,bash]
 ----
-lisk-core system node-info
+klayr-core system node-info
 ----
 
 

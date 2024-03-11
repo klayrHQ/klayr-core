@@ -1,17 +1,17 @@
-`lisk-core help`
+`klayr-core help`
 ================
 
-Display help for lisk-core.
+Display help for klayr-core.
 
-* [`lisk-core help [COMMAND]`](#lisk-core-help-command)
+* [`klayr-core help [COMMAND]`](#klayr-core-help-command)
 
-## `lisk-core help [COMMAND]`
+## `klayr-core help [COMMAND]`
 
-Display help for lisk-core.
+Display help for klayr-core.
 
 ```
 USAGE
-  $ lisk-core help [COMMAND]
+  $ klayr-core help [COMMAND]
 
 ARGUMENTS
   COMMAND  Command to show help for.

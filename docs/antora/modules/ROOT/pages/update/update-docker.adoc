@@ -1,25 +1,25 @@
-= Update Lisk Core (Docker)
+= Update Klayr Core (Docker)
 Christopher Braithwaite <christopher.braithwaite@lightcurve.io>
-:description: How to update up a Lisk Core node with Docker.
+:description: How to update up a Klayr Core node with Docker.
 :toc:
 // Settings
 // External URLs
-:url_core_releases: https://github.com/LiskHQ/lisk-core/releases
-:url_rel_notes: https://github.com/LiskHQ/lisk-core/releases
-:url_tags: https://github.com/LiskHQ/lisk-core/tags
+:url_core_releases: https://github.com/KlayrHQ/klayr-core/releases
+:url_rel_notes: https://github.com/KlayrHQ/klayr-core/releases
+:url_tags: https://github.com/KlayrHQ/klayr-core/tags
 
-This page describes how to update the Docker image-based container in Lisk Core.
-Lisk Core version 4 does not have any external dependencies, and hence does not require using `docker-compose`.
+This page describes how to update the Docker image-based container in Klayr Core.
+Klayr Core version 4 does not have any external dependencies, and hence does not require using `docker-compose`.
 
 
 To upgrade the Docker container to a desired version, please follow one of the two options below.
-To find all the tagged versions for Lisk Core, please check the {url_tags}[available tags] on GitHub.
+To find all the tagged versions for Klayr Core, please check the {url_tags}[available tags] on GitHub.
 [tabs]
 ====
 Option A - Download pre-built images from DockerHub::
 +
 --
-. Stop Lisk Core
+. Stop Klayr Core
 +
 ----
 make stop
@@ -30,11 +30,11 @@ make stop
 
 [source,sh]
 ----
-docker image pull lisk-core
+docker image pull klayr-core
 ----
-NOTE: To download a specific version of Lisk Core, please include the tag after `lisk-core` in the above command. For example, `lisk-core:4.0.0`
+NOTE: To download a specific version of Klayr Core, please include the tag after `klayr-core` in the above command. For example, `klayr-core:4.0.0`
 
-. Start Lisk Core in the containers.
+. Start Klayr Core in the containers.
 +
 ----
 make start ARGS="-n mainnet --api-ws"
@@ -45,9 +45,9 @@ Option B - Build images locally ::
 +
 --
 Build the images locally using the following steps.
-Navigate inside the lisk-core root folder, and execute the following commands.
+Navigate inside the klayr-core root folder, and execute the following commands.
 
-. Stop Lisk Core
+. Stop Klayr Core
 +
 ----
 make stop
@@ -65,7 +65,7 @@ git checkout v4.0.0
 make build-image
 ----
 
-. Start Lisk Core in the container
+. Start Klayr Core in the container
 +
 ----
 make start ARGS="-n mainnet --api-ws"

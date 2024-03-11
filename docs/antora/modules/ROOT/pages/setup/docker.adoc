@@ -1,10 +1,10 @@
 = Docker setup
 Mona Bärenfänger <mona@lightcurve.io>
-:description: How to install and setup up a Lisk Core node with Docker.
+:description: How to install and setup up a Klayr Core node with Docker.
 :toc:
 // Settings
 // External URLs
-:url_core_releases: https://github.com/LiskHQ/lisk-core/releases
+:url_core_releases: https://github.com/KlayrHQ/klayr-core/releases
 :url_podman: https://github.com/containers/podman/
 :url_docker_install: https://docs.docker.com/engine/installation/#desktop
 :url_docker_install_linux: https://docs.docker.com/engine/installation/#server
@@ -12,16 +12,16 @@ Mona Bärenfänger <mona@lightcurve.io>
 :url_docker_install_windows: https://docs.docker.com/docker-for-windows/install/
 :url_docker_linux_post_install: https://docs.docker.com/install/linux/linux-postinstall
 :url_xcode: https://developer.apple.com/xcode/features/
-:url_devnet_passphrase: https://github.com/LiskHQ/lisk-core/blob/development/config/devnet/passphrase.json
+:url_devnet_passphrase: https://github.com/KlayrHQ/klayr-core/blob/development/config/devnet/passphrase.json
 // Project URLs
 :url_config: management/configuration.adoc
 :url_upgrade_source: update/source.adoc
-:url_run_logging: lisk-core::run-blockchain/logging.adoc
+:url_run_logging: klayr-core::run-blockchain/logging.adoc
 :url_run_logging: ROOT::run-blockchain/logging.adoc
 :fn: footnote:hdd[These recommendations are derived from the log level settings, in the event that the user needs to increase storage to prevent limited memory access and potential memory-related problems with a node. Furthermore, as more transactions are processed and added to the blockchain, the size of the blockchain increases over time and this directly affects the HDD storage requirements for a blockchain node. Hence, adhering to the above listed requirements is highly recommended.]
 
-This document describes how to run Lisk Core as a Docker image-based container.
-Lisk Core version 4 does not have any external dependencies and hence does not require using `docker-compose`.
+This document describes how to run Klayr Core as a Docker image-based container.
+Klayr Core version 4 does not have any external dependencies and hence does not require using `docker-compose`.
 
 == Pre-installation
 
@@ -40,22 +40,22 @@ Storage::
 include::partial$create-a-new-user.adoc[]
 
 include::partial$firewall-setup.adoc[]
-// === Create a new user `lisk`
+// === Create a new user `klayr`
 
 // // [source,bash]
 // ----
-// adduser lisk
+// adduser klayr
 // ----
 //
-// Add the `lisk` user to the `sudo` user group:
+// Add the `klayr` user to the `sudo` user group:
 //
 // [source,bash]
 // ----
-// sudo usermod -aG sudo lisk
+// sudo usermod -aG sudo klayr
 // ----
 
 === Install Docker
-To run Lisk Core in Docker, firstly it is necessary to install the Docker engine.
+To run Klayr Core in Docker, firstly it is necessary to install the Docker engine.
 Determine if your platform can run Docker as described below.
 
 Please refer to the {url_docker_install}[Docker installation] page.
@@ -91,20 +91,20 @@ Please refer to {url_docker_install_windows}[Docker installation for Windows^].
 --
 ====
 
-== Lisk Core download
+== Klayr Core download
 
-The following commands below describe how to clone the repository, then how to navigate into the `lisk-core` root folder, and how to check out the latest release tag.
+The following commands below describe how to clone the repository, then how to navigate into the `klayr-core` root folder, and how to check out the latest release tag.
 
 .Clone the repository
 [source,bash]
 ----
-git clone https://github.com/LiskHQ/lisk-core.git
+git clone https://github.com/KlayrHQ/klayr-core.git
 ----
 
-.Navigate into the "lisk-core" root folder
+.Navigate into the "klayr-core" root folder
 [source,bash]
 ----
-cd lisk-core
+cd klayr-core
 ----
 
 .Check out the latest release tag
@@ -119,7 +119,7 @@ git checkout v4.0.0
 make build-image
 ----
 
-NOTE: Please check for the latest release in the {url_core_releases}[Lisk Core releases^] list.
+NOTE: Please check for the latest release in the {url_core_releases}[Klayr Core releases^] list.
 
 == Run
 
@@ -131,7 +131,7 @@ It is also possible to use {url_podman}[podman] instead of docker by simply repl
 
 ====
 
-Create a "lisk-core" container:
+Create a "klayr-core" container:
 
 [tabs]
 ====
@@ -141,10 +141,10 @@ Mainnet::
 
 [source,bash]
 ----
-docker run --volume lisk-data:/home/lisk/.lisk \
+docker run --volume klayr-data:/home/klayr/.klayr \
            --publish 7887:7887 \
-           --name lisk-core \
-           lisk/core:4.0.0 \
+           --name klayr-core \
+           klayr/core:4.0.0 \
            start --network=mainnet
 ----
 
@@ -181,10 +181,10 @@ Testnet::
 
 [source,bash]
 ----
-docker run --volume lisk-data:/home/lisk/.lisk \
+docker run --volume klayr-data:/home/klayr/.klayr \
            --publish 7887:7887 \
-           --name lisk-core \
-           lisk/core:4.0.0 \
+           --name klayr-core \
+           klayr/core:4.0.0 \
            start --network=testnet
 ----
 
@@ -194,14 +194,14 @@ Devnet::
 --
 [source,bash]
 ----
-docker run --volume lisk-data:/home/lisk/.lisk \
+docker run --volume klayr-data:/home/klayr/.klayr \
            --publish 7887:7887 \
-           --name lisk-core \
-           lisk/core:4.0.0 \
+           --name klayr-core \
+           klayr/core:4.0.0 \
            start --network=devnet
 ----
 --
-NOTE: The passphrase for the genesis account(s) can be found here in the Lisk Core GitHub repository under the following path: {url_devnet_passphrase}[config/devnet/passphrase.json].
+NOTE: The passphrase for the genesis account(s) can be found here in the Klayr Core GitHub repository under the following path: {url_devnet_passphrase}[config/devnet/passphrase.json].
 ====
 
 == Configuration
@@ -210,11 +210,11 @@ Further parameters can be passed after `--network`, for example, as shown below:
 
 [source,bash]
 ----
-docker run --volume lisk-data:/home/lisk/.lisk \
+docker run --volume klayr-data:/home/klayr/.klayr \
            --publish 7667:7667 \
            --publish 127.0.0.1:7887:7887 \
-           --name lisk-core \
-           lisk/core:4.0.0 \
+           --name klayr-core \
+           klayr/core:4.0.0 \
            start --network=testnet --api-ws --api-http --log=debug
 ----
 
@@ -222,11 +222,11 @@ Environment variables can be set with `--env`:
 
 [source,bash]
 ----
-docker run --volume lisk-data:/home/lisk/.lisk \
+docker run --volume klayr-data:/home/klayr/.klayr \
            --publish 7667:7667 \
-           --env LISK_CONSOLE_LOG_LEVEL=debug \
-           --name lisk-core \
-           lisk/core:4.0.0 \
+           --env KLAYR_CONSOLE_LOG_LEVEL=debug \
+           --name klayr-core \
+           klayr/core:4.0.0 \
            start --network=mainnet
 ----
 
@@ -239,9 +239,9 @@ docker run --volume lisk-data:/home/lisk/.lisk \
 
 [source,bash]
 ----
-docker run --volume lisk-data:/home/lisk/.lisk -it --rm lisk/core:4.0.0 blockchain download --network=betanet --output=/home/lisk/.lisk/tmp/
-docker run --volume lisk-data:/home/lisk/.lisk -it --rm lisk/core:4.0.0 blockchain import /home/lisk/.lisk/tmp/blockchain.db.tar.gz
-docker run --volume lisk-data:/home/lisk/.lisk -it --rm --entrypoint rm lisk/core:4.0.0 -f /home/lisk/.lisk/tmp/blockchain.db.tar.gz
-docker start lisk-core
-docker logs -f lisk-core
+docker run --volume klayr-data:/home/klayr/.klayr -it --rm klayr/core:4.0.0 blockchain download --network=betanet --output=/home/klayr/.klayr/tmp/
+docker run --volume klayr-data:/home/klayr/.klayr -it --rm klayr/core:4.0.0 blockchain import /home/klayr/.klayr/tmp/blockchain.db.tar.gz
+docker run --volume klayr-data:/home/klayr/.klayr -it --rm --entrypoint rm klayr/core:4.0.0 -f /home/klayr/.klayr/tmp/blockchain.db.tar.gz
+docker start klayr-core
+docker logs -f klayr-core
 ----

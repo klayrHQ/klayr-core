@@ -1,6 +1,6 @@
 === Ports
 
-To connect to the desired network with Lisk Core, please ensure that the corresponding ports listed below are open.
+To connect to the desired network with Klayr Core, please ensure that the corresponding ports listed below are open.
 
 [options="header",]
 |===

@@ -1,20 +1,20 @@
-`lisk-core keys`
+`klayr-core keys`
 ================
 
 Return keys corresponding to the given passphrase.
 
-* [`lisk-core keys:create`](#lisk-core-keyscreate)
-* [`lisk-core keys:encrypt`](#lisk-core-keysencrypt)
-* [`lisk-core keys:export`](#lisk-core-keysexport)
-* [`lisk-core keys:import`](#lisk-core-keysimport)
+* [`klayr-core keys:create`](#klayr-core-keyscreate)
+* [`klayr-core keys:encrypt`](#klayr-core-keysencrypt)
+* [`klayr-core keys:export`](#klayr-core-keysexport)
+* [`klayr-core keys:import`](#klayr-core-keysimport)
 
-## `lisk-core keys:create`
+## `klayr-core keys:create`
 
 Return keys corresponding to the given passphrase.
 
 ```
 USAGE
-  $ lisk-core keys:create
+  $ klayr-core keys:create
 
 OPTIONS
   -c, --count=count            [default: 1] Number of keys to create
@@ -48,15 +48,15 @@ EXAMPLES
   /mypath/keys.json
 ```
 
-_See code: [dist/commands/keys/create.ts](https://github.com/LiskHQ/lisk-core/blob/v4.0.2/dist/commands/keys/create.ts)_
+_See code: [dist/commands/keys/create.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/keys/create.ts)_
 
-## `lisk-core keys:encrypt`
+## `klayr-core keys:encrypt`
 
 Encrypt keys from a file and overwrite the file
 
 ```
 USAGE
-  $ lisk-core keys:encrypt
+  $ klayr-core keys:encrypt
 
 OPTIONS
   -f, --file-path=file-path  (required) Path of the file to encrypt from
@@ -71,18 +71,18 @@ EXAMPLES
   keys:encrypt --file-path ./my/path/keys.json --password mypass
 ```
 
-_See code: [dist/commands/keys/encrypt.ts](https://github.com/LiskHQ/lisk-core/blob/v4.0.2/dist/commands/keys/encrypt.ts)_
+_See code: [dist/commands/keys/encrypt.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/keys/encrypt.ts)_
 
-## `lisk-core keys:export`
+## `klayr-core keys:export`
 
 Export to <FILE>.
 
 ```
 USAGE
-  $ lisk-core keys:export
+  $ klayr-core keys:export
 
 OPTIONS
-  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "LISK_DATA_PATH"
+  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "KLAYR_DATA_PATH"
                              can also be used.
 
   -o, --output=output        (required) The output directory. Default will set to current working directory.
@@ -94,18 +94,18 @@ EXAMPLES
   keys:export --output /mypath/keys.json --data-path ./data
 ```
 
-_See code: [dist/commands/keys/export.ts](https://github.com/LiskHQ/lisk-core/blob/v4.0.2/dist/commands/keys/export.ts)_
+_See code: [dist/commands/keys/export.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/keys/export.ts)_
 
-## `lisk-core keys:import`
+## `klayr-core keys:import`
 
 Import from <FILE>.
 
 ```
 USAGE
-  $ lisk-core keys:import
+  $ klayr-core keys:import
 
 OPTIONS
-  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "LISK_DATA_PATH"
+  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "KLAYR_DATA_PATH"
                              can also be used.
 
   -f, --file-path=file-path  (required) Path of the file to import from
@@ -117,4 +117,4 @@ EXAMPLES
   keys:import --file-path ./my/path/keys.json --data-path ./data
 ```
 
-_See code: [dist/commands/keys/import.ts](https://github.com/LiskHQ/lisk-core/blob/v4.0.2/dist/commands/keys/import.ts)_
+_See code: [dist/commands/keys/import.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/keys/import.ts)_

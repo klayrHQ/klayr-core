@@ -1,17 +1,17 @@
-`lisk-core console`
+`klayr-core console`
 ===================
 
-Lisk interactive REPL session to run commands.
+Klayr interactive REPL session to run commands.
 
-* [`lisk-core console`](#lisk-core-console)
+* [`klayr-core console`](#klayr-core-console)
 
-## `lisk-core console`
+## `klayr-core console`
 
-Lisk interactive REPL session to run commands.
+Klayr interactive REPL session to run commands.
 
 ```
 USAGE
-  $ lisk-core console
+  $ klayr-core console
 
 OPTIONS
   --api-ipc=api-ipc  Enable api-client with IPC communication.
@@ -23,4 +23,4 @@ EXAMPLES
   console --api-ipc=/path/to/server
 ```
 
-_See code: [dist/commands/console.ts](https://github.com/LiskHQ/lisk-core/blob/v4.0.2/dist/commands/console.ts)_
+_See code: [dist/commands/console.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/console.ts)_

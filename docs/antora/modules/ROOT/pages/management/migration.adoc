@@ -8,44 +8,44 @@
 :snapshotHeightTestnet: 20449414
 :initRounds: 587
 :initRoundsTime: 1 week
-:lisk-migrator: lisk-migrator-v2.0.1-linux-x64.tar.gz
-:lisk-migrator_darwinx64: lisk-migrator-v2.0.1-darwin-x64.tar.gz
-:lisk-migrator_darwinarm64: lisk-migrator-v2.0.1-darwin-arm64.tar.gz
-:docs_sdk: lisk-sdk::
-:docs_lisk: ROOT::
-:docs_liskv5: ROOT::
+:klayr-migrator: klayr-migrator-v2.0.1-linux-x64.tar.gz
+:klayr-migrator_darwinx64: klayr-migrator-v2.0.1-darwin-x64.tar.gz
+:klayr-migrator_darwinarm64: klayr-migrator-v2.0.1-darwin-arm64.tar.gz
+:docs_sdk: klayr-sdk::
+:docs_klayr: ROOT::
+:docs_klayrv5: ROOT::
 // External URLs
 :url_curl: https://curl.se/
 :url_jq: https://jqlang.github.io/jq/
-:url_lisk_chat: https://lisk.chat/
-:url_lisk_migrator: https://downloads.lisk.com/lisk-migrator/{lisk-migrator}
-:url_lisk_migrator_darwinarm64: https://downloads.lisk.com/lisk-migrator/{lisk-migrator_darwinarm64}
-:url_lisk_migrator_darwinx64: https://downloads.lisk.com/lisk-migrator/{lisk-migrator_darwinx64}
-:url_wallet: https://lisk.com/wallet
+:url_klayr_chat: https://klayr.chat/
+:url_klayr_migrator: https://downloads.klayr.com/klayr-migrator/{klayr-migrator}
+:url_klayr_migrator_darwinarm64: https://downloads.klayr.com/klayr-migrator/{klayr-migrator_darwinarm64}
+:url_klayr_migrator_darwinx64: https://downloads.klayr.com/klayr-migrator/{klayr-migrator_darwinx64}
+:url_wallet: https://klayr.com/wallet
 :url_jsonrpc: https://www.jsonrpc.org/specification
-:url_lisk_blog_migration: https://lisk.com/blog/posts/announcing-lisk-testnet-v4-migration
-:url_lisk_blog_migration_mainnet: https://lisk.com/blog/posts/announcing-lisk-mainnet-v4-migration
+:url_klayr_blog_migration: https://klayr.com/blog/posts/announcing-klayr-testnet-v4-migration
+:url_klayr_blog_migration_mainnet: https://klayr.com/blog/posts/announcing-klayr-mainnet-v4-migration
 // Project URLs
-:url_run_validator: {docs_lisk}run-blockchain/become-validator.adoc
-:url_run_pm2: {docs_lisk}run-blockchain/process-management.adoc
-:url_api_sethashonion: {docs_lisk}api/module-rpc-api/random-endpoints.adoc#random_sethashonion
-:url_api_forgingstatus: {docs_liskv5}api/lisk-node-rpc.adoc#appgetforgingstatus
+:url_run_validator: {docs_klayr}run-blockchain/become-validator.adoc
+:url_run_pm2: {docs_klayr}run-blockchain/process-management.adoc
+:url_api_sethashonion: {docs_klayr}api/module-rpc-api/random-endpoints.adoc#random_sethashonion
+:url_api_forgingstatus: {docs_klayrv5}api/klayr-node-rpc.adoc#appgetforgingstatus
 :url_sdk_cli_keyscreate: {docs_sdk}client-cli.adoc#keyscreate
 :url_sdk_config_system: {docs_sdk}config.adoc#system
-:url_build_custom_config: {docs_lisk}build-blockchain/configuration.adoc#how-to-use-a-custom-configuration
+:url_build_custom_config: {docs_klayr}build-blockchain/configuration.adoc#how-to-use-a-custom-configuration
 :url_cli_generatorenable: core-cli.adoc#generatorenable
 :url_cli_endpointinvoke: core-cli.adoc#endpointinvoke
 
-This guide explains how to migrate a Lisk Core v3 node to Lisk Core v4 using the Lisk Migrator v2.
+This guide explains how to migrate a Klayr Core v3 node to Klayr Core v4 using the Klayr Migrator v2.
 
-The Lisk migrator CLI will generate a new genesis block for Lisk Core v4.
-The new genesis block is created based on a snapshot of the old blockchain (running on Lisk Core v3.1.0 or later) at a given height.
+The Klayr migrator CLI will generate a new genesis block for Klayr Core v4.
+The new genesis block is created based on a snapshot of the old blockchain (running on Klayr Core v3.1.0 or later) at a given height.
 
 [IMPORTANT]
 ====
-All active validators on the Lisk Mainnet and the Lisk Testnet need to follow this guide to correctly migrate their nodes to the new network, in order to not miss any blocks after the network hard fork.
+All active validators on the Klayr Mainnet and the Klayr Testnet need to follow this guide to correctly migrate their nodes to the new network, in order to not miss any blocks after the network hard fork.
 
-Optionally, anyone running a Lisk Core v3.1.0 (or later) who is not an active validator can also participate in the migration process.
+Optionally, anyone running a Klayr Core v3.1.0 (or later) who is not an active validator can also participate in the migration process.
 In this case, the following steps 2.4 and 2.5 in this guide can be skipped, as they are only relevant for the current validators.
 ====
 
@@ -77,28 +77,28 @@ The following dependencies are required for running the migration script:
 Node.js::
 * Version 18 (LTS) installed via NVM
 
-Lisk Core::
+Klayr Core::
 * Version 3.1.0 or later
 ====
 
-=== Ensure you are running version 3.1.0 (or later) of Lisk Core
-Ensure you are running version 3.1.0 (or later) of Lisk Core to be able to seamlessly migrate to Lisk Core 4.0.0.
+=== Ensure you are running version 3.1.0 (or later) of Klayr Core
+Ensure you are running version 3.1.0 (or later) of Klayr Core to be able to seamlessly migrate to Klayr Core 4.0.0.
 
-We *recommend* to install *v3.1.1* of Lisk Core, because it comes with the Mainnet snapshot height pre-configured. If using an existing data directory, kindly make sure to use the `--overwrite-config` flag when restarting the application.
+We *recommend* to install *v3.1.1* of Klayr Core, because it comes with the Mainnet snapshot height pre-configured. If using an existing data directory, kindly make sure to use the `--overwrite-config` flag when restarting the application.
 
-Print the Lisk Core node info in the terminal, and check the value of `version`. Also, kindly ensure that the `backup.height` property is present and the corresponding value matches the announced migration height of {snapshotHeight}.
+Print the Klayr Core node info in the terminal, and check the value of `version`. Also, kindly ensure that the `backup.height` property is present and the corresponding value matches the announced migration height of {snapshotHeight}.
 
 [source,bash]
 ----
-lisk-core node:info --pretty
+klayr-core node:info --pretty
 ----
 
 NOTE: If your version is 3.1.0, please ensure to set `backup.height` to the announced snapshot height in your node config and restart the node with the `--overwrite-config` flag.
 
-=== Setting up the Lisk Migrator
+=== Setting up the Klayr Migrator
 
 ==== Download the migration script
-Navigate into the folder where you want to install the Lisk Migrator, and then download the migration script by running the following command in the terminal:
+Navigate into the folder where you want to install the Klayr Migrator, and then download the migration script by running the following command in the terminal:
 
 [tabs]
 ====
@@ -108,7 +108,7 @@ Linux x64::
 [subs=attributes+]
 [source,bash]
 ----
-curl -o {lisk-migrator} {url_lisk_migrator}
+curl -o {klayr-migrator} {url_klayr_migrator}
 ----
 --
 Darwin x64::
@@ -117,7 +117,7 @@ Darwin x64::
 [subs=attributes+]
 [source,bash]
 ----
-curl -o {lisk-migrator_darwinx64} {url_lisk_migrator_darwinx64}
+curl -o {klayr-migrator_darwinx64} {url_klayr_migrator_darwinx64}
 ----
 --
 Darwin ARM64::
@@ -126,13 +126,13 @@ Darwin ARM64::
 [subs=attributes+]
 [source,bash]
 ----
-curl -o {lisk-migrator_darwinarm64} {url_lisk_migrator_darwinarm64}
+curl -o {klayr-migrator_darwinarm64} {url_klayr_migrator_darwinarm64}
 ----
 --
 ====
 
 ==== Download the checksum and verify
-Download the checksum and verify the successful download of the lisk-migrator.
+Download the checksum and verify the successful download of the klayr-migrator.
 
 {counter:seq3:A}) Download the checksum.
 
@@ -144,7 +144,7 @@ Linux x64::
 [subs=attributes+]
 [source,bash]
 ----
-curl -o {lisk-migrator}.SHA256 {url_lisk_migrator}.SHA256
+curl -o {klayr-migrator}.SHA256 {url_klayr_migrator}.SHA256
 ----
 --
 Darwin x64::
@@ -153,7 +153,7 @@ Darwin x64::
 [subs=attributes+]
 [source,bash]
 ----
-curl -o {lisk-migrator_darwinx64}.SHA256 {url_lisk_migrator_darwinx64}.SHA256
+curl -o {klayr-migrator_darwinx64}.SHA256 {url_klayr_migrator_darwinx64}.SHA256
 ----
 --
 Darwin ARM64::
@@ -162,7 +162,7 @@ Darwin ARM64::
 [subs=attributes+]
 [source,bash]
 ----
-curl -o {lisk-migrator_darwinarm64}.SHA256 {url_lisk_migrator_darwinarm64}.SHA256
+curl -o {klayr-migrator_darwinarm64}.SHA256 {url_klayr_migrator_darwinarm64}.SHA256
 ----
 --
 ====
@@ -177,7 +177,7 @@ Linux::
 [subs=attributes+]
 [source,bash]
 ----
-sha256sum -c {lisk-migrator}.SHA256
+sha256sum -c {klayr-migrator}.SHA256
 ----
 --
 Darwin::
@@ -186,7 +186,7 @@ Darwin::
 [subs=attributes+]
 [source,bash]
 ----
-sha -a 256 {lisk-migrator}.SHA256
+sha -a 256 {klayr-migrator}.SHA256
 ----
 --
 ====
@@ -198,47 +198,47 @@ Unpack it, and then add it to the system path, in order to use it in the termina
 [subs=attributes+]
 [source,bash]
 ----
-tar -xf ./{lisk-migrator}
+tar -xf ./{klayr-migrator}
 ----
 
-Make the `lisk-migrator` command available in the PATH, e.g. by executing the following command:
+Make the `klayr-migrator` command available in the PATH, e.g. by executing the following command:
 
 [source,bash]
 ----
-export PATH="$PATH:$HOME/lisk-migrator/bin"
+export PATH="$PATH:$HOME/klayr-migrator/bin"
 ----
 
-In case the `lisk-migrator` was extracted somewhere other than your home directory, replace `$HOME` with the absolute path of where the `lisk-migrator` folder is located.
+In case the `klayr-migrator` was extracted somewhere other than your home directory, replace `$HOME` with the absolute path of where the `klayr-migrator` folder is located.
 
 === Check the announced snapshot height
 
 * For Mainnet: {snapshotHeight} +
-For more information check the {url_lisk_blog_migration_mainnet}[Mainnet migration announcement^].
+For more information check the {url_klayr_blog_migration_mainnet}[Mainnet migration announcement^].
 * For Testnet: {snapshotHeightTestnet} +
-For more information check the {url_lisk_blog_migration}[Testnet migration announcement^].
+For more information check the {url_klayr_blog_migration}[Testnet migration announcement^].
 
-The height is needed by the `lisk-migrator` in the next step.
+The height is needed by the `klayr-migrator` in the next step.
 A snapshot of the blockchain will be created at this particular height, which will then be used to create the genesis block for the new blockchain.
 
-=== Ensure Lisk Core v3.1.x is fully synced with the network
+=== Ensure Klayr Core v3.1.x is fully synced with the network
 Check the current block height of your node directly in the terminal by running the following command:
 
 [source,bash]
 ----
-lisk-core node:info --pretty
+klayr-core node:info --pretty
 ----
 
-Compare the current height of your node to the network height in {url_wallet}[Lisk Desktop^], which is shown on the kbd:[Network] or kbd:[Blocks] pages.
+Compare the current height of your node to the network height in {url_wallet}[Klayr Desktop^], which is shown on the kbd:[Network] or kbd:[Blocks] pages.
 
-TIP: To view the current height of the *Lisk Testnet*, use the network switcher of Lisk Desktop, which can be enabled in the settings.
+TIP: To view the current height of the *Klayr Testnet*, use the network switcher of Klayr Desktop, which can be enabled in the settings.
 
-Alternatively, users can also verify the current height by comparing `data.height` in the response from the https://service.lisk.com/api/v2/network/status[^] endpoint.
+Alternatively, users can also verify the current height by comparing `data.height` in the response from the https://service.klayr.com/api/v2/network/status[^] endpoint.
 
 To directly check the current height via the command line, run:
 
 [source,bash]
 ----
-curl --silent https://service.lisk.com/api/v2/network/status | jq '.data.height'
+curl --silent https://service.klayr.com/api/v2/network/status | jq '.data.height'
 ----
 
 To run the command, both {url_curl}[curl^] and {url_jq}[jq^] are required to be installed.
@@ -247,11 +247,11 @@ If both heights are equal, it is verified that your node is fully synced with th
 
 === Open ports
 
-Open the necessary ports for Lisk Core v4.
+Open the necessary ports for Klayr Core v4.
 
 [IMPORTANT]
 ====
-If you migrate the existing Lisk Core v3 config with the `--auto-migrate-config` flag in the next step <<run-lisk-migrator>>, please ensure that the necessary ports in the final v4 config are open for communication.
+If you migrate the existing Klayr Core v3 config with the `--auto-migrate-config` flag in the next step <<run-klayr-migrator>>, please ensure that the necessary ports in the final v4 config are open for communication.
 
 The final config (when auto-migrating) is printed on the screen for the user's confirmation. You can check for the exact port details there.
 It should be the same that you were using with v3.
@@ -270,15 +270,15 @@ ufw allow 7667
 ufw allow 7887
 ----
 
-=== Run lisk migrator
+=== Run klayr migrator
 
 [IMPORTANT]
 ====
 .When to start the migrator script?
-`lisk-migrator` can be started any time before the announced snapshot height.
+`klayr-migrator` can be started any time before the announced snapshot height.
 ====
 
-If you have added the `lisk-migrator` to the PATH as described in the section <<setting-up-the-lisk-migrator>>, you can start the migration script by running the following command footnote:snap_footnote[Snap versions of Lisk Core store everything in `~/snap/lisk-core/current/.lisk/lisk-core` instead of `~/.lisk/lisk-core`] in the terminal:
+If you have added the `klayr-migrator` to the PATH as described in the section <<setting-up-the-klayr-migrator>>, you can start the migration script by running the following command footnote:snap_footnote[Snap versions of Klayr Core store everything in `~/snap/klayr-core/current/.klayr/klayr-core` instead of `~/.klayr/klayr-core`] in the terminal:
 
 [tabs]
 ====
@@ -287,7 +287,7 @@ Mainnet::
 --
 [source,bash,subs=attributes+]
 ----
-lisk-migrator --snapshot-height {snapshotHeight} --auto-migrate-config --auto-start-lisk-core-v4
+klayr-migrator --snapshot-height {snapshotHeight} --auto-migrate-config --auto-start-klayr-core-v4
 ----
 --
 Testnet::
@@ -295,7 +295,7 @@ Testnet::
 --
 [source,bash,subs=attributes+]
 ----
-lisk-migrator --snapshot-height {snapshotHeightTestnet} --auto-migrate-config --auto-start-lisk-core-v4
+klayr-migrator --snapshot-height {snapshotHeightTestnet} --auto-migrate-config --auto-start-klayr-core-v4
 ----
 --
 ====
@@ -304,41 +304,41 @@ lisk-migrator --snapshot-height {snapshotHeightTestnet} --auto-migrate-config --
 The height on which the blockchain snapshot will be performed.
 The snapshot height will be announced separately.
 
-CAUTION: If you choose to specify custom output path with the `--output` flag, please don't specify the default data directory for Lisk Core (`~/.lisk/lisk-core`) or any sub-directory within it, as it might lead to errors during the migration.
+CAUTION: If you choose to specify custom output path with the `--output` flag, please don't specify the default data directory for Klayr Core (`~/.klayr/klayr-core`) or any sub-directory within it, as it might lead to errors during the migration.
 
 .Custom data path
 [TIP]
 ====
-In case a custom xref:{url_sdk_config_system}[dataPath] is defined in the config, that is different from the default path `~/.lisk/lisk-core`, then it is possible to define the data path with the `--lisk-core-v3-data-path` flag like so:
+In case a custom xref:{url_sdk_config_system}[dataPath] is defined in the config, that is different from the default path `~/.klayr/klayr-core`, then it is possible to define the data path with the `--klayr-core-v3-data-path` flag like so:
 
 [source,bash,subs=attributes+]
 ----
-lisk-migrator --snapshot-height {snapshotHeight} --lisk-core-v3-data-path ~/lisk/custom/path/  --auto-migrate-config --auto-start-lisk-core-v4
+klayr-migrator --snapshot-height {snapshotHeight} --klayr-core-v3-data-path ~/klayr/custom/path/  --auto-migrate-config --auto-start-klayr-core-v4
 ----
 ====
 
 .Custom config
 [TIP]
 ====
-In case a xref:{url_build_custom_config}[custom config] is used for Lisk Core v3, then it is also possible to define the path to the custom config file with the `--config` flag like so:
+In case a xref:{url_build_custom_config}[custom config] is used for Klayr Core v3, then it is also possible to define the path to the custom config file with the `--config` flag like so:
 
 [source,bash,subs=attributes+]
 ----
-lisk-migrator --snapshot-height {snapshotHeight} --config=/path/to/config.json --auto-migrate-config --auto-start-lisk-core-v4
+klayr-migrator --snapshot-height {snapshotHeight} --config=/path/to/config.json --auto-migrate-config --auto-start-klayr-core-v4
 ----
 ====
 
 .Running the migrator in the background
 [TIP]
 ====
-It is possible to use tools such as `screen` to run the Lisk migrator in the background.
+It is possible to use tools such as `screen` to run the Klayr migrator in the background.
 
 With `screen` you can detach the current terminal window into the background:
 
 .Example (Mainnet) footnote:snap_footnote[]
 [source,bash,subs=attributes+]
 ----
-screen -dmSL migration lisk-migrator --snapshot-height {snapshotHeight} --auto-migrate-config --auto-start-lisk-core-v4
+screen -dmSL migration klayr-migrator --snapshot-height {snapshotHeight} --auto-migrate-config --auto-start-klayr-core-v4
 ----
 
 Shortly before the migration occurs, it is possible to reattach to the screen, in order to check if everything is working correctly.
@@ -355,7 +355,7 @@ This returns a list of all detached screens with `screen`:
 ----
 There is a screen on:
 	1842.migration	(05/07/2021 12:35:59 PM)	(Detached)
-1 Socket in /run/screen/S-lisk.
+1 Socket in /run/screen/S-klayr.
 ----
 
 Use `screen -r` and the name of the detached screen you want to connect to
@@ -370,12 +370,12 @@ screen -r 1842.migration
 
 === Wait until the network reaches the snapshot height
 
-Observe if the `lisk-migrator` finishes successfully.
+Observe if the `klayr-migrator` finishes successfully.
 
 Expected migration duration::
 This can take *~3 mins* against the *Testnet*, and *~5 mins* against the *Mainnet*.
 
-The script will download and install Lisk Core v4 for you automatically.
+The script will download and install Klayr Core v4 for you automatically.
 
 The flag `--auto-migrate-config` will automatically migrate the config from the old to the new node.
 
@@ -392,45 +392,45 @@ To verify that the migrator created the correct new genesis block, compare the n
 
 [source,bash]
 ----
-grep \"id\": ./lisk-migrator/output/4c09e6a781fc4c7bdb936ee815de8f94190f8a7519becd9de2081832be309a99/genesis_block.json
+grep \"id\": ./klayr-migrator/output/4c09e6a781fc4c7bdb936ee815de8f94190f8a7519becd9de2081832be309a99/genesis_block.json
 ----
 
-The hashes can be shared in the dedicated network channel on {url_lisk_chat}[lisk.chat^].
+The hashes can be shared in the dedicated network channel on {url_klayr_chat}[klayr.chat^].
 
 ====
 
-=== Stop Lisk Core v3.1.x
+=== Stop Klayr Core v3.1.x
 
-After the `lisk-migrator` script has finished and the announced snapshot height has passed, there is no reason to continue running Lisk Core v3.1.x, and therefore it is recommended to stop it.
+After the `klayr-migrator` script has finished and the announced snapshot height has passed, there is no reason to continue running Klayr Core v3.1.x, and therefore it is recommended to stop it.
 
 [IMPORTANT]
 ====
-It is important to stop Lisk Core v3 *before* starting Lisk Core v4.
-If the migrator is started with `--auto-start-lisk-core-v4` flag, the user is prompted to verify that Lisk Core v3 is stopped - only afterwards, the migration script will continue.
+It is important to stop Klayr Core v3 *before* starting Klayr Core v4.
+If the migrator is started with `--auto-start-klayr-core-v4` flag, the user is prompted to verify that Klayr Core v3 is stopped - only afterwards, the migration script will continue.
 
 .Prompt when
- Please stop Lisk Core v3 to continue. Type 'yes' and press Enter when ready. [yes/no]: yes
+ Please stop Klayr Core v3 to continue. Type 'yes' and press Enter when ready. [yes/no]: yes
 ====
 
-//TODO: Update with correct command to stop Lisk Core
+//TODO: Update with correct command to stop Klayr Core
 ////
-Navigate into the root folder of your Lisk Core v3.1.x installation and run the following command to stop the old Lisk Core version:
+Navigate into the root folder of your Klayr Core v3.1.x installation and run the following command to stop the old Klayr Core version:
 
 [source,bash]
 ----
-lisk-core
+klayr-core
 ----
 ////
 
-NOTE: Users that have set something up to start Lisk Core on boot, whether it's through `cron` or `systemd` or something else, should keep that in mind and adjust things accordingly so that Lisk Core 4.0.0 gets started instead of Lisk Core 3.1.x.
+NOTE: Users that have set something up to start Klayr Core on boot, whether it's through `cron` or `systemd` or something else, should keep that in mind and adjust things accordingly so that Klayr Core 4.0.0 gets started instead of Klayr Core 3.1.x.
 
-Last but not least, remove the folder with Lisk Core v3.1.x.
+Last but not least, remove the folder with Klayr Core v3.1.x.
 
 
-=== Start Lisk Core v4
-If you set the flag `--auto-start-lisk-core-v4` when running lisk-migrator, it will start Lisk Core v4 in the background (managed by PM2) right after successful migration.
+=== Start Klayr Core v4
+If you set the flag `--auto-start-klayr-core-v4` when running klayr-migrator, it will start Klayr Core v4 in the background (managed by PM2) right after successful migration.
 
-Otherwise, start Lisk Core manually like so:
+Otherwise, start Klayr Core manually like so:
 
 [tabs]
 ====
@@ -439,7 +439,7 @@ Mainnet::
 --
 [source,bash]
 ----
-lisk-core start --network mainnet
+klayr-core start --network mainnet
 ----
 --
 Testnet::
@@ -447,23 +447,23 @@ Testnet::
 --
 [source,bash]
 ----
-lisk-core start --network testnet
+klayr-core start --network testnet
 ----
 --
 ====
 
 Observe the logs in the terminal, to verify the node is starting correctly.
 
-TIP: To run Lisk Core in the background install PM2, as described in the guide xref:{url_run_pm2}[].
+TIP: To run Klayr Core in the background install PM2, as described in the guide xref:{url_run_pm2}[].
 
 You can verify that the node is running correctly by executing the following command:
 
 [source,bash]
 ----
-lisk-core system:node-info --pretty
+klayr-core system:node-info --pretty
 ----
 
-Check the value of `version` in the response, to verify you are running version 4.0.0 of Lisk Core.
+Check the value of `version` in the response, to verify you are running version 4.0.0 of Klayr Core.
 
 === Enable block generation after the migration (for validators)
 
@@ -473,7 +473,7 @@ All other validators will be banned during the bootstrap period.
 `initRounds` is the number of rounds for the bootstrap period of the new network.
 The bootstrap period after migration to Core v4 is *{initRounds} rounds*.
 
-The initial validators will be exactly the 101 validators that were in active positions in the Lisk Core v3 network, at the time of the migration.
+The initial validators will be exactly the 101 validators that were in active positions in the Klayr Core v3 network, at the time of the migration.
 
 For the initial validators, it will be important to enable block generation as soon as possible on the new node, to not miss any block rewards.
 
@@ -481,7 +481,7 @@ It is also important that a maximum number of validators participate in the netw
 If only a small number of validators migrate their nodes, this can prolong the bootstrap period.
 Additionally, for blocks to be finalized, enough of the active validators (minimum 68) need to participate in the migration process.
 
-After {initRounds} rounds, the normal Lisk PoS protocol will be followed to generate the list of active validators, but only for the validators who have <<register-legacy-validator-keys,registered their validator keys>>.
+After {initRounds} rounds, the normal Klayr PoS protocol will be followed to generate the list of active validators, but only for the validators who have <<register-legacy-validator-keys,registered their validator keys>>.
 
 WARNING: All migrated validators who *did not register their keys* until the bootstrap period ends will stay *banned*.
 To be un-banned, a validator needs to <<register-legacy-validator-keys>>.
@@ -489,7 +489,7 @@ To be un-banned, a validator needs to <<register-legacy-validator-keys>>.
 ==== Allow methods in the node config
 To be able to run certain validator-related commands of the node, it is required to enable security-sensitive methods in the node config.
 
-NOTE: If you used the migrator with the `--auto-start-lisk-core-v4` flag, it is not necessary to update the config, as it is already done by the migrator.
+NOTE: If you used the migrator with the `--auto-start-klayr-core-v4` flag, it is not necessary to update the config, as it is already done by the migrator.
 
 .config.json
 [source,json]
@@ -517,7 +517,7 @@ It is possible to generate all relevant validator keys to enable block generatio
 
 To do so, use the command xref:{url_sdk_cli_keyscreate}[keys:create].
 
-IMPORTANT: The flag `--add-legacy` is only available in Lisk Core v4.0.0 or later.
+IMPORTANT: The flag `--add-legacy` is only available in Klayr Core v4.0.0 or later.
 
 [tabs]
 ====
@@ -526,7 +526,7 @@ Mainnet::
 --
 [source,bash]
 ----
-lisk-core keys:create --chainid 0 --output ./config/keys.json --add-legacy
+klayr-core keys:create --chainid 0 --output ./config/keys.json --add-legacy
 ----
 --
 Testnet::
@@ -534,7 +534,7 @@ Testnet::
 --
 [source,bash]
 ----
-lisk-core keys:create --chainid 1 --output ./config/keys.json --add-legacy
+klayr-core keys:create --chainid 1 --output ./config/keys.json --add-legacy
 ----
 --
 ====
@@ -562,7 +562,7 @@ This will generate the following file, which includes all important keys for the
 {
   "keys": [
     {
-      "address": "lskqaxxmj78frvgpjgwvf4yqjjkcrr9yhn2sxxwm3",
+      "address": "klyqaxxmj78frvgpjgwvf4yqjjkcrr9yhn2sxxwm3",
       "keyPath": "legacy",
       "publicKey": "6290c8b58de8b71fedb7e3cb9a6ee9426aa3e7ac0141f278526375d46705b546",
       "privateKey": "759305903f7bbb449cf2fd22e6da476792b63e24558e266a4859f9ed3c91fd7e6290c8b58de8b71fedb7e3cb9a6ee9426aa3e7ac0141f278526375d46705b546",
@@ -612,7 +612,7 @@ After creating the validator keys as suggested in the  <<create-the-validator-ke
 
 [source,bash]
 ----
-lisk-core keys:import --file-path config/keys.json
+klayr-core keys:import --file-path config/keys.json
 ----
 
 ==== Set the hash onion
@@ -623,15 +623,15 @@ Set the hash-onion by invoking the xref:{url_api_sethashonion}[setHashOnion] end
 
 [source,bash]
 ----
-lisk-core endpoint:invoke random_setHashOnion '{"address":"lskqaxxmj78frvgpjgwvf4yqjjkcrr9yhn2sxxwm3"}'
+klayr-core endpoint:invoke random_setHashOnion '{"address":"klyqaxxmj78frvgpjgwvf4yqjjkcrr9yhn2sxxwm3"}'
 ----
 
 ==== Import validator info data
 
-Look in the output directory of the lisk-migrator for a file called `forgingStatus.json` (the specific location will be in the migrator output), this will contain the valid validator info data to enable block generation on the Lisk Core v4 node.
+Look in the output directory of the klayr-migrator for a file called `forgingStatus.json` (the specific location will be in the migrator output), this will contain the valid validator info data to enable block generation on the Klayr Core v4 node.
 
 .Migrator output example
- Finished exporting forging status to /root/lisk-migrator/output/15f0dacc1060e91818224a94286b13aa04279c640bd5d6f193182031d133df7c/forgingStatus.json
+ Finished exporting forging status to /root/klayr-migrator/output/15f0dacc1060e91818224a94286b13aa04279c640bd5d6f193182031d133df7c/forgingStatus.json
 
 .Alternative option in the event of data loss
 TIP: In case the validator info data is lost, the validator can use the **snapshot height** for `height`, `maxHeightPrevoted` and `maxHeightGenerated` to enable block generation safely.
@@ -646,24 +646,24 @@ To import the validator info data, invoke the endpoint `generator_setStatus` lik
 
 [source,bash]
 ----
-lisk-core endpoint:invoke generator_setStatus '{ "address": "lskbgyrx3v76jxowgkgthu9yaf3dr29wqxbtxz8yp", "height": 20432255, "maxHeightGenerated": 20432207, "maxHeightPrevoted": 20432159 }' --pretty
+klayr-core endpoint:invoke generator_setStatus '{ "address": "klybgyrx3v76jxowgkgthu9yaf3dr29wqxbtxz8yp", "height": 20432255, "maxHeightGenerated": 20432207, "maxHeightPrevoted": 20432159 }' --pretty
 ----
 
 ==== Enable block generation
 
-Now, it is possible to enable block generation on the new node for your validator by using the xref:{url_cli_generatorenable}[generator:enable] command of the Lisk Core CLI.
+Now, it is possible to enable block generation on the new node for your validator by using the xref:{url_cli_generatorenable}[generator:enable] command of the Klayr Core CLI.
 
 [source,bash]
 ----
-lisk-core generator:enable lskqaxxmj78frvgpjgwvf4yqjjkcrr9yhn2sxxwm3 --use-status-value
+klayr-core generator:enable klyqaxxmj78frvgpjgwvf4yqjjkcrr9yhn2sxxwm3 --use-status-value
 ----
 
-Replace the address `lskqaxxmj78frvgpjgwvf4yqjjkcrr9yhn2sxxwm3` with your validator address, the `--use-status-value` flag will use the validator info data that was imported in the previous step <<import-validator-info-data>>.
+Replace the address `klyqaxxmj78frvgpjgwvf4yqjjkcrr9yhn2sxxwm3` with your validator address, the `--use-status-value` flag will use the validator info data that was imported in the previous step <<import-validator-info-data>>.
 
 .Don't use zeros as validator info data!
 [WARNING]
 ====
-If the validator already generated blocks with Lisk Core v3, they need to use their current validator info data.
+If the validator already generated blocks with Klayr Core v3, they need to use their current validator info data.
 The validator info data is migrated during the migration process, and can directly be used to enable block generation on the v4 node.
 
 To directly set the values, use the `--use-status-value` flag, or set the values manually as described below.
@@ -671,13 +671,13 @@ To directly set the values, use the `--use-status-value` flag, or set the values
 For setting the values manually, first get the data:
 [source,bash]
 ----
-lisk-core generator:status --pretty
+klayr-core generator:status --pretty
 ----
 
 And then set the values manually by adding the relevant flags:
 [source,bash]
 ----
-lisk-core generator:enable lskqaxxmj78frvgpjgwvf4yqjjkcrr9yhn2sxxwm3 --height=123 --max-height-generated=101 --max-height-prevoted=101
+klayr-core generator:enable klyqaxxmj78frvgpjgwvf4yqjjkcrr9yhn2sxxwm3 --height=123 --max-height-generated=101 --max-height-prevoted=101
 ----
 ====
 
@@ -692,7 +692,7 @@ To register the legacy validator keys with the new node, create a new `registerK
 
 [source,bash]
 ----
-lisk-core transaction:create legacy registerKeys 400000 --key-derivation-path=legacy --send
+klayr-core transaction:create legacy registerKeys 400000 --key-derivation-path=legacy --send
 ----
 
 It will ask you for the required parameters:
@@ -707,6 +707,6 @@ The required parameters can be obtained from the `keys.json` file, which was cre
 
 NOTE: To send transactions from multisignature accounts, please follow the instructions xref:ROOT::integrate-blockchain/multisignature-accounts-and-transactions.adoc#how-to-create-a-multi-signature-transaction[here].
 
-The migration of Lisk Core from v3 to v4 is now completed.
+The migration of Klayr Core from v3 to v4 is now completed.
 
-If you have specific questions regarding the process or need additional support, please reach out in the dedicated community channels, like {url_lisk_chat}[^].
+If you have specific questions regarding the process or need additional support, please reach out in the dedicated community channels, like {url_klayr_chat}[^].

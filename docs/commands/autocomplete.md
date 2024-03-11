@@ -1,17 +1,17 @@
-`lisk-core autocomplete`
+`klayr-core autocomplete`
 ========================
 
 display autocomplete installation instructions
 
-* [`lisk-core autocomplete [SHELL]`](#lisk-core-autocomplete-shell)
+* [`klayr-core autocomplete [SHELL]`](#klayr-core-autocomplete-shell)
 
-## `lisk-core autocomplete [SHELL]`
+## `klayr-core autocomplete [SHELL]`
 
 display autocomplete installation instructions
 
 ```
 USAGE
-  $ lisk-core autocomplete [SHELL]
+  $ klayr-core autocomplete [SHELL]
 
 ARGUMENTS
   SHELL  shell type
@@ -20,10 +20,10 @@ OPTIONS
   -r, --refresh-cache  Refresh cache (ignores displaying instructions)
 
 EXAMPLES
-  $ lisk-core autocomplete
-  $ lisk-core autocomplete bash
-  $ lisk-core autocomplete zsh
-  $ lisk-core autocomplete --refresh-cache
+  $ klayr-core autocomplete
+  $ klayr-core autocomplete bash
+  $ klayr-core autocomplete zsh
+  $ klayr-core autocomplete --refresh-cache
 ```
 
 _See code: [@oclif/plugin-autocomplete](https://github.com/oclif/plugin-autocomplete/blob/v1.3.6/src/commands/autocomplete/index.ts)_

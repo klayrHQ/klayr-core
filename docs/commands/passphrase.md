@@ -1,19 +1,19 @@
-`lisk-core passphrase`
+`klayr-core passphrase`
 ======================
 
-Commands relating to Lisk Core passphrases.
+Commands relating to Klayr Core passphrases.
 
-* [`lisk-core passphrase:create`](#lisk-core-passphrasecreate)
-* [`lisk-core passphrase:decrypt`](#lisk-core-passphrasedecrypt)
-* [`lisk-core passphrase:encrypt`](#lisk-core-passphraseencrypt)
+* [`klayr-core passphrase:create`](#klayr-core-passphrasecreate)
+* [`klayr-core passphrase:decrypt`](#klayr-core-passphrasedecrypt)
+* [`klayr-core passphrase:encrypt`](#klayr-core-passphraseencrypt)
 
-## `lisk-core passphrase:create`
+## `klayr-core passphrase:create`
 
 Returns a randomly generated 24 words mnemonic passphrase.
 
 ```
 USAGE
-  $ lisk-core passphrase:create
+  $ klayr-core passphrase:create
 
 OPTIONS
   -o, --output=output  The output directory. Default will set to current working directory.
@@ -23,15 +23,15 @@ EXAMPLES
   passphrase:create --output /mypath/passphrase.json
 ```
 
-_See code: [dist/commands/passphrase/create.ts](https://github.com/LiskHQ/lisk-core/blob/v4.0.2/dist/commands/passphrase/create.ts)_
+_See code: [dist/commands/passphrase/create.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/passphrase/create.ts)_
 
-## `lisk-core passphrase:decrypt`
+## `klayr-core passphrase:decrypt`
 
 Decrypt secret passphrase using the password provided at the time of encryption.
 
 ```
 USAGE
-  $ lisk-core passphrase:decrypt
+  $ klayr-core passphrase:decrypt
 
 OPTIONS
   -f, --file-path=file-path  (required) Path of the file to import from
@@ -46,15 +46,15 @@ EXAMPLES
   passphrase:decrypt --file-path ./my/path/output.json --password your-password
 ```
 
-_See code: [dist/commands/passphrase/decrypt.ts](https://github.com/LiskHQ/lisk-core/blob/v4.0.2/dist/commands/passphrase/decrypt.ts)_
+_See code: [dist/commands/passphrase/decrypt.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/passphrase/decrypt.ts)_
 
-## `lisk-core passphrase:encrypt`
+## `klayr-core passphrase:encrypt`
 
 Encrypt secret passphrase using password.
 
 ```
 USAGE
-  $ lisk-core passphrase:encrypt
+  $ klayr-core passphrase:encrypt
 
 OPTIONS
   -o, --output=output          The output directory. Default will set to current working directory.
@@ -81,4 +81,4 @@ EXAMPLES
   passphrase:encrypt --output-public-key --output /mypath/keys.json
 ```
 
-_See code: [dist/commands/passphrase/encrypt.ts](https://github.com/LiskHQ/lisk-core/blob/v4.0.2/dist/commands/passphrase/encrypt.ts)_
+_See code: [dist/commands/passphrase/encrypt.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/passphrase/encrypt.ts)_
