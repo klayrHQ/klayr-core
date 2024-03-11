@@ -1,27 +1,27 @@
-`lisk-core generator`
+`klayr-core generator`
 =====================
 
 Disable block generation for given validator address.
 
-* [`lisk-core generator:disable ADDRESS`](#lisk-core-generatordisable-address)
-* [`lisk-core generator:enable ADDRESS`](#lisk-core-generatorenable-address)
-* [`lisk-core generator:export`](#lisk-core-generatorexport)
-* [`lisk-core generator:import`](#lisk-core-generatorimport)
-* [`lisk-core generator:status`](#lisk-core-generatorstatus)
+* [`klayr-core generator:disable ADDRESS`](#klayr-core-generatordisable-address)
+* [`klayr-core generator:enable ADDRESS`](#klayr-core-generatorenable-address)
+* [`klayr-core generator:export`](#klayr-core-generatorexport)
+* [`klayr-core generator:import`](#klayr-core-generatorimport)
+* [`klayr-core generator:status`](#klayr-core-generatorstatus)
 
-## `lisk-core generator:disable ADDRESS`
+## `klayr-core generator:disable ADDRESS`
 
 Disable block generation for given validator address.
 
 ```
 USAGE
-  $ lisk-core generator:disable ADDRESS
+  $ klayr-core generator:disable ADDRESS
 
 ARGUMENTS
-  ADDRESS  Address of an account in a lisk32 format.
+  ADDRESS  Address of an account in a klayr32 format.
 
 OPTIONS
-  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "LISK_DATA_PATH"
+  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "KLAYR_DATA_PATH"
                              can also be used.
 
   -w, --password=password    Specifies a source for your secret password. Command will prompt you for input if this
@@ -32,27 +32,27 @@ OPTIONS
   --pretty                   Prints JSON in pretty format rather than condensed.
 
 EXAMPLES
-  generator:disable lskycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz
-  generator:disable lskycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz --data-path ./data
-  generator:disable lskycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz --data-path ./data --password your_password
+  generator:disable klyycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz
+  generator:disable klyycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz --data-path ./data
+  generator:disable klyycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz --data-path ./data --password your_password
 ```
 
-_See code: [dist/commands/generator/disable.ts](https://github.com/LiskHQ/lisk-core/blob/v4.0.2/dist/commands/generator/disable.ts)_
+_See code: [dist/commands/generator/disable.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/generator/disable.ts)_
 
-## `lisk-core generator:enable ADDRESS`
+## `klayr-core generator:enable ADDRESS`
 
 Enable block generation for given validator address.
 
 ```
 USAGE
-  $ lisk-core generator:enable ADDRESS
+  $ klayr-core generator:enable ADDRESS
 
 ARGUMENTS
-  ADDRESS  Address of an account in a lisk32 format.
+  ADDRESS  Address of an account in a klayr32 format.
 
 OPTIONS
   -d, --data-path=data-path                    Directory path to specify where node data is stored. Environment variable
-                                               "LISK_DATA_PATH" can also be used.
+                                               "KLAYR_DATA_PATH" can also be used.
 
   -w, --password=password                      Specifies a source for your secret password. Command will prompt you for
                                                input if this option is not set.
@@ -71,27 +71,27 @@ OPTIONS
   --use-status-value                           Use status value from the connected node
 
 EXAMPLES
-  generator:enable lsk24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu --use-status-value
-  generator:enable lsk24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu --height=100 --max-height-generated=30 
+  generator:enable kly24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu --use-status-value
+  generator:enable kly24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu --height=100 --max-height-generated=30 
   --max-height-prevoted=10
-  generator:enable lsk24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu --height=100 --max-height-generated=30 
+  generator:enable kly24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu --height=100 --max-height-generated=30 
   --max-height-prevoted=10 --data-path ./data
-  generator:enable lsk24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu --height=100 --max-height-generated=30 
+  generator:enable kly24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu --height=100 --max-height-generated=30 
   --max-height-prevoted=10 --data-path ./data --password your_password
 ```
 
-_See code: [dist/commands/generator/enable.ts](https://github.com/LiskHQ/lisk-core/blob/v4.0.2/dist/commands/generator/enable.ts)_
+_See code: [dist/commands/generator/enable.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/generator/enable.ts)_
 
-## `lisk-core generator:export`
+## `klayr-core generator:export`
 
 Export to <FILE>.
 
 ```
 USAGE
-  $ lisk-core generator:export
+  $ klayr-core generator:export
 
 OPTIONS
-  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "LISK_DATA_PATH"
+  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "KLAYR_DATA_PATH"
                              can also be used.
 
   -o, --output=output        The output directory. Default will set to current working directory.
@@ -104,18 +104,18 @@ EXAMPLES
   generator:export --output /mypath/generator_info.json --data-path ./data
 ```
 
-_See code: [dist/commands/generator/export.ts](https://github.com/LiskHQ/lisk-core/blob/v4.0.2/dist/commands/generator/export.ts)_
+_See code: [dist/commands/generator/export.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/generator/export.ts)_
 
-## `lisk-core generator:import`
+## `klayr-core generator:import`
 
 Import from <FILE>.
 
 ```
 USAGE
-  $ lisk-core generator:import
+  $ klayr-core generator:import
 
 OPTIONS
-  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "LISK_DATA_PATH"
+  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "KLAYR_DATA_PATH"
                              can also be used.
 
   -f, --file-path=file-path  (required) Path of the file to import from
@@ -127,18 +127,18 @@ EXAMPLES
   generator:import --file-path ./my/path/genInfo.json --data-path ./data
 ```
 
-_See code: [dist/commands/generator/import.ts](https://github.com/LiskHQ/lisk-core/blob/v4.0.2/dist/commands/generator/import.ts)_
+_See code: [dist/commands/generator/import.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/generator/import.ts)_
 
-## `lisk-core generator:status`
+## `klayr-core generator:status`
 
 Get forging information for the locally running node.
 
 ```
 USAGE
-  $ lisk-core generator:status
+  $ klayr-core generator:status
 
 OPTIONS
-  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "LISK_DATA_PATH"
+  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "KLAYR_DATA_PATH"
                              can also be used.
 
   --pretty                   Prints JSON in pretty format rather than condensed.
@@ -148,4 +148,4 @@ EXAMPLES
   generator:status --data-path ./sample --pretty
 ```
 
-_See code: [dist/commands/generator/status.ts](https://github.com/LiskHQ/lisk-core/blob/v4.0.2/dist/commands/generator/status.ts)_
+_See code: [dist/commands/generator/status.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/generator/status.ts)_

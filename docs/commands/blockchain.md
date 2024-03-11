@@ -1,24 +1,24 @@
-`lisk-core blockchain`
+`klayr-core blockchain`
 ======================
 
-Commands relating to Lisk Core blockchain data.
+Commands relating to Klayr Core blockchain data.
 
-* [`lisk-core blockchain:download`](#lisk-core-blockchaindownload)
-* [`lisk-core blockchain:export`](#lisk-core-blockchainexport)
-* [`lisk-core blockchain:hash`](#lisk-core-blockchainhash)
-* [`lisk-core blockchain:import FILEPATH`](#lisk-core-blockchainimport-filepath)
-* [`lisk-core blockchain:reset`](#lisk-core-blockchainreset)
+* [`klayr-core blockchain:download`](#klayr-core-blockchaindownload)
+* [`klayr-core blockchain:export`](#klayr-core-blockchainexport)
+* [`klayr-core blockchain:hash`](#klayr-core-blockchainhash)
+* [`klayr-core blockchain:import FILEPATH`](#klayr-core-blockchainimport-filepath)
+* [`klayr-core blockchain:reset`](#klayr-core-blockchainreset)
 
-## `lisk-core blockchain:download`
+## `klayr-core blockchain:download`
 
 Download snapshot from <URL>.
 
 ```
 USAGE
-  $ lisk-core blockchain:download
+  $ klayr-core blockchain:download
 
 OPTIONS
-  -n, --network=network  [default: mainnet] Default network config to use. Environment variable "LISK_NETWORK" can also
+  -n, --network=network  [default: mainnet] Default network config to use. Environment variable "KLAYR_NETWORK" can also
                          be used.
 
   -o, --output=output    Directory path to specify where snapshot is downloaded. By default outputs the files to current
@@ -29,21 +29,21 @@ OPTIONS
 EXAMPLES
   download
   download --network betanet
-  download --url https://snapshots.lisk.com/mainnet/blockchain.db.tar.gz --output ./downloads
+  download --url https://snapshots.klayr.com/mainnet/blockchain.db.tar.gz --output ./downloads
 ```
 
-_See code: [dist/commands/blockchain/download.ts](https://github.com/LiskHQ/lisk-core/blob/v4.0.2/dist/commands/blockchain/download.ts)_
+_See code: [dist/commands/blockchain/download.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/blockchain/download.ts)_
 
-## `lisk-core blockchain:export`
+## `klayr-core blockchain:export`
 
 Export to <FILE>.
 
 ```
 USAGE
-  $ lisk-core blockchain:export
+  $ klayr-core blockchain:export
 
 OPTIONS
-  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "LISK_DATA_PATH"
+  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "KLAYR_DATA_PATH"
                              can also be used.
 
   -o, --output=output        The output directory. Default will set to current working directory.
@@ -53,18 +53,18 @@ EXAMPLES
   blockchain:export --data-path ./data --output ./my/path/
 ```
 
-_See code: [dist/commands/blockchain/export.ts](https://github.com/LiskHQ/lisk-core/blob/v4.0.2/dist/commands/blockchain/export.ts)_
+_See code: [dist/commands/blockchain/export.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/blockchain/export.ts)_
 
-## `lisk-core blockchain:hash`
+## `klayr-core blockchain:hash`
 
 Generate SHA256 hash from <PATH>.
 
 ```
 USAGE
-  $ lisk-core blockchain:hash
+  $ klayr-core blockchain:hash
 
 OPTIONS
-  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "LISK_DATA_PATH"
+  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "KLAYR_DATA_PATH"
                              can also be used.
 
 EXAMPLES
@@ -72,51 +72,51 @@ EXAMPLES
   blockchain:hash --data-path ./data
 ```
 
-_See code: [dist/commands/blockchain/hash.ts](https://github.com/LiskHQ/lisk-core/blob/v4.0.2/dist/commands/blockchain/hash.ts)_
+_See code: [dist/commands/blockchain/hash.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/blockchain/hash.ts)_
 
-## `lisk-core blockchain:import FILEPATH`
+## `klayr-core blockchain:import FILEPATH`
 
 Import from <FILE>.
 
 ```
 USAGE
-  $ lisk-core blockchain:import FILEPATH
+  $ klayr-core blockchain:import FILEPATH
 
 ARGUMENTS
   FILEPATH  Path to the gzipped blockchain data.
 
 OPTIONS
-  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "LISK_DATA_PATH"
+  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "KLAYR_DATA_PATH"
                              can also be used.
 
   -f, --force                Delete and overwrite existing blockchain data
 
 EXAMPLES
   blockchain:import ./path/to/blockchain.tar.gz
-  blockchain:import ./path/to/blockchain.tar.gz --data-path ./lisk/
-  blockchain:import ./path/to/blockchain.tar.gz --data-path ./lisk/ --force
+  blockchain:import ./path/to/blockchain.tar.gz --data-path ./klayr/
+  blockchain:import ./path/to/blockchain.tar.gz --data-path ./klayr/ --force
 ```
 
-_See code: [dist/commands/blockchain/import.ts](https://github.com/LiskHQ/lisk-core/blob/v4.0.2/dist/commands/blockchain/import.ts)_
+_See code: [dist/commands/blockchain/import.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/blockchain/import.ts)_
 
-## `lisk-core blockchain:reset`
+## `klayr-core blockchain:reset`
 
 Reset the blockchain data.
 
 ```
 USAGE
-  $ lisk-core blockchain:reset
+  $ klayr-core blockchain:reset
 
 OPTIONS
-  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "LISK_DATA_PATH"
+  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "KLAYR_DATA_PATH"
                              can also be used.
 
   -y, --yes                  Skip confirmation prompt.
 
 EXAMPLES
   blockchain:reset
-  blockchain:reset --data-path ./lisk
+  blockchain:reset --data-path ./klayr
   blockchain:reset --yes
 ```
 
-_See code: [dist/commands/blockchain/reset.ts](https://github.com/LiskHQ/lisk-core/blob/v4.0.2/dist/commands/blockchain/reset.ts)_
+_See code: [dist/commands/blockchain/reset.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/blockchain/reset.ts)_

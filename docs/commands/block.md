@@ -1,23 +1,23 @@
-`lisk-core block`
+`klayr-core block`
 =================
 
-Commands relating to Lisk Core blocks.
+Commands relating to Klayr Core blocks.
 
-* [`lisk-core block:get INPUT`](#lisk-core-blockget-input)
+* [`klayr-core block:get INPUT`](#klayr-core-blockget-input)
 
-## `lisk-core block:get INPUT`
+## `klayr-core block:get INPUT`
 
 Get block information for a given id or height.
 
 ```
 USAGE
-  $ lisk-core block:get INPUT
+  $ klayr-core block:get INPUT
 
 ARGUMENTS
   INPUT  Height in number or block id in hex format.
 
 OPTIONS
-  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "LISK_DATA_PATH"
+  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "KLAYR_DATA_PATH"
                              can also be used.
 
   --pretty                   Prints JSON in pretty format rather than condensed.
@@ -27,4 +27,4 @@ EXAMPLES
   block:get 2
 ```
 
-_See code: [dist/commands/block/get.ts](https://github.com/LiskHQ/lisk-core/blob/v4.0.2/dist/commands/block/get.ts)_
+_See code: [dist/commands/block/get.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/block/get.ts)_

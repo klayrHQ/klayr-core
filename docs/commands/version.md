@@ -1,15 +1,15 @@
-`lisk-core version`
+`klayr-core version`
 ===================
 
 
 
-* [`lisk-core version`](#lisk-core-version)
+* [`klayr-core version`](#klayr-core-version)
 
-## `lisk-core version`
+## `klayr-core version`
 
 ```
 USAGE
-  $ lisk-core version
+  $ klayr-core version
 
 OPTIONS
   --json     Format output as json.

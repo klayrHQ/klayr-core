@@ -1,20 +1,20 @@
-`lisk-core transaction`
+`klayr-core transaction`
 =======================
 
-Commands relating to Lisk Core transactions.
+Commands relating to Klayr Core transactions.
 
-* [`lisk-core transaction:create MODULE COMMAND FEE`](#lisk-core-transactioncreate-module-command-fee)
-* [`lisk-core transaction:get ID`](#lisk-core-transactionget-id)
-* [`lisk-core transaction:send TRANSACTION`](#lisk-core-transactionsend-transaction)
-* [`lisk-core transaction:sign TRANSACTION`](#lisk-core-transactionsign-transaction)
+* [`klayr-core transaction:create MODULE COMMAND FEE`](#klayr-core-transactioncreate-module-command-fee)
+* [`klayr-core transaction:get ID`](#klayr-core-transactionget-id)
+* [`klayr-core transaction:send TRANSACTION`](#klayr-core-transactionsend-transaction)
+* [`klayr-core transaction:sign TRANSACTION`](#klayr-core-transactionsign-transaction)
 
-## `lisk-core transaction:create MODULE COMMAND FEE`
+## `klayr-core transaction:create MODULE COMMAND FEE`
 
 Create transaction which can be broadcasted to the network. Note: fee and amount should be in Beddows!!
 
 ```
 USAGE
-  $ lisk-core transaction:create MODULE COMMAND FEE
+  $ klayr-core transaction:create MODULE COMMAND FEE
 
 ARGUMENTS
   MODULE   Registered transaction module.
@@ -25,7 +25,7 @@ OPTIONS
   -a, --params=params                            Creates transaction with specific params information
 
   -d, --data-path=data-path                      Directory path to specify where node data is stored. Environment
-                                                 variable "LISK_DATA_PATH" can also be used.
+                                                 variable "KLAYR_DATA_PATH" can also be used.
 
   -f, --file=file                                The file to upload.
                                                  Example:
@@ -60,31 +60,31 @@ OPTIONS
 
 EXAMPLES
   transaction:create token transfer 100000000 --params='{"amount":100000000,"tokenID":"0400000000000000","recipientAddre
-  ss":"lskycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz","data":"send token"}'
+  ss":"klyycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz","data":"send token"}'
   transaction:create token transfer 100000000 --params='{"amount":100000000,"tokenID":"0400000000000000","recipientAddre
-  ss":"lskycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz","data":"send token"}' --json
+  ss":"klyycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz","data":"send token"}' --json
   transaction:create token transfer 100000000 --offline --network mainnet --chain-id 10000000 --nonce 1 --params='{"amou
-  nt":100000000,"tokenID":"0400000000000000","recipientAddress":"lskycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz","data":"send
+  nt":100000000,"tokenID":"0400000000000000","recipientAddress":"klyycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz","data":"send
    token"}'
   transaction:create token transfer 100000000 --file=/txn_params.json
   transaction:create token transfer 100000000 --file=/txn_params.json --json
 ```
 
-_See code: [dist/commands/transaction/create.ts](https://github.com/LiskHQ/lisk-core/blob/v4.0.2/dist/commands/transaction/create.ts)_
+_See code: [dist/commands/transaction/create.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/transaction/create.ts)_
 
-## `lisk-core transaction:get ID`
+## `klayr-core transaction:get ID`
 
 Get transaction from local node by ID.
 
 ```
 USAGE
-  $ lisk-core transaction:get ID
+  $ klayr-core transaction:get ID
 
 ARGUMENTS
   ID  Transaction ID in hex format.
 
 OPTIONS
-  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "LISK_DATA_PATH"
+  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "KLAYR_DATA_PATH"
                              can also be used.
 
   --pretty                   Prints JSON in pretty format rather than condensed.
@@ -93,21 +93,21 @@ EXAMPLE
   transaction:get eab06c6a22e88bca7150e0347a7d976acd070cb9284423e6eabecd657acc1263
 ```
 
-_See code: [dist/commands/transaction/get.ts](https://github.com/LiskHQ/lisk-core/blob/v4.0.2/dist/commands/transaction/get.ts)_
+_See code: [dist/commands/transaction/get.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/transaction/get.ts)_
 
-## `lisk-core transaction:send TRANSACTION`
+## `klayr-core transaction:send TRANSACTION`
 
 Send transaction to the local node.
 
 ```
 USAGE
-  $ lisk-core transaction:send TRANSACTION
+  $ klayr-core transaction:send TRANSACTION
 
 ARGUMENTS
   TRANSACTION  A transaction to be sent to the node encoded as hex string
 
 OPTIONS
-  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "LISK_DATA_PATH"
+  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "KLAYR_DATA_PATH"
                              can also be used.
 
   --pretty                   Prints JSON in pretty format rather than condensed.
@@ -118,22 +118,22 @@ EXAMPLE
   2cea39d58aa84809aa87bcfe6feaac46211c80472ad9297fd87727709f5d7e7b4134caf106b02
 ```
 
-_See code: [dist/commands/transaction/send.ts](https://github.com/LiskHQ/lisk-core/blob/v4.0.2/dist/commands/transaction/send.ts)_
+_See code: [dist/commands/transaction/send.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/transaction/send.ts)_
 
-## `lisk-core transaction:sign TRANSACTION`
+## `klayr-core transaction:sign TRANSACTION`
 
 Sign encoded transaction.
 
 ```
 USAGE
-  $ lisk-core transaction:sign TRANSACTION
+  $ klayr-core transaction:sign TRANSACTION
 
 ARGUMENTS
   TRANSACTION  The transaction to be signed encoded as hex string
 
 OPTIONS
   -d, --data-path=data-path                      Directory path to specify where node data is stored. Environment
-                                                 variable "LISK_DATA_PATH" can also be used.
+                                                 variable "KLAYR_DATA_PATH" can also be used.
 
   -j, --json                                     Print the transaction in JSON format.
 
@@ -161,4 +161,4 @@ EXAMPLES
   transaction:sign <hex-encoded-binary-transaction> --network testnet
 ```
 
-_See code: [dist/commands/transaction/sign.ts](https://github.com/LiskHQ/lisk-core/blob/v4.0.2/dist/commands/transaction/sign.ts)_
+_See code: [dist/commands/transaction/sign.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/transaction/sign.ts)_

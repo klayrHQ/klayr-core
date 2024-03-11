@@ -1,49 +1,49 @@
-`lisk-core system`
+`klayr-core system`
 ==================
 
-Commands relating to Lisk Core node.
+Commands relating to Klayr Core node.
 
-* [`lisk-core system:metadata`](#lisk-core-systemmetadata)
-* [`lisk-core system:node-info`](#lisk-core-systemnode-info)
+* [`klayr-core system:metadata`](#klayr-core-systemmetadata)
+* [`klayr-core system:node-info`](#klayr-core-systemnode-info)
 
-## `lisk-core system:metadata`
+## `klayr-core system:metadata`
 
 Get node metadata from a running application.
 
 ```
 USAGE
-  $ lisk-core system:metadata
+  $ klayr-core system:metadata
 
 OPTIONS
-  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "LISK_DATA_PATH"
+  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "KLAYR_DATA_PATH"
                              can also be used.
 
   --pretty                   Prints JSON in pretty format rather than condensed.
 
 EXAMPLES
   system:metadata
-  system:metadata --data-path ./lisk
+  system:metadata --data-path ./klayr
 ```
 
-_See code: [dist/commands/system/metadata.ts](https://github.com/LiskHQ/lisk-core/blob/v4.0.2/dist/commands/system/metadata.ts)_
+_See code: [dist/commands/system/metadata.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/system/metadata.ts)_
 
-## `lisk-core system:node-info`
+## `klayr-core system:node-info`
 
 Get node information from a running application.
 
 ```
 USAGE
-  $ lisk-core system:node-info
+  $ klayr-core system:node-info
 
 OPTIONS
-  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "LISK_DATA_PATH"
+  -d, --data-path=data-path  Directory path to specify where node data is stored. Environment variable "KLAYR_DATA_PATH"
                              can also be used.
 
   --pretty                   Prints JSON in pretty format rather than condensed.
 
 EXAMPLES
   system:node-info
-  system:node-info --data-path ./lisk
+  system:node-info --data-path ./klayr
 ```
 
-_See code: [dist/commands/system/node-info.ts](https://github.com/LiskHQ/lisk-core/blob/v4.0.2/dist/commands/system/node-info.ts)_
+_See code: [dist/commands/system/node-info.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/system/node-info.ts)_

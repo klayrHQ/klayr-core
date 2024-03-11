@@ -1,23 +1,23 @@
-`lisk-core sdk`
+`klayr-core sdk`
 ===============
 
-Commands relating to Lisk SDK development.
+Commands relating to Klayr SDK development.
 
-* [`lisk-core sdk:link TARGETSDKFOLDER`](#lisk-core-sdklink-targetsdkfolder)
+* [`klayr-core sdk:link TARGETSDKFOLDER`](#klayr-core-sdklink-targetsdkfolder)
 
-## `lisk-core sdk:link TARGETSDKFOLDER`
+## `klayr-core sdk:link TARGETSDKFOLDER`
 
 Symlink specific SDK folder during development.
 
 ```
 USAGE
-  $ lisk-core sdk:link TARGETSDKFOLDER
+  $ klayr-core sdk:link TARGETSDKFOLDER
 
 ARGUMENTS
-  TARGETSDKFOLDER  The path to the lisk SDK folder
+  TARGETSDKFOLDER  The path to the klayr SDK folder
 
 EXAMPLE
-  sdk:link /path/to/lisk-sdk/sdk
+  sdk:link /path/to/klayr-sdk/sdk
 ```
 
-_See code: [dist/commands/sdk/link.ts](https://github.com/LiskHQ/lisk-core/blob/v4.0.2/dist/commands/sdk/link.ts)_
+_See code: [dist/commands/sdk/link.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/sdk/link.ts)_
