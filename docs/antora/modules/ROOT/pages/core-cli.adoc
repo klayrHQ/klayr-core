@@ -408,7 +408,7 @@ EXAMPLES
   download --url https://snapshots.klayr.com/mainnet/blockchain.db.tar.gz --output ./downloads
 ----
 
-.Example 
+.Example
 [%collapsible]
 ====
 [source,bash]
@@ -442,7 +442,7 @@ EXAMPLES
   blockchain:export --data-path ./data --output ./my/path/
 ----
 
-.Example 
+.Example
 [%collapsible]
 ====
 [source,bash]
@@ -475,7 +475,7 @@ EXAMPLES
   blockchain:hash --data-path ./data
 ----
 
-.Example 
+.Example
 [%collapsible]
 ====
 [source,bash]
@@ -511,7 +511,7 @@ EXAMPLES
   blockchain:import ./path/to/blockchain.tar.gz --data-path ./klayr/ --force
 ----
 
-.Example 
+.Example
 [%collapsible]
 ====
 [source,bash]
@@ -547,7 +547,7 @@ EXAMPLES
   blockchain:reset --yes
 ----
 
-.Example 
+.Example
 [%collapsible]
 ====
 [source,bash]
@@ -596,7 +596,7 @@ EXAMPLES
   config:create --output mydir --label beta-sdk-app --community-identifier sdk
 ----
 
-.Example 
+.Example
 [%collapsible]
 ====
 [source,bash]
@@ -628,7 +628,7 @@ EXAMPLES
   config:show --config ./custom-config.json --data-path ./data
 ----
 
-.Example 
+.Example
 [%collapsible]
 ====
 [source,bash]
@@ -747,7 +747,7 @@ EXAMPLES
   endpoint:invoke consensus_getBFTParameters -f ./input.json
 ----
 
-.Example 
+.Example
 [%collapsible]
 ====
 [source,bash]
@@ -815,7 +815,7 @@ EXAMPLES
   endpoint:list getBalances -m token -d ~/.klayr/pos-mainchain
 ----
 
-.Example 
+.Example
 [%collapsible]
 ====
 [source,bash]
@@ -1020,7 +1020,7 @@ EXAMPLES
   generator:export --output /mypath/generator_info.json --data-path ./data
 ----
 
-.Example 
+.Example
 [%collapsible]
 ====
 [source,bash]
@@ -1054,7 +1054,7 @@ EXAMPLES
   generator:import --file-path ./my/path/genInfo.json --data-path ./data
 ----
 
-.Example 
+.Example
 [%collapsible]
 ====
 [source,bash]
@@ -1083,7 +1083,7 @@ EXAMPLES
   generator:status --data-path ./sample --pretty
 ----
 
-.Example 
+.Example
 [%collapsible]
 ====
 [source,bash]
@@ -1155,7 +1155,7 @@ EXAMPLES
   085d7c9b7bddc8052be9eefe185f407682a495f1b4498677df1480026b74f2e9
 ----
 
-.Example 
+.Example
 [%collapsible]
 ====
 [source,bash]
@@ -1221,7 +1221,7 @@ EXAMPLES
   genesis-block:download --url http://mydomain.com/genesis_block.blob.tar.gz --data-path ./klayr/ --force
 ----
 
-.Example 
+.Example
 [%collapsible]
 ====
 [source,bash]
@@ -1298,7 +1298,7 @@ EXAMPLES
   /mypath/keys.json
 ----
 
-.Example 
+.Example
 [%collapsible]
 ====
 [source,bash]
@@ -1374,7 +1374,7 @@ EXAMPLES
 ----
 
 
-.Example 
+.Example
 [%collapsible]
 ====
 [source,bash]
@@ -1443,7 +1443,7 @@ EXAMPLES
   keys:export --output /mypath/keys.json --data-path ./data
 ----
 
-.Example 
+.Example
 [%collapsible]
 ====
 [source,bash]
@@ -1474,7 +1474,7 @@ EXAMPLES
   keys:import --file-path ./my/path/keys.json --data-path ./data
 ----
 
-.Example 
+.Example
 [%collapsible]
 ====
 [source,bash]
@@ -1516,7 +1516,7 @@ EXAMPLES
   system:node-info --data-path ./klayr
 ----
 
-.Example 
+.Example
 [%collapsible]
 ====
 [source,bash]
@@ -7698,7 +7698,7 @@ EXAMPLES
   passphrase:create --output /mypath/passphrase.json
 ----
 
-.Example 
+.Example
 [%collapsible]
 ====
 [source,bash]
@@ -7734,7 +7734,7 @@ EXAMPLES
   passphrase:decrypt --file-path ./my/path/output.json --password your-password
 ----
 
-.Example 
+.Example
 [%collapsible]
 ====
 [source,bash]
@@ -7782,7 +7782,7 @@ EXAMPLES
   passphrase:encrypt --output-public-key --output /mypath/keys.json
 ----
 
-.Example 
+.Example
 [%collapsible]
 ====
 [source,bash]
@@ -7843,7 +7843,7 @@ EXAMPLE
   sdk:link /path/to/klayr-sdk/sdk
 ----
 
-.Example 
+.Example
 [%collapsible]
 ====
 [source,bash]
@@ -7935,7 +7935,7 @@ EXAMPLES
   transaction:create token transfer 100000000 --file=/txn_params.json --json
 ----
 
-.Example 
+.Example
 [%collapsible]
 ====
 [source,bash]
@@ -7975,7 +7975,7 @@ EXAMPLE
   transaction:get eab06c6a22e88bca7150e0347a7d976acd070cb9284423e6eabecd657acc1263
 ----
 
-.Example 
+.Example
 [%collapsible]
 ====
 [source,bash]
@@ -8027,7 +8027,7 @@ EXAMPLE
   2cea39d58aa84809aa87bcfe6feaac46211c80472ad9297fd87727709f5d7e7b4134caf106b02
 ----
 
-.Example 
+.Example
 [%collapsible]
 ====
 [source,bash]
@@ -8081,7 +8081,7 @@ EXAMPLES
   transaction:sign <hex-encoded-binary-transaction> --network testnet
 ----
 
-.Example 
+.Example
 [%collapsible]
 ====
 [source,bash]
