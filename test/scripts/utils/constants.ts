@@ -14,8 +14,8 @@
 export const TRANSACTIONS_PER_ACCOUNT = 20;
 export const DEFAULT_TX_FEES = BigInt('10000000');
 export const NUM_OF_ROUNDS = 3;
-export const TAG_MULTISIG_REG = 'LSK_RMSG_';
-export const TAG_TRANSACTION = 'LSK_TX_';
+export const TAG_MULTISIG_REG = 'KLY_RMSG_';
+export const TAG_TRANSACTION = 'KLY_TX_';
 export const MNEMONIC_LENGTH = 256;
 export const LOCAL_ID = '00000000';
 export const MAX_COMMISSION = 10000;
@@ -34,7 +34,7 @@ export const COMMAND_AUTH_REGISTER_MULTISIGNATURE = 'registerMultisignature';
 
 export const MODULE_LEGACY = 'legacy';
 export const COMMAND_LEGACY_REGISTER_KEYS = 'registerKeys';
-export const COMMAND_LEGACY_RECLAIM_LSK = 'reclaimLSK';
+export const COMMAND_LEGACY_RECLAIM_KLY = 'reclaimKLY';
 
 export const MODULE_INTEROPERABILITY = 'interoperability';
 export const COMMAND_INTEROPERABILITY_SIDECHAIN_REG = 'registerSidechain';

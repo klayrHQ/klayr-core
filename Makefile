@@ -19,7 +19,7 @@ endif
 
 all: node_modules dist/index.js release
 
-yarn.lock: 
+yarn.lock:
 	git checkout yarn.lock
 	touch -r yarn.lock
 
@@ -30,21 +30,21 @@ dist/index.js: node_modules
 	yarn build
 
 ifndef $(CORE_VERSION)
-release: dist/channels/$(CORE_CHANNEL)/lisk-core-v$(CORE_VERSION)
+release: dist/channels/$(CORE_CHANNEL)/klayr-core-v$(CORE_VERSION)
 
-dist/channels/$(CORE_CHANNEL)/lisk-core-v$(CORE_VERSION):
+dist/channels/$(CORE_CHANNEL)/klayr-core-v$(CORE_VERSION):
 	npx oclif-dev pack --targets=linux-x64,darwin-x64
 else
-release: dist/lisk-core-v$(CORE_VERSION)
+release: dist/klayr-core-v$(CORE_VERSION)
 
-dist/lisk-core-v$(CORE_VERSION):
+dist/klayr-core-v$(CORE_VERSION):
 	npx oclif-dev pack --targets=linux-x64,darwin-x64
 endif
 
 build: build-image build-local
 
 build-image:
-	docker buildx build -f ./docker/Dockerfile --build-arg NODEJS_VERSION=$(shell cat .nvmrc) --tag=lisk/core .
+	docker buildx build -f ./docker/Dockerfile --build-arg NODEJS_VERSION=$(shell cat .nvmrc) --tag=klayr/core .
 
 build-local:
 	yarn install --frozen-lockfile
@@ -53,27 +53,27 @@ build-local:
 clean: clean-image clean-local
 
 clean-image:
-	docker rmi lisk/core; :
+	docker rmi klayr/core; :
 
 clean-local:
 	rm -rf dist/ node_modules/
 
 # Usage: make start ARGS="-n mainnet -l debug"
 start: check-args
-	docker run -d -p 7887:7887 -p 7667:7667 --name lisk-core --rm lisk/core start $(ARGS)
+	docker run -d -p 7887:7887 -p 7667:7667 --name klayr-core --rm klayr/core start $(ARGS)
 
 stop:
-	docker stop lisk-core; :
+	docker stop klayr-core; :
 
 logs:
-	docker logs lisk-core
+	docker logs klayr-core
 
 logs-live:
-	docker logs lisk-core --follow
+	docker logs klayr-core --follow
 
 # Usage: make run ARGS="start --help"
 run: check-args
-	docker run --name lisk-core-temp --rm lisk/core $(ARGS)
+	docker run --name klayr-core-temp --rm klayr/core $(ARGS)
 
 check-args:
 ifndef ARGS

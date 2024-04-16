@@ -1,6 +1,6 @@
 {
 	"system": {
-		"dataPath": "~/.lisk",
+		"dataPath": "~/.klayr",
 		"logLevel": "info",
 		"enableMetrics": false,
 		"keepEventsForHeights": 300,
@@ -17,7 +17,7 @@
 		"block": {
 			"fromFile": "./config/genesis_block.blob"
 		},
-		"blockTime": 10,
+		"blockTime": 5,
 		"chainID": "02000000",
 		"maxTransactionsSize": 15360,
 		"minimumCertifyHeight": 10609
@@ -26,26 +26,26 @@
 		"keys": {}
 	},
 	"network": {
-		"version": "5.0",
+		"version": "5.1",
 		"seedPeers": [
 			{
-				"ip": "betanet-seed-01.lisk.com",
+				"ip": "betanet-seed-01.klayr.dev",
 				"port": 7667
 			},
 			{
-				"ip": "betanet-seed-02.lisk-nodes.net",
+				"ip": "betanet-seed-02.klayr.net",
 				"port": 7667
 			},
 			{
-				"ip": "betanet-seed-03.lisk.com",
+				"ip": "betanet-seed-03.klayr.network",
 				"port": 7667
 			},
 			{
-				"ip": "betanet-seed-04.lisk-nodes.net",
+				"ip": "betanet-seed-04.klayr.xyz",
 				"port": 7667
 			},
 			{
-				"ip": "betanet-seed-05.lisk.com",
+				"ip": "betanet-seed-05.klayr.one",
 				"port": 7667
 			}
 		],
@@ -63,7 +63,7 @@
 			"tokenID": "0200000000000000",
 			"offset": 2160,
 			"distance": 3000000,
-			"brackets": ["500000000", "400000000", "300000000", "200000000", "100000000"]
+			"brackets": ["500000000", "400000000", "300000000", "200000000", "200000000"]
 		},
 		"fee": {
 			"feeTokenID": "0200000000000000"

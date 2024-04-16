@@ -1,5 +1,4 @@
 /*
- * LiskHQ/lisk-commander
  * Copyright © 2020 Lisk Foundation
  *
  * See the LICENSE file at the top-level directory of this distribution
@@ -22,5 +21,5 @@ export enum NETWORK {
 	DEVNET = 'devnet',
 }
 export const DEFAULT_NETWORK = NETWORK.MAINNET;
-export const SNAPSHOT_URL = 'https://snapshots.lisk.com';
-export const DOWNLOAD_URL = 'https://downloads.lisk.com/lisk';
+export const SNAPSHOT_URL = 'https://snapshots.klayr.xyz';
+export const DOWNLOAD_URL = 'https://downloads.klayr.xyz/klayr';

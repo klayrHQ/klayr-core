@@ -1,8 +1,8 @@
 module.exports = {
 	root: true,
-	extends: ['lisk-base/ts'],
+	extends: ['klayr-base/ts'],
 	parserOptions: {
-		project: './tsconfig.json',
+		project: true,
 		tsconfigRootDir: __dirname,
 	},
 	rules: {

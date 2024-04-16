@@ -40,7 +40,6 @@ const getLastCommitIdFromRevisionFile = (): string => {
  * @throws {Error} If cannot get last git commit
  */
 export const getLastCommitId = (): string => {
-	// tslint:disable-next-line no-let
 	let lastCommitId = getLastCommitIdFromGit();
 	if (!lastCommitId) {
 		lastCommitId = getLastCommitIdFromRevisionFile();

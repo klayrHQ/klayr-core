@@ -12,7 +12,7 @@
  * Removal or modification of this copyright notice is prohibited.
  */
 
-import { BaseEndpoint, chain, cryptography, testing } from 'lisk-sdk';
+import { BaseEndpoint, chain, cryptography, testing } from 'klayr-sdk';
 import { when } from 'jest-when';
 
 import { LegacyModule } from '../../../../src/application/modules';
@@ -41,13 +41,14 @@ describe('LegacyEndpoint', () => {
 		}),
 	};
 
-	interface Accounts {
-		[key: string]: {
+	type Accounts = Record<
+		string,
+		{
 			passphrase: string;
 			publicKey?: Buffer;
 			address?: Buffer;
-		};
-	}
+		}
+	>;
 
 	const accounts: Accounts = {
 		existingAccount: {
@@ -61,7 +62,7 @@ describe('LegacyEndpoint', () => {
 		account.publicKey = publicKey;
 	}
 
-	const existingPublicKey = accounts.existingAccount.publicKey as Buffer;
+	const existingPublicKey = accounts.existingAccount.publicKey!;
 	const nonExistingPublicKey = getRandomBytes(32);
 
 	beforeEach(() => {

@@ -14,7 +14,7 @@
  */
 import { Command, Flags as flagParser } from '@oclif/core';
 import { NETWORK, SNAPSHOT_URL, DEFAULT_NETWORK } from '../../constants';
-import { liskSnapshotUrl } from '../../utils/commons';
+import { klayrSnapshotUrl } from '../../utils/commons';
 import { getFullPath } from '../../utils/path';
 import { downloadAndValidate, getChecksum } from '../../utils/download';
 import { flags as commonFlags } from '../../utils/flags';
@@ -25,13 +25,13 @@ export default class DownloadCommand extends Command {
 	static examples = [
 		'download',
 		'download --network betanet',
-		'download --url https://snapshots.lisk.com/mainnet/blockchain.db.tar.gz --output ./downloads',
+		'download --url https://snapshots.klayr.xyz/mainnet/blockchain.db.tar.gz --output ./downloads',
 	];
 
 	static flags = {
 		network: flagParser.string({
 			...commonFlags.network,
-			env: 'LISK_NETWORK',
+			env: 'KLAYR_NETWORK',
 			default: DEFAULT_NETWORK,
 		}),
 		output: flagParser.string({
@@ -48,7 +48,7 @@ export default class DownloadCommand extends Command {
 	async run(): Promise<void> {
 		const { flags } = await this.parse(DownloadCommand);
 		const network = flags.network ? (flags.network as NETWORK) : DEFAULT_NETWORK;
-		const url = flags.url ? flags.url : liskSnapshotUrl(SNAPSHOT_URL, network);
+		const url = flags.url ? flags.url : klayrSnapshotUrl(SNAPSHOT_URL, network);
 		const dataPath = flags.output ? flags.output : process.cwd();
 		this.log(`Downloading snapshot from ${url} to ${getFullPath(dataPath)}`);
 

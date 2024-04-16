@@ -1,5 +1,5 @@
 `klayr-core system`
-==================
+===================
 
 Commands relating to Klayr Core node.
 
@@ -25,7 +25,7 @@ EXAMPLES
   system:metadata --data-path ./klayr
 ```
 
-_See code: [dist/commands/system/metadata.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/system/metadata.ts)_
+_See code: [dist/commands/system/metadata.ts](https://github.com/klayrhq/klayr-core/blob/v4.0.3/dist/commands/system/metadata.ts)_
 
 ## `klayr-core system:node-info`
 
@@ -46,4 +46,4 @@ EXAMPLES
   system:node-info --data-path ./klayr
 ```
 
-_See code: [dist/commands/system/node-info.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/system/node-info.ts)_
+_See code: [dist/commands/system/node-info.ts](https://github.com/klayrhq/klayr-core/blob/v4.0.3/dist/commands/system/node-info.ts)_

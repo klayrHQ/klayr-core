@@ -13,8 +13,8 @@
  *
  */
 const fs = require('fs');
-import { passphrase as liskPassphrase, cryptography } from 'lisk-sdk';
-const { Mnemonic } = liskPassphrase;
+import { passphrase as klayrPassphrase, cryptography } from 'klayr-sdk';
+const { Mnemonic } = klayrPassphrase;
 
 import { createTokenSubstoreArray } from './tokenUserSubstore';
 
@@ -62,7 +62,7 @@ export const createValidatorsInfo = async (count = 103) => {
 		const blsPublicKey = cryptography.bls.getPublicKeyFromPrivateKey(blsPrivateKey);
 
 		devValidators.push({
-			address: cryptography.address.getLisk32AddressFromAddress(address),
+			address: cryptography.address.getKlayr32AddressFromAddress(address),
 			keyPath: accountKeyPath,
 			publicKey: accountPublicKey.toString('hex'),
 			privateKey: accountPrivateKey.toString('hex'),
@@ -79,7 +79,7 @@ export const createValidatorsInfo = async (count = 103) => {
 		});
 
 		validators.push({
-			address: cryptography.address.getLisk32AddressFromAddress(address),
+			address: cryptography.address.getKlayr32AddressFromAddress(address),
 			name: `genesis_${i}`,
 			blsKey: blsPublicKey.toString('hex'),
 			generatorKey: generatorPublicKey.toString('hex'),

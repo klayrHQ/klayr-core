@@ -1,5 +1,5 @@
-import { TransactionCreateCommand as BaseTransactionCreateCommand } from 'lisk-commander';
-import { Application, PartialApplicationConfig } from 'lisk-sdk';
+import { TransactionCreateCommand as BaseTransactionCreateCommand } from 'klayr-commander';
+import { Application, PartialApplicationConfig } from 'klayr-sdk';
 import { getApplication } from '../../application';
 
 export class TransactionCreateCommand extends BaseTransactionCreateCommand {

@@ -16,10 +16,10 @@
 import * as path from 'path';
 import * as fs from 'fs-extra';
 import * as os from 'os';
-import { PartialApplicationConfig, systemDirs } from 'lisk-sdk';
+import { PartialApplicationConfig, systemDirs } from 'klayr-sdk';
 
-const defaultDir = '.lisk';
-const defaultFolder = 'lisk-core';
+const defaultDir = '.klayr';
+const defaultFolder = 'klayr-core';
 const getConfigPath = (dataPath: string): string => path.join(dataPath, 'config');
 
 export const getDefaultPath = (): string => path.join(os.homedir(), defaultDir, defaultFolder);
@@ -109,8 +109,8 @@ export const getSocketsPath = (dataPath: string): SocketPaths => {
 	const dirs = systemDirs(dataPath);
 	return {
 		root: `unix://${dirs.sockets}`,
-		pub: `unix://${dirs.sockets}/lisk_pub.sock`,
-		sub: `unix://${dirs.sockets}/lisk_sub.sock`,
+		pub: `unix://${dirs.sockets}/klayr_pub.sock`,
+		sub: `unix://${dirs.sockets}/klayr_sub.sock`,
 		rpc: `unix://${dirs.sockets}/bus_rpc_socket.sock`,
 	};
 };

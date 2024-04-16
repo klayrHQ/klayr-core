@@ -20,9 +20,9 @@ import {
 	CommandVerifyContext,
 	VerificationResult,
 	VerifyStatus,
-	validator as liskValidator,
+	validator as klayrValidator,
 	cryptography,
-} from 'lisk-sdk';
+} from 'klayr-sdk';
 import { INVALID_BLS_KEY } from '../constants';
 import { registerKeysParamsSchema } from '../schemas';
 import { registerKeysData } from '../types';
@@ -33,7 +33,7 @@ const {
 } = cryptography;
 
 // eslint-disable-next-line prefer-destructuring
-const validator: liskValidator.LiskValidator = liskValidator.validator;
+const validator: klayrValidator.KlayrValidator = klayrValidator.validator;
 
 export class RegisterKeysCommand extends BaseCommand {
 	public schema = registerKeysParamsSchema;

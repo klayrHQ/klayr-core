@@ -18,27 +18,27 @@ import {
 	CommandVerifyContext,
 	VerificationResult,
 	VerifyStatus,
-	validator as liskValidator,
+	validator as klayrValidator,
 	cryptography,
 	TokenMethod,
-} from 'lisk-sdk';
+} from 'klayr-sdk';
 
 import { ADDRESS_LEGACY_RESERVE } from '../constants';
 
-import { reclaimLSKParamsSchema } from '../schemas';
-import { ReclaimLSKParamsData, TokenIDReclaim, ModuleName } from '../types';
+import { reclaimKLYParamsSchema } from '../schemas';
+import { ReclaimKLYParamsData, TokenIDReclaim, ModuleName } from '../types';
 import { getLegacyAddress } from '../utils';
 import { LegacyAccountStore } from '../stores/legacyAccount';
 import { AccountReclaimedEvent } from '../events/accountReclaimed';
 
 // eslint-disable-next-line prefer-destructuring
-const validator: liskValidator.LiskValidator = liskValidator.validator;
+const validator: klayrValidator.KlayrValidator = klayrValidator.validator;
 const {
 	address: { getAddressFromPublicKey },
 } = cryptography;
 
-export class ReclaimLSKCommand extends BaseCommand {
-	public schema = reclaimLSKParamsSchema;
+export class ReclaimKLYCommand extends BaseCommand {
+	public schema = reclaimKLYParamsSchema;
 	public legacyReserveAddress = ADDRESS_LEGACY_RESERVE;
 	private _tokenMethod!: TokenMethod;
 	private _tokenIDReclaim!: TokenIDReclaim;
@@ -54,10 +54,10 @@ export class ReclaimLSKCommand extends BaseCommand {
 	}
 
 	public async verify(ctx: CommandVerifyContext): Promise<VerificationResult> {
-		const params = (ctx.params as unknown) as ReclaimLSKParamsData;
+		const params = (ctx.params as unknown) as ReclaimKLYParamsData;
 
 		try {
-			validator.validate(reclaimLSKParamsSchema, params);
+			validator.validate(reclaimKLYParamsSchema, params);
 		} catch (err) {
 			return {
 				status: VerifyStatus.FAIL,
@@ -90,7 +90,7 @@ export class ReclaimLSKCommand extends BaseCommand {
 	}
 
 	public async execute(ctx: CommandExecuteContext): Promise<void> {
-		const params = (ctx.params as unknown) as ReclaimLSKParamsData;
+		const params = (ctx.params as unknown) as ReclaimKLYParamsData;
 		const legacyAddress = getLegacyAddress(ctx.transaction.senderPublicKey);
 		const legacyStore = this.stores.get(LegacyAccountStore);
 		await legacyStore.del(ctx, legacyAddress);

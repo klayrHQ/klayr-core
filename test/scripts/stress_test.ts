@@ -12,7 +12,7 @@
  * Removal or modification of this copyright notice is prohibited.
  */
 /* eslint-disable no-console */
-import { apiClient } from 'lisk-sdk';
+import { apiClient } from 'klayr-sdk';
 
 import {
 	createAccount,
@@ -34,7 +34,7 @@ import {
 	sendTokenTransferTransaction,
 	sendRegisterKeysTransaction,
 	sendSidechainRegistrationTransaction,
-	sendReclaimLSKTransaction,
+	sendReclaimKLYTransaction,
 } from './utils/transactions/send';
 import { Account, GeneratorAccount, Stake } from './utils/types';
 import { wait } from './utils/wait';
@@ -67,7 +67,7 @@ const start = async (count, roundNumber) => {
 	}
 
 	// const URL = process.env.WS_SERVER_URL || 'ws://localhost:7887/rpc-ws';
-	const client = await apiClient.createIPCClient('~/.lisk/lisk-core');
+	const client = await apiClient.createIPCClient('~/.klayr/klayr-core');
 	const accounts: GeneratorAccount[] = await Promise.all(
 		[...Array(count)].map(async () => await createAccount()),
 	);
@@ -132,7 +132,7 @@ const start = async (count, roundNumber) => {
 			const params = {
 				amount: legacyAccount.amount,
 			};
-			await sendReclaimLSKTransaction(legacyAccount, params, client);
+			await sendReclaimKLYTransaction(legacyAccount, params, client);
 		}
 
 		// Wait for 2 blocks
@@ -251,7 +251,6 @@ const start = async (count, roundNumber) => {
 			await sendRegisterKeysTransaction(account, params, client);
 		}
 
-		// Remove wait once SDK fixes issue: https://github.com/LiskHQ/lisk-sdk/issues/8148
 		await wait(1000);
 	}
 

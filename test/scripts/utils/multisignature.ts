@@ -12,7 +12,7 @@
  * Removal or modification of this copyright notice is prohibited.
  *
  */
-import { codec, cryptography } from 'lisk-sdk';
+import { codec, cryptography } from 'klayr-sdk';
 import {
 	TAG_TRANSACTION,
 	TAG_MULTISIG_REG,

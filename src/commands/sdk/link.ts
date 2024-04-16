@@ -21,30 +21,30 @@ import { join, isAbsolute } from 'path';
 export default class LinkCommand extends Command {
 	static description = 'Symlink specific SDK folder during development.';
 
-	static examples = ['sdk:link /path/to/lisk-sdk/sdk'];
+	static examples = ['sdk:link /path/to/klayr-sdk/sdk'];
 
 	static args = [
-		{ name: 'targetSDKFolder', required: true, description: 'The path to the lisk SDK folder' },
+		{ name: 'targetSDKFolder', required: true, description: 'The path to the klayr SDK folder' },
 	];
 
 	// eslint-disable-next-line class-methods-use-this, @typescript-eslint/require-await
 	async run(): Promise<void> {
 		const {
 			args: { targetSDKFolder },
-		} = await this.parse(LinkCommand);
+		} = (await this.parse(LinkCommand)) as { args: { targetSDKFolder: string } };
 
 		if (!pathExistsSync(targetSDKFolder)) {
-			throw new Error(`Path '${targetSDKFolder as string}' does not exist or access denied.`);
+			throw new Error(`Path '${targetSDKFolder}' does not exist or access denied.`);
 		}
 
-		const sdkLocalPath = join(__dirname, '../../../', 'node_modules', 'lisk-sdk');
+		const sdkLocalPath = join(__dirname, '../../../', 'node_modules', 'klayr-sdk');
 
 		// If targetSDK folder is relative path, it should be relative from the node_module
-		const targetSDKFolderFromNodeModule = isAbsolute(targetSDKFolder)
+		const targetSDKFolderFromNodeModule: string = isAbsolute(targetSDKFolder)
 			? targetSDKFolder
 			: join('../', targetSDKFolder);
 		removeSync(sdkLocalPath);
 		await symlink(targetSDKFolderFromNodeModule, sdkLocalPath);
-		this.log(`Linked '${targetSDKFolder as string}' to '${sdkLocalPath}'.`);
+		this.log(`Linked '${targetSDKFolder}' to '${sdkLocalPath}'.`);
 	}
 }

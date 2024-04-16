@@ -1,5 +1,5 @@
-import { TransactionSignCommand as BaseTransactionSignCommand } from 'lisk-commander';
-import { Application, PartialApplicationConfig } from 'lisk-sdk';
+import { TransactionSignCommand as BaseTransactionSignCommand } from 'klayr-commander';
+import { Application, PartialApplicationConfig } from 'klayr-sdk';
 import { getApplication } from '../../application';
 
 export class TransactionSignCommand extends BaseTransactionSignCommand {

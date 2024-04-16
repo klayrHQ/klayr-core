@@ -1,5 +1,5 @@
 `klayr-core sdk`
-===============
+================
 
 Commands relating to Klayr SDK development.
 
@@ -20,4 +20,4 @@ EXAMPLE
   sdk:link /path/to/klayr-sdk/sdk
 ```
 
-_See code: [dist/commands/sdk/link.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/sdk/link.ts)_
+_See code: [dist/commands/sdk/link.ts](https://github.com/klayrhq/klayr-core/blob/v4.0.3/dist/commands/sdk/link.ts)_

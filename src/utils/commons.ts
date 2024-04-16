@@ -13,10 +13,10 @@
  * Removal or modification of this copyright notice is prohibited.
  *
  */
-import { cryptography } from 'lisk-sdk';
+import { cryptography } from 'klayr-sdk';
 import { NETWORK, SNAPSHOT_URL, DOWNLOAD_URL } from '../constants';
 
-export const liskGenesisBlockUrl = (url: string, network: NETWORK): string => {
+export const klayrGenesisBlockUrl = (url: string, network: NETWORK): string => {
 	if (!['testnet', 'mainnet', 'betanet'].includes(network.toLowerCase())) {
 		return '';
 	}
@@ -26,7 +26,7 @@ export const liskGenesisBlockUrl = (url: string, network: NETWORK): string => {
 	return url;
 };
 
-export const liskSnapshotUrl = (url: string, network: NETWORK): string => {
+export const klayrSnapshotUrl = (url: string, network: NETWORK): string => {
 	if (!['testnet', 'mainnet', 'betanet'].includes(network.toLowerCase())) {
 		return '';
 	}
