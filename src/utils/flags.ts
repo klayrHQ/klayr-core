@@ -51,12 +51,15 @@ export type AlphabetLowercase =
 	| 'y'
 	| 'z';
 
-export interface FlagMap {
-	readonly [key: string]: {
-		readonly char?: AlphabetLowercase;
-		readonly description: string;
-	};
-}
+export type FlagMap = Readonly<
+	Record<
+		string,
+		{
+			readonly char?: AlphabetLowercase;
+			readonly description: string;
+		}
+	>
+>;
 
 export const flags: FlagMap = {
 	passphrase: {
@@ -70,7 +73,7 @@ export const flags: FlagMap = {
 	dataPath: {
 		char: 'd',
 		description:
-			'Directory path to specify where node data is stored. Environment variable "LISK_DATA_PATH" can also be used.',
+			'Directory path to specify where node data is stored. Environment variable "KLAYR_DATA_PATH" can also be used.',
 	},
 	offline: {
 		description: 'Specify whether to connect to a local node or not.',
@@ -78,9 +81,9 @@ export const flags: FlagMap = {
 	network: {
 		char: 'n',
 		description:
-			'Default network config to use. Environment variable "LISK_NETWORK" can also be used.',
+			'Default network config to use. Environment variable "KLAYR_NETWORK" can also be used.',
 	},
 	networkIdentifier: {
-		description: 'Network identifier defined for the network or main | test for the Lisk Network.',
+		description: 'Network identifier defined for the network or main | test for the Klayr Network.',
 	},
 };

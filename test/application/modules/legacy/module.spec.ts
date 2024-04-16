@@ -12,7 +12,15 @@
  * Removal or modification of this copyright notice is prohibited.
  */
 
-import { BaseModule, codec, cryptography } from 'lisk-sdk';
+import {
+	BaseModule,
+	codec,
+	cryptography,
+	GenesisBlockExecuteContext,
+	PoSMethod,
+	TokenMethod,
+	ValidatorsMethod,
+} from 'klayr-sdk';
 import { when } from 'jest-when';
 
 import { genesis as genesisConfig } from '../../../../config/mainnet/config.json';
@@ -45,11 +53,12 @@ const getContext = (accounts: genesisLegacyStore, getStore: any, getMethodContex
 
 describe('LegacyModule', () => {
 	let legacyModule: LegacyModule;
-	interface Accounts {
-		[key: string]: {
+	type Accounts = Record<
+		string,
+		{
 			passphrase: string;
-		};
-	}
+		}
+	>;
 
 	const testAccounts: Accounts = {
 		account1: {
@@ -99,7 +108,7 @@ describe('LegacyModule', () => {
 					moduleConfig: {},
 				}),
 			).resolves.toBeUndefined();
-			expect(legacyModule['_moduleConfig']).toEqual(moduleConfig);
+			expect(legacyModule.moduleConfig).toEqual(moduleConfig);
 		});
 	});
 
@@ -151,13 +160,15 @@ describe('LegacyModule', () => {
 				assets: { getAsset: jest.fn() },
 				getStore,
 				getMethodContext,
-			} as any;
+			};
 
 			when(genesisBlockExecuteContextInput.assets.getAsset)
 				.calledWith(legacyModule.name)
 				.mockReturnValue(false);
 			await expect(
-				legacyModule.initGenesisState(genesisBlockExecuteContextInput),
+				legacyModule.initGenesisState(
+					(genesisBlockExecuteContextInput as unknown) as GenesisBlockExecuteContext,
+				),
 			).resolves.toBeUndefined();
 		});
 
@@ -166,7 +177,7 @@ describe('LegacyModule', () => {
 				{ accounts: [...storeData.accounts, ...storeData.accounts] },
 				getStore,
 				getMethodContext,
-			);
+			) as GenesisBlockExecuteContext;
 
 			await expect(
 				legacyModule.initGenesisState(genesisBlockExecuteContextInput),
@@ -181,19 +192,21 @@ describe('LegacyModule', () => {
 
 			const genesisBlockExecuteContextInput = getContext(storeData, getStore, getMethodContext);
 
-			const tokenMethod = {
+			const tokenMethod = ({
 				getLockedAmount: jest.fn().mockResolvedValue(BigInt(currentTotalBalance)),
-			};
-			const posMethod = {
+			} as unknown) as TokenMethod;
+			const posMethod = ({
 				unbanValidator: jest.fn(),
-			};
+			} as unknown) as PoSMethod;
 			legacyModule.addDependencies(
-				tokenMethod as any,
-				{ setValidatorBLSKey: jest.fn() } as any,
-				posMethod as any,
+				tokenMethod,
+				({ setValidatorBLSKey: jest.fn() } as unknown) as ValidatorsMethod,
+				posMethod,
 			);
 
-			await legacyModule.initGenesisState(genesisBlockExecuteContextInput);
+			await legacyModule.initGenesisState(
+				(genesisBlockExecuteContextInput as unknown) as GenesisBlockExecuteContext,
+			);
 
 			for (const account of storeData.accounts) {
 				when(mockStoreHas).calledWith(account.address).mockReturnValue(true);
@@ -224,19 +237,21 @@ describe('LegacyModule', () => {
 
 			const genesisBlockExecuteContextInput = getContext(storeData, getStore, getMethodContext);
 
-			const tokenMethod = {
+			const tokenMethod = ({
 				getLockedAmount: jest.fn().mockResolvedValue(BigInt(UpdatedTotalBalance)),
-			};
-			const posMethod = {
+			} as unknown) as TokenMethod;
+			const posMethod = ({
 				unbanValidator: jest.fn(),
-			};
+			} as unknown) as PoSMethod;
 			legacyModule.addDependencies(
-				tokenMethod as any,
-				{ setValidatorBLSKey: jest.fn() } as any,
-				posMethod as any,
+				tokenMethod,
+				({ setValidatorBLSKey: jest.fn() } as unknown) as ValidatorsMethod,
+				posMethod,
 			);
 
-			await legacyModule.initGenesisState(genesisBlockExecuteContextInput);
+			await legacyModule.initGenesisState(
+				genesisBlockExecuteContextInput as GenesisBlockExecuteContext,
+			);
 
 			for (const account of storeData.accounts) {
 				when(mockStoreHas).calledWith(account.address).mockReturnValue(true);
@@ -259,7 +274,11 @@ describe('LegacyModule', () => {
 				),
 				balance: BigInt(LEGACY_ACC_MAX_TOTAL_BAL_NON_INC) - currentTotalBalance,
 			});
-			const genesisBlockExecuteContextInput = getContext(storeData, getStore, getMethodContext);
+			const genesisBlockExecuteContextInput = getContext(
+				storeData,
+				getStore,
+				getMethodContext,
+			) as GenesisBlockExecuteContext;
 
 			await expect(
 				legacyModule.initGenesisState(genesisBlockExecuteContextInput),
@@ -273,7 +292,11 @@ describe('LegacyModule', () => {
 				),
 				balance: BigInt(LEGACY_ACC_MAX_TOTAL_BAL_NON_INC),
 			});
-			const genesisBlockExecuteContextInput = getContext(storeData, getStore, getMethodContext);
+			const genesisBlockExecuteContextInput = getContext(
+				storeData,
+				getStore,
+				getMethodContext,
+			) as GenesisBlockExecuteContext;
 
 			await expect(
 				legacyModule.initGenesisState(genesisBlockExecuteContextInput),
@@ -289,10 +312,10 @@ describe('LegacyModule', () => {
 					balance: BigInt(Math.floor(Math.random()) * 1000),
 				});
 				const genesisBlockExecuteContextInput = getContext(
-					updatedStoreData as any,
+					updatedStoreData,
 					getStore,
 					getMethodContext,
-				);
+				) as GenesisBlockExecuteContext;
 
 				await expect(
 					legacyModule.initGenesisState(genesisBlockExecuteContextInput),
@@ -301,17 +324,21 @@ describe('LegacyModule', () => {
 		});
 
 		it('should reject the block when total balance for all legacy accounts is not equal to lockedAmount', async () => {
-			const genesisBlockExecuteContextInput = getContext(storeData, getStore, getMethodContext);
-			const tokenMethod = {
+			const genesisBlockExecuteContextInput = getContext(
+				storeData,
+				getStore,
+				getMethodContext,
+			) as GenesisBlockExecuteContext;
+			const tokenMethod = ({
 				getLockedAmount: jest.fn().mockResolvedValue(BigInt(10000100000)),
-			};
-			const posMethod = {
+			} as unknown) as TokenMethod;
+			const posMethod = ({
 				unbanValidator: jest.fn(),
-			};
+			} as unknown) as PoSMethod;
 			legacyModule.addDependencies(
-				tokenMethod as any,
-				{ setValidatorBLSKey: jest.fn() } as any,
-				posMethod as any,
+				tokenMethod,
+				({ setValidatorBLSKey: jest.fn() } as unknown) as ValidatorsMethod,
+				posMethod,
 			);
 
 			await expect(

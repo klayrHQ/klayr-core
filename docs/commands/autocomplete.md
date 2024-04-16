@@ -1,5 +1,5 @@
 `klayr-core autocomplete`
-========================
+=========================
 
 display autocomplete installation instructions
 

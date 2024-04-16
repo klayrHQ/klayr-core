@@ -1,5 +1,5 @@
 `klayr-core generator`
-=====================
+======================
 
 Disable block generation for given validator address.
 
@@ -32,12 +32,12 @@ OPTIONS
   --pretty                   Prints JSON in pretty format rather than condensed.
 
 EXAMPLES
-  generator:disable klyycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz
-  generator:disable klyycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz --data-path ./data
-  generator:disable klyycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz --data-path ./data --password your_password
+  generator:disable kly ycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz
+  generator:disable kly ycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz --data-path ./data
+  generator:disable kly ycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz --data-path ./data --password your_password
 ```
 
-_See code: [dist/commands/generator/disable.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/generator/disable.ts)_
+_See code: [dist/commands/generator/disable.ts](https://github.com/klayrhq/klayr-core/blob/v4.0.3-alpha.0/dist/commands/generator/disable.ts)_
 
 ## `klayr-core generator:enable ADDRESS`
 
@@ -71,16 +71,16 @@ OPTIONS
   --use-status-value                           Use status value from the connected node
 
 EXAMPLES
-  generator:enable kly24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu --use-status-value
-  generator:enable kly24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu --height=100 --max-height-generated=30 
+  generator:enable kly 24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu --use-status-value
+  generator:enable kly 24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu --height=100 --max-height-generated=30 
   --max-height-prevoted=10
-  generator:enable kly24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu --height=100 --max-height-generated=30 
+  generator:enable kly 24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu --height=100 --max-height-generated=30 
   --max-height-prevoted=10 --data-path ./data
-  generator:enable kly24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu --height=100 --max-height-generated=30 
+  generator:enable kly 24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu --height=100 --max-height-generated=30 
   --max-height-prevoted=10 --data-path ./data --password your_password
 ```
 
-_See code: [dist/commands/generator/enable.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/generator/enable.ts)_
+_See code: [dist/commands/generator/enable.ts](https://github.com/klayrhq/klayr-core/blob/v4.0.3-alpha.0/dist/commands/generator/enable.ts)_
 
 ## `klayr-core generator:export`
 
@@ -104,7 +104,7 @@ EXAMPLES
   generator:export --output /mypath/generator_info.json --data-path ./data
 ```
 
-_See code: [dist/commands/generator/export.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/generator/export.ts)_
+_See code: [dist/commands/generator/export.ts](https://github.com/klayrhq/klayr-core/blob/v4.0.3-alpha.0/dist/commands/generator/export.ts)_
 
 ## `klayr-core generator:import`
 
@@ -127,7 +127,7 @@ EXAMPLES
   generator:import --file-path ./my/path/genInfo.json --data-path ./data
 ```
 
-_See code: [dist/commands/generator/import.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/generator/import.ts)_
+_See code: [dist/commands/generator/import.ts](https://github.com/klayrhq/klayr-core/blob/v4.0.3-alpha.0/dist/commands/generator/import.ts)_
 
 ## `klayr-core generator:status`
 
@@ -148,4 +148,4 @@ EXAMPLES
   generator:status --data-path ./sample --pretty
 ```
 
-_See code: [dist/commands/generator/status.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/generator/status.ts)_
+_See code: [dist/commands/generator/status.ts](https://github.com/klayrhq/klayr-core/blob/v4.0.3-alpha.0/dist/commands/generator/status.ts)_

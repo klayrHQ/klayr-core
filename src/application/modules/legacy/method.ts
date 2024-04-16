@@ -12,6 +12,6 @@
  * Removal or modification of this copyright notice is prohibited.
  */
 
-import { BaseMethod } from 'lisk-sdk';
+import { BaseMethod } from 'klayr-sdk';
 
 export class LegacyMethod extends BaseMethod {}

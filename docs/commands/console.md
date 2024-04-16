@@ -1,5 +1,5 @@
 `klayr-core console`
-===================
+====================
 
 Klayr interactive REPL session to run commands.
 
@@ -23,4 +23,4 @@ EXAMPLES
   console --api-ipc=/path/to/server
 ```
 
-_See code: [dist/commands/console.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/console.ts)_
+_See code: [dist/commands/console.ts](https://github.com/klayrhq/klayr-core/blob/v4.0.3-alpha.0/dist/commands/console.ts)_

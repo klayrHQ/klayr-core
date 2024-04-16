@@ -11,7 +11,7 @@
  *
  * Removal or modification of this copyright notice is prohibited.
  */
-import { cryptography, GenesisConfig } from 'lisk-sdk';
+import { cryptography, GenesisConfig } from 'klayr-sdk';
 
 import { ModuleConfig, ModuleConfigJSON } from './types';
 

@@ -25,14 +25,14 @@ import {
 } from '../../utils/download';
 import { flags as commonFlags } from '../../utils/flags';
 import { getDefaultPath, getNetworkConfigFilesPath } from '../../utils/path';
-import { liskGenesisBlockUrl } from '../../utils/commons';
+import { klayrGenesisBlockUrl } from '../../utils/commons';
 
 export default class DownloadCommand extends Command {
 	static description = 'Download genesis block.';
 
 	static examples = [
 		'genesis-block:download --network mainnet -f',
-		'genesis-block:download --network --data-path ./lisk/',
+		'genesis-block:download --network --data-path ./klayr/',
 		'genesis-block:download --url http://mydomain.com/genesis_block.blob.tar.gz --data-path ./lisk/ --force',
 	];
 
@@ -40,7 +40,7 @@ export default class DownloadCommand extends Command {
 		'data-path': flagParser.string(commonFlags.dataPath),
 		network: flagParser.string({
 			...commonFlags.network,
-			env: 'LISK_NETWORK',
+			env: 'KLAYR_NETWORK',
 		}),
 		url: flagParser.string({
 			char: 'u',
@@ -62,7 +62,7 @@ export default class DownloadCommand extends Command {
 		}
 
 		const customUrl = !!flags.url;
-		const downloadUrl = url ?? liskGenesisBlockUrl(DOWNLOAD_URL, network as NETWORK);
+		const downloadUrl = url ?? klayrGenesisBlockUrl(DOWNLOAD_URL, network as NETWORK);
 
 		let genesisBlockPath: string;
 

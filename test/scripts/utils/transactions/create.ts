@@ -13,7 +13,7 @@
  *
  */
 
-import { apiClient, codec, cryptography } from 'lisk-sdk';
+import { apiClient, codec, cryptography } from 'klayr-sdk';
 
 import {
 	MODULE_TOKEN,
@@ -30,7 +30,7 @@ import {
 	COMMAND_LEGACY_REGISTER_KEYS,
 	MODULE_INTEROPERABILITY,
 	COMMAND_INTEROPERABILITY_SIDECHAIN_REG,
-	COMMAND_LEGACY_RECLAIM_LSK,
+	COMMAND_LEGACY_RECLAIM_KLY,
 } from '../constants';
 import {
 	createSignatureForMultisignature,
@@ -367,7 +367,7 @@ export const createSidechainRegistrationTransaction = async (
 	return tx;
 };
 
-export const createReclaimLSKTransaction = async (
+export const createReclaimKLYTransaction = async (
 	input: {
 		fee?: bigint;
 		nonce: bigint;
@@ -380,7 +380,7 @@ export const createReclaimLSKTransaction = async (
 	const tx = await createAndSignTransaction(
 		{
 			module: MODULE_LEGACY,
-			command: COMMAND_LEGACY_RECLAIM_LSK,
+			command: COMMAND_LEGACY_RECLAIM_KLY,
 			nonce: input.nonce,
 			senderPublicKey: input.publicKey.toString('hex'),
 			fee: input.fee ?? BigInt('2500000000'),

@@ -12,13 +12,13 @@
  * Removal or modification of this copyright notice is prohibited.
  *
  */
-import { cryptography } from 'lisk-sdk';
+import { cryptography } from 'klayr-sdk';
 
 const TOKEN_ID = '0400000000000000';
 
 export const createTokenSubstoreArray = async validators => {
 	const userSubstore = validators.map(validator => ({
-		address: cryptography.address.getAddressFromLisk32Address(validator.address),
+		address: cryptography.address.getAddressFromKlayr32Address(validator.address),
 		tokenID: Buffer.from(TOKEN_ID, 'hex'),
 		availableBalance: '100000000000000',
 		lockedBalances: [],
@@ -33,7 +33,7 @@ export const createTokenSubstoreArray = async validators => {
 
 	const parsedUserSubstore = userSubstoreSorted.map(entry => ({
 		...entry,
-		address: cryptography.address.getLisk32AddressFromAddress(entry.address),
+		address: cryptography.address.getKlayr32AddressFromAddress(entry.address),
 		tokenID: entry.tokenID.toString('hex'),
 	}));
 

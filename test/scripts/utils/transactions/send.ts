@@ -14,7 +14,7 @@
  */
 /* eslint-disable no-console, @typescript-eslint/restrict-template-expressions */
 
-import { apiClient, transactions } from 'lisk-sdk';
+import { apiClient, transactions } from 'klayr-sdk';
 
 import { TRANSACTIONS_PER_ACCOUNT, DEFAULT_TX_FEES } from '../constants';
 import {
@@ -27,12 +27,12 @@ import {
 	createMultisignatureTransferTransaction,
 	createRegisterKeysTransaction,
 	createSidechainRegistrationTransaction,
-	createReclaimLSKTransaction,
+	createReclaimKLYTransaction,
 } from './create';
 import { Account, GeneratorAccount, LegacyAccount, Stake } from '../types';
 
-export const getBeddows = (lskAmount: string) =>
-	BigInt(transactions.convertLSKToBeddows(lskAmount));
+export const getBeddows = (klyAmount: string) =>
+	BigInt(transactions.convertKLYToBeddows(klyAmount));
 
 const generateRandomUserName = () => {
 	const allLowerAlpha = [...'abcdefghijklmnopqrstuvwxyz'];
@@ -293,14 +293,14 @@ export const sendSidechainRegistrationTransaction = async (
 	await handleTransaction(transaction, 'sidechain registration', client);
 };
 
-export const sendReclaimLSKTransaction = async (
+export const sendReclaimKLYTransaction = async (
 	legacyAccount: LegacyAccount,
 	params: any,
 	client: apiClient.APIClient,
 ) => {
 	const accountNonce = await getAccountNonce(legacyAccount.address, client);
 
-	const transaction = await createReclaimLSKTransaction(
+	const transaction = await createReclaimKLYTransaction(
 		{
 			nonce: BigInt(accountNonce),
 			fee: getBeddows('15'),

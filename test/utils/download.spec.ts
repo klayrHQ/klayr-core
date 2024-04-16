@@ -15,11 +15,12 @@
 import * as fs from 'fs-extra';
 import * as axios from 'axios';
 import { EventEmitter } from 'events';
+import { ReadStream } from 'node:fs';
 import * as downloadUtil from '../../src/utils/download';
 
 describe('download utils', () => {
-	const url = 'https://snapshots.lisk.com/betanet/blockchain.db.tar.gz';
-	const outDir = './tmp/cache/lisk-core';
+	const url = 'https://snapshots.klayr.xyz/betanet/blockchain.db.tar.gz';
+	const outDir = './tmp/cache/klayr-core';
 
 	describe('#download', () => {
 		beforeEach(() => {
@@ -42,12 +43,12 @@ describe('download utils', () => {
 		});
 	});
 
-	describe('#downloadLiskAndValidate', () => {
+	describe('#downloadKlayrAndValidate', () => {
 		beforeEach(() => {
 			jest.spyOn(axios, 'default').mockResolvedValue({ data: { pipe: jest.fn() } } as any);
 			jest.spyOn(fs, 'createWriteStream');
-			const stream = new EventEmitter();
-			jest.spyOn(fs, 'createReadStream').mockReturnValue(stream as any);
+			const stream = new EventEmitter() as ReadStream;
+			jest.spyOn(fs, 'createReadStream').mockReturnValue(stream);
 			setTimeout(() => stream.emit('end'), 10);
 			jest.spyOn(fs, 'readFileSync');
 			jest.spyOn(downloadUtil, 'download').mockResolvedValue();
@@ -58,7 +59,7 @@ describe('download utils', () => {
 				.mockReturnValue({ fileDir: '', fileName: '', filePath: '' });
 		});
 
-		it('should download lisk and validate release', async () => {
+		it('should download klayr and validate release', async () => {
 			(fs.readFileSync as jest.Mock).mockReturnValueOnce(
 				'7607d6792843d6003c12495b54e34517a508d2a8622526aff1884422c5478971 tar filename here',
 			);

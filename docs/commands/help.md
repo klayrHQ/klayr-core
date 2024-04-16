@@ -1,5 +1,5 @@
 `klayr-core help`
-================
+=================
 
 Display help for klayr-core.
 

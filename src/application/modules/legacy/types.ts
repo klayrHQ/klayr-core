@@ -11,14 +11,14 @@
  *
  * Removal or modification of this copyright notice is prohibited.
  */
-import { GenesisConfig, JSONObject } from 'lisk-sdk';
+import { GenesisConfig, JSONObject } from 'klayr-sdk';
 
 export interface LegacyStoreData {
 	legacyAddress: string;
 	balance: bigint;
 }
 
-export interface ReclaimLSKParamsData {
+export interface ReclaimKLYParamsData {
 	amount: bigint;
 }
 

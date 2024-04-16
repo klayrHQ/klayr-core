@@ -12,8 +12,8 @@
  * Removal or modification of this copyright notice is prohibited.
  *
  */
-import { passphrase as liskPassphrase, cryptography } from 'lisk-sdk';
-const { Mnemonic } = liskPassphrase;
+import { passphrase as klayrPassphrase, cryptography } from 'klayr-sdk';
+const { Mnemonic } = klayrPassphrase;
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const createAccountWithLegacyInfo = () => {

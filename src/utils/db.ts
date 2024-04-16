@@ -13,7 +13,7 @@
  *
  */
 
-import { db } from 'lisk-sdk';
+import { db } from 'klayr-sdk';
 import { getBlockchainDBPath } from './path';
 
 export const getBlockchainDB = (dataPath: string): db.StateDB =>

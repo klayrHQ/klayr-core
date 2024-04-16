@@ -11,7 +11,7 @@
  *
  * Removal or modification of this copyright notice is prohibited.
  */
-import { BaseEvent, EventQueuer } from 'lisk-sdk';
+import { BaseEvent, EventQueuer } from 'klayr-sdk';
 
 import { LENGTH_ADDRESS, LENGTH_GENERATOR_KEY, LENGTH_BLS_KEY } from '../constants';
 
@@ -22,7 +22,7 @@ export interface keysRegisteredEventData {
 }
 
 export const keysRegisteredEventDataSchema = {
-	$id: 'lisk/legacy/keysRegisteredEventData',
+	$id: 'klayr/legacy/keysRegisteredEventData',
 	type: 'object',
 	required: ['address', 'generatorKey', 'blsKey'],
 	properties: {

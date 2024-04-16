@@ -1,5 +1,5 @@
 `klayr-core genesis-block`
-=========================
+==========================
 
 Creates genesis block file.
 
@@ -40,7 +40,7 @@ EXAMPLES
   085d7c9b7bddc8052be9eefe185f407682a495f1b4498677df1480026b74f2e9
 ```
 
-_See code: [dist/commands/genesis-block/create.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/genesis-block/create.ts)_
+_See code: [dist/commands/genesis-block/create.ts](https://github.com/klayrhq/klayr-core/blob/v4.0.3-alpha.0/dist/commands/genesis-block/create.ts)_
 
 ## `klayr-core genesis-block:download`
 
@@ -63,7 +63,7 @@ OPTIONS
 EXAMPLES
   genesis-block:download --network mainnet -f
   genesis-block:download --network --data-path ./klayr/
-  genesis-block:download --url http://mydomain.com/genesis_block.blob.tar.gz --data-path ./klayr/ --force
+  genesis-block:download --url http://mydomain.com/genesis_block.blob.tar.gz --data-path ./lisk/ --force
 ```
 
-_See code: [dist/commands/genesis-block/download.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/genesis-block/download.ts)_
+_See code: [dist/commands/genesis-block/download.ts](https://github.com/klayrhq/klayr-core/blob/v4.0.3-alpha.0/dist/commands/genesis-block/download.ts)_

@@ -12,7 +12,7 @@
  * Removal or modification of this copyright notice is prohibited.
  */
 
-import { BaseMethod } from 'lisk-sdk';
+import { BaseMethod } from 'klayr-sdk';
 
 import { LegacyMethod } from '../../../../src/application/modules/legacy/method';
 import { LegacyModule } from '../../../../src/application/modules/legacy/module';

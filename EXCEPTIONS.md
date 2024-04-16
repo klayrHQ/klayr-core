@@ -1,6 +1,6 @@
 ## Exceptions
 
-During the development of Lisk Core, we found some edge cases when the existing data on the network becomes invalid. Either it was because of a bug or some protocol change. To maintain state of the chain we have to consider that particular data valid in that particular scope. This concept of making some invalid data to be valid in the network is known to us as exceptions. To see the full list of available exception categories see the following [exception schema](https://github.com/LiskHQ/lisk-sdk/blob/ca7a626f5d231f07ac784b4f6b58ed72dfa9aaa3/framework/src/modules/chain/defaults/config.js#L110)
+During the development of Lisk Core, we found some edge cases when the existing data on the network becomes invalid. Either it was because of a bug or some protocol change. To maintain state of the chain we have to consider that particular data valid in that particular scope. This concept of making some invalid data to be valid in the network is known to us as exceptions. To see the full list of available exception categories see the following [exception schema](https://github.com/klayrhq/klayr-sdk/blob/ca7a626f5d231f07ac784b4f6b58ed72dfa9aaa3/framework/src/modules/chain/defaults/config.js#L110)
 
 Below is the list of exceptions on each network with some details.
 

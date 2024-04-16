@@ -12,15 +12,15 @@
  * Removal or modification of this copyright notice is prohibited.
  */
 
-import { passphrase as liskPassphrase, cryptography } from 'lisk-sdk';
+import { passphrase as klayrPassphrase, cryptography } from 'klayr-sdk';
 
-const { Mnemonic } = liskPassphrase;
+const { Mnemonic } = klayrPassphrase;
 
 import { MNEMONIC_LENGTH } from './constants';
 
 export const getLegacyAccountInfo = async legacyAccount => {
 	const { privateKey, publicKey } = await cryptography.legacy.getKeys(legacyAccount.passphrase);
-	const address = await cryptography.address.getLisk32AddressFromPublicKey(publicKey);
+	const address = await cryptography.address.getKlayr32AddressFromPublicKey(publicKey);
 
 	return {
 		address,
@@ -72,7 +72,7 @@ export const createAccount = async () => {
 		blsKey: blsPublicKey,
 		generatorKey: generatorPublicKey,
 		proofOfPossession: cryptography.bls.popProve(blsPrivateKey),
-		address: cryptography.address.getLisk32AddressFromAddress(address),
+		address: cryptography.address.getKlayr32AddressFromAddress(address),
 	};
 };
 
@@ -93,7 +93,7 @@ export const genesisAccount = async accountKeyPath => {
 	const publicKey = cryptography.ed.getPublicKeyFromPrivateKey(privateKey);
 
 	return {
-		address: cryptography.address.getLisk32AddressFromPublicKey(publicKey),
+		address: cryptography.address.getKlayr32AddressFromPublicKey(publicKey),
 		...cryptography.legacy.getKeys(passphrase),
 		passphrase,
 		password: 'elephant tree paris dragon chair galaxy',

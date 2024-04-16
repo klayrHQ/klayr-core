@@ -18,10 +18,10 @@ import {
 	PoSMethod,
 	codec,
 	GenesisBlockExecuteContext,
-	validator as liskValidator,
+	validator as klayrValidator,
 	utils,
 	ModuleMetadata,
-} from 'lisk-sdk';
+} from 'klayr-sdk';
 
 import { LegacyMethod } from './method';
 import { LegacyEndpoint } from './endpoint';
@@ -40,24 +40,24 @@ import {
 import { ModuleConfig, ModuleConfigJSON, ModuleInitArgs, genesisLegacyStore } from './types';
 import { getModuleConfig } from './utils';
 import { LegacyAccountStore } from './stores/legacyAccount';
-import { ReclaimLSKCommand } from './commands/reclaim';
+import { ReclaimKLYCommand } from './commands/reclaim';
 import { RegisterKeysCommand } from './commands/register_keys';
 import { AccountReclaimedEvent } from './events/accountReclaimed';
 import { KeysRegisteredEvent } from './events/keysRegistered';
 
 // eslint-disable-next-line prefer-destructuring
-const validator: liskValidator.LiskValidator = liskValidator.validator;
+const validator: klayrValidator.KlayrValidator = klayrValidator.validator;
 
 export class LegacyModule extends BaseModule {
 	public endpoint = new LegacyEndpoint(this.stores, this.offchainStores);
 	public method = new LegacyMethod(this.stores, this.events);
+	public moduleConfig!: ModuleConfig;
 	public legacyReserveAddress = ADDRESS_LEGACY_RESERVE;
 	private _tokenMethod!: TokenMethod;
 	private _validatorsMethod!: ValidatorsMethod;
 	private _posMethod!: PoSMethod;
-	private _moduleConfig!: ModuleConfig;
 
-	private readonly _reclaimLSKCommand = new ReclaimLSKCommand(this.stores, this.events);
+	private readonly _reclaimKLYCommand = new ReclaimKLYCommand(this.stores, this.events);
 	private readonly _registerKeysCommand = new RegisterKeysCommand(this.stores, this.events);
 
 	public constructor() {
@@ -72,7 +72,7 @@ export class LegacyModule extends BaseModule {
 	}
 
 	// eslint-disable-next-line @typescript-eslint/member-ordering
-	public commands = [this._reclaimLSKCommand, this._registerKeysCommand];
+	public commands = [this._reclaimKLYCommand, this._registerKeysCommand];
 
 	public addDependencies(
 		tokenMethod: TokenMethod,
@@ -82,7 +82,7 @@ export class LegacyModule extends BaseModule {
 		this._posMethod = posMethod;
 		this._tokenMethod = tokenMethod;
 		this._validatorsMethod = validatorsMethod;
-		this._reclaimLSKCommand.addDependencies(this._tokenMethod);
+		this._reclaimKLYCommand.addDependencies(this._tokenMethod);
 		this._registerKeysCommand.addDependencies(this._validatorsMethod, this._posMethod);
 	}
 
@@ -121,9 +121,9 @@ export class LegacyModule extends BaseModule {
 			defaultConfig,
 			moduleConfig,
 		) as ModuleConfigJSON;
-		this._moduleConfig = getModuleConfig(genesisConfig, mergedModuleConfig);
-		this._reclaimLSKCommand.init({
-			tokenIDReclaim: this._moduleConfig.tokenIDReclaim,
+		this.moduleConfig = getModuleConfig(genesisConfig, mergedModuleConfig);
+		this._reclaimKLYCommand.init({
+			tokenIDReclaim: this.moduleConfig.tokenIDReclaim,
 			moduleName: this.name,
 		});
 	}
@@ -162,7 +162,7 @@ export class LegacyModule extends BaseModule {
 		const lockedAmount = await this._tokenMethod.getLockedAmount(
 			ctx.getMethodContext(),
 			this.legacyReserveAddress,
-			this._moduleConfig.tokenIDReclaim,
+			this.moduleConfig.tokenIDReclaim,
 			this.name,
 		);
 

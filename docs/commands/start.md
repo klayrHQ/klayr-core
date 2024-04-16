@@ -1,5 +1,5 @@
 `klayr-core start`
-=================
+==================
 
 Start Blockchain Node.
 
@@ -30,9 +30,9 @@ OPTIONS
                                                        variable "KLAYR_PORT" can also be used.
 
   -u, --genesis-block-url=genesis-block-url            The URL to download the genesis block. Environment variable
-                                                       "KLAYR_GENESIS_BLOCK_URL" can also be used. Kindly ensure that the
-                                                       provided URL downloads the genesis block 'blob' in the tarball
-                                                       format.
+                                                       "KLAYR_GENESIS_BLOCK_URL" can also be used. Kindly ensure that
+                                                       the provided URL downloads the genesis block 'blob' in the
+                                                       tarball format.
 
   --api-host=api-host                                  Host to be used for api-client. Environment variable
                                                        "KLAYR_API_HOST" can also be used.
@@ -101,4 +101,4 @@ EXAMPLES
   start --network testnet --config ~/my_custom_config.json
 ```
 
-_See code: [dist/commands/start.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/start.ts)_
+_See code: [dist/commands/start.ts](https://github.com/klayrhq/klayr-core/blob/v4.0.3-alpha.0/dist/commands/start.ts)_

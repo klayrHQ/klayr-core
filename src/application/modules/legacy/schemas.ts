@@ -22,7 +22,7 @@ import { legacyAccountStoreSchema } from './stores/legacyAccount';
 
 export const legacyAccountResponseSchema = legacyAccountStoreSchema;
 
-export const reclaimLSKParamsSchema = {
+export const reclaimKLYParamsSchema = {
 	$id: '/legacy/command/reclaimLSKParams',
 	type: 'object',
 	required: ['amount'],

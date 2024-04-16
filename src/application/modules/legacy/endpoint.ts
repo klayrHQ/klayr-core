@@ -16,15 +16,15 @@ import {
 	JSONObject,
 	ModuleEndpointContext,
 	chain,
-	validator as liskValidator,
-} from 'lisk-sdk';
+	validator as klayrValidator,
+} from 'klayr-sdk';
 import { legacyAccountRequestSchema } from './schemas';
 import { LegacyAccountStore } from './stores/legacyAccount';
 import { LegacyStoreData } from './types';
 import { getLegacyAddress } from './utils';
 
 // eslint-disable-next-line prefer-destructuring
-const validator: liskValidator.LiskValidator = liskValidator.validator;
+const validator: klayrValidator.KlayrValidator = klayrValidator.validator;
 
 const { NotFoundError } = chain;
 

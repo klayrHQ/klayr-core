@@ -1,6 +1,6 @@
 # Scripts
 
-Lisk quality assurance scripts.
+Klayr quality assurance scripts.
 
 ## Stress Test
 
@@ -8,7 +8,7 @@ Stress test script enables creating and sending transactions to local node.
 
 ### Run node locally with default data path
 
-Command to run lisk core node
+Command to run klayr core node
 
 ```sh
 ./bin/run start -n devnet --enable-ipc
@@ -22,7 +22,7 @@ $ npm run test:stress
 
 ### Run node locally with custom data path
 
-Command to run lisk core node
+Command to run klayr core node
 
 ```sh
 ./bin/run start -n devnet --enable-ipc -d /tmp/test_node

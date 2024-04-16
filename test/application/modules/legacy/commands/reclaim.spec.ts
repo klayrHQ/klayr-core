@@ -20,15 +20,16 @@ import {
 	Transaction,
 	cryptography,
 	EventQueuer,
-} from 'lisk-sdk';
+	TokenMethod,
+	Schema,
+} from 'klayr-sdk';
 
-// TODO: Update the import once this issue is closed: https://github.com/LiskHQ/lisk-sdk/issues/8372
-import { PrefixedStateReadWriter } from '../../../../../node_modules/lisk-framework/dist-node/state_machine/prefixed_state_read_writer';
+import { PrefixedStateReadWriter } from 'klayr-framework/dist-node/state_machine/prefixed_state_read_writer';
 
 import { COMMAND_RECLAIM } from '../../../../../src/application/modules/legacy/constants';
 import { LegacyModule } from '../../../../../src/application/modules/legacy/module';
-import { ReclaimLSKCommand } from '../../../../../src/application/modules/legacy/commands/reclaim';
-import { reclaimLSKParamsSchema } from '../../../../../src/application/modules/legacy/schemas';
+import { ReclaimKLYCommand } from '../../../../../src/application/modules/legacy/commands/reclaim';
+import { reclaimKLYParamsSchema } from '../../../../../src/application/modules/legacy/schemas';
 import { getLegacyAddress } from '../../../../../src/application/modules/legacy/utils';
 import { LegacyAccountStore } from '../../../../../src/application/modules/legacy/stores/legacyAccount';
 import { AccountReclaimedEvent } from '../../../../../src/application/modules/legacy/events/accountReclaimed';
@@ -43,7 +44,7 @@ const chainID = Buffer.from(
 );
 
 const MODULE_NAME = 'legacy';
-const COMMAND_NAME = 'reclaimLSK';
+const COMMAND_NAME = 'reclaimKLY';
 const senderPublicKey = '275ce55f7b42fab1a12f718a14eb886f59631d172e236be46255c33506a64c6c';
 const legacyAddress = getLegacyAddress(Buffer.from(senderPublicKey, 'hex'));
 const reclaimBalance = BigInt(10000);
@@ -60,7 +61,7 @@ const checkEventResult = (
 	expect(eventQueue.getEvents()[index].toObject().name).toEqual(new EventClass(moduleName).name);
 
 	const eventData = codec.decode<Record<string, unknown>>(
-		new EventClass(moduleName).schema,
+		new EventClass(moduleName).schema as Schema,
 		eventQueue.getEvents()[index].toObject().data,
 	);
 
@@ -71,13 +72,13 @@ const createStoreGetter = stateStore => ({
 	getStore: (p1, p2) => stateStore.getStore(p1, p2),
 });
 
-const getReclaimTransaction = (transactionParams: any, customSchema?: any): Transaction => {
+const getReclaimTransaction = (transactionParams: object, customSchema?: Schema): Transaction => {
 	const encodedTransactionParams = codec.encode(
-		customSchema || reclaimLSKParamsSchema,
+		customSchema ?? reclaimKLYParamsSchema,
 		transactionParams,
 	);
 
-	const reclaimLskTransaction = new Transaction({
+	const reclaimKLYTransaction = new Transaction({
 		module: MODULE_NAME,
 		command: COMMAND_NAME,
 		senderPublicKey: Buffer.from(senderPublicKey, 'hex'),
@@ -87,40 +88,40 @@ const getReclaimTransaction = (transactionParams: any, customSchema?: any): Tran
 		signatures: [Buffer.from(senderPublicKey, 'hex')],
 	});
 
-	return reclaimLskTransaction;
+	return reclaimKLYTransaction;
 };
 
 describe('Reclaim command', () => {
 	let stateStore: PrefixedStateReadWriter;
 	let legacyAccountStore: LegacyAccountStore;
 
-	let reclaimLSKCommand: ReclaimLSKCommand;
+	let reclaimKLYCommand: ReclaimKLYCommand;
 	let mint: any;
-	const validReclaimLskTransaction = getReclaimTransaction({
+	const validReclaimKLYTransaction = getReclaimTransaction({
 		amount: reclaimBalance,
 	});
 
 	beforeEach(() => {
 		mint = jest.fn();
 		const module = new LegacyModule();
-		reclaimLSKCommand = new ReclaimLSKCommand(module.stores, module.events);
-		reclaimLSKCommand.addDependencies({ mint } as any);
+		reclaimKLYCommand = new ReclaimKLYCommand(module.stores, module.events);
+		reclaimKLYCommand.addDependencies(({ mint } as unknown) as TokenMethod);
 
 		stateStore = new PrefixedStateReadWriter(new testing.InMemoryPrefixedStateDB());
 		legacyAccountStore = module.stores.get(LegacyAccountStore);
 	});
 
 	it('should inherit from BaseCommand', () => {
-		expect(ReclaimLSKCommand.prototype).toBeInstanceOf(BaseCommand);
+		expect(ReclaimKLYCommand.prototype).toBeInstanceOf(BaseCommand);
 	});
 
 	describe('constructor', () => {
 		it('should have valid name', () => {
-			expect(reclaimLSKCommand.name).toBe(COMMAND_RECLAIM);
+			expect(reclaimKLYCommand.name).toBe(COMMAND_RECLAIM);
 		});
 
 		it('should have valid schema', () => {
-			expect(reclaimLSKCommand.schema).toEqual(reclaimLSKParamsSchema);
+			expect(reclaimKLYCommand.schema).toEqual(reclaimKLYParamsSchema);
 		});
 	});
 
@@ -132,12 +133,12 @@ describe('Reclaim command', () => {
 			const context = testing
 				.createTransactionContext({
 					chainID,
-					transaction: validReclaimLskTransaction,
+					transaction: validReclaimKLYTransaction,
 					stateStore,
 				})
-				.createCommandVerifyContext(reclaimLSKParamsSchema);
+				.createCommandVerifyContext(reclaimKLYParamsSchema);
 
-			await expect(reclaimLSKCommand.verify(context)).resolves.toHaveProperty(
+			await expect(reclaimKLYCommand.verify(context)).resolves.toHaveProperty(
 				'status',
 				VerifyStatus.OK,
 			);
@@ -156,9 +157,9 @@ describe('Reclaim command', () => {
 					transaction: invalidAmountReclaimTransaction,
 					stateStore,
 				})
-				.createCommandVerifyContext(reclaimLSKParamsSchema);
+				.createCommandVerifyContext(reclaimKLYParamsSchema);
 
-			await expect(reclaimLSKCommand.verify(context)).resolves.toHaveProperty(
+			await expect(reclaimKLYCommand.verify(context)).resolves.toHaveProperty(
 				'status',
 				VerifyStatus.FAIL,
 			);
@@ -168,20 +169,20 @@ describe('Reclaim command', () => {
 			const context = testing
 				.createTransactionContext({
 					chainID,
-					transaction: validReclaimLskTransaction,
+					transaction: validReclaimKLYTransaction,
 					stateStore,
 				})
-				.createCommandVerifyContext(reclaimLSKParamsSchema);
+				.createCommandVerifyContext(reclaimKLYParamsSchema);
 
-			await expect(reclaimLSKCommand.verify(context)).resolves.toHaveProperty(
+			await expect(reclaimKLYCommand.verify(context)).resolves.toHaveProperty(
 				'status',
 				VerifyStatus.FAIL,
 			);
 		});
 
-		it('should throw error when transaction params does not follow reclaimLSKParamsSchema', async () => {
+		it('should throw error when transaction params does not follow reclaimKLYParamsSchema', async () => {
 			const invalidSchema = {
-				$id: '/legacy/command/invalidReclaimLSKParams',
+				$id: '/legacy/command/invalidReclaimKLYParams',
 				type: 'object',
 				required: ['invalidParam'],
 				properties: {
@@ -203,7 +204,7 @@ describe('Reclaim command', () => {
 				})
 				.createCommandVerifyContext(invalidSchema);
 
-			await expect(reclaimLSKCommand.verify(context)).resolves.toHaveProperty(
+			await expect(reclaimKLYCommand.verify(context)).resolves.toHaveProperty(
 				'status',
 				VerifyStatus.FAIL,
 			);
@@ -222,17 +223,17 @@ describe('Reclaim command', () => {
 			const context = testing
 				.createTransactionContext({
 					chainID,
-					transaction: validReclaimLskTransaction,
+					transaction: validReclaimKLYTransaction,
 					stateStore,
 				})
-				.createCommandExecuteContext(reclaimLSKParamsSchema);
+				.createCommandExecuteContext(reclaimKLYParamsSchema);
 
-			reclaimLSKCommand.addDependencies({
+			reclaimKLYCommand.addDependencies(({
 				unlock,
 				transfer,
-			} as any);
+			} as unknown) as TokenMethod);
 
-			await reclaimLSKCommand.execute(context);
+			await reclaimKLYCommand.execute(context);
 			expect(unlock).toHaveBeenCalledTimes(1);
 			expect(transfer).toHaveBeenCalledTimes(1);
 

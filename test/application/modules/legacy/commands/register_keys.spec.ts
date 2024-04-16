@@ -20,10 +20,12 @@ import {
 	Transaction,
 	codec,
 	EventQueuer,
-} from 'lisk-sdk';
+	ValidatorsMethod,
+	PoSMethod,
+	Schema,
+} from 'klayr-sdk';
 
-// TODO: Update the import once this issue is closed: https://github.com/LiskHQ/lisk-sdk/issues/8372
-import { PrefixedStateReadWriter } from '../../../../../node_modules/lisk-framework/dist-node/state_machine/prefixed_state_read_writer';
+import { PrefixedStateReadWriter } from 'klayr-framework/dist-node/state_machine/prefixed_state_read_writer';
 
 import { COMMAND_REGISTER_KEYS } from '../../../../../src/application/modules/legacy/constants';
 import { LegacyModule } from '../../../../../src/application/modules/legacy/module';
@@ -42,13 +44,16 @@ const COMMAND_NAME = 'registerKeys';
 const senderPublicKey = 'ac8fb4c7318a1ff9e399102f4b87e3d831e734a48013967bfdba978c9313455c';
 const validatorAddress = getAddressFromPublicKey(Buffer.from(senderPublicKey, 'hex'));
 
-const getRegisterKeysTransaction = (transactionParams: any, customSchema?: any): Transaction => {
+const getRegisterKeysTransaction = (
+	transactionParams: object,
+	customSchema?: Schema,
+): Transaction => {
 	const encodedTransactionParams = codec.encode(
-		customSchema || registerKeysParamsSchema,
+		customSchema ?? registerKeysParamsSchema,
 		transactionParams,
 	);
 
-	const registerKeysTransaction = new Transaction({
+	return new Transaction({
 		module: MODULE_NAME,
 		command: COMMAND_NAME,
 		senderPublicKey: Buffer.from(senderPublicKey, 'hex'),
@@ -57,8 +62,6 @@ const getRegisterKeysTransaction = (transactionParams: any, customSchema?: any):
 		params: encodedTransactionParams,
 		signatures: [Buffer.from(senderPublicKey, 'hex')],
 	});
-
-	return registerKeysTransaction;
 };
 
 const checkEventResult = (
@@ -73,7 +76,7 @@ const checkEventResult = (
 	expect(eventQueue.getEvents()[index].toObject().name).toEqual(new EventClass(moduleName).name);
 
 	const eventData = codec.decode<Record<string, unknown>>(
-		new EventClass(moduleName).schema,
+		new EventClass(moduleName).schema as Schema,
 		eventQueue.getEvents()[index].toObject().data,
 	);
 
@@ -120,7 +123,10 @@ describe('Register keys command', () => {
 				.fn()
 				.mockReturnValue({ blsKey: Buffer.alloc(48), generatorKey: getRandomBytes(32) });
 			const unbanValidator = jest.fn();
-			registerKeysCommand.addDependencies({ getValidatorKeys } as any, { unbanValidator } as any);
+			registerKeysCommand.addDependencies(
+				({ getValidatorKeys } as unknown) as ValidatorsMethod,
+				({ unbanValidator } as unknown) as PoSMethod,
+			);
 
 			// Create context
 			const stateStore = new PrefixedStateReadWriter(new testing.InMemoryPrefixedStateDB());
@@ -152,7 +158,10 @@ describe('Register keys command', () => {
 				.fn()
 				.mockReturnValue({ blsKey: getRandomBytes(48), generatorKey: getRandomBytes(32) });
 			const unbanValidator = jest.fn();
-			registerKeysCommand.addDependencies({ getValidatorKeys } as any, { unbanValidator } as any);
+			registerKeysCommand.addDependencies(
+				({ getValidatorKeys } as unknown) as ValidatorsMethod,
+				({ unbanValidator } as unknown) as PoSMethod,
+			);
 
 			await expect(registerKeysCommand.verify(context)).resolves.toHaveProperty(
 				'status',
@@ -166,8 +175,8 @@ describe('Register keys command', () => {
 			const getValidatorKeys = jest.fn().mockReturnValue({ generatorKey: Buffer.alloc(32) });
 			const unbanValidator = jest.fn();
 			registerKeysCommand.addDependencies(
-				{ setValidatorBLSKey, getValidatorKeys } as any,
-				{ unbanValidator } as any,
+				({ setValidatorBLSKey, getValidatorKeys } as unknown) as ValidatorsMethod,
+				({ unbanValidator } as unknown) as PoSMethod,
 			);
 
 			// Create context
@@ -224,12 +233,12 @@ describe('Register keys command', () => {
 				.mockReturnValue({ generatorKey: transactionParams.generatorKey });
 			const unbanValidator = jest.fn();
 			registerKeysCommand.addDependencies(
-				{
+				({
 					setValidatorBLSKey,
 					getValidatorKeys,
 					setValidatorGeneratorKey,
-				} as any,
-				{ unbanValidator } as any,
+				} as unknown) as ValidatorsMethod,
+				({ unbanValidator } as unknown) as PoSMethod,
 			);
 
 			// Create context
@@ -263,12 +272,12 @@ describe('Register keys command', () => {
 			const getValidatorKeys = jest.fn().mockReturnValue({ generatorKey: Buffer.alloc(32) });
 			const unbanValidator = jest.fn();
 			registerKeysCommand.addDependencies(
-				{
+				({
 					setValidatorBLSKey,
 					getValidatorKeys,
 					setValidatorGeneratorKey,
-				} as any,
-				{ unbanValidator } as any,
+				} as unknown) as ValidatorsMethod,
+				({ unbanValidator } as unknown) as PoSMethod,
 			);
 
 			// Create context
@@ -297,12 +306,12 @@ describe('Register keys command', () => {
 			const getValidatorKeys = jest.fn().mockReturnValue({ generatorKey: Buffer.alloc(32) });
 			const unbanValidator = jest.fn();
 			registerKeysCommand.addDependencies(
-				{
+				({
 					setValidatorBLSKey,
 					getValidatorKeys,
 					setValidatorGeneratorKey,
-				} as any,
-				{ unbanValidator } as any,
+				} as unknown) as ValidatorsMethod,
+				({ unbanValidator } as unknown) as PoSMethod,
 			);
 
 			// Create context
@@ -330,7 +339,10 @@ describe('Register keys command', () => {
 				.fn()
 				.mockReturnValue({ blsKey: Buffer.alloc(48), generatorKey: getRandomBytes(32) });
 			const unbanValidator = jest.fn();
-			registerKeysCommand.addDependencies({ getValidatorKeys } as any, { unbanValidator } as any);
+			registerKeysCommand.addDependencies(
+				({ getValidatorKeys } as unknown) as ValidatorsMethod,
+				({ unbanValidator } as unknown) as PoSMethod,
+			);
 
 			// Create context
 			const invalidParams = {
@@ -372,7 +384,10 @@ describe('Register keys command', () => {
 				.fn()
 				.mockReturnValue({ blsKey: Buffer.alloc(48), generatorKey: getRandomBytes(32) });
 			const unbanValidator = jest.fn();
-			registerKeysCommand.addDependencies({ getValidatorKeys } as any, { unbanValidator } as any);
+			registerKeysCommand.addDependencies(
+				({ getValidatorKeys } as unknown) as ValidatorsMethod,
+				({ unbanValidator } as unknown) as PoSMethod,
+			);
 
 			// Create context
 			const invalidParams = {
@@ -411,7 +426,10 @@ describe('Register keys command', () => {
 				.fn()
 				.mockReturnValue({ blsKey: Buffer.alloc(48), generatorKey: getRandomBytes(32) });
 			const unbanValidator = jest.fn();
-			registerKeysCommand.addDependencies({ getValidatorKeys } as any, { unbanValidator } as any);
+			registerKeysCommand.addDependencies(
+				({ getValidatorKeys } as unknown) as ValidatorsMethod,
+				({ unbanValidator } as unknown) as PoSMethod,
+			);
 
 			// Create context
 			const invalidParams = {
@@ -453,7 +471,10 @@ describe('Register keys command', () => {
 				.fn()
 				.mockReturnValue({ blsKey: Buffer.alloc(48), generatorKey: getRandomBytes(32) });
 			const unbanValidator = jest.fn();
-			registerKeysCommand.addDependencies({ getValidatorKeys } as any, { unbanValidator } as any);
+			registerKeysCommand.addDependencies(
+				({ getValidatorKeys } as unknown) as ValidatorsMethod,
+				({ unbanValidator } as unknown) as PoSMethod,
+			);
 
 			// Create context
 			const invalidParams = {
@@ -492,7 +513,10 @@ describe('Register keys command', () => {
 				.fn()
 				.mockReturnValue({ blsKey: Buffer.alloc(48), generatorKey: getRandomBytes(32) });
 			const unbanValidator = jest.fn();
-			registerKeysCommand.addDependencies({ getValidatorKeys } as any, { unbanValidator } as any);
+			registerKeysCommand.addDependencies(
+				({ getValidatorKeys } as unknown) as ValidatorsMethod,
+				({ unbanValidator } as unknown) as PoSMethod,
+			);
 
 			// Create context
 			const invalidParams = {
@@ -534,7 +558,10 @@ describe('Register keys command', () => {
 				.fn()
 				.mockReturnValue({ blsKey: Buffer.alloc(48), generatorKey: getRandomBytes(32) });
 			const unbanValidator = jest.fn();
-			registerKeysCommand.addDependencies({ getValidatorKeys } as any, { unbanValidator } as any);
+			registerKeysCommand.addDependencies(
+				({ getValidatorKeys } as unknown) as ValidatorsMethod,
+				({ unbanValidator } as unknown) as PoSMethod,
+			);
 
 			// Create context
 			const invalidParams = {

@@ -1,8 +1,8 @@
-name: lisk-core
-summary: Lisk blockchain application platform
+name: klayr-core
+summary: Klayr blockchain application platform
 description: |
-  Run lisk-core
-adopt-info: lisk-core
+  Run klayr-core
+adopt-info: klayr-core
 architectures: [amd64]
 
 grade: stable
@@ -10,14 +10,14 @@ confinement: strict
 base: core22
 
 parts:
-  lisk-core:
+  klayr-core:
     build-packages:
       - git
       - curl
       - jq
     plugin: nil
     build-environment:
-      - NODE_VERSION: 18.19.1
+      - NODE_VERSION: 18.20.2
     source: .
     override-build: |
       export PRV=$(pwd)
@@ -44,19 +44,19 @@ parts:
       npm run build
       ../dev-cli/bin/run pack --targets=linux-x64
       cd dist
-      find . -name \*linux\*.tar.gz -exec cp {} /root/parts/lisk-core/install \;
+      find . -name \*linux\*.tar.gz -exec cp {} /root/parts/klayr-core/install \;
       cd ../../install
       tar -zvxf *.tar.gz
       rm *.tar.gz
       mkdir bin
       cp /opt/node/bin/* bin
     stage:
-      - lisk-core/*
+      - klayr-core/*
       - bin/*
 
 apps:
-  lisk-core:
-    command: lisk-core/bin/lisk-core
+  klayr-core:
+    command: klayr-core/bin/klayr-core
     plugs:
       - network
       - network-bind

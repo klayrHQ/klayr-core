@@ -11,7 +11,7 @@
  *
  * Removal or modification of this copyright notice is prohibited.
  */
-import { BaseEvent, EventQueuer } from 'lisk-sdk';
+import { BaseEvent, EventQueuer } from 'klayr-sdk';
 
 import { LENGTH_LEGACY_ADDRESS, LENGTH_ADDRESS } from '../constants';
 
@@ -22,7 +22,7 @@ export interface accountReclaimedEventData {
 }
 
 export const accountReclaimedEventDataSchema = {
-	$id: 'lisk/legacy/accountReclaimedEventData',
+	$id: 'klayr/legacy/accountReclaimedEventData',
 	type: 'object',
 	required: ['legacyAddress', 'address', 'amount'],
 	properties: {

@@ -1,5 +1,5 @@
 `klayr-core block`
-=================
+==================
 
 Commands relating to Klayr Core blocks.
 
@@ -27,4 +27,4 @@ EXAMPLES
   block:get 2
 ```
 
-_See code: [dist/commands/block/get.ts](https://github.com/KlayrHQ/klayr-core/blob/v4.0.2/dist/commands/block/get.ts)_
+_See code: [dist/commands/block/get.ts](https://github.com/klayrhq/klayr-core/blob/v4.0.3-alpha.0/dist/commands/block/get.ts)_

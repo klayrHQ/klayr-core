@@ -29,4 +29,4 @@ Note: `--dangerous` is needed here to install the local snap file. For more deta
 
 ## Run the snap
 
-At this point, you should be able to run `lisk-core` as if you had installed it with `npm`.
+At this point, you should be able to run `klayr-core` as if you had installed it with `npm`.
