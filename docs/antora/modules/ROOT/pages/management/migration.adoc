@@ -1,4 +1,4 @@
-= Testnet and Mainnet v4 migration guide
+= Testnet and Mainnet Klayr migration guide
 :toc: preamble
 :toclevels: 4
 :experimental:
