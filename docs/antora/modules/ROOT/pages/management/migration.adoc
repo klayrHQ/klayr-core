@@ -8,9 +8,9 @@
 :snapshotHeightTestnet: 21916546
 :initRounds: 587
 :initRoundsTime: 1 week
-:klayr-migrator: klayr-migrator-v2.0.7.tar.gz
-:klayr-migrator_darwinx64: klayr-migrator-v2.0.7-darwin-x64.tar.gz
-:klayr-migrator_darwinarm64: klayr-migrator-v2.0.7-darwin-arm64.tar.gz
+:klayr-migrator: klayr-migrator-v2.0.8-linux-x64.tar.gz
+:klayr-migrator_darwinx64: klayr-migrator-v2.0.8-darwin-x64.tar.gz
+:klayr-migrator_darwinarm64: klayr-migrator-v2.0.8-darwin-arm64.tar.gz
 :docs_sdk: klayr-sdk::
 :docs_klayr: ROOT::
 :docs_klayrv5: ROOT::
