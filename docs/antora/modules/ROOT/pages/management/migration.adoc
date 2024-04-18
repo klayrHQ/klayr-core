@@ -8,9 +8,9 @@
 :snapshotHeightTestnet: 21916546
 :initRounds: 587
 :initRoundsTime: 1 week
-:klayr-migrator: klayr-migrator-v2.0.8-linux-x64.tar.gz
-:klayr-migrator_darwinx64: klayr-migrator-v2.0.8-darwin-x64.tar.gz
-:klayr-migrator_darwinarm64: klayr-migrator-v2.0.8-darwin-arm64.tar.gz
+:klayr-migrator: klayr-migrator-v2.0.9-linux-x64.tar.gz
+:klayr-migrator_darwinx64: klayr-migrator-v2.0.9-darwin-x64.tar.gz
+:klayr-migrator_darwinarm64: klayr-migrator-v2.0.9-darwin-arm64.tar.gz
 :docs_sdk: klayr-sdk::
 :docs_klayr: ROOT::
 :docs_klayrv5: ROOT::
@@ -76,7 +76,7 @@ OS::
 The following dependencies are required for running the migration script:
 
 Node.js::
-* Version 18 (LTS) installed via NVM
+* Version 18.20.2 (LTS) installed via NVM
 
 Lisk Core::
 * Version 4.0.2 or later
@@ -85,14 +85,64 @@ Lisk Core::
 === Ensure you are running version 4.0.2 (or later) of Lisk Core
 Ensure you are running version 4.0.2 (or later) of Lisk Core to be able to seamlessly migrate to Klayr Core.
 
-Print the Lisk Core node info in the terminal, and check the value of `version`. Also, kindly ensure that the `backup.height` property is present and the corresponding value matches the announced migration height of {snapshotHeight}.
+Print the Lisk Core node info in the terminal, and check the value of `version`.
 
 [source,bash]
 ----
-lisk-core node:info --pretty
+lisk-core system node-info --pretty
 ----
 
-NOTE: If your version is 4.0.x, please ensure to set `backup.height` to the announced snapshot height in your node config and restart the node with the `--overwrite-config` flag.
+=== Set the snapshot height in the Lisk Core config
+
+Kindly ensure that the `system.backup.height` property is present and the corresponding value matches the announced migration height of `{snapshotHeightTestnet}` (testnet) or `{snapshotHeight}` (mainnet).
+
+Please set the `system.backup.height` property in the Lisk Core config file to the announced snapshot height. See the example below:
+
+[tabs]
+====
+Mainnet::
++
+--
+[source,json,subs=attributes+]
+----
+{
+  "system": {
+    "dataPath": "~/.lisk",
+    "logLevel": "info",
+    "keepEventsForHeights": 300,
+    "backup": {
+      "height": {snapshotHeight}  // <.>
+    }
+  },
+  ...
+}
+----
+<.> Add the `backup.height` property to the `system` object in the Lisk Core config file.
+--
+Testnet::
++
+--
+[source,json,subs=attributes+]
+----
+{
+  "system": {
+    "dataPath": "~/.lisk",
+    "logLevel": "info",
+    "keepEventsForHeights": 300,
+    "backup": {
+      "height": {snapshotHeightTestnet} // <.>
+    }
+  },
+  ...
+}
+----
+<.> Add the `backup.height` property to the `system` object in the Lisk Core config file.
+
+--
+====
+
+[IMPORTANT]
+If your version is 4.0.x, please ensure to set `system.backup.height` to the announced snapshot height in your node config and restart the node with the `--overwrite-config` flag.
 
 === Setting up the Klayr Migrator
 
@@ -224,7 +274,7 @@ Check the current block height of your node directly in the terminal by running 
 
 [source,bash]
 ----
-lisk-core node:info --pretty
+lisk-core system node-info --pretty
 ----
 
 Compare the current height of your node to the network height in {url_wallet_lisk}[Lisk Desktop^], which is shown on the kbd:[Network] or kbd:[Blocks] pages.
@@ -237,7 +287,7 @@ To directly check the current height via the command line, run:
 
 [source,bash]
 ----
-curl --silent https://service.klayr.com/api/v3/network/status | jq '.data.height'
+curl --silent https://service.lisk.com/api/v3/network/status | jq '.data.height'
 ----
 
 To run the command, both {url_curl}[curl^] and {url_jq}[jq^] are required to be installed.
@@ -312,7 +362,7 @@ In case a custom xref:{url_sdk_config_system}[dataPath] is defined in the config
 
 [source,bash,subs=attributes+]
 ----
-klayr-migrator --snapshot-height {snapshotHeight} --klayr-core-data-path ~/klayr/custom/path/  --auto-migrate-config --auto-start-klayr-core-v4
+klayr-migrator --snapshot-height {snapshotHeight} --lisk-core-data-path ~/lisk/custom/path/  --auto-migrate-config --auto-start-klayr-core-v4
 ----
 ====
 
