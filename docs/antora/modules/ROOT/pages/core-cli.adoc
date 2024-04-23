@@ -656,7 +656,7 @@ klayr-core config:show --pretty
     "block": {
       "fromFile": "./config/genesis_block.blob"
     },
-    "blockTime": 10,
+    "blockTime": 7,
     "chainID": "04000000",
     "maxTransactionsSize": 15360
   },
@@ -770,7 +770,7 @@ klayr-core endpoint:invoke system_getNodeInfo --pretty
     "block": {
       "fromFile": "./config/genesis_block.blob"
     },
-    "blockTime": 10,
+    "blockTime": 7,
     "maxTransactionsSize": 15360,
     "chainID": "04000000"
   },
@@ -1539,7 +1539,7 @@ klayr-core system:node-info --pretty
     "block": {
       "fromFile": "./config/genesis_block.blob"
     },
-    "blockTime": 10,
+    "blockTime": 7,
     "maxTransactionsSize": 15360,
     "chainID": "04000000"
   },
