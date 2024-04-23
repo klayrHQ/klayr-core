@@ -653,14 +653,14 @@
     ws "8.11.0"
     zeromq "6.0.0-beta.6"
 
-"@klayr/chain-connector-plugin@0.1.4-alpha.0":
-  version "0.1.4-alpha.0"
-  resolved "https://registry.yarnpkg.com/@klayr/chain-connector-plugin/-/chain-connector-plugin-0.1.4-alpha.0.tgz#4f44fa8837941bc3ebca2729ff9e82752a60d285"
-  integrity sha512-Y7krvELMWlurS71j0dBPTmvgcKMMuDohVuyz/LTvQ+BaW5t0nzWjlE+d++jSf0zPQOsqo9gP+n9AgjvIcL+xTA==
+"@klayr/chain-connector-plugin@0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@klayr/chain-connector-plugin/-/chain-connector-plugin-0.1.4.tgz#f0161233fb087ac77ef4670386050357255dde2f"
+  integrity sha512-ysQO5Gs7jFwRAimcquHiL+66eTIWcj+/lBvC/D/5s0CXJrvGiMSJbSddgh6gdIrqoRvD1uWgXbxdb+t1TGuPNw==
   dependencies:
     debug "4.3.4"
     fs-extra "11.1.0"
-    klayr-sdk "^6.0.4-alpha.0"
+    klayr-sdk "^6.0.4"
 
 "@klayr/chain@^0.5.2":
   version "0.5.2"
@@ -709,10 +709,10 @@
     hash-wasm "4.9.0"
     tweetnacl "1.0.3"
 
-"@klayr/faucet-plugin@0.3.4-alpha.0":
-  version "0.3.4-alpha.0"
-  resolved "https://registry.yarnpkg.com/@klayr/faucet-plugin/-/faucet-plugin-0.3.4-alpha.0.tgz#765dde6366d169ef2afd22067544ad94e7d50d1d"
-  integrity sha512-ZPh5n9g8Jzu0N4uNu82zzydDFXujp28Oi9vuFRxAkOTw/SFYc0ca0VgWB+Q5ugXrvOE4qiNCTcFaxcYkZBGneQ==
+"@klayr/faucet-plugin@0.3.4":
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/@klayr/faucet-plugin/-/faucet-plugin-0.3.4.tgz#736a83c2c2e988097400271b4aed3b015cf88dda"
+  integrity sha512-1iD0DJBGSA2Tom6hYKWbXC57EnEiVf1TiKb6/EyNROHyy4ptA7pvnsr/bMCNodq5y1hJL2VO+1EtDPkTCqBFrg==
   dependencies:
     "@csstools/normalize.css" "12.0.0"
     "@klayr/api-client" "^6.0.3"
@@ -723,30 +723,30 @@
     "@klayr/validator" "^0.8.2"
     axios "1.2.0"
     express "4.18.2"
-    klayr-sdk "^6.0.4-alpha.0"
+    klayr-sdk "^6.0.4"
     react "^17.0.1"
     react-dom "^17.0.1"
     react-router-dom "^5.2.0"
 
-"@klayr/generator-plugin@0.4.4-alpha.0":
-  version "0.4.4-alpha.0"
-  resolved "https://registry.yarnpkg.com/@klayr/generator-plugin/-/generator-plugin-0.4.4-alpha.0.tgz#b9c5eb34a10771f49b72bce7d039e7ba30e7c34e"
-  integrity sha512-A+GAtER7mrttp8ekhoUhfu+ObagiaAQybdO9+ulbkLW2hJoiiaxHGuW0pEGuLKR/w/TnjHEQJJUk56KQEDoHEw==
+"@klayr/generator-plugin@0.4.4":
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/@klayr/generator-plugin/-/generator-plugin-0.4.4.tgz#740f6235ea1f1fcc668e449eeffdc63b3d58e795"
+  integrity sha512-AB1uMcF+vCAuVIL5Gw2UQvFf52KWiIT7kleicSDAoR23KpUaiXKR5qHzZ+ybbnUAf/aNS/tYyJyrnaCiWwOOUA==
   dependencies:
     debug "4.3.4"
     fs-extra "11.1.0"
-    klayr-sdk "^6.0.4-alpha.0"
+    klayr-sdk "^6.0.4"
 
-"@klayr/monitor-plugin@0.4.4-alpha.0":
-  version "0.4.4-alpha.0"
-  resolved "https://registry.yarnpkg.com/@klayr/monitor-plugin/-/monitor-plugin-0.4.4-alpha.0.tgz#ed077755b6b7a8f590c8c4a342725a2aeba6695a"
-  integrity sha512-GE/Rcl21xGyAbQG6LCi/BEuH2VKO4hrV1TMSJpVOiKSYyyniN2b1J4/CoTKY/qPNO2N7iNWtDE4BDqT8wnWC6Q==
+"@klayr/monitor-plugin@0.4.4":
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/@klayr/monitor-plugin/-/monitor-plugin-0.4.4.tgz#536d6e8aad0397abaf51f7a01f0681793318fa73"
+  integrity sha512-UaeFGETFHZWakpLzua6wBNCb8w9c9AiNU+xg+nLMH/6S4LTA5j05UN7oM371kv5+Mh7f9dCumZ8dq2KlYzYkhg==
   dependencies:
     cors "2.8.5"
     express "4.18.2"
     express-rate-limit "6.7.0"
     ip "1.1.5"
-    klayr-sdk "^6.0.4-alpha.0"
+    klayr-sdk "^6.0.4"
 
 "@klayr/p2p@^0.9.2":
   version "0.9.2"
@@ -768,14 +768,14 @@
   dependencies:
     bip39 "3.0.3"
 
-"@klayr/report-misbehavior-plugin@0.4.4-alpha.0":
-  version "0.4.4-alpha.0"
-  resolved "https://registry.yarnpkg.com/@klayr/report-misbehavior-plugin/-/report-misbehavior-plugin-0.4.4-alpha.0.tgz#650061d3c6f7c2abe8cf4650a409e7227d85f9fb"
-  integrity sha512-Iml9k3nwkQJwIZiB8C3PwA4IWlAwz/0n7vacQuLlmpJRXno9PGVbSu49/4FIAilbxwT4eLuW1eTlZrBWoZzYoQ==
+"@klayr/report-misbehavior-plugin@0.4.4":
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/@klayr/report-misbehavior-plugin/-/report-misbehavior-plugin-0.4.4.tgz#5e039583e8c393976fd8c072f8ee9712786246d4"
+  integrity sha512-jCTDYqcYcjgrrO1RvKCobs9+k4jfrXFPNTGo604HsZw5nXqJlM/W2DDkt39HdMSx967kIXmWqVVOQqo6mctsxQ==
   dependencies:
     "@klayr/cryptography" "^4.0.2"
     fs-extra "11.1.0"
-    klayr-sdk "^6.0.4-alpha.0"
+    klayr-sdk "^6.0.4"
 
 "@klayr/transaction-pool@^0.7.2":
   version "0.7.2"
@@ -5300,10 +5300,10 @@ keyv@^4.5.3:
   dependencies:
     json-buffer "3.0.1"
 
-klayr-commander@6.0.5-alpha.0:
-  version "6.0.5-alpha.0"
-  resolved "https://registry.yarnpkg.com/klayr-commander/-/klayr-commander-6.0.5-alpha.0.tgz#754a0e82a644b5dadabb715dc1d747102b229c53"
-  integrity sha512-RzL1/bd94eZ/mUg91V5C3B1HjcxYMzu8nYMvM5c/KLwwUICwIejrKjc5QBZlmMlUkxaq8/qXxWQoxW4jwOJOyw==
+klayr-commander@6.0.5:
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/klayr-commander/-/klayr-commander-6.0.5.tgz#5ea7727ba27777a05347962cfe2516144d7f0987"
+  integrity sha512-TWrP5iT4Wn80Qfxvs0aFCFJEbKDHorfh+ZbeynlilX6gQ5mGPJYQwBr3EdlT78S5M+7+7gWFVRlPPkovTGTDiQ==
   dependencies:
     "@klayr/api-client" "^6.0.3"
     "@klayr/chain" "^0.5.2"
@@ -5325,7 +5325,7 @@ klayr-commander@6.0.5-alpha.0:
     cli-table3 "0.6.0"
     fs-extra "11.1.0"
     inquirer "8.2.5"
-    klayr-framework "^0.11.4-alpha.1"
+    klayr-framework "^0.11.4"
     listr "0.14.3"
     progress "2.0.3"
     semver "7.5.2"
@@ -5336,10 +5336,10 @@ klayr-commander@6.0.5-alpha.0:
     yeoman-environment "3.12.1"
     yeoman-generator "5.7.0"
 
-klayr-framework@0.11.4-alpha.1, klayr-framework@^0.11.4-alpha.1:
-  version "0.11.4-alpha.1"
-  resolved "https://registry.yarnpkg.com/klayr-framework/-/klayr-framework-0.11.4-alpha.1.tgz#fba31af6e783add6d0480ee828b10594e2780f02"
-  integrity sha512-ZkIO9+Au4wd04pNnS4IbkXtOuSFd17M2FLxWxCnhPWOCAodOnbV9cMXxNEkHck5zv9SbLYoB9KU3OhGuxwtXtg==
+klayr-framework@0.11.4, klayr-framework@^0.11.4:
+  version "0.11.4"
+  resolved "https://registry.yarnpkg.com/klayr-framework/-/klayr-framework-0.11.4.tgz#49ad8b1664363b791f6e94000424d8c68ebc0b63"
+  integrity sha512-VBIJJYCKlYhCzZILy5e3JwBlAesQti9urgWelkW0F6IHvAEshFMP4HMReLy7CmcB4W2WbfvtZX5KbERWdosKvw==
   dependencies:
     "@chainsafe/blst" "0.2.9"
     "@klayr/api-client" "^6.0.3"
@@ -5363,10 +5363,10 @@ klayr-framework@0.11.4-alpha.1, klayr-framework@^0.11.4-alpha.1:
     ws "8.11.0"
     zeromq "6.0.0-beta.6"
 
-klayr-sdk@6.0.4-alpha.0, klayr-sdk@^6.0.4-alpha.0:
-  version "6.0.4-alpha.0"
-  resolved "https://registry.yarnpkg.com/klayr-sdk/-/klayr-sdk-6.0.4-alpha.0.tgz#484254cba260f56892e97c671b1532171895b698"
-  integrity sha512-pi5zIbM1bjcfSuE1ZJjcur/6Wk8iCLGieYI59k9Yu0MJzQ2VBe7+uN4hOuwy5cwxkrl2QgBMrnlzc/UpB/qy6g==
+klayr-sdk@6.0.4, klayr-sdk@^6.0.4:
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/klayr-sdk/-/klayr-sdk-6.0.4.tgz#c7d07637f04b23b65c0310fe2c9c1879d632b762"
+  integrity sha512-b4edRzRIVyxjRSRt+Fw8x8KCGmKWSPcKb8BBWzDsHMjzthyEBFCEdH89c7qMQqREInsmSZqVwSnuTNZmmHkb0A==
   dependencies:
     "@klayr/api-client" "^6.0.3"
     "@klayr/chain" "^0.5.2"
@@ -5380,7 +5380,7 @@ klayr-sdk@6.0.4-alpha.0, klayr-sdk@^6.0.4-alpha.0:
     "@klayr/utils" "^0.4.2"
     "@klayr/validator" "^0.8.2"
     "@liskhq/lisk-db" "0.3.10"
-    klayr-framework "^0.11.4-alpha.1"
+    klayr-framework "^0.11.4"
 
 kleur@^3.0.3:
   version "3.0.3"
