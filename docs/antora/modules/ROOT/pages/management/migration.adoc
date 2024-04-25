@@ -4,8 +4,8 @@
 :experimental:
 :idprefix:
 :idseparator: -
-:snapshotHeight: -
-:snapshotHeightTestnet: 21916546
+:snapshotHeight: 24823618
+:snapshotHeightTestnet: 21976183
 :initRounds: 587
 :initRoundsTime: 1 week
 :klayr-migrator: klayr-migrator-v2.0.9-linux-x64.tar.gz
