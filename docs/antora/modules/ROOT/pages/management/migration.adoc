@@ -44,7 +44,7 @@ The new genesis block is created based on a snapshot of the old Lisk blockchain 
 
 [IMPORTANT]
 ====
-All active validators on the Lisk Mainnet and the Lisk Testnet need to follow this guide to correctly migrate their nodes to the new network, in order to not miss any blocks after the network hard fork.
+All active validators on the Lisk Mainnet and the Lisk Testnet need to follow this guide to correctly migrate their nodes to the new network in order to not miss any blocks after the network hard fork.
 
 Optionally, anyone running a Lisk Core v4.0.2 (or later) who is not an active validator can also participate in the migration process.
 In this case, the following steps 2.4 and 2.5 in this guide can be skipped, as they are only relevant for the current validators.
@@ -261,10 +261,10 @@ In case the `klayr-migrator` was extracted somewhere other than your home direct
 
 === Check the announced snapshot height
 
-* For Mainnet: {snapshotHeight} +
-For more information check the {url_klayr_blog_migration_mainnet}[Mainnet migration announcement^].
-* For Testnet: {snapshotHeightTestnet} +
-For more information check the {url_klayr_blog_migration}[Testnet migration announcement^].
+* For Mainnet: `{snapshotHeight}` +
+// For more information check the {url_klayr_blog_migration_mainnet}[Mainnet migration announcement^].
+* For Testnet: `{snapshotHeightTestnet}` +
+// For more information check the {url_klayr_blog_migration}[Testnet migration announcement^].
 
 The height is needed by the `klayr-migrator` in the next step.
 A snapshot of the blockchain will be created at this particular height, which will then be used to create the genesis block for the new blockchain.
