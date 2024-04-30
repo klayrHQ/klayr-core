@@ -561,12 +561,14 @@ Add the `namespace`, to allow all endpoints of `namespace`, or `namespace_endpoi
 ====
 
 ==== Create the validator keys
+NOTE: Most likely you already have a `keys.json` file from the Lisk Core v4 node. Skip this step if you have already have a `keys.json` file.
 
 It is possible to generate all relevant validator keys to enable block generation from the account passphrase.
 
 To do so, use the command xref:{url_sdk_cli_keyscreate}[keys:create].
 
 IMPORTANT: The flag `--add-legacy` is only available in Klayr Core v4.0.0 or later.
+
 
 [tabs]
 ====
@@ -658,6 +660,12 @@ So after the keys are imported in step <<import-the-validator-keys>>, make sure 
 ==== Import the validator keys
 
 After creating the validator keys as suggested in the  <<create-the-validator-keys>> section, the next step is to import them into the node.
+
+[IMPORTANT]
+====
+You most likely already have a `keys.json` file from the Lisk Core v4 node. If you have already created the keys for the Klayr Core node, you need to update the address in the `keys.json` file to the new address of the validator.
+By replacing the `lsk` prefix with `kly` in the address, you can use the same keys for the Klayr Core node.
+====
 
 [source,bash]
 ----
