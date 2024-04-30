@@ -663,7 +663,7 @@ After creating the validator keys as suggested in the  <<create-the-validator-ke
 
 [IMPORTANT]
 ====
-You most likely already have a `keys.json` file from the Lisk Core v4 node. If you have already created the keys for the Klayr Core node, you need to update the address in the `keys.json` file to the new address of the validator.
+You most likely already have a `keys.json` file from the Lisk Core v4 node. If you have already have the keys file, you need to update the address in the `keys.json` file to the new address of the validator.
 By replacing the `lsk` prefix with `kly` in the address, you can use the same keys for the Klayr Core node.
 ====
 
