@@ -8,5 +8,4 @@
 ** xref:update/update-docker.adoc[]
 * Management
 ** xref:management/configuration.adoc[]
-** xref:management/migration.adoc[]
 * xref:core-cli.adoc[]
