@@ -15,24 +15,7 @@ import {
 	LENGTH_GENERATOR_KEY,
 	LENGTH_PROOF_OF_POSSESSION,
 	LENGTH_BLS_KEY,
-	LENGTH_LEGACY_ADDRESS,
 } from './constants';
-
-import { legacyAccountStoreSchema } from './stores/legacyAccount';
-
-export const legacyAccountResponseSchema = legacyAccountStoreSchema;
-
-export const reclaimKLYParamsSchema = {
-	$id: '/legacy/command/reclaimLSKParams',
-	type: 'object',
-	required: ['amount'],
-	properties: {
-		amount: {
-			dataType: 'uint64',
-			fieldNumber: 1,
-		},
-	},
-};
 
 export const registerKeysParamsSchema = {
 	$id: '/legacy/command/registerKeysParams',
@@ -56,46 +39,6 @@ export const registerKeysParamsSchema = {
 			minLength: LENGTH_GENERATOR_KEY,
 			maxLength: LENGTH_GENERATOR_KEY,
 			fieldNumber: 3,
-		},
-	},
-};
-
-export const genesisStoreSchema = {
-	$id: '/legacy/module/genesis',
-	type: 'object',
-	required: ['accounts'],
-	properties: {
-		accounts: {
-			type: 'array',
-			fieldNumber: 1,
-			items: {
-				type: 'object',
-				required: ['address', 'balance'],
-				properties: {
-					address: {
-						dataType: 'bytes',
-						minLength: LENGTH_LEGACY_ADDRESS,
-						maxLength: LENGTH_LEGACY_ADDRESS,
-						fieldNumber: 1,
-					},
-					balance: {
-						dataType: 'uint64',
-						fieldNumber: 2,
-					},
-				},
-			},
-		},
-	},
-};
-
-export const legacyAccountRequestSchema = {
-	$id: '/legacy/endpoint/legacyAccountRequest',
-	type: 'object',
-	required: ['publicKey'],
-	properties: {
-		publicKey: {
-			type: 'string',
-			format: 'hex',
 		},
 	},
 };

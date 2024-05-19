@@ -11,52 +11,6 @@
  *
  * Removal or modification of this copyright notice is prohibited.
  */
-import {
-	BaseEndpoint,
-	JSONObject,
-	ModuleEndpointContext,
-	chain,
-	validator as klayrValidator,
-} from 'klayr-sdk';
-import { legacyAccountRequestSchema } from './schemas';
-import { LegacyAccountStore } from './stores/legacyAccount';
-import { LegacyStoreData } from './types';
-import { getLegacyAddress } from './utils';
+import { BaseEndpoint } from 'klayr-sdk';
 
-// eslint-disable-next-line prefer-destructuring
-const validator: klayrValidator.KlayrValidator = klayrValidator.validator;
-
-const { NotFoundError } = chain;
-
-export class LegacyEndpoint extends BaseEndpoint {
-	public async getLegacyAccount(
-		ctx: ModuleEndpointContext,
-	): Promise<JSONObject<LegacyStoreData> | undefined> {
-		try {
-			validator.validate(legacyAccountRequestSchema, ctx.params);
-
-			const publicKey = Buffer.from(ctx.params.publicKey as string, 'hex');
-			const legacyStore = this.stores.get(LegacyAccountStore);
-
-			const legacyAddressBuffer = getLegacyAddress(publicKey);
-			const legacyAddress = legacyAddressBuffer.toString('hex');
-			const hasLegacyAddress = await legacyStore.has(ctx, legacyAddressBuffer);
-			if (!hasLegacyAddress) {
-				return {
-					legacyAddress,
-					balance: '0',
-				};
-			}
-			const legacyAccount = await legacyStore.get(ctx, legacyAddressBuffer);
-			return {
-				legacyAddress,
-				balance: legacyAccount.balance.toString(),
-			};
-		} catch (err) {
-			if (err instanceof NotFoundError) {
-				return undefined;
-			}
-			throw err;
-		}
-	}
-}
+export class LegacyEndpoint extends BaseEndpoint {}

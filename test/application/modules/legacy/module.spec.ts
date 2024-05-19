@@ -14,63 +14,17 @@
 
 import {
 	BaseModule,
-	codec,
-	cryptography,
-	GenesisBlockExecuteContext,
-	PoSMethod,
-	TokenMethod,
-	ValidatorsMethod,
 } from 'klayr-sdk';
-import { when } from 'jest-when';
 
-import { genesis as genesisConfig } from '../../../../config/mainnet/config.json';
 import { LegacyModule } from '../../../../src/application/modules';
 import { LegacyMethod } from '../../../../src/application/modules/legacy/method';
 import { LegacyEndpoint } from '../../../../src/application/modules/legacy/endpoint';
 import {
 	MODULE_NAME_LEGACY,
-	LEGACY_ACC_MAX_TOTAL_BAL_NON_INC,
-	defaultConfig,
 } from '../../../../src/application/modules/legacy/constants';
-import { genesisStoreSchema } from '../../../../src/application/modules/legacy/schemas';
-import { genesisLegacyStore } from '../../../../src/application/modules/legacy/types';
-
-const getLegacyBytesFromPassphrase = (passphrase: string): Buffer => {
-	const { publicKey } = cryptography.legacy.getKeys(passphrase);
-	return cryptography.legacyAddress.getFirstEightBytesReversed(cryptography.utils.hash(publicKey));
-};
-
-const getContext = (accounts: genesisLegacyStore, getStore: any, getMethodContext): any => {
-	const mockAssets = codec.encode(genesisStoreSchema, accounts);
-	return {
-		assets: {
-			getAsset: () => mockAssets,
-		},
-		getStore,
-		getMethodContext,
-	} as any;
-};
 
 describe('LegacyModule', () => {
 	let legacyModule: LegacyModule;
-	type Accounts = Record<
-		string,
-		{
-			passphrase: string;
-		}
-	>;
-
-	const testAccounts: Accounts = {
-		account1: {
-			passphrase: 'float slow tiny rubber seat lion arrow skirt reveal garlic draft shield',
-		},
-		account2: {
-			passphrase: 'hand nominee keen alarm skate latin seek fox spring guilt loop snake',
-		},
-		account3: {
-			passphrase: 'february large secret save risk album opera rebel tray roast air captain',
-		},
-	};
 
 	beforeAll(() => {
 		legacyModule = new LegacyModule();
@@ -96,22 +50,6 @@ describe('LegacyModule', () => {
 		});
 	});
 
-	describe('init', () => {
-		it('should initialize config with defaultConfig', async () => {
-			const moduleConfig = {
-				tokenIDReclaim: Buffer.from(defaultConfig.tokenIDReclaim, 'hex'),
-			} as any;
-			await expect(
-				legacyModule.init({
-					// Manually adding 'bftBatchSize', since SDK now internally calculates 'bftBatchSize' based on pos.numberActiveValidators + pos.numberStandbyValidators
-					genesisConfig: { ...genesisConfig, bftBatchSize: 103 },
-					moduleConfig: {},
-				}),
-			).resolves.toBeUndefined();
-			expect(legacyModule.moduleConfig).toEqual(moduleConfig);
-		});
-	});
-
 	describe('metadata', () => {
 		it('should return module metadata', () => {
 			const moduleMetadata = legacyModule.metadata();
@@ -123,227 +61,12 @@ describe('LegacyModule', () => {
 				'assets',
 				'stores',
 			]);
-			expect(moduleMetadata.endpoints).toHaveLength(1);
-			expect(moduleMetadata.commands).toHaveLength(2);
-			expect(moduleMetadata.events).toHaveLength(2);
-			expect(moduleMetadata.assets).toHaveLength(1);
+			expect(moduleMetadata.endpoints).toHaveLength(0);
+			expect(moduleMetadata.commands).toHaveLength(1);
+			expect(moduleMetadata.events).toHaveLength(1);
+			expect(moduleMetadata.assets).toHaveLength(0);
 			expect(moduleMetadata.stores).toHaveLength(0);
 		});
 	});
 
-	describe('initGenesisState', () => {
-		let storeData: genesisLegacyStore;
-		const mockSetWithSchema = jest.fn();
-		const mockStoreHas = jest.fn();
-
-		const getStore: any = () => ({
-			setWithSchema: mockSetWithSchema,
-			has: mockStoreHas,
-		});
-
-		const getMethodContext: any = () => ({
-			getStore,
-		});
-
-		beforeEach(() => {
-			storeData = { accounts: [] };
-			for (const account of Object.values(testAccounts)) {
-				storeData.accounts.push({
-					address: getLegacyBytesFromPassphrase(account.passphrase),
-					balance: BigInt(Math.floor(Math.random() * 1000)),
-				});
-			}
-		});
-
-		it('should return undefined when legacy assets does not exists', async () => {
-			const genesisBlockExecuteContextInput = {
-				assets: { getAsset: jest.fn() },
-				getStore,
-				getMethodContext,
-			};
-
-			when(genesisBlockExecuteContextInput.assets.getAsset)
-				.calledWith(legacyModule.name)
-				.mockReturnValue(false);
-			await expect(
-				legacyModule.initGenesisState(
-					(genesisBlockExecuteContextInput as unknown) as GenesisBlockExecuteContext,
-				),
-			).resolves.toBeUndefined();
-		});
-
-		it('should reject the block when address entries are not pair-wise distinct', async () => {
-			const genesisBlockExecuteContextInput = getContext(
-				{ accounts: [...storeData.accounts, ...storeData.accounts] },
-				getStore,
-				getMethodContext,
-			) as GenesisBlockExecuteContext;
-
-			await expect(
-				legacyModule.initGenesisState(genesisBlockExecuteContextInput),
-			).rejects.toThrow();
-		});
-
-		it('should save legacy accounts to state store if accounts are valid', async () => {
-			const currentTotalBalance = storeData.accounts.reduce(
-				(total, account) => total + account.balance,
-				BigInt('0'),
-			);
-
-			const genesisBlockExecuteContextInput = getContext(storeData, getStore, getMethodContext);
-
-			const tokenMethod = ({
-				getLockedAmount: jest.fn().mockResolvedValue(BigInt(currentTotalBalance)),
-			} as unknown) as TokenMethod;
-			const posMethod = ({
-				unbanValidator: jest.fn(),
-			} as unknown) as PoSMethod;
-			legacyModule.addDependencies(
-				tokenMethod,
-				({ setValidatorBLSKey: jest.fn() } as unknown) as ValidatorsMethod,
-				posMethod,
-			);
-
-			await legacyModule.initGenesisState(
-				(genesisBlockExecuteContextInput as unknown) as GenesisBlockExecuteContext,
-			);
-
-			for (const account of storeData.accounts) {
-				when(mockStoreHas).calledWith(account.address).mockReturnValue(true);
-				const isAccountInStore = await genesisBlockExecuteContextInput
-					.getStore()
-					.has(account.address);
-				expect(isAccountInStore).toBe(true);
-			}
-		});
-
-		it('should save legacy accounts to state store when total balance for all legacy accounts is less than 2^64', async () => {
-			const currentTotalBalance = storeData.accounts.reduce(
-				(total, account) => total + account.balance,
-				BigInt('0'),
-			);
-
-			storeData.accounts.push({
-				address: getLegacyBytesFromPassphrase(
-					'dolphin curious because horror unfold smoke write type badge ecology say pet',
-				),
-				balance: BigInt(LEGACY_ACC_MAX_TOTAL_BAL_NON_INC) - currentTotalBalance - BigInt('1'),
-			});
-
-			const UpdatedTotalBalance = storeData.accounts.reduce(
-				(total, account) => total + account.balance,
-				BigInt('0'),
-			);
-
-			const genesisBlockExecuteContextInput = getContext(storeData, getStore, getMethodContext);
-
-			const tokenMethod = ({
-				getLockedAmount: jest.fn().mockResolvedValue(BigInt(UpdatedTotalBalance)),
-			} as unknown) as TokenMethod;
-			const posMethod = ({
-				unbanValidator: jest.fn(),
-			} as unknown) as PoSMethod;
-			legacyModule.addDependencies(
-				tokenMethod,
-				({ setValidatorBLSKey: jest.fn() } as unknown) as ValidatorsMethod,
-				posMethod,
-			);
-
-			await legacyModule.initGenesisState(
-				genesisBlockExecuteContextInput as GenesisBlockExecuteContext,
-			);
-
-			for (const account of storeData.accounts) {
-				when(mockStoreHas).calledWith(account.address).mockReturnValue(true);
-				const isAccountInStore = await genesisBlockExecuteContextInput
-					.getStore()
-					.has(account.address);
-				expect(isAccountInStore).toBe(true);
-			}
-		});
-
-		it('should reject the block when total balance for all legacy accounts equals 2^64', async () => {
-			const currentTotalBalance = storeData.accounts.reduce(
-				(total, account) => total + account.balance,
-				BigInt('0'),
-			);
-
-			storeData.accounts.push({
-				address: getLegacyBytesFromPassphrase(
-					'strategy phone follow wait moon figure cart primary comic recall silver donate',
-				),
-				balance: BigInt(LEGACY_ACC_MAX_TOTAL_BAL_NON_INC) - currentTotalBalance,
-			});
-			const genesisBlockExecuteContextInput = getContext(
-				storeData,
-				getStore,
-				getMethodContext,
-			) as GenesisBlockExecuteContext;
-
-			await expect(
-				legacyModule.initGenesisState(genesisBlockExecuteContextInput),
-			).rejects.toThrow();
-		});
-
-		it('should reject the block when total balance for all legacy accounts is greater than 2^64', async () => {
-			storeData.accounts.push({
-				address: getLegacyBytesFromPassphrase(
-					'elephant version solar amused enhance fuel black armor vendor regular tortoise tank',
-				),
-				balance: BigInt(LEGACY_ACC_MAX_TOTAL_BAL_NON_INC),
-			});
-			const genesisBlockExecuteContextInput = getContext(
-				storeData,
-				getStore,
-				getMethodContext,
-			) as GenesisBlockExecuteContext;
-
-			await expect(
-				legacyModule.initGenesisState(genesisBlockExecuteContextInput),
-			).rejects.toThrow();
-		});
-
-		it('should reject the block when address property of accounts is invalid', async () => {
-			const invalidLegacyAccountAddresses = ['02089ca', '0208930ca', '4644873072065426945L'];
-			for (const invalidLegacyAddress of invalidLegacyAccountAddresses) {
-				const updatedStoreData = { accounts: [...storeData.accounts] };
-				updatedStoreData.accounts.push({
-					address: Buffer.from(invalidLegacyAddress),
-					balance: BigInt(Math.floor(Math.random()) * 1000),
-				});
-				const genesisBlockExecuteContextInput = getContext(
-					updatedStoreData,
-					getStore,
-					getMethodContext,
-				) as GenesisBlockExecuteContext;
-
-				await expect(
-					legacyModule.initGenesisState(genesisBlockExecuteContextInput),
-				).rejects.toThrow();
-			}
-		});
-
-		it('should reject the block when total balance for all legacy accounts is not equal to lockedAmount', async () => {
-			const genesisBlockExecuteContextInput = getContext(
-				storeData,
-				getStore,
-				getMethodContext,
-			) as GenesisBlockExecuteContext;
-			const tokenMethod = ({
-				getLockedAmount: jest.fn().mockResolvedValue(BigInt(10000100000)),
-			} as unknown) as TokenMethod;
-			const posMethod = ({
-				unbanValidator: jest.fn(),
-			} as unknown) as PoSMethod;
-			legacyModule.addDependencies(
-				tokenMethod,
-				({ setValidatorBLSKey: jest.fn() } as unknown) as ValidatorsMethod,
-				posMethod,
-			);
-
-			await expect(
-				legacyModule.initGenesisState(genesisBlockExecuteContextInput),
-			).rejects.toThrow();
-		});
-	});
 });
