@@ -12,29 +12,14 @@
  * Removal or modification of this copyright notice is prohibited.
  *
  */
-import { cryptography } from 'klayr-sdk';
-
-const {
-	utils: { hash },
-} = cryptography;
-
 export const MODULE_NAME_LEGACY = 'legacy';
-export const LEGACY_ACCOUNT_LENGTH = 8;
-export const LEGACY_ACC_MAX_TOTAL_BAL_NON_INC = 2 ** 64;
 
 // Commands
 export const COMMAND_RECLAIM = 'reclaimKLY';
 export const COMMAND_REGISTER_KEYS = 'registerKeys';
-export const ADDRESS_LEGACY_RESERVE = hash(Buffer.from('legacyReserve', 'utf8')).slice(0, 20);
-export const TOKEN_ID_KLY = '0000000000000000'; // On Mainnet
 
 export const INVALID_BLS_KEY = Buffer.alloc(48);
 
-export const defaultConfig = {
-	tokenIDReclaim: TOKEN_ID_KLY,
-};
-
-export const LENGTH_LEGACY_ADDRESS = 8;
 export const LENGTH_ADDRESS = 20;
 
 export const LENGTH_GENERATOR_KEY = 32;

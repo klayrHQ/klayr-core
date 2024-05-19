@@ -11,41 +11,8 @@
  *
  * Removal or modification of this copyright notice is prohibited.
  */
-import { GenesisConfig, JSONObject } from 'klayr-sdk';
-
-export interface LegacyStoreData {
-	legacyAddress: string;
-	balance: bigint;
-}
-
-export interface ReclaimKLYParamsData {
-	amount: bigint;
-}
-
-export type TokenIDReclaim = Buffer;
-
-export interface ModuleConfig {
-	tokenIDReclaim: TokenIDReclaim;
-}
-
-export type ModuleConfigJSON = JSONObject<ModuleConfig>;
-
-export interface ModuleInitArgs {
-	genesisConfig: GenesisConfig;
-	moduleConfig: Record<string, unknown>;
-}
-
 export interface registerKeysData {
 	blsKey: Buffer;
 	proofOfPossession: Buffer;
 	generatorKey: Buffer;
 }
-
-export interface genesisLegacyStore {
-	accounts: {
-		address: Buffer;
-		balance: bigint;
-	}[];
-}
-
-export type ModuleName = string;
