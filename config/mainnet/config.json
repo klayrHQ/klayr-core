@@ -86,7 +86,7 @@
 		},
 		"pos": {
 			"maxBFTWeightCap": 1000,
-			"useInvalidBLSKey": true
+			"useInvalidBLSKey": false
 		}
 	},
 	"plugins": {}

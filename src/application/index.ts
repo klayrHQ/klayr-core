@@ -13,14 +13,8 @@
  */
 import { Application, PartialApplicationConfig } from 'klayr-sdk';
 
-import { LegacyModule } from './modules';
-
 export const getApplication = (config: PartialApplicationConfig): Application => {
-	const { app, method } = Application.defaultApplication(config, true);
-	const legacyModule = new LegacyModule();
-
-	legacyModule.addDependencies(method.validator, method.pos);
-	app.registerModule(legacyModule);
+	const { app } = Application.defaultApplication(config, true);
 
 	return app;
 };

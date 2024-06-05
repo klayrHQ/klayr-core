@@ -19,10 +19,10 @@
 		"blockTime": 7,
 		"chainID": "01000000",
 		"maxTransactionsSize": 15360,
-		"minimumCertifyHeight": 66250
+		"minimumCertifyHeight": 27295
 	},
 	"network": {
-		"version": "6.0",
+		"version": "6.1",
 		"seedPeers": [
 			{
 				"ip": "testnet-seed-01.klayr.xyz",
@@ -57,7 +57,7 @@
 	"modules": {
 		"dynamicReward": {
 			"tokenID": "0100000000000000",
-			"offset": 66250,
+			"offset": 27295,
 			"distance": 9200000,
 			"brackets": ["200000000", "100000000"]
 		},
@@ -66,7 +66,7 @@
 		},
 		"pos": {
 			"maxBFTWeightCap": 1000,
-			"useInvalidBLSKey": true
+			"useInvalidBLSKey": false
 		}
 	},
 	"plugins": {}
