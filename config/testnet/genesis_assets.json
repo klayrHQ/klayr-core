@@ -113,12 +113,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"fdbc75686fda5a5b3c4c1e26d29441358a110eba3cde75d59ca17e7bbf09191e"
-							],
-							"optionalKeys": [
-								"ca160202e4210851170abeb91088637ddfa14b235c241b5070a5e06bde5b856c"
-							],
+							"mandatoryKeys": ["fdbc75686fda5a5b3c4c1e26d29441358a110eba3cde75d59ca17e7bbf09191e"],
+							"optionalKeys": ["ca160202e4210851170abeb91088637ddfa14b235c241b5070a5e06bde5b856c"],
 							"nonce": "0"
 						},
 						"address": "klyzxdmn8y3tqre369edt6698mtp42w26d4rhnhrs"
@@ -207,9 +203,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"c6ef1dc64dd249813384802509faedacffaf8a83119d93014862e191343a72be"
-							],
+							"mandatoryKeys": ["c6ef1dc64dd249813384802509faedacffaf8a83119d93014862e191343a72be"],
 							"optionalKeys": [
 								"707f5dee5c6c23741e6d8abfb19b45ea4e3f91fc8d68ae333483dcff6facb2f0",
 								"ab2656454ee67782a3a2267b0123f3070ed89ec29bc6e0d0636ce84131ad9d0d"
@@ -347,12 +341,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"d1c08341408884d1ecab000e14b1f4688ad7f59640e5a257a10fcd2b8c779418"
-							],
-							"optionalKeys": [
-								"ef5c868b8e9164b620f6523761433b84424dca7368db1216bb279a6ebdf02cff"
-							],
+							"mandatoryKeys": ["d1c08341408884d1ecab000e14b1f4688ad7f59640e5a257a10fcd2b8c779418"],
+							"optionalKeys": ["ef5c868b8e9164b620f6523761433b84424dca7368db1216bb279a6ebdf02cff"],
 							"nonce": "0"
 						},
 						"address": "klyzb4zvqvj83782d894phjnkx2p3q7hdbcqpuha7"
@@ -463,9 +453,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"da64ac59ec5c9f5c5ff589ca876ba6580769f5829e33a7d2ffe588509f1a36ec"
-							],
+							"mandatoryKeys": ["da64ac59ec5c9f5c5ff589ca876ba6580769f5829e33a7d2ffe588509f1a36ec"],
 							"optionalKeys": [
 								"40476969a4e7431c81a78d0694b168ffbc0893f2791fdcac10b1e3700aef0d68",
 								"570879f50f2369dbf78a5d952254c0ea78e2cc2fbf4e413224261f6599b75318"
@@ -561,12 +549,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"903bfcab8745accb572b6ebe266929e753dd936c921a94d1121fedb9e7e63850"
-							],
-							"optionalKeys": [
-								"b1f9ca64d66e4d62a79af0dc84adfc778a71e8a7b80737457b0d6c6734813e86"
-							],
+							"mandatoryKeys": ["903bfcab8745accb572b6ebe266929e753dd936c921a94d1121fedb9e7e63850"],
+							"optionalKeys": ["b1f9ca64d66e4d62a79af0dc84adfc778a71e8a7b80737457b0d6c6734813e86"],
 							"nonce": "0"
 						},
 						"address": "klyz4a59mpmh3hytk3z9nxkpjvzsby6d3cckqwqcz"
@@ -592,9 +576,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"90c23507e1b8d6b19df26ab6d535d63ca96fb14ba1593d3f20c29123e2162985"
-							],
+							"mandatoryKeys": ["90c23507e1b8d6b19df26ab6d535d63ca96fb14ba1593d3f20c29123e2162985"],
 							"optionalKeys": [
 								"773eb3b52fc7a861d17d43d53eb71e78d4567fd102dca59f1fd58dd297f5c76e",
 								"bd2ac47309840c23a883349d0e2fdc44e73be180412d5675611ebf94c9060aab"
@@ -861,9 +843,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"e80ba4ad0d24bd0c760859d50844a23e4c8f8f91fa71f97a975ab0652182261d"
-							],
+							"mandatoryKeys": ["e80ba4ad0d24bd0c760859d50844a23e4c8f8f91fa71f97a975ab0652182261d"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -905,9 +885,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"ecc05e744899388b168ed49deab9de065665ec6595af017c6195f7c1a5797306"
-							],
+							"mandatoryKeys": ["ecc05e744899388b168ed49deab9de065665ec6595af017c6195f7c1a5797306"],
 							"optionalKeys": [
 								"ca9a38190c98693e79dbe119ef7f51caa48b276d1ec0d30879b3b541c4d8a120",
 								"cf042242e2035718d46f302f4cce9e3f3f27c035721f45fd865538228361f59a"
@@ -1045,9 +1023,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"6f9e232b8eea612a519951ca6f501591b62e2dfe4de11668d33481588ed6aa0b"
-							],
+							"mandatoryKeys": ["6f9e232b8eea612a519951ca6f501591b62e2dfe4de11668d33481588ed6aa0b"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -1110,9 +1086,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"ddfd246cff0fa204d4e163a4603d20143f76eef6a63f96c11a11aac635570520"
-							],
+							"mandatoryKeys": ["ddfd246cff0fa204d4e163a4603d20143f76eef6a63f96c11a11aac635570520"],
 							"optionalKeys": [
 								"698e30d4063ce2deab9dbe41839f5a27957a09612b4363bede7d06cdc97b4502",
 								"7abb46d6974c89ee8ffbfcc628a5bae76bdec8f05d65b812e3c5836505d18530"
@@ -1169,9 +1143,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"044f9777c246b691a93cb7a0ddda30fb44a460fd6d0ea5c5c8949f030ebacf54"
-							],
+							"mandatoryKeys": ["044f9777c246b691a93cb7a0ddda30fb44a460fd6d0ea5c5c8949f030ebacf54"],
 							"optionalKeys": [
 								"8f617c5c00cfe6ab6dad4b3767cc6d7d059718db0cd4508b102ac2dafff6f89e",
 								"cd2ee670517a77f7364eb33a1e2e7cbfffc4b25ff13004310c5d6b0e392d091e"
@@ -1210,9 +1182,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"fdfa94ab38af863d649d08e0ea81fd649bcfb314a60d3f2a07863a45823c8d50"
-							],
+							"mandatoryKeys": ["fdfa94ab38af863d649d08e0ea81fd649bcfb314a60d3f2a07863a45823c8d50"],
 							"optionalKeys": [
 								"8718c7a28f90b7f46f28e30c60dedec573c4400baf44a5a89fcf5bffae5396df",
 								"d2429c297d4fb6b7a83c5f2a9275344e4617f28dd07e634ea100ee15342f9489"
@@ -1420,12 +1390,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"1b32707784c9c9614a3f0417a4ac4a26c2372a97c1e0ff2c1feaf4bca75c029b"
-							],
-							"optionalKeys": [
-								"cc9e9212cabfe8c031c00c9de9d33e07f09b6cbcc3a57a642b58e361407d75f2"
-							],
+							"mandatoryKeys": ["1b32707784c9c9614a3f0417a4ac4a26c2372a97c1e0ff2c1feaf4bca75c029b"],
+							"optionalKeys": ["cc9e9212cabfe8c031c00c9de9d33e07f09b6cbcc3a57a642b58e361407d75f2"],
 							"nonce": "0"
 						},
 						"address": "klyzsj2nxm9gmx3sf2cavjbfyv4ye99j8wcmg4wyg"
@@ -1539,12 +1505,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"7b9184047a7e537506032d0214e985ca6c8a6e5ef9ecb031b55d4000588840ba"
-							],
-							"optionalKeys": [
-								"28663fbe31f8ab79dbec0f509dfb09d4b367cc0e4ce6fe249898355e27ae9e36"
-							],
+							"mandatoryKeys": ["7b9184047a7e537506032d0214e985ca6c8a6e5ef9ecb031b55d4000588840ba"],
+							"optionalKeys": ["28663fbe31f8ab79dbec0f509dfb09d4b367cc0e4ce6fe249898355e27ae9e36"],
 							"nonce": "0"
 						},
 						"address": "klyzgq3bdwvfp6wcm57nh36cn6ss8o87y8npsxaq8"
@@ -1552,9 +1514,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"285f9905b99ff3dd392973478dc16f80541dd656eed977c0a499a83ed358f988"
-							],
+							"mandatoryKeys": ["285f9905b99ff3dd392973478dc16f80541dd656eed977c0a499a83ed358f988"],
 							"optionalKeys": [
 								"5f3fb8a5cfece17c8fe6e7403f7a0b3d10e95255b1436352136321286cf6d0c6",
 								"fd061b9146691f3c56504be051175d5b76d1b1d0179c5c4370e18534c5882122"
@@ -1593,9 +1553,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"cd56c433f5affcc674f8a54a7c50e6dae73178dec29c084f0192620751db6523"
-							],
+							"mandatoryKeys": ["cd56c433f5affcc674f8a54a7c50e6dae73178dec29c084f0192620751db6523"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -1715,9 +1673,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"dad1f8b43e778b3e1ddcbf37d2d365ce20a93679dfb15b6b8a1e5aad643adf01"
-							],
+							"mandatoryKeys": ["dad1f8b43e778b3e1ddcbf37d2d365ce20a93679dfb15b6b8a1e5aad643adf01"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -1846,9 +1802,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"83702b5355d3a6465ca7c375e55b807afb30bea752bb40a51829f261e0371efc"
-							],
+							"mandatoryKeys": ["83702b5355d3a6465ca7c375e55b807afb30bea752bb40a51829f261e0371efc"],
 							"optionalKeys": [
 								"ccee37d49952b8fb70d541796f9e3c049552210256710e46ee47c2dadafde3f3",
 								"f840f044fb93d63e366dab90e174ee67db4ee68ee2e1f20cf09e58cd78669be0"
@@ -2603,9 +2557,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"fd061b9146691f3c56504be051175d5b76d1b1d0179c5c4370e18534c5882122"
-							],
+							"mandatoryKeys": ["fd061b9146691f3c56504be051175d5b76d1b1d0179c5c4370e18534c5882122"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -2830,9 +2782,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"d45357b2fa3070a955e915baad5616b6fa21eb2d6a0cf823d95c4718d7f4af21"
-							],
+							"mandatoryKeys": ["d45357b2fa3070a955e915baad5616b6fa21eb2d6a0cf823d95c4718d7f4af21"],
 							"optionalKeys": [
 								"24307c3f6e8e16bb7ae0dd10329ea582193e284f0b29209e25c68ca205fd108f",
 								"6edd779f9c8a25c92715f8c9d25c3873f6c98bc34787997ee03b695a946dfe3b"
@@ -3278,12 +3228,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"6cdf7eb034aadd3ba6cf70960f9bfc083445c5961423b050d831b3c385ce4042"
-							],
-							"optionalKeys": [
-								"8c21c3c15d9a16357e5634ef74b7be9ca1cf11c4d89825e1aba2e48d3407b25b"
-							],
+							"mandatoryKeys": ["6cdf7eb034aadd3ba6cf70960f9bfc083445c5961423b050d831b3c385ce4042"],
+							"optionalKeys": ["8c21c3c15d9a16357e5634ef74b7be9ca1cf11c4d89825e1aba2e48d3407b25b"],
 							"nonce": "0"
 						},
 						"address": "klyvcbg9qm6f3htv393cgja7rmssus4bhnsnot7to"
@@ -3474,9 +3420,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"d5a4c466f580d010a0e44e259e530ea1029b68aa8c1f94e35fff5f1d8edc2811"
-							],
+							"mandatoryKeys": ["d5a4c466f580d010a0e44e259e530ea1029b68aa8c1f94e35fff5f1d8edc2811"],
 							"optionalKeys": [
 								"c021935d37f1210bbadb276475cf9c478fdc4e6f3373697cb5ed62c71ac8261f",
 								"d3a537e83d69d4504f8441d5fb837532c35aa6059523881ef6eb8fe13c2dd73b"
@@ -3596,9 +3540,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"0608b297e75bacdfb2a8d95876a48d8bdd728cb3875c13c2fb866387cca8e802"
-							],
+							"mandatoryKeys": ["0608b297e75bacdfb2a8d95876a48d8bdd728cb3875c13c2fb866387cca8e802"],
 							"optionalKeys": [
 								"28ebc41d4a8ea286fde688b2583f13ce8bd2ccd8ffca4079b91066bd3cb72be2",
 								"86b6ebdceb460d6c5516443b1368ee3709d9a2c6f5a77d6c961da185ede640c4"
@@ -3865,9 +3807,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"d71cc60ccaf3ce959b7cf0a6d6958fb595d1fed9d59a93e4707a6ed2392c8a10"
-							],
+							"mandatoryKeys": ["d71cc60ccaf3ce959b7cf0a6d6958fb595d1fed9d59a93e4707a6ed2392c8a10"],
 							"optionalKeys": [
 								"40482271736d08f41f6f1c413f818ac765fa260e4af423244b9cade9ba943b70",
 								"f84ec429e071a585fad2e69f05bff98418c18d403a6c93baee426e66063f90c5"
@@ -3954,9 +3894,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"5bcb40eeac01b72a7dbde5d4f6fb4e5c8518727b7a58437a5db1e2a61588b081"
-							],
+							"mandatoryKeys": ["5bcb40eeac01b72a7dbde5d4f6fb4e5c8518727b7a58437a5db1e2a61588b081"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -4019,9 +3957,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"747d0f07f8897d04166cbf3520c3a133964cefd8a139f63fa49b3684061805f0"
-							],
+							"mandatoryKeys": ["747d0f07f8897d04166cbf3520c3a133964cefd8a139f63fa49b3684061805f0"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -4030,9 +3966,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"55f79cec4c1ff1f93e112a83dbec007e32c42f775c3e17ae0f7d96dddc012968"
-							],
+							"mandatoryKeys": ["55f79cec4c1ff1f93e112a83dbec007e32c42f775c3e17ae0f7d96dddc012968"],
 							"optionalKeys": [
 								"cddc66cb24cf2b59e34cbc2bf071308d7ade1dd0917f17fca5dfd3e21e32879a",
 								"e70510b8ededa7e5661a912b8da6907b33f5d3367c42f6fc657fc46677b37ddc"
@@ -4155,9 +4089,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"dee292f0da1949fb582adba354ab6e43b498217577de4ac7584707cdf88cce4c"
-							],
+							"mandatoryKeys": ["dee292f0da1949fb582adba354ab6e43b498217577de4ac7584707cdf88cce4c"],
 							"optionalKeys": [
 								"714d39705af8dc0d6b1cab59368d50fafe951c36411a6698802122c4f2f6e73d",
 								"f2c5ff655fff291fb298c9fe9f3874b616ffca63d6d6e3144a786f8c8f743a4c"
@@ -4482,12 +4414,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"2dec2171d8a4754fe411407fe91d5ca097c45f624a27d16de78c0465abad8cf0"
-							],
-							"optionalKeys": [
-								"7b9184047a7e537506032d0214e985ca6c8a6e5ef9ecb031b55d4000588840ba"
-							],
+							"mandatoryKeys": ["2dec2171d8a4754fe411407fe91d5ca097c45f624a27d16de78c0465abad8cf0"],
+							"optionalKeys": ["7b9184047a7e537506032d0214e985ca6c8a6e5ef9ecb031b55d4000588840ba"],
 							"nonce": "0"
 						},
 						"address": "klyvhdzzwqnaxxjhqs2rbkcm5c5wrtzsvuw8oq2du"
@@ -4924,9 +4852,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"fddd28fc950ffe77846db8cae3164433de80a8c5780c243372a48dccc0babfcc"
-							],
+							"mandatoryKeys": ["fddd28fc950ffe77846db8cae3164433de80a8c5780c243372a48dccc0babfcc"],
 							"optionalKeys": [
 								"6bd630397b8692c622dc31b916125ff8b198457ea82e90ab2373886a2e11fe98",
 								"6cb027b9d50a52d68bf49544f706976972549f576dcc9f48c523655f29b9667c",
@@ -5065,9 +4991,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"e599465dd63b51a82cd07b0f11d2dab439071fecf79581da91a2d1c03be59183"
-							],
+							"mandatoryKeys": ["e599465dd63b51a82cd07b0f11d2dab439071fecf79581da91a2d1c03be59183"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -5585,12 +5509,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"e457a07aed257d980d9c5dce26c27bc088ffd16244379832c55bb51ec7066352"
-							],
-							"optionalKeys": [
-								"1f91ad76e3fbb72ae90dc17fb4e45a9ebff02b896fe17350500f0f23d0920a24"
-							],
+							"mandatoryKeys": ["e457a07aed257d980d9c5dce26c27bc088ffd16244379832c55bb51ec7066352"],
+							"optionalKeys": ["1f91ad76e3fbb72ae90dc17fb4e45a9ebff02b896fe17350500f0f23d0920a24"],
 							"nonce": "0"
 						},
 						"address": "klycwg35zc8ht3svnqqpnzejfu438xs3k9ex773hk"
@@ -5870,9 +5790,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"305cfdf62a65f5d0548255f7dd192be7f80ada811bf3d3b57ae6d80be8fbff1e"
-							],
+							"mandatoryKeys": ["305cfdf62a65f5d0548255f7dd192be7f80ada811bf3d3b57ae6d80be8fbff1e"],
 							"optionalKeys": [
 								"a3845b538f5b3da51ce75f5fd92d07415e7199ca3ed948937a14294a8dc5fe77",
 								"c2a7a50928a9a127492e8f99057a6316806b64aa508b527007571d88069761b8"
@@ -5902,9 +5820,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"d9810483b0504da048d934287052cf5161cb7605d184461ca53f01c4140bd3b2"
-							],
+							"mandatoryKeys": ["d9810483b0504da048d934287052cf5161cb7605d184461ca53f01c4140bd3b2"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -5940,12 +5856,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"c7ddd7ca296b431c4bce77e7561473bb93913659264c0394a9957cc7f6ee390b"
-							],
-							"optionalKeys": [
-								"213d9611bc206a6c67183f250f7e2b26f50cabecdac5a837d4c859d7bad29f61"
-							],
+							"mandatoryKeys": ["c7ddd7ca296b431c4bce77e7561473bb93913659264c0394a9957cc7f6ee390b"],
+							"optionalKeys": ["213d9611bc206a6c67183f250f7e2b26f50cabecdac5a837d4c859d7bad29f61"],
 							"nonce": "0"
 						},
 						"address": "klycg2vq24akvcu3c54jt49qjxsj74n2cg2o7fagw"
@@ -5989,9 +5901,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"d3a6a55491f66c26b1ba23b9f51b23ae9d5fe8ef609b8f43c35e50859be2501b"
-							],
+							"mandatoryKeys": ["d3a6a55491f66c26b1ba23b9f51b23ae9d5fe8ef609b8f43c35e50859be2501b"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -6000,12 +5910,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"a1b627856fae39d60543c42a3e8075a3169b55faeb1b83d4f63b1c38097ced70"
-							],
-							"optionalKeys": [
-								"970795607cb3b0bdf23f02e43ab99f1fdf7db2bd953208cdff0464cd043c746f"
-							],
+							"mandatoryKeys": ["a1b627856fae39d60543c42a3e8075a3169b55faeb1b83d4f63b1c38097ced70"],
+							"optionalKeys": ["970795607cb3b0bdf23f02e43ab99f1fdf7db2bd953208cdff0464cd043c746f"],
 							"nonce": "0"
 						},
 						"address": "klypx3awoxc2t4tu9z99262oovj8wvdpxb3fbavuf"
@@ -6040,12 +5946,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"d8d37eed14eaf92f2d0034d89ea20e205177f4046f416581ac944e3837109d25"
-							],
-							"optionalKeys": [
-								"ce5e39a5d7a31a0d02df546ad0b11297904bcd7cf34d4ddc27b6b18b7c105675"
-							],
+							"mandatoryKeys": ["d8d37eed14eaf92f2d0034d89ea20e205177f4046f416581ac944e3837109d25"],
+							"optionalKeys": ["ce5e39a5d7a31a0d02df546ad0b11297904bcd7cf34d4ddc27b6b18b7c105675"],
 							"nonce": "0"
 						},
 						"address": "klypxdvyh4bfuru8mynzwgvdzzzjbhe7jmwcue6cm"
@@ -6300,12 +6202,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"de75a9dcb496ec93ed4ac971705f0ea57699e5f2bf41eebc2afb02b789a97350"
-							],
-							"optionalKeys": [
-								"0e41a88eb48025d8378d5f54bca7f574a120bf4742f8bfbe2e9a15c2bd9cc708"
-							],
+							"mandatoryKeys": ["de75a9dcb496ec93ed4ac971705f0ea57699e5f2bf41eebc2afb02b789a97350"],
+							"optionalKeys": ["0e41a88eb48025d8378d5f54bca7f574a120bf4742f8bfbe2e9a15c2bd9cc708"],
 							"nonce": "0"
 						},
 						"address": "klypndaknv8cw7xwb39meyhna52udgz94q47pmwxd"
@@ -6459,9 +6357,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"341757c84785a6381a6d18848c08d52a6dca0a774f389320aa8828a6739b2648"
-							],
+							"mandatoryKeys": ["341757c84785a6381a6d18848c08d52a6dca0a774f389320aa8828a6739b2648"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -6501,9 +6397,7 @@
 								"25a2bb114e48037766e788f97396408b0aaac9544febe13ba70a2feb4f8c3a9e",
 								"ce2df419e29004b43c4d34fe5c0a33a30c2c31c2e053c9c45ba6ffe1952c3c8e"
 							],
-							"optionalKeys": [
-								"6ee309d4190de0e9adea6b06f83582e61bc7556022e7d3e29a886e35ab80d6a4"
-							],
+							"optionalKeys": ["6ee309d4190de0e9adea6b06f83582e61bc7556022e7d3e29a886e35ab80d6a4"],
 							"nonce": "0"
 						},
 						"address": "klyp9gxvbr3fgnjkn5z2h59f629ht2wthcwxjbhh8"
@@ -6565,12 +6459,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"ce5e39a5d7a31a0d02df546ad0b11297904bcd7cf34d4ddc27b6b18b7c105675"
-							],
-							"optionalKeys": [
-								"493bae897dae345480f07817082f07e28351b968ba7e3c2aec2e5ea4bd2f375b"
-							],
+							"mandatoryKeys": ["ce5e39a5d7a31a0d02df546ad0b11297904bcd7cf34d4ddc27b6b18b7c105675"],
+							"optionalKeys": ["493bae897dae345480f07817082f07e28351b968ba7e3c2aec2e5ea4bd2f375b"],
 							"nonce": "0"
 						},
 						"address": "klyp8nuuoqhjwug4fbkuaekjhmdvzjrf6fkbxme44"
@@ -6935,9 +6825,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"aa71a464d4922c3f5280e01514d86f2eb794d2def9768c28732e2131e998a301"
-							],
+							"mandatoryKeys": ["aa71a464d4922c3f5280e01514d86f2eb794d2def9768c28732e2131e998a301"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -7208,9 +7096,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"11f7e480d1d914ceeba64bca7587ce5a6025d0dab7a7cb3f83e1a90db0f83e57"
-							],
+							"mandatoryKeys": ["11f7e480d1d914ceeba64bca7587ce5a6025d0dab7a7cb3f83e1a90db0f83e57"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -7526,9 +7412,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"414934d5c70dec65c4c01ddef4cb131913cc53b18e0c1c375857a5e7db52484b"
-							],
+							"mandatoryKeys": ["414934d5c70dec65c4c01ddef4cb131913cc53b18e0c1c375857a5e7db52484b"],
 							"optionalKeys": [
 								"a3c22fd67483ae07134c93224384dac7206c40b1b7a14186dd2d3f0dcc8234ff",
 								"c4fbe7dbc9cc52dd33b2b10cddd8d023c1ff30e1bcbb45fc813550540668295c"
@@ -7549,9 +7433,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"352ca0bda57a31b84e932af1ce3ce3d143ad78b4437c02b013e60eff5dc362b0"
-							],
+							"mandatoryKeys": ["352ca0bda57a31b84e932af1ce3ce3d143ad78b4437c02b013e60eff5dc362b0"],
 							"optionalKeys": [
 								"0c5fcb5d130b24cc4036ba25fc369546dabf47f5324b1a3bd9a4cab743697f68",
 								"d65192fee4c6dceb16cff79f1793f7f07d999cd1d41fff0bab58de934beb6a99"
@@ -7563,9 +7445,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"c516d39751de7d2e8772a37be0cd52e1ea04adbdb9675f9ecebf0eea955e74d5"
-							],
+							"mandatoryKeys": ["c516d39751de7d2e8772a37be0cd52e1ea04adbdb9675f9ecebf0eea955e74d5"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -7600,9 +7480,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"26ee2760f767a09294fe3d97132e497a9ba2e95ec416611f41e0606e2ae0b29e"
-							],
+							"mandatoryKeys": ["26ee2760f767a09294fe3d97132e497a9ba2e95ec416611f41e0606e2ae0b29e"],
 							"optionalKeys": [
 								"00691e161761b852fb920e10786db868ce8ccd4c45e80a18cfe1da14aea1be24",
 								"bfb646aef267f30e8197ec5af456eb586976d72d7f6bd49d4829b2076a3c46c6"
@@ -7650,9 +7528,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"18e86064b09d0998cfe5e0324c59e5f8af1dd3e7b3902ccb4629ce51810261cd"
-							],
+							"mandatoryKeys": ["18e86064b09d0998cfe5e0324c59e5f8af1dd3e7b3902ccb4629ce51810261cd"],
 							"optionalKeys": [
 								"493698159488ee5f1c400d60b92944eb751b195a51c0aaba9d6c4fee836933fb",
 								"8f635b2e8837e918461906bc7f5e66191e46a11c44d811b0a05f6dc5c8294618"
@@ -7811,12 +7687,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"9ef79ec275e9d702264b85b50b3bbcc7466107cebcee595864f70f63ed2dde9e"
-							],
-							"optionalKeys": [
-								"f844f1fd2df6d13a920af1fd0a4698dbb90d8f16814a7f3496f3bb915028c489"
-							],
+							"mandatoryKeys": ["9ef79ec275e9d702264b85b50b3bbcc7466107cebcee595864f70f63ed2dde9e"],
+							"optionalKeys": ["f844f1fd2df6d13a920af1fd0a4698dbb90d8f16814a7f3496f3bb915028c489"],
 							"nonce": "0"
 						},
 						"address": "klym9rkm75vo5ek8bppqrvgt2jpck7m8kmwfvhpk7"
@@ -7842,9 +7714,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"4b77b474d40ce5138f441e52cbd2e5deeb0019c587148e5bd0131832de5ed1d9"
-							],
+							"mandatoryKeys": ["4b77b474d40ce5138f441e52cbd2e5deeb0019c587148e5bd0131832de5ed1d9"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -8211,9 +8081,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"a09089884dd1680a8d5769be2059d0f1853789ca17b4787942b6b863c8623ebf"
-							],
+							"mandatoryKeys": ["a09089884dd1680a8d5769be2059d0f1853789ca17b4787942b6b863c8623ebf"],
 							"optionalKeys": [
 								"088c028dc67e64cd53daeac83a74521f847111bb91222d52e0b217fe2e43f855",
 								"c76c1a2654776a715ce0880ce66fac485919d9ca7377643a01c1396733f647d1"
@@ -8413,12 +8281,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"ca8238aca7948c29e4dc58adad62ad9f7b0fb0ef9eb528b9722d1b2c1e7e4a17"
-							],
-							"optionalKeys": [
-								"32bff2174e0a33f743b06fb038ee10fecd1e588de6db34acd7711eddfe94e97b"
-							],
+							"mandatoryKeys": ["ca8238aca7948c29e4dc58adad62ad9f7b0fb0ef9eb528b9722d1b2c1e7e4a17"],
+							"optionalKeys": ["32bff2174e0a33f743b06fb038ee10fecd1e588de6db34acd7711eddfe94e97b"],
 							"nonce": "0"
 						},
 						"address": "klymd8eb5bbgvsptedw5ura6e9ur7znkh8rtnbprn"
@@ -8447,12 +8311,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"b1f9ca64d66e4d62a79af0dc84adfc778a71e8a7b80737457b0d6c6734813e86"
-							],
-							"optionalKeys": [
-								"e218a60bae037800908e7322ad7dc8dd2f5d299a141cf7f5f08e3f9fae8cd1f5"
-							],
+							"mandatoryKeys": ["b1f9ca64d66e4d62a79af0dc84adfc778a71e8a7b80737457b0d6c6734813e86"],
+							"optionalKeys": ["e218a60bae037800908e7322ad7dc8dd2f5d299a141cf7f5f08e3f9fae8cd1f5"],
 							"nonce": "0"
 						},
 						"address": "klymssoquqaxsvcf8twmacpkjp4fvn33c4vyrnuz6"
@@ -8469,9 +8329,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"c5f74e8a9b39d9807745e8ed72085ef60cb0472815b0b689fabe25a3f15cedf8"
-							],
+							"mandatoryKeys": ["c5f74e8a9b39d9807745e8ed72085ef60cb0472815b0b689fabe25a3f15cedf8"],
 							"optionalKeys": [
 								"9f6ba96dd1d6b0a4a9ce54bba7dbfbb9daab72b38dc70209efd9792c16b036d2",
 								"b86bb45052493aecf5973ccc1e0a2ba17a45341fdf014102069358821d0bf003"
@@ -8725,9 +8583,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"0fb9f0dca2ff1464687f58ebdaad126156542d672b856b09f6858dbb1b63829b"
-							],
+							"mandatoryKeys": ["0fb9f0dca2ff1464687f58ebdaad126156542d672b856b09f6858dbb1b63829b"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -8875,9 +8731,7 @@
 								"05d00b062bd9d479cf185a3ddb97e64d9a8e07e9b113e133badb8f8ef0e37519",
 								"3dccca4dccca817ebfb9572ae5a0d64e2abd7d6af02bfb9fef97b410b4a4e468"
 							],
-							"optionalKeys": [
-								"c1e9d0839b02b649385d665d49eba4935292e258d7ac05f095d9c5351cabeb8c"
-							],
+							"optionalKeys": ["c1e9d0839b02b649385d665d49eba4935292e258d7ac05f095d9c5351cabeb8c"],
 							"nonce": "0"
 						},
 						"address": "klybc8joerx7zsoktrh7rfzncam8bno757n9nfuhg"
@@ -9054,9 +8908,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"a2638fe264d2a8edf52b039fea3369a4dba887800030743ed8d17f3e2457f52c"
-							],
+							"mandatoryKeys": ["a2638fe264d2a8edf52b039fea3369a4dba887800030743ed8d17f3e2457f52c"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -9158,9 +9010,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"1ff741c00dbefb94a4c9b778fa7ff6c42c38d20d2cff1ff52a4396b030921fa7"
-							],
+							"mandatoryKeys": ["1ff741c00dbefb94a4c9b778fa7ff6c42c38d20d2cff1ff52a4396b030921fa7"],
 							"optionalKeys": [
 								"0a96cd6472656bb81f2a6a8441eaba3c8c79e907299186f3c242bf0de059e72c",
 								"b8e60abe6702a0f1a57a8d61ab7a9615ddf89833861799fa83b15cc45172542b"
@@ -9190,9 +9040,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"576ad7f7608ea42fae9eaec3266dfb80a24d1893aaf31d60414ac7f48ddef704"
-							],
+							"mandatoryKeys": ["576ad7f7608ea42fae9eaec3266dfb80a24d1893aaf31d60414ac7f48ddef704"],
 							"optionalKeys": [
 								"abf9787621f8f43ec4e4a645b515094f42fc5615f2e231eca24eaf6e69dc6a65",
 								"e08baa4ae3c70a652903ae879606247d2ed0163cd9c16c95b537df3f7556c132"
@@ -9384,9 +9232,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"e1d4072907c041cfab69290bcea8a958d43f74097d8a8bd7c2db2164f424e17b"
-							],
+							"mandatoryKeys": ["e1d4072907c041cfab69290bcea8a958d43f74097d8a8bd7c2db2164f424e17b"],
 							"optionalKeys": [
 								"0b1f8d5c940497a072bc086b07eec68a2a7003180309194e19e561929f6e543f",
 								"1fc0127e567e15fe880455d393c9ff789bce2e1bb6d1a1fa3287d0ec981b710b",
@@ -9417,9 +9263,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"1a09995cf11775d6d7e3e37678a061a20b79a38d75f7471d357cac90a757890a"
-							],
+							"mandatoryKeys": ["1a09995cf11775d6d7e3e37678a061a20b79a38d75f7471d357cac90a757890a"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -9561,9 +9405,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"97744e76e5f0328ff1276b21dfee8b95ed30adf2b56ef1ead54128ce2a6a83fa"
-							],
+							"mandatoryKeys": ["97744e76e5f0328ff1276b21dfee8b95ed30adf2b56ef1ead54128ce2a6a83fa"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -9629,12 +9471,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"5cc142df015459c6ce9ee0d53ae6a19b834e44752e7c68116e64c9be51ad2d52"
-							],
-							"optionalKeys": [
-								"832b02de6275f5c9da31f1106576060a2284a9efdda4db242fc17e245dc5267a"
-							],
+							"mandatoryKeys": ["5cc142df015459c6ce9ee0d53ae6a19b834e44752e7c68116e64c9be51ad2d52"],
+							"optionalKeys": ["832b02de6275f5c9da31f1106576060a2284a9efdda4db242fc17e245dc5267a"],
 							"nonce": "0"
 						},
 						"address": "klybt53oe4txrrdnepgvbjnz49hm62rovf8tqccdm"
@@ -9678,9 +9516,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"a5237097a20c27f9275d882b95b7450b6d0fa42244871d9dc0e73957c80ce375"
-							],
+							"mandatoryKeys": ["a5237097a20c27f9275d882b95b7450b6d0fa42244871d9dc0e73957c80ce375"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -9780,9 +9616,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"4f6194d08c3a8cb2d614346c5a3f2b5acdfbcb02307dd4d867377d0845238675"
-							],
+							"mandatoryKeys": ["4f6194d08c3a8cb2d614346c5a3f2b5acdfbcb02307dd4d867377d0845238675"],
 							"optionalKeys": [
 								"064c373d71220727b508f9eadcd2c7eaea669b8436d364c7d2ab5812aa135308",
 								"0a7b744dbb479ca58927799118019b8fdb872914bc339ca56af7ef67c9a30396"
@@ -10049,12 +9883,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"f5f48420c882e99c83fbae3388b7222b6b8199c1022a13629e445f0b5f2bd1da"
-							],
-							"optionalKeys": [
-								"ecc202b3d03a3e80e89e51cc433037f4db37479f2247db8a62f230a9930d16a4"
-							],
+							"mandatoryKeys": ["f5f48420c882e99c83fbae3388b7222b6b8199c1022a13629e445f0b5f2bd1da"],
+							"optionalKeys": ["ecc202b3d03a3e80e89e51cc433037f4db37479f2247db8a62f230a9930d16a4"],
 							"nonce": "0"
 						},
 						"address": "klybhrfoktcshnak8ur2wydma4gynxedwqxc3up6m"
@@ -10290,9 +10120,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"6490a090dfb6d273c6cb769eb50fd6846fc3c691a9bf042a64e32549019d82fa"
-							],
+							"mandatoryKeys": ["6490a090dfb6d273c6cb769eb50fd6846fc3c691a9bf042a64e32549019d82fa"],
 							"optionalKeys": [
 								"54452bdb0967aefd05159257b259841f0101eaf1cc7c18029ca82746e9ce25e5",
 								"7812e73168b88adfec7462f4004e69adaf5d65e85fe0da89cd0b3c1ad51987f9"
@@ -10410,9 +10238,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"52f339317ea3be59c5176e09ad13d50578a36a6acd2dca6681cc457e4efe245c"
-							],
+							"mandatoryKeys": ["52f339317ea3be59c5176e09ad13d50578a36a6acd2dca6681cc457e4efe245c"],
 							"optionalKeys": [
 								"1259a4a37aecb741e0a6c48370384cace8a32a75ef1f2fb33d2e1e2eb2737f90",
 								"447f1def5262a3aed5932e9d2138cd80436bacab78369865ac19db9e62699013"
@@ -10562,9 +10388,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"42c842a8fc47426f2e7b626933fe27a2911ef7ff2bfea5c48f2a645417ca6f5d"
-							],
+							"mandatoryKeys": ["42c842a8fc47426f2e7b626933fe27a2911ef7ff2bfea5c48f2a645417ca6f5d"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -10708,9 +10532,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"430bc661b7fb9c9b703f4d86799943a5559d36aa33b7422bc139c5599695b397"
-							],
+							"mandatoryKeys": ["430bc661b7fb9c9b703f4d86799943a5559d36aa33b7422bc139c5599695b397"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -10755,9 +10577,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"af115c117a1abe75b25f8d46975e2b8e3699dd9a7da73b4710b7c48b1a814481"
-							],
+							"mandatoryKeys": ["af115c117a1abe75b25f8d46975e2b8e3699dd9a7da73b4710b7c48b1a814481"],
 							"optionalKeys": [
 								"6461f88ad9bf2bf7f5bc4a274030084712ff8fb8a08b3b3ee650d995935458e5",
 								"b116f5f4cf777c5f25555ad6abb4372ee1d05663549d1b97fe23f9248529b857"
@@ -10858,9 +10678,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"096d86c5175cf0a3efc8794db17f27e298add34cbfdb0094e1a435ede3039abf"
-							],
+							"mandatoryKeys": ["096d86c5175cf0a3efc8794db17f27e298add34cbfdb0094e1a435ede3039abf"],
 							"optionalKeys": [
 								"6b7a5eaca3a540cea15ba3d25b5f41044fbf6bcfded487da5df33fb38fe18ccb",
 								"bf2f1b2c63f12936f5520cd8aab9a159b93cb330e6e267b7a91663637d33a981"
@@ -11074,9 +10892,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"a62617dae1157d928173211273a5278e2051ad280e1e3a2665adeff9564abd2a"
-							],
+							"mandatoryKeys": ["a62617dae1157d928173211273a5278e2051ad280e1e3a2665adeff9564abd2a"],
 							"optionalKeys": [
 								"650b1a7661ce3861cfa2d0597541507dfc9f870b39bb11cb38b90c76ec9436c4",
 								"89b870467e1a57f92a72d71a0825808e23022690adbc90037ebb5d0f7c8f20dd",
@@ -11146,9 +10962,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"3d04bb195d02ef2087c24d4a3c7b21deeae8c7bb526e3ddb095629816b8f88cb"
-							],
+							"mandatoryKeys": ["3d04bb195d02ef2087c24d4a3c7b21deeae8c7bb526e3ddb095629816b8f88cb"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -11274,9 +11088,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"4b3784b8d9e9ad030bd9d3fe7cdbba13f5a2d37d448310eb279cce0bff4ab71d"
-							],
+							"mandatoryKeys": ["4b3784b8d9e9ad030bd9d3fe7cdbba13f5a2d37d448310eb279cce0bff4ab71d"],
 							"optionalKeys": [
 								"95f674fe82e1594a6c0785f30cf150042e78a719ddcdb64c2cac2a5c60054844",
 								"b7a86707b8b1992bc34e9cb600f1734c322129b04378ab27d7ca14c06c537dbf"
@@ -11632,12 +11444,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"993ad8c442c40d1d9d6f52af947614e8d80ae9e11b616c5010916dfe5a29c18b"
-							],
-							"optionalKeys": [
-								"9ef79ec275e9d702264b85b50b3bbcc7466107cebcee595864f70f63ed2dde9e"
-							],
+							"mandatoryKeys": ["993ad8c442c40d1d9d6f52af947614e8d80ae9e11b616c5010916dfe5a29c18b"],
+							"optionalKeys": ["9ef79ec275e9d702264b85b50b3bbcc7466107cebcee595864f70f63ed2dde9e"],
 							"nonce": "0"
 						},
 						"address": "kly3zhz38ha39ed2aex4pxyodvdtyyzhkqre4cqnd"
@@ -11729,9 +11537,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"533e8f2f698616561c994fd51f4e90e603b5bffcecc3bf50d83b0eb82269c9e8"
-							],
+							"mandatoryKeys": ["533e8f2f698616561c994fd51f4e90e603b5bffcecc3bf50d83b0eb82269c9e8"],
 							"optionalKeys": [
 								"43aec7db44cc3c1b3368cafddd435a80fe7f79d6e778441406e5315b0d8b7926",
 								"f92e18bdc22d739324bbb45d470afe5711e43bd657070947b5012ef3ec582aef"
@@ -12032,9 +11838,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"0e1ae01157bfd689433909f25c2435b2cc738987329d5bf0601eee9434b463b7"
-							],
+							"mandatoryKeys": ["0e1ae01157bfd689433909f25c2435b2cc738987329d5bf0601eee9434b463b7"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -12199,9 +12003,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"ed4a7aad56a32df2a0b432445d78282cc3db5e3f15bce9d98ecf7499e0daaba3"
-							],
+							"mandatoryKeys": ["ed4a7aad56a32df2a0b432445d78282cc3db5e3f15bce9d98ecf7499e0daaba3"],
 							"optionalKeys": [
 								"54959361320dd8376451b64f779981a5211045c39afbcc5677d17d3c8e7ee61e",
 								"fd061b9146691f3c56504be051175d5b76d1b1d0179c5c4370e18534c5882122"
@@ -12213,9 +12015,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"5697f5cd50f1f2f3e2f0fa33b88d9b4d21a8d171a14027ccbf92e16ee75f9dcd"
-							],
+							"mandatoryKeys": ["5697f5cd50f1f2f3e2f0fa33b88d9b4d21a8d171a14027ccbf92e16ee75f9dcd"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -12519,9 +12319,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"ab5146c3d62747f6372f5b35ca68ff85dccba9094526f84cd557133d395a8a7d"
-							],
+							"mandatoryKeys": ["ab5146c3d62747f6372f5b35ca68ff85dccba9094526f84cd557133d395a8a7d"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -12674,9 +12472,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"6c473383b64c7f4cdd1643f618f9efe388190f0087ab588cd4dee26ef5c3831f"
-							],
+							"mandatoryKeys": ["6c473383b64c7f4cdd1643f618f9efe388190f0087ab588cd4dee26ef5c3831f"],
 							"optionalKeys": [
 								"80cfd0f8b804938d134e9d3f648e6a9cc84fa6210c6eb0661dba2da85f7d49d0",
 								"d0251e56088328fceb9f05fe2895e5241d707e19642a936fbad0e7cb72ef4542"
@@ -12710,9 +12506,7 @@
 								"00f046aea2782180c51f7271249a0c107e6b6295c6b3c31e43c1a3ed644dcdeb",
 								"4b496d614b5341b968ea1c625e1d8783cfeee63d08827eefed3e0cf964549f3a"
 							],
-							"optionalKeys": [
-								"68bafb9805cecfffdf3c80674808c65d623419680116909fb33870e17237d1f9"
-							],
+							"optionalKeys": ["68bafb9805cecfffdf3c80674808c65d623419680116909fb33870e17237d1f9"],
 							"nonce": "0"
 						},
 						"address": "kly3whgd9hy4spn2wcccbmaj7ke5ja95sahcwuxrs"
@@ -12783,9 +12577,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"f9dca830a18d97be16cded0fbcc2a2f8e2f498621128b2b496981dafbb34c4ce"
-							],
+							"mandatoryKeys": ["f9dca830a18d97be16cded0fbcc2a2f8e2f498621128b2b496981dafbb34c4ce"],
 							"optionalKeys": [
 								"51f874b78068b43d53f2bbadfc1263e327fdbe67d7f135c54a780db8af370406",
 								"db4e8e80e4e785c99770a76fd09892390066d8f75b6f4e042aaa480f4193659e"
@@ -12941,9 +12733,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"6cea247907980c412ec1b0f51957f7bd50391361a8ab2408b584f182b89e5f32"
-							],
+							"mandatoryKeys": ["6cea247907980c412ec1b0f51957f7bd50391361a8ab2408b584f182b89e5f32"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -13049,9 +12839,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"fd061b9146691f3c56504be051175d5b76d1b1d0179c5c4370e18534c5882122"
-							],
+							"mandatoryKeys": ["fd061b9146691f3c56504be051175d5b76d1b1d0179c5c4370e18534c5882122"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -13616,9 +13404,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"358852b0cc9df4cf779b974bbdb7debf1200cb10723e8fa803f7b1c89ad97b85"
-							],
+							"mandatoryKeys": ["358852b0cc9df4cf779b974bbdb7debf1200cb10723e8fa803f7b1c89ad97b85"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -13636,9 +13422,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"9d6a0d8257ceec5722a2ea0f2445bae0b5d77223af97e5ba318cc841d72cae53"
-							],
+							"mandatoryKeys": ["9d6a0d8257ceec5722a2ea0f2445bae0b5d77223af97e5ba318cc841d72cae53"],
 							"optionalKeys": [
 								"37b147fa95bce7efd58a51966d36c2f8707868e8359510e9c0e9dbf41fe2d26c",
 								"600c2672dcd42419a42fd94fb0215dc490552b5eba48b6c101400e9acdbb389b"
@@ -13800,9 +13584,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 3,
-							"mandatoryKeys": [
-								"e1d9b43efdac5111ac64561acfd9757cb37e97438acf3ccdb4664e16ab7ee7e8"
-							],
+							"mandatoryKeys": ["e1d9b43efdac5111ac64561acfd9757cb37e97438acf3ccdb4664e16ab7ee7e8"],
 							"optionalKeys": [
 								"269ab3d21da57813f5648577b49795ffafeb132f817932a9d2f6fbd781432a38",
 								"a838ddf1fb3387dcefb1963f5ac73a3b2f46a13f70c3035b6a2f922461af0b8a",
@@ -13815,9 +13597,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"5d9589bf21742df9e898a1f17a647a51f2847f9a5db2ea3ec466cb966dfbad56"
-							],
+							"mandatoryKeys": ["5d9589bf21742df9e898a1f17a647a51f2847f9a5db2ea3ec466cb966dfbad56"],
 							"optionalKeys": [
 								"08e9295d34d116407c83e745b0bcce08fa81e8e6eb9d7fde879cd8564ee634e4",
 								"18c00b39daaab2c4a0cfd5bdb1d20f49c0a423efc457877aee254f07668dfd90",
@@ -14176,9 +13956,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"a27b144a99adcc46ed77d74b2bcee0e8d02fb243c4e82a2acf558f04ba3a8d84"
-							],
+							"mandatoryKeys": ["a27b144a99adcc46ed77d74b2bcee0e8d02fb243c4e82a2acf558f04ba3a8d84"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -14485,9 +14263,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"6952db50f23e1c24dcbd71e2011918d7efe6d021b86b74a9f20946be854c55c2"
-							],
+							"mandatoryKeys": ["6952db50f23e1c24dcbd71e2011918d7efe6d021b86b74a9f20946be854c55c2"],
 							"optionalKeys": [
 								"64fb0c1fccd9150eed2c269d454801659399f7f1d6a2a0f56d02baa1dd1b76c1",
 								"6b300de19a7263143299683ebd43df9d280233053c7606c0f6b03cc68a5db592"
@@ -14731,9 +14507,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"b264b6cc3c8243fe786ee771ac54918f9a265b94354f68e6b7cf0facc2ab18b7"
-							],
+							"mandatoryKeys": ["b264b6cc3c8243fe786ee771ac54918f9a265b94354f68e6b7cf0facc2ab18b7"],
 							"optionalKeys": [
 								"8718c7a28f90b7f46f28e30c60dedec573c4400baf44a5a89fcf5bffae5396df",
 								"d2429c297d4fb6b7a83c5f2a9275344e4617f28dd07e634ea100ee15342f9489"
@@ -14808,12 +14582,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"b4d365b9e8e61886b41a2615dd2eb72ac040ab876a416ca2a7c58b046b407fd6"
-							],
-							"optionalKeys": [
-								"0ca475cbce2a0907e5b2ff9b4a61f61259ff74c71ce121685520575543e55fac"
-							],
+							"mandatoryKeys": ["b4d365b9e8e61886b41a2615dd2eb72ac040ab876a416ca2a7c58b046b407fd6"],
+							"optionalKeys": ["0ca475cbce2a0907e5b2ff9b4a61f61259ff74c71ce121685520575543e55fac"],
 							"nonce": "0"
 						},
 						"address": "kly6vyhm3rp83tvavjvrgqjnyvmgw9q8kshz7dbsp"
@@ -14920,9 +14690,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"918463a1cbaed80b125cc592370908c54eacd4f71b38e2e982e9a2a804d9cf8c"
-							],
+							"mandatoryKeys": ["918463a1cbaed80b125cc592370908c54eacd4f71b38e2e982e9a2a804d9cf8c"],
 							"optionalKeys": [
 								"4614929f27861f853b4f0016a1052030ee5de5304f8a29eb56f125d3ca083ef6",
 								"77ce315210dd760842905f8f82c65e930df505590a5356c47432aeaaed622000",
@@ -15046,12 +14814,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"cdd25320d966096ce85cb0c6953c3a38296908369920220d0b74db3559c4e913"
-							],
-							"optionalKeys": [
-								"b2ecdfb6e052889728c2a117cf19a90965c0daf993888f6ad20dcaff5d7212cd"
-							],
+							"mandatoryKeys": ["cdd25320d966096ce85cb0c6953c3a38296908369920220d0b74db3559c4e913"],
+							"optionalKeys": ["b2ecdfb6e052889728c2a117cf19a90965c0daf993888f6ad20dcaff5d7212cd"],
 							"nonce": "0"
 						},
 						"address": "kly6na3ptjt2p662tpdd4hm44nq6e7bzy8bbyporm"
@@ -15158,9 +14922,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"16f7e2c88e9f994927ee293be6b6969782d2d96048480cf1a317117ef736af01"
-							],
+							"mandatoryKeys": ["16f7e2c88e9f994927ee293be6b6969782d2d96048480cf1a317117ef736af01"],
 							"optionalKeys": [
 								"569c15179a67313f7c3aede5f5ae5b1f006a42edea13ced2f272bc3b7bd8e34b",
 								"f1f3d14a75f1a4f40be1bb1344d66fbd4526ba36d893c80d446290c1c40e7d22"
@@ -15190,12 +14952,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"0e41a88eb48025d8378d5f54bca7f574a120bf4742f8bfbe2e9a15c2bd9cc708"
-							],
-							"optionalKeys": [
-								"9f1703d3ad9e07f7c878f34459a87e1f7f1e9c0d2eaba3e7ce572193e53794e1"
-							],
+							"mandatoryKeys": ["0e41a88eb48025d8378d5f54bca7f574a120bf4742f8bfbe2e9a15c2bd9cc708"],
+							"optionalKeys": ["9f1703d3ad9e07f7c878f34459a87e1f7f1e9c0d2eaba3e7ce572193e53794e1"],
 							"nonce": "0"
 						},
 						"address": "kly6o2mfy52b3mj67wrxeafv8c6ovdym9ugo2fs9f"
@@ -15203,9 +14961,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"707a1c356f394fed665f0706777b25d6681871e07ab0a05365c49144db80b891"
-							],
+							"mandatoryKeys": ["707a1c356f394fed665f0706777b25d6681871e07ab0a05365c49144db80b891"],
 							"optionalKeys": [
 								"5f52291f67b6ccdf94c07bf950a0013b0e701db9c92dd6f58cf62b1a751d8e97",
 								"a5ec3eb11243a1cfb3756d704adb05038d6b4f7623516356be652e934a558f84"
@@ -15226,9 +14982,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"be6545938710027b46f98f4e747b0fe0171c5e2ed8ee4c27e7b0d6bb24c9c866"
-							],
+							"mandatoryKeys": ["be6545938710027b46f98f4e747b0fe0171c5e2ed8ee4c27e7b0d6bb24c9c866"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -15300,9 +15054,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"f6ee4fceabb198a1fdd1d71c1bcf6ffb5baa579628cc97912a8c5cfbeada917b"
-							],
+							"mandatoryKeys": ["f6ee4fceabb198a1fdd1d71c1bcf6ffb5baa579628cc97912a8c5cfbeada917b"],
 							"optionalKeys": [
 								"2b148fff5541fd9520377e5850d305792100b84935a95cf9c43a3f78b807cb5c",
 								"650629b0258bbcce59f71c46dd7fe5bb6f0bd6e5247d7066360a27ffe01d6b62"
@@ -15404,9 +15156,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"3182b14f4679fcecdfcba89045cdcc770d9acaa6abcfaebe52a40ddb6436b6cc"
-							],
+							"mandatoryKeys": ["3182b14f4679fcecdfcba89045cdcc770d9acaa6abcfaebe52a40ddb6436b6cc"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -15433,9 +15183,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"c5b6ae88b09630b61284df750638959fe3f1e37dc008decfcd162e86a439fbbe"
-							],
+							"mandatoryKeys": ["c5b6ae88b09630b61284df750638959fe3f1e37dc008decfcd162e86a439fbbe"],
 							"optionalKeys": [
 								"82e6a703e38f9bc4eb46fc2b75c21831048c0c7903d766599887208c4fed8a56",
 								"ca1d14df26c447c31e2873ecece03321d795f1d4e017ac5aa3fa1574c49f5968"
@@ -15520,12 +15268,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"44c4b0f3bf9f2abbbe97d87c31254ce388f92c09d3c2abdb3fd25a60790938c4"
-							],
-							"optionalKeys": [
-								"51319c7e1b3b244f6a43843fe3391f34f3e0fd7843c8d6d1f70b7b06d70d04cb"
-							],
+							"mandatoryKeys": ["44c4b0f3bf9f2abbbe97d87c31254ce388f92c09d3c2abdb3fd25a60790938c4"],
+							"optionalKeys": ["51319c7e1b3b244f6a43843fe3391f34f3e0fd7843c8d6d1f70b7b06d70d04cb"],
 							"nonce": "0"
 						},
 						"address": "kly6kv439fdy5szkde4hcsct2xeypp5fs9zt9a2gd"
@@ -15653,9 +15397,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"c01244bca456d47419315837bb1b266f5fd406e7345e281c667857a9bbe6387a"
-							],
+							"mandatoryKeys": ["c01244bca456d47419315837bb1b266f5fd406e7345e281c667857a9bbe6387a"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -15800,12 +15542,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"ecc202b3d03a3e80e89e51cc433037f4db37479f2247db8a62f230a9930d16a4"
-							],
-							"optionalKeys": [
-								"7be080ace7f2f6e37b4dd1cd3e9d73593a6f80596e8db0683d1da041acc66165"
-							],
+							"mandatoryKeys": ["ecc202b3d03a3e80e89e51cc433037f4db37479f2247db8a62f230a9930d16a4"],
+							"optionalKeys": ["7be080ace7f2f6e37b4dd1cd3e9d73593a6f80596e8db0683d1da041acc66165"],
 							"nonce": "0"
 						},
 						"address": "kly6agfcyegdmma2psru9f5rdzgtr8oec329qfn84"
@@ -15927,12 +15665,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"28663fbe31f8ab79dbec0f509dfb09d4b367cc0e4ce6fe249898355e27ae9e36"
-							],
-							"optionalKeys": [
-								"e7af102b863d10f5479614185ef7e6755973ef2c8a8397574fc15ae08e73c388"
-							],
+							"mandatoryKeys": ["28663fbe31f8ab79dbec0f509dfb09d4b367cc0e4ce6fe249898355e27ae9e36"],
+							"optionalKeys": ["e7af102b863d10f5479614185ef7e6755973ef2c8a8397574fc15ae08e73c388"],
 							"nonce": "0"
 						},
 						"address": "kly6sts7gqvfkwfuan4gtjw6dgcoqfn5ssgc9cnxs"
@@ -16066,9 +15800,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"8214537e5cff9aece4703174c18626d2c49af825cce4afd5f1a5ebde47321d8a"
-							],
+							"mandatoryKeys": ["8214537e5cff9aece4703174c18626d2c49af825cce4afd5f1a5ebde47321d8a"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -16212,12 +15944,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"fc5303c6182024958e0a670d7a8ce448735e7b5531b71aa8dd1f83fa7380ea62"
-							],
-							"optionalKeys": [
-								"2f32ac80f04dd167173ae666886dc5295e88cbacde5c336f4e66f2a204655028"
-							],
+							"mandatoryKeys": ["fc5303c6182024958e0a670d7a8ce448735e7b5531b71aa8dd1f83fa7380ea62"],
+							"optionalKeys": ["2f32ac80f04dd167173ae666886dc5295e88cbacde5c336f4e66f2a204655028"],
 							"nonce": "0"
 						},
 						"address": "kly5zwe8uwa2pbaq3d2kj4pt9qzs6uykg62gvae92"
@@ -16270,12 +15998,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"45e7aa6a2f7b1bd8735d1513415c92824c5f19fd074bb68f1eead2deae9a180c"
-							],
-							"optionalKeys": [
-								"f39ec2772f2350205a6de447ef4d68f761cbafbe69d51656231ffa2b60d5bf87"
-							],
+							"mandatoryKeys": ["45e7aa6a2f7b1bd8735d1513415c92824c5f19fd074bb68f1eead2deae9a180c"],
+							"optionalKeys": ["f39ec2772f2350205a6de447ef4d68f761cbafbe69d51656231ffa2b60d5bf87"],
 							"nonce": "0"
 						},
 						"address": "kly5xump7a6ecxu2ssetaqrbh84b4sqbg4866yoyy"
@@ -16407,9 +16131,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"b1ce164eecab6db8c56295372f45ddeabb0023e9127c4ce8c5876b94aa42d30d"
-							],
+							"mandatoryKeys": ["b1ce164eecab6db8c56295372f45ddeabb0023e9127c4ce8c5876b94aa42d30d"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -16652,9 +16374,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"bf12ceeb140255c9c2a33d6853744aef7ec75046b4a806aae2b847afd5c0f4b0"
-							],
+							"mandatoryKeys": ["bf12ceeb140255c9c2a33d6853744aef7ec75046b4a806aae2b847afd5c0f4b0"],
 							"optionalKeys": [
 								"3fff6cb3ca48dd211db683d009e93b523e93cb8866e514bf8a9ca9d7e4873556",
 								"dc0bcc455419386827318933b8f01871960f69d78d290ffbd18b90f82b2a8178"
@@ -16941,9 +16661,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"4c4eecfe7a3f034990cf41b32346c90a8e104bc4be6f05d4372cbd43cfb4854c"
-							],
+							"mandatoryKeys": ["4c4eecfe7a3f034990cf41b32346c90a8e104bc4be6f05d4372cbd43cfb4854c"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -16970,9 +16688,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"414934d5c70dec65c4c01ddef4cb131913cc53b18e0c1c375857a5e7db52484b"
-							],
+							"mandatoryKeys": ["414934d5c70dec65c4c01ddef4cb131913cc53b18e0c1c375857a5e7db52484b"],
 							"optionalKeys": [
 								"4695516d68b51f87e3d53010d083be75feeff6026177f0f811170747af8b4a16",
 								"c4fbe7dbc9cc52dd33b2b10cddd8d023c1ff30e1bcbb45fc813550540668295c"
@@ -17144,9 +16860,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"d5dce13b6044486fc5561e7a8f481dd918ed7bdfeeb52dc81af9f283d98add45"
-							],
+							"mandatoryKeys": ["d5dce13b6044486fc5561e7a8f481dd918ed7bdfeeb52dc81af9f283d98add45"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -17173,9 +16887,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"9e87b26e0a7263cd07602b1ecb0cb250ef0d687bf13f8b33fe8d9b2edfc5ea40"
-							],
+							"mandatoryKeys": ["9e87b26e0a7263cd07602b1ecb0cb250ef0d687bf13f8b33fe8d9b2edfc5ea40"],
 							"optionalKeys": [
 								"059d944a830420ee13731a14906b333d40933f9eaf78de7cc3b84e9089957f16",
 								"5af0749117bb8972bbd8be491c5d05f35cee0034b0220d0ce001628a910d7d2a",
@@ -17338,9 +17050,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"6d74692338cab3db071f046e61f48d69a3b21f8febfc02939849c7c92245e2da"
-							],
+							"mandatoryKeys": ["6d74692338cab3db071f046e61f48d69a3b21f8febfc02939849c7c92245e2da"],
 							"optionalKeys": [
 								"3d5d91a1b5a6e75cbbc281bf67c0792e221832e85e4c0fc3b7a26d2bb59c7a43",
 								"b1486b0ab3e98f6fa3633d09c449f00892be0cbd1e9488aa7d5c743b4bb48102"
@@ -17517,9 +17227,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"d5dce13b6044486fc5561e7a8f481dd918ed7bdfeeb52dc81af9f283d98add45"
-							],
+							"mandatoryKeys": ["d5dce13b6044486fc5561e7a8f481dd918ed7bdfeeb52dc81af9f283d98add45"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -17675,12 +17383,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"333ff7501ca34a9bea8aa9f6c26a88adff16db78aebef0974254a3bb6ee5b96c"
-							],
-							"optionalKeys": [
-								"ffb54132c70b63528e78b8af56c56eaa41482d85f4a8231baafce3209ca16f34"
-							],
+							"mandatoryKeys": ["333ff7501ca34a9bea8aa9f6c26a88adff16db78aebef0974254a3bb6ee5b96c"],
+							"optionalKeys": ["ffb54132c70b63528e78b8af56c56eaa41482d85f4a8231baafce3209ca16f34"],
 							"nonce": "0"
 						},
 						"address": "kly5ftaf4o74o8j3wu4z3fxq3kwk8ycwcaayva9eu"
@@ -17958,9 +17662,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"0d7479c4d4ae87fd51531cfc1d6e2715cb8d20236c44079e0a97591f14341c9e"
-							],
+							"mandatoryKeys": ["0d7479c4d4ae87fd51531cfc1d6e2715cb8d20236c44079e0a97591f14341c9e"],
 							"optionalKeys": [
 								"8eb0542059b38b2404488f8286cea8f60a70e265a4184c4c2e2bae4c40d924e2",
 								"e09184eb0632cc4966eb9202f6b88ff34b8ffc59b146b18ce2b2e245575bfcfc"
@@ -18167,9 +17869,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"d01c49d3dca0e08c01325fcefab138e9e2c4eb4cf355c2215d1a31f37ce054d7"
-							],
+							"mandatoryKeys": ["d01c49d3dca0e08c01325fcefab138e9e2c4eb4cf355c2215d1a31f37ce054d7"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -18290,9 +17990,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"00d9fe7ff80de481e6cea2a994cd5226902288fddbb7bc3a96658bfd02b59a2e"
-							],
+							"mandatoryKeys": ["00d9fe7ff80de481e6cea2a994cd5226902288fddbb7bc3a96658bfd02b59a2e"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -19030,9 +18728,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 3,
-							"mandatoryKeys": [
-								"0e8ed5cbc13e00b93f64833fe8e1a30fb2dc87049b3a24554dff866a0ca09dc4"
-							],
+							"mandatoryKeys": ["0e8ed5cbc13e00b93f64833fe8e1a30fb2dc87049b3a24554dff866a0ca09dc4"],
 							"optionalKeys": [
 								"3f74116ff090ddd686fd4350424314d10d82d5c7e06457f6676d6ac03e3d9f34",
 								"af1d9aff6f6c3f81639defe01ef44b25b3ed59a27e18c5578fa35cd1d43bd231"
@@ -19257,9 +18953,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"fd061b9146691f3c56504be051175d5b76d1b1d0179c5c4370e18534c5882122"
-							],
+							"mandatoryKeys": ["fd061b9146691f3c56504be051175d5b76d1b1d0179c5c4370e18534c5882122"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -19268,12 +18962,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"04a665a9c1008c53cdf854360c612a208bb4db4d8ba5d1e430408f5c2e9e0558"
-							],
-							"optionalKeys": [
-								"1742af69d3d965600c7624794e4fe05939d3b3ce99da3561ce4f9f59e760218a"
-							],
+							"mandatoryKeys": ["04a665a9c1008c53cdf854360c612a208bb4db4d8ba5d1e430408f5c2e9e0558"],
+							"optionalKeys": ["1742af69d3d965600c7624794e4fe05939d3b3ce99da3561ce4f9f59e760218a"],
 							"nonce": "0"
 						},
 						"address": "klyojj7dzpqvo6vyjjesfq8ggrpb4tzmxh5s5j5k4"
@@ -19699,9 +19389,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"43ed4040eff15dcc263ca396cedcaf0a5a3384fca701a239de499991c589e36c"
-							],
+							"mandatoryKeys": ["43ed4040eff15dcc263ca396cedcaf0a5a3384fca701a239de499991c589e36c"],
 							"optionalKeys": [
 								"1f1077ef57f43fb8935fc9bd04e8c582e7ec643a1c80739e3810758067250593",
 								"29154b9b85db5f23d9509203ba62a3868eba654d009460a96882605062930f68",
@@ -19771,9 +19459,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"ba7d3e523abcef0205183776d6f9e356346226cf7ffd5846aabb14877bf65782"
-							],
+							"mandatoryKeys": ["ba7d3e523abcef0205183776d6f9e356346226cf7ffd5846aabb14877bf65782"],
 							"optionalKeys": [
 								"0519c9e79ad4955e89c9fe194ffdc4fb4ef2785e8de02ec368f5c4ae40d90c81",
 								"be6a18fc60ce35ae55e8a1f8c6411055d098a0921b4543de413b06942009a451"
@@ -19998,9 +19684,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"35d60e648f9a53ded5260acb1024c912a1c4c75006e3419a5499b133836ed468"
-							],
+							"mandatoryKeys": ["35d60e648f9a53ded5260acb1024c912a1c4c75006e3419a5499b133836ed468"],
 							"optionalKeys": [
 								"041943ee7865305520ea1a064f5f846d8c071d8937489e8c027f2eea7880f0b4",
 								"ed123ac346acae9ab86b8a0972c2c734b0a0aec898af2046d442bfe3f7d15218"
@@ -20783,12 +20467,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"fd061b9146691f3c56504be051175d5b76d1b1d0179c5c4370e18534c5882122"
-							],
-							"optionalKeys": [
-								"5697f5cd50f1f2f3e2f0fa33b88d9b4d21a8d171a14027ccbf92e16ee75f9dcd"
-							],
+							"mandatoryKeys": ["fd061b9146691f3c56504be051175d5b76d1b1d0179c5c4370e18534c5882122"],
+							"optionalKeys": ["5697f5cd50f1f2f3e2f0fa33b88d9b4d21a8d171a14027ccbf92e16ee75f9dcd"],
 							"nonce": "0"
 						},
 						"address": "kly9jffvvz83crogjk98xpmqfx5um3fremv5psc4g"
@@ -20970,9 +20650,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"7aa9cfdb28a7fa2afa8f9421c7a01e71f9823ffd358e50906baa20e12bc62092"
-							],
+							"mandatoryKeys": ["7aa9cfdb28a7fa2afa8f9421c7a01e71f9823ffd358e50906baa20e12bc62092"],
 							"optionalKeys": [
 								"03cb2cc6a0777874773f02337bf0de3e9a38b1a0eb07880e08f7ecbc4c480d97",
 								"d47749926a4c4d0fb68eeace41b0c7865201f110d0392c7be522aba7d870024e"
@@ -21269,9 +20947,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"c7db1fbf254cb68b28e05f6c7f2946abcca74e3767eed1042af33ee7ede7c880"
-							],
+							"mandatoryKeys": ["c7db1fbf254cb68b28e05f6c7f2946abcca74e3767eed1042af33ee7ede7c880"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -21466,12 +21142,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"213d9611bc206a6c67183f250f7e2b26f50cabecdac5a837d4c859d7bad29f61"
-							],
-							"optionalKeys": [
-								"2dec2171d8a4754fe411407fe91d5ca097c45f624a27d16de78c0465abad8cf0"
-							],
+							"mandatoryKeys": ["213d9611bc206a6c67183f250f7e2b26f50cabecdac5a837d4c859d7bad29f61"],
+							"optionalKeys": ["2dec2171d8a4754fe411407fe91d5ca097c45f624a27d16de78c0465abad8cf0"],
 							"nonce": "0"
 						},
 						"address": "kly78tz9kq8dgz9fs57z5tam2fcv274fjdgtwcemn"
@@ -21911,12 +21583,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"5257e3d9729a6be99f6ccb6e3ef11947ff45ec7ce7d93dbfe73b7806a0902e51"
-							],
-							"optionalKeys": [
-								"fd061b9146691f3c56504be051175d5b76d1b1d0179c5c4370e18534c5882122"
-							],
+							"mandatoryKeys": ["5257e3d9729a6be99f6ccb6e3ef11947ff45ec7ce7d93dbfe73b7806a0902e51"],
+							"optionalKeys": ["fd061b9146691f3c56504be051175d5b76d1b1d0179c5c4370e18534c5882122"],
 							"nonce": "0"
 						},
 						"address": "kly72ajhezfmoxcft8h9857kvmd94w92a4afcrxpa"
@@ -21936,9 +21604,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 6,
-							"mandatoryKeys": [
-								"835c72df1a565a2310b542825feba2f1f0170524a1ece6e998b6cd551a9e9d15"
-							],
+							"mandatoryKeys": ["835c72df1a565a2310b542825feba2f1f0170524a1ece6e998b6cd551a9e9d15"],
 							"optionalKeys": [
 								"0131b28e30ab44c743c359b141c7ad9b4b94a106f2243bb493c021a50728fe93",
 								"0c2ceb2ccb168e4b1fc4987f05e51943389c6bd1d5a7fbd2e517ad82471a5db4",
@@ -22064,9 +21730,7 @@
 								"20624ef31cf55003d812b706f11c31a636f08cf5c20966e01e98494478d5131e",
 								"d5dce13b6044486fc5561e7a8f481dd918ed7bdfeeb52dc81af9f283d98add45"
 							],
-							"optionalKeys": [
-								"167221bdf0af9f83fd9f0cda0aff264a836f4b85a0cf7ee5f6bec6029bb6d517"
-							],
+							"optionalKeys": ["167221bdf0af9f83fd9f0cda0aff264a836f4b85a0cf7ee5f6bec6029bb6d517"],
 							"nonce": "0"
 						},
 						"address": "kly7sf67mfzzz77hk593gyutymvjcznbjy3hgqj39"
@@ -22131,9 +21795,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"fd061b9146691f3c56504be051175d5b76d1b1d0179c5c4370e18534c5882122"
-							],
+							"mandatoryKeys": ["fd061b9146691f3c56504be051175d5b76d1b1d0179c5c4370e18534c5882122"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -22178,12 +21840,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"e7af102b863d10f5479614185ef7e6755973ef2c8a8397574fc15ae08e73c388"
-							],
-							"optionalKeys": [
-								"d8d37eed14eaf92f2d0034d89ea20e205177f4046f416581ac944e3837109d25"
-							],
+							"mandatoryKeys": ["e7af102b863d10f5479614185ef7e6755973ef2c8a8397574fc15ae08e73c388"],
+							"optionalKeys": ["d8d37eed14eaf92f2d0034d89ea20e205177f4046f416581ac944e3837109d25"],
 							"nonce": "0"
 						},
 						"address": "kly7gbhz6sf4esj6afjs4txeygmey92cubfcph3xs"
@@ -22294,9 +21952,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"c56ff6d8c3a4e826c2136e50a4ff1c0f51cc85ec7b05b8c1810c4070cce17a47"
-							],
+							"mandatoryKeys": ["c56ff6d8c3a4e826c2136e50a4ff1c0f51cc85ec7b05b8c1810c4070cce17a47"],
 							"optionalKeys": [
 								"1927095dbdcb52113afe46c6f2d59f48f75812f98c85313a1bd7e500a38207d8",
 								"1dd23ea4d9030c2616e2ffd35a45c8a2df03e404fa70d3bd1468948db234cce2",
@@ -22405,9 +22061,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"15b50402822a1ecc3d8f17ccae407858078a21ca940cfa919ec42ed50c4e612f"
-							],
+							"mandatoryKeys": ["15b50402822a1ecc3d8f17ccae407858078a21ca940cfa919ec42ed50c4e612f"],
 							"optionalKeys": [
 								"1927095dbdcb52113afe46c6f2d59f48f75812f98c85313a1bd7e500a38207d8",
 								"1dd23ea4d9030c2616e2ffd35a45c8a2df03e404fa70d3bd1468948db234cce2",
@@ -22495,9 +22149,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"7898f5b9d80e483fe994656ceccb9c18b945a7de38132b346d166d3bb9b1b354"
-							],
+							"mandatoryKeys": ["7898f5b9d80e483fe994656ceccb9c18b945a7de38132b346d166d3bb9b1b354"],
 							"optionalKeys": [
 								"8f4ac07cdd0a3bc662504537eaf49da29a7bd68112946305c676af10b987c61c",
 								"ccee37d49952b8fb70d541796f9e3c049552210256710e46ee47c2dadafde3f3",
@@ -22555,9 +22207,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"afebf41d6ddb4ea90b4c45e90b2f66cefeda2a82b95886fff5c4af6af6a55ee5"
-							],
+							"mandatoryKeys": ["afebf41d6ddb4ea90b4c45e90b2f66cefeda2a82b95886fff5c4af6af6a55ee5"],
 							"optionalKeys": [
 								"6ee309d4190de0e9adea6b06f83582e61bc7556022e7d3e29a886e35ab80d6a4",
 								"ce2df419e29004b43c4d34fe5c0a33a30c2c31c2e053c9c45ba6ffe1952c3c8e"
@@ -22755,9 +22405,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"32f182e5645661b96dd4c2f2ba95ef9be693aa00f57093ee5d566bcd0158078c"
-							],
+							"mandatoryKeys": ["32f182e5645661b96dd4c2f2ba95ef9be693aa00f57093ee5d566bcd0158078c"],
 							"optionalKeys": [
 								"5c56817b3cb23261797b1f8584a0063436a1cc86dbf9664b9222c44c9c954880",
 								"ab77140058b57a5eddcd6b75b73681b054336fa94d2fe57f5c049c607d5f353d"
@@ -22778,9 +22426,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"4a0867e1aa4de7fa174f8d530b6306bbd2c5583341df8ea3c955107a55b00393"
-							],
+							"mandatoryKeys": ["4a0867e1aa4de7fa174f8d530b6306bbd2c5583341df8ea3c955107a55b00393"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -22816,12 +22462,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"ca264fd8ddd1ea53e68956f1341a941618c2b598e57f1eafccdae0e750abfaa5"
-							],
-							"optionalKeys": [
-								"45e7aa6a2f7b1bd8735d1513415c92824c5f19fd074bb68f1eead2deae9a180c"
-							],
+							"mandatoryKeys": ["ca264fd8ddd1ea53e68956f1341a941618c2b598e57f1eafccdae0e750abfaa5"],
+							"optionalKeys": ["45e7aa6a2f7b1bd8735d1513415c92824c5f19fd074bb68f1eead2deae9a180c"],
 							"nonce": "0"
 						},
 						"address": "kly8ogy3vsyrbsd2dergw9dmd8d4xwownf8ygr6uz"
@@ -22829,9 +22471,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"97f39a497067228703a3314ebd0ede4f090a2fb2501914fe0a345f9fc36aa9cb"
-							],
+							"mandatoryKeys": ["97f39a497067228703a3314ebd0ede4f090a2fb2501914fe0a345f9fc36aa9cb"],
 							"optionalKeys": [
 								"6a3ca6163b263ee789054dbc528a97793ee973ed23e89319e09bdcd742c65407",
 								"b6e8fb843e21789047fb9788ca923858ea61e8ce62026cc84ee802b6634daeae",
@@ -23120,9 +22760,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"fff83234cebc9598470d4bd345e3b299d6f125790366987d35219efcce27e859"
-							],
+							"mandatoryKeys": ["fff83234cebc9598470d4bd345e3b299d6f125790366987d35219efcce27e859"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -23216,9 +22854,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"82d37f368878daafd0c64cd797450fe20537798f4f87aca6985d8c537042ea42"
-							],
+							"mandatoryKeys": ["82d37f368878daafd0c64cd797450fe20537798f4f87aca6985d8c537042ea42"],
 							"optionalKeys": [
 								"3bff7e326edd573db6ab78cff1818cf034e20eec8a2885a6badca4a105e06a8d",
 								"f1fb79c49b038b2b6f2e26aa3e96137f37746da8e7c236a587a916a8fea0d873"
@@ -23353,9 +22989,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"7fb3f81d20053d6c768b624ee923cccb1acce9c5c5f5aac997468dd60156e6ba"
-							],
+							"mandatoryKeys": ["7fb3f81d20053d6c768b624ee923cccb1acce9c5c5f5aac997468dd60156e6ba"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -23779,9 +23413,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"85c832ad9784eb2b747c46e12c5e4d45ebb9cc72164c81d1f315c3f92a5aaaf3"
-							],
+							"mandatoryKeys": ["85c832ad9784eb2b747c46e12c5e4d45ebb9cc72164c81d1f315c3f92a5aaaf3"],
 							"optionalKeys": [
 								"54684e6340710727f70c2dd7e8e1c2f549fb124d95ffb0e40ad3631cdee4a371",
 								"bceda99f5f4982b1511628356a81eacd0f39f04f9d01976454292206b2f9ab84"
@@ -23793,9 +23425,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"1a09995cf11775d6d7e3e37678a061a20b79a38d75f7471d357cac90a757890a"
-							],
+							"mandatoryKeys": ["1a09995cf11775d6d7e3e37678a061a20b79a38d75f7471d357cac90a757890a"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -24113,9 +23743,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"9a82d8029044a40a4551dcf2dc1fd4e2b5d3ba3dcc77136781243b3b0f0d68dc"
-							],
+							"mandatoryKeys": ["9a82d8029044a40a4551dcf2dc1fd4e2b5d3ba3dcc77136781243b3b0f0d68dc"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -24286,9 +23914,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"dcc26c10c6460969fc378dadf43e4a129a1b8ed9406c489ba1c1a825c7e22d86"
-							],
+							"mandatoryKeys": ["dcc26c10c6460969fc378dadf43e4a129a1b8ed9406c489ba1c1a825c7e22d86"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -24408,12 +24034,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"4082b4e4b4b81bc910fad903f0d6b9e11d9381f133eea019187a360011bf2b37"
-							],
-							"optionalKeys": [
-								"44c4b0f3bf9f2abbbe97d87c31254ce388f92c09d3c2abdb3fd25a60790938c4"
-							],
+							"mandatoryKeys": ["4082b4e4b4b81bc910fad903f0d6b9e11d9381f133eea019187a360011bf2b37"],
+							"optionalKeys": ["44c4b0f3bf9f2abbbe97d87c31254ce388f92c09d3c2abdb3fd25a60790938c4"],
 							"nonce": "0"
 						},
 						"address": "klyu8n446v5sa9nqch32rooxfemg8c8f3ywsbwwva"
@@ -24475,9 +24097,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"4d4a79240324c51c94da892b62bdde7aa81c139d605d86e00361a2f38ab40e89"
-							],
+							"mandatoryKeys": ["4d4a79240324c51c94da892b62bdde7aa81c139d605d86e00361a2f38ab40e89"],
 							"optionalKeys": [
 								"64188408479db22b2b9be0cbd6c9935704cfeed10e332e14edd8f07c4daa670f",
 								"ac52795ecd61b58995835909a9b966bf38abf6d48038312e512001c0475a1b0f",
@@ -24610,9 +24230,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"c2fa28d490a66bae90c796798574f87ee6f2c05f1c7dc129d084170ac1c1da75"
-							],
+							"mandatoryKeys": ["c2fa28d490a66bae90c796798574f87ee6f2c05f1c7dc129d084170ac1c1da75"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -24783,9 +24401,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"4f993f28559892e7be5a3a4a6ed7f23464aa23d4aed8b6a3f1ea03b10d7c24f4"
-							],
+							"mandatoryKeys": ["4f993f28559892e7be5a3a4a6ed7f23464aa23d4aed8b6a3f1ea03b10d7c24f4"],
 							"optionalKeys": [
 								"3a2a565b0fa3a84106c7a34aed82df52945de6e05cb6ac9f6b6b59e2c1203d75",
 								"6cfd3d33317f84366dd51d7231a85f53750afbe56c8cfec7ee4f9fee25c9e7c3"
@@ -24872,9 +24488,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"ff9b5d09bf6eaac3f3e06c7f1c9126b57c73fe992bbe74740252ec69418b6972"
-							],
+							"mandatoryKeys": ["ff9b5d09bf6eaac3f3e06c7f1c9126b57c73fe992bbe74740252ec69418b6972"],
 							"optionalKeys": [
 								"b230ae5f85f9ad95e3628038b1e747a5ff2fc5b242fd96ccf22f3ad18fb2666b",
 								"fd061b9146691f3c56504be051175d5b76d1b1d0179c5c4370e18534c5882122"
@@ -25063,9 +24677,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"755360e5f225b924e1f7c528984c54bdb3e3410de51302fa7c9597343a29b370"
-							],
+							"mandatoryKeys": ["755360e5f225b924e1f7c528984c54bdb3e3410de51302fa7c9597343a29b370"],
 							"optionalKeys": [
 								"0b25df8efe8a8e78150ec5112a96eed3ea7ae420b872b79322efe7d0e570e077",
 								"4c3755eedd1a89c1e857fd7a48f950be47444e8f28d9eb67a84017aabc2ed0b5",
@@ -25352,9 +24964,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"5fcca051b38fd7a951e17fd20c3362554c1495a7e4472c2dea84157f1ebcae57"
-							],
+							"mandatoryKeys": ["5fcca051b38fd7a951e17fd20c3362554c1495a7e4472c2dea84157f1ebcae57"],
 							"optionalKeys": [
 								"dff8210502d5bfadbc1c700ef857d5ad9b2c48f1c3f21b2e4a9de2304d17a7e0",
 								"e0f7f86696cfb2155fe8e9849ab89515af3a982d4c7dd51bcae26f5c5009685d"
@@ -25420,9 +25030,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"805efb89f4e79b464fc5657c500a9a4f4a92deb9e57460ef6192bd904c230646"
-							],
+							"mandatoryKeys": ["805efb89f4e79b464fc5657c500a9a4f4a92deb9e57460ef6192bd904c230646"],
 							"optionalKeys": [
 								"0c2af3c743eff4b31d3079756e88fced84bd642ce5bcda3db1a6e09f6e82f1fc",
 								"6dd5b8c7daad58d11178060fbec3c91581142035ccd1b3f0c9cbb788bd5fbd53"
@@ -25461,9 +25069,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"6bf9921b4fa3f0e422ba10ed728afc70d05329b70b8c2c46753fe78400ad33fe"
-							],
+							"mandatoryKeys": ["6bf9921b4fa3f0e422ba10ed728afc70d05329b70b8c2c46753fe78400ad33fe"],
 							"optionalKeys": [
 								"b5eaed26c5920c00caeeb0fda0edcda3600ace21190c646f8a03b8e449d97fdd",
 								"d5dce13b6044486fc5561e7a8f481dd918ed7bdfeeb52dc81af9f283d98add45"
@@ -26363,9 +25969,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"5d4935fb6fae89bcf7cd18c653e923b11b5fcb5931b225faf4ed62ac4909641a"
-							],
+							"mandatoryKeys": ["5d4935fb6fae89bcf7cd18c653e923b11b5fcb5931b225faf4ed62ac4909641a"],
 							"optionalKeys": [
 								"8779b372a57039455ef6b43300143a23694adf0c8806294af16a248603da5b70",
 								"8bc16962d92ab2980720854183a79fb42477d31fc45082d660b1a3f0ee61898a",
@@ -26520,9 +26124,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 3,
-							"mandatoryKeys": [
-								"24193236b7cbeaf5e6feafbbf7a791095ea64ec73abde8f0470001fee5d39d9d"
-							],
+							"mandatoryKeys": ["24193236b7cbeaf5e6feafbbf7a791095ea64ec73abde8f0470001fee5d39d9d"],
 							"optionalKeys": [
 								"2eca11a4786f35f367299e1defd6a22ac4eb25d2552325d6c5126583a3bdd0fb",
 								"758fc45791faf5796e8201e49950a9ee1ee788192714b935be982f315b1af8cd",
@@ -26595,9 +26197,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"872d1fc51d3947e7c7847b142f82fda858d5c3ae5777af2f8c5dbd71bf685f74"
-							],
+							"mandatoryKeys": ["872d1fc51d3947e7c7847b142f82fda858d5c3ae5777af2f8c5dbd71bf685f74"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -26843,9 +26443,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"d345e42149ef2d4599af1acc153afacaa6316d743cef929d0d039099f57137ff"
-							],
+							"mandatoryKeys": ["d345e42149ef2d4599af1acc153afacaa6316d743cef929d0d039099f57137ff"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -27008,9 +26606,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"3cf45b6f93f8fc94053fa1083f8494c071dd8b18b8472d74ee4eeac648907372"
-							],
+							"mandatoryKeys": ["3cf45b6f93f8fc94053fa1083f8494c071dd8b18b8472d74ee4eeac648907372"],
 							"optionalKeys": [
 								"cf434a889d6c7a064e8de61bb01759a76f585e5ff45a78ba8126ca332601f535",
 								"fd061b9146691f3c56504be051175d5b76d1b1d0179c5c4370e18534c5882122"
@@ -27040,9 +26636,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"4d7cc73ff093baeed193e456fcc9a0d8008a489d6ccc6e5c7a88d6f5d9980c86"
-							],
+							"mandatoryKeys": ["4d7cc73ff093baeed193e456fcc9a0d8008a489d6ccc6e5c7a88d6f5d9980c86"],
 							"optionalKeys": [
 								"8853d0efde715a8ad433e7a3dd55153aff1ffc2f2d1bb0325bda76f440fab7a1",
 								"cf37587639f518afeb5c12e5de30bb0ccfabee0923f85c58859c1cddc466b71d"
@@ -27117,9 +26711,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"43633e10bfb8362f2631de50cbca5ae6a9624604ce53747f7341350be9d88c1a"
-							],
+							"mandatoryKeys": ["43633e10bfb8362f2631de50cbca5ae6a9624604ce53747f7341350be9d88c1a"],
 							"optionalKeys": [
 								"45d5adabf7ec0c093b496c954206407ff7f923d762cd37e64d24fcb8ad292a7a",
 								"c7648e0e99efa3c87c5c685ffa3f3bc340a6f69125367239227bdc222c0bd349"
@@ -27266,9 +26858,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"ed8f279a29a34237398b24b8b1d9e3c26c3bdbd7d9f100a9b258a9fd6d773f60"
-							],
+							"mandatoryKeys": ["ed8f279a29a34237398b24b8b1d9e3c26c3bdbd7d9f100a9b258a9fd6d773f60"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -27400,12 +26990,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"7be080ace7f2f6e37b4dd1cd3e9d73593a6f80596e8db0683d1da041acc66165"
-							],
-							"optionalKeys": [
-								"8fe529a846e121ce466bd74a3258ebbda059cf78abcf8d864faf666af9929ae2"
-							],
+							"mandatoryKeys": ["7be080ace7f2f6e37b4dd1cd3e9d73593a6f80596e8db0683d1da041acc66165"],
+							"optionalKeys": ["8fe529a846e121ce466bd74a3258ebbda059cf78abcf8d864faf666af9929ae2"],
 							"nonce": "0"
 						},
 						"address": "klyrutntnoz3hjmsb7ybmsztyyh5tpz9c8ge3suwv"
@@ -27413,9 +26999,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"817187e2eed892f3516f2fcc512145e8c3b38b36c8934b29af00bb6abba7cc2b"
-							],
+							"mandatoryKeys": ["817187e2eed892f3516f2fcc512145e8c3b38b36c8934b29af00bb6abba7cc2b"],
 							"optionalKeys": [
 								"580edb3035edaa6aad3fc4563ea6074163b51232c7b6efb0c2a348c7f8df53ae",
 								"96ac3371d9cd1748041915cd3ceb9c0bfa84f3ec00789a0cf1990f670319eac7"
@@ -27499,9 +27083,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"12cbd42dafa110e003b210d62b6f9c286691c387f8a58a91d9b28ed31442324d"
-							],
+							"mandatoryKeys": ["12cbd42dafa110e003b210d62b6f9c286691c387f8a58a91d9b28ed31442324d"],
 							"optionalKeys": [
 								"30b207c00f4eab9a247d23b4ae8cc37c4406afa06f446ed50f369a5f4b551448",
 								"39723e1f9d272f7feacdbfb6ad89c0966513d785329c3d70d766808ee9a3287c"
@@ -27690,12 +27272,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"e218a60bae037800908e7322ad7dc8dd2f5d299a141cf7f5f08e3f9fae8cd1f5"
-							],
-							"optionalKeys": [
-								"ca264fd8ddd1ea53e68956f1341a941618c2b598e57f1eafccdae0e750abfaa5"
-							],
+							"mandatoryKeys": ["e218a60bae037800908e7322ad7dc8dd2f5d299a141cf7f5f08e3f9fae8cd1f5"],
+							"optionalKeys": ["ca264fd8ddd1ea53e68956f1341a941618c2b598e57f1eafccdae0e750abfaa5"],
 							"nonce": "0"
 						},
 						"address": "klyrayu4wjdmmdfye343ovr66d749jbo4k6zjt7g7"
@@ -27757,9 +27335,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"c18718d3bcec893e88ed15b05a046a9f490d228e886f97c6f1f52c18f6bbf501"
-							],
+							"mandatoryKeys": ["c18718d3bcec893e88ed15b05a046a9f490d228e886f97c6f1f52c18f6bbf501"],
 							"optionalKeys": [
 								"9cc69eb423abc2531394ce133a0e9111f6a1a65f68b805615db22f2f1273fe84",
 								"ab07c7db0a0e4da201a3cd7355a9b7478a94bfcdbf0ce5bd648581e0c89e9bc6"
@@ -27825,9 +27401,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"301f3028e70da098c11bd1d3d8fdaa25d10f16165377028b850285fb4a60b8f3"
-							],
+							"mandatoryKeys": ["301f3028e70da098c11bd1d3d8fdaa25d10f16165377028b850285fb4a60b8f3"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -27845,12 +27419,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"551cbe22e27577432ed930ca327b5ad9bc594322b9eaca3eb19a0ed92dac24c3"
-							],
-							"optionalKeys": [
-								"431c062547eb3c2edd2972024f47310b209178ddcba4f55ed168619a2631870d"
-							],
+							"mandatoryKeys": ["551cbe22e27577432ed930ca327b5ad9bc594322b9eaca3eb19a0ed92dac24c3"],
+							"optionalKeys": ["431c062547eb3c2edd2972024f47310b209178ddcba4f55ed168619a2631870d"],
 							"nonce": "0"
 						},
 						"address": "klyrhqo8cz99tadze93aq8v4b4rnjjgtb5ncok4ty"
@@ -28056,9 +27626,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"97e0426bf2e858e18ee15dac48d1cb7c1a00fb00bc43864962504a45e4419d4d"
-							],
+							"mandatoryKeys": ["97e0426bf2e858e18ee15dac48d1cb7c1a00fb00bc43864962504a45e4419d4d"],
 							"optionalKeys": [
 								"3e2418102aa43d89935875bb2609e3831a0f2d79650ed7ddbdb11ea7a284bb37",
 								"a0dc94ecc4b4dd00f2fb9caeb483fefff1130b41023de3e49b47a10cb939efa8"
@@ -28386,9 +27954,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"5a85e71849d1777087275c5c323c1b54476c09c77b46cf4cc069e97ce8cb90d1"
-							],
+							"mandatoryKeys": ["5a85e71849d1777087275c5c323c1b54476c09c77b46cf4cc069e97ce8cb90d1"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -28527,9 +28093,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"6f070c85d004855a50a99aaa7901198df55b36a64ec01578970e9de4dfcb1c65"
-							],
+							"mandatoryKeys": ["6f070c85d004855a50a99aaa7901198df55b36a64ec01578970e9de4dfcb1c65"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -28578,9 +28142,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"cba0867a49dc822fe3a5b6534386478f2a9a4c5592557efef81ec0ae34dc6143"
-							],
+							"mandatoryKeys": ["cba0867a49dc822fe3a5b6534386478f2a9a4c5592557efef81ec0ae34dc6143"],
 							"optionalKeys": [
 								"6d568a157a2a28523a50aaf4d62effea4a49a3449719333a7af7cccf8eefd289",
 								"eaa049295d96618c51eb30deffe7fc2cc8bfc13190cb97f3b513dd060b000a46"
@@ -28601,12 +28163,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"efd157d175cadcd2857b5748439e093d976ccd892ebccf53334e5a45425e08e2"
-							],
-							"optionalKeys": [
-								"d7daf01bae5d3caf8845467dc538574df1bdec7c2a85598433955fcb8502afbd"
-							],
+							"mandatoryKeys": ["efd157d175cadcd2857b5748439e093d976ccd892ebccf53334e5a45425e08e2"],
+							"optionalKeys": ["d7daf01bae5d3caf8845467dc538574df1bdec7c2a85598433955fcb8502afbd"],
 							"nonce": "0"
 						},
 						"address": "klyt7qx8bss877p76fogyhnr3pg2h8zjtx3dxqfer"
@@ -28641,9 +28199,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"f12465df32913b945fbc8ed59806d599b7688267651a49bb3c890b0b0225ded6"
-							],
+							"mandatoryKeys": ["f12465df32913b945fbc8ed59806d599b7688267651a49bb3c890b0b0225ded6"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -28873,9 +28429,7 @@
 								"3972849f2ab66376a68671c10a00e8b8b67d880434cc65b04c6ed886dfa91c2c",
 								"5f3fb8a5cfece17c8fe6e7403f7a0b3d10e95255b1436352136321286cf6d0c6"
 							],
-							"optionalKeys": [
-								"712ad1cd851a1686ce7a89f8cc2fb849673c777b961ad840f712f2317d210272"
-							],
+							"optionalKeys": ["712ad1cd851a1686ce7a89f8cc2fb849673c777b961ad840f712f2317d210272"],
 							"nonce": "0"
 						},
 						"address": "klytk7bj2yadx5vq3f87gh5cwca7ptpk5djpxhhc3"
@@ -28883,12 +28437,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"c04704c6c2e60becb6373529fee49459b29d90564d2277e1e0d65bf4a31f88fa"
-							],
-							"optionalKeys": [
-								"1281c0ed8e5b2199c94d6b0fcfdc8e98775382fa73f8d5546c5e6d6b8f124e7e"
-							],
+							"mandatoryKeys": ["c04704c6c2e60becb6373529fee49459b29d90564d2277e1e0d65bf4a31f88fa"],
+							"optionalKeys": ["1281c0ed8e5b2199c94d6b0fcfdc8e98775382fa73f8d5546c5e6d6b8f124e7e"],
 							"nonce": "0"
 						},
 						"address": "klytkt7756bth46gqf7x5uv3ho8jnwegf7ze57rh5"
@@ -28896,9 +28446,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"340eef019ccb870cc2a3d3faad6d3ba8e8d9b6a9f01f34103adf5b20f1b04ff8"
-							],
+							"mandatoryKeys": ["340eef019ccb870cc2a3d3faad6d3ba8e8d9b6a9f01f34103adf5b20f1b04ff8"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -29139,12 +28687,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"205688492bc52ddabfdc10fa7728b8bcb5942ad17c68ab5c20e96153fd1ac657"
-							],
-							"optionalKeys": [
-								"3504412cc17c9a8a0b410adee6620dd15d3ff7e04b9d555ac85f2d90dde9e5b9"
-							],
+							"mandatoryKeys": ["205688492bc52ddabfdc10fa7728b8bcb5942ad17c68ab5c20e96153fd1ac657"],
+							"optionalKeys": ["3504412cc17c9a8a0b410adee6620dd15d3ff7e04b9d555ac85f2d90dde9e5b9"],
 							"nonce": "0"
 						},
 						"address": "klytd3opwn38pbcqb2fg2tjnzux3psw85e7va557q"
@@ -29312,12 +28856,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"cf3734f17689809c0f34963147234fb2cc7a3d9c4933e654d7390fa56d1adfb1"
-							],
-							"optionalKeys": [
-								"c04704c6c2e60becb6373529fee49459b29d90564d2277e1e0d65bf4a31f88fa"
-							],
+							"mandatoryKeys": ["cf3734f17689809c0f34963147234fb2cc7a3d9c4933e654d7390fa56d1adfb1"],
+							"optionalKeys": ["c04704c6c2e60becb6373529fee49459b29d90564d2277e1e0d65bf4a31f88fa"],
 							"nonce": "0"
 						},
 						"address": "klytfmg36t36h22w24dmc2jn5wacb336vzbjzbv29"
@@ -29479,9 +29019,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"f7dd6ac599381837fcacc6792c2550b0131a8b73340fd1be8c3555a9ead6abee"
-							],
+							"mandatoryKeys": ["f7dd6ac599381837fcacc6792c2550b0131a8b73340fd1be8c3555a9ead6abee"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -29490,9 +29028,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"4cb1cab9a19594c0ce6e57ef3b8cb57e0ff1185388c1b6724525781680f9ce37"
-							],
+							"mandatoryKeys": ["4cb1cab9a19594c0ce6e57ef3b8cb57e0ff1185388c1b6724525781680f9ce37"],
 							"optionalKeys": [
 								"0004fb430723e87c8f2fb2347877e11230aa7d3ae7b649ff160ec78728570193",
 								"640da05a4e401ce326c744c97b252bef7a31e51d41df0054db6824a38ab81dfb",
@@ -29505,12 +29041,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"29ce9bd5cd9d0df6660b9aaaee34b0d194a913c7c10c9211fbda1279a7f8bad1"
-							],
-							"optionalKeys": [
-								"167221bdf0af9f83fd9f0cda0aff264a836f4b85a0cf7ee5f6bec6029bb6d517"
-							],
+							"mandatoryKeys": ["29ce9bd5cd9d0df6660b9aaaee34b0d194a913c7c10c9211fbda1279a7f8bad1"],
+							"optionalKeys": ["167221bdf0af9f83fd9f0cda0aff264a836f4b85a0cf7ee5f6bec6029bb6d517"],
 							"nonce": "0"
 						},
 						"address": "klykxe7wf95vxkh3qkwg582zkb698pqofahk2k95q"
@@ -29563,9 +29095,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"75fe9e07df0f2ab7986913282419a0269fa4c66f3f964ac3e7e11f371c899a8a"
-							],
+							"mandatoryKeys": ["75fe9e07df0f2ab7986913282419a0269fa4c66f3f964ac3e7e11f371c899a8a"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -29619,9 +29149,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"6edd9b5b01734fad5fb6653f8e7edeb67618162e409bb34da4dfb25fbc22d674"
-							],
+							"mandatoryKeys": ["6edd9b5b01734fad5fb6653f8e7edeb67618162e409bb34da4dfb25fbc22d674"],
 							"optionalKeys": [
 								"0b1f8d5c940497a072bc086b07eec68a2a7003180309194e19e561929f6e543f",
 								"1fc0127e567e15fe880455d393c9ff789bce2e1bb6d1a1fa3287d0ec981b710b",
@@ -30026,12 +29554,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"3a29d2f23991f7b9bf8430534356c41be612d6c804dcddd635024e732e8dcdde"
-							],
-							"optionalKeys": [
-								"b4d365b9e8e61886b41a2615dd2eb72ac040ab876a416ca2a7c58b046b407fd6"
-							],
+							"mandatoryKeys": ["3a29d2f23991f7b9bf8430534356c41be612d6c804dcddd635024e732e8dcdde"],
+							"optionalKeys": ["b4d365b9e8e61886b41a2615dd2eb72ac040ab876a416ca2a7c58b046b407fd6"],
 							"nonce": "0"
 						},
 						"address": "klyk7b2y6asc35g397zvgv8c3chsuys2d7rcge7dy"
@@ -30057,9 +29581,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"4cb2a7b53738f068517207bb530828bab01673dd988db6bbc66986db2ae03d10"
-							],
+							"mandatoryKeys": ["4cb2a7b53738f068517207bb530828bab01673dd988db6bbc66986db2ae03d10"],
 							"optionalKeys": [
 								"2205b70216c0f4ca46301ac84029229db6fd68c34b8aac4f0d0966c1b3975f2b",
 								"627f17d893e5697a4ba2208bc80b0292e7f58d8120eb353c1b55429db9c6b196",
@@ -30180,9 +29702,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"c93551ed56275e69317b566c445811c3b84e1d032e9e1977a4d3b2dbaaa108c9"
-							],
+							"mandatoryKeys": ["c93551ed56275e69317b566c445811c3b84e1d032e9e1977a4d3b2dbaaa108c9"],
 							"optionalKeys": [
 								"2d53b5ddeaf3db0f1aa3cc49633028449c5e398142aa489655dd6e5d8a9c2304",
 								"ad829f6b3f3ca91bcdd1cb8233c95b72ec17288fc13379b4d62f7e16233ee11f"
@@ -30273,12 +29793,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"ffb54132c70b63528e78b8af56c56eaa41482d85f4a8231baafce3209ca16f34"
-							],
-							"optionalKeys": [
-								"fc5303c6182024958e0a670d7a8ce448735e7b5531b71aa8dd1f83fa7380ea62"
-							],
+							"mandatoryKeys": ["ffb54132c70b63528e78b8af56c56eaa41482d85f4a8231baafce3209ca16f34"],
+							"optionalKeys": ["fc5303c6182024958e0a670d7a8ce448735e7b5531b71aa8dd1f83fa7380ea62"],
 							"nonce": "0"
 						},
 						"address": "klykkcbfbg52zbysps3cvq8tktdbxmranejpf8b5c"
@@ -30340,9 +29856,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"061228832ab19641a0a9437502f83ed585643196adbdf55ab13de29ede265776"
-							],
+							"mandatoryKeys": ["061228832ab19641a0a9437502f83ed585643196adbdf55ab13de29ede265776"],
 							"optionalKeys": [
 								"69561bcc5c764dc24f2d1b53472cb10e3ea42753906b4fb9ae5981e1605d43ed",
 								"ac879b1e1fdb58d3c1c1be5bfb9dc4b772e0d96167ec137aef4a15d10fc9f4ff"
@@ -30354,9 +29868,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"e3dcc1d9c47ea3010f1ad942992bdb5a233cf6af4ff3207da1ef345feec9c1fd"
-							],
+							"mandatoryKeys": ["e3dcc1d9c47ea3010f1ad942992bdb5a233cf6af4ff3207da1ef345feec9c1fd"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -30374,9 +29886,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"981d91f7336b9da35fd0ee72b5fbf9cb4c4512d2520824e07649a7db1320dd8e"
-							],
+							"mandatoryKeys": ["981d91f7336b9da35fd0ee72b5fbf9cb4c4512d2520824e07649a7db1320dd8e"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -30754,9 +30264,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"10bdf57ee21ff657ab617395acab81814c3983f608bf6f0be6e626298225331d"
-							],
+							"mandatoryKeys": ["10bdf57ee21ff657ab617395acab81814c3983f608bf6f0be6e626298225331d"],
 							"optionalKeys": [
 								"2b4ffbf13f902811a41adb31ed21d63b725474f9c9bbf283e2015fa376dc03f8",
 								"7812e73168b88adfec7462f4004e69adaf5d65e85fe0da89cd0b3c1ad51987f9"
@@ -30880,9 +30388,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"b44aebeb6ea4b9c0cd3a117a2ddcabed1fed6ecb320a08fa496dbb367bf8e9e4"
-							],
+							"mandatoryKeys": ["b44aebeb6ea4b9c0cd3a117a2ddcabed1fed6ecb320a08fa496dbb367bf8e9e4"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -30987,12 +30493,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"cc9e9212cabfe8c031c00c9de9d33e07f09b6cbcc3a57a642b58e361407d75f2"
-							],
-							"optionalKeys": [
-								"4082b4e4b4b81bc910fad903f0d6b9e11d9381f133eea019187a360011bf2b37"
-							],
+							"mandatoryKeys": ["cc9e9212cabfe8c031c00c9de9d33e07f09b6cbcc3a57a642b58e361407d75f2"],
+							"optionalKeys": ["4082b4e4b4b81bc910fad903f0d6b9e11d9381f133eea019187a360011bf2b37"],
 							"nonce": "0"
 						},
 						"address": "klyqb6s96h4kd3xjdxg4nnod2tog52qbnx9tx7gok"
@@ -31381,12 +30883,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"35a388295339d2477cfb86bd2355b140ce3c8e4ea0281ceb6f61d0df95e707dc"
-							],
-							"optionalKeys": [
-								"92c112c9b3830c395ae05fd2a8308fdb4542886720cc15c8fac9d3cb108a1f7b"
-							],
+							"mandatoryKeys": ["35a388295339d2477cfb86bd2355b140ce3c8e4ea0281ceb6f61d0df95e707dc"],
+							"optionalKeys": ["92c112c9b3830c395ae05fd2a8308fdb4542886720cc15c8fac9d3cb108a1f7b"],
 							"nonce": "0"
 						},
 						"address": "klyq9abqzpb9f8ocwxcbcs4tamo257tex7ppzojp8"
@@ -31623,12 +31121,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"1281c0ed8e5b2199c94d6b0fcfdc8e98775382fa73f8d5546c5e6d6b8f124e7e"
-							],
-							"optionalKeys": [
-								"5cc142df015459c6ce9ee0d53ae6a19b834e44752e7c68116e64c9be51ad2d52"
-							],
+							"mandatoryKeys": ["1281c0ed8e5b2199c94d6b0fcfdc8e98775382fa73f8d5546c5e6d6b8f124e7e"],
+							"optionalKeys": ["5cc142df015459c6ce9ee0d53ae6a19b834e44752e7c68116e64c9be51ad2d52"],
 							"nonce": "0"
 						},
 						"address": "klyqka6hswnp8cqkr5wmarjooc6s4unfxhtd2xbd8"
@@ -31756,9 +31250,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"1f0fe45b97418ca905f0baa689316e9fa27982468384ac9ef5aada327f37d6cf"
-							],
+							"mandatoryKeys": ["1f0fe45b97418ca905f0baa689316e9fa27982468384ac9ef5aada327f37d6cf"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -32048,9 +31540,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"b8c3ea8ea750fa87d3fdddf4d708b01bf29e94166496e6fdc8c1317a90ce26ee"
-							],
+							"mandatoryKeys": ["b8c3ea8ea750fa87d3fdddf4d708b01bf29e94166496e6fdc8c1317a90ce26ee"],
 							"optionalKeys": [
 								"38d40eb76e570e80adc4671018592e0c7c9b4573703a80f7b9f22885e99acfce",
 								"f8c62068e77a305a37dd6e884f49099254304ec187ee4e45f3ed6316b2e4efa5"
@@ -32089,9 +31579,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"81c0528065305f757043c17c951c94bb1a8b7d62d38ae4897934f2849d178ada"
-							],
+							"mandatoryKeys": ["81c0528065305f757043c17c951c94bb1a8b7d62d38ae4897934f2849d178ada"],
 							"optionalKeys": [
 								"9e62b73d34b3e9a03e5bb858cd78fcac8e095b6fbfe8179dfc37ae318956ea14",
 								"beed28d54a90066459f23bcb0222b3e183caf7cfb063b18b840bff200dfced22"
@@ -32325,9 +31813,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"d93905eb5f61ef66f298406eb2a9072b92a48ccd622797c6b9869e7e5c9688d4"
-							],
+							"mandatoryKeys": ["d93905eb5f61ef66f298406eb2a9072b92a48ccd622797c6b9869e7e5c9688d4"],
 							"optionalKeys": [
 								"9434da32f207c30a646605d0237bb9213d8863ab1fb35b15f3ea7aac4e4a7cb6",
 								"e21048eda341f5c8e303e15e8dc2574993318e75e876e0888f938ef56805495d"
@@ -32339,9 +31825,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"de930076fec43f941fbc176241cdc5393a8e6f44cc27f95652811cab33f776dd"
-							],
+							"mandatoryKeys": ["de930076fec43f941fbc176241cdc5393a8e6f44cc27f95652811cab33f776dd"],
 							"optionalKeys": [
 								"94c88b3536da7e44dcb5e33da68de44f98be4a104be3b707d1fcacc32ccb8c86",
 								"cf8d9707c9cd33467865f1006aabed160d263ce9bee4094a04a381d64f8d2634"
@@ -32662,12 +32146,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"2d15ffbf64856e57ea9013a298684dbaf236ae0225c7d262faacf05f14856b8d"
-							],
-							"optionalKeys": [
-								"fdbc75686fda5a5b3c4c1e26d29441358a110eba3cde75d59ca17e7bbf09191e"
-							],
+							"mandatoryKeys": ["2d15ffbf64856e57ea9013a298684dbaf236ae0225c7d262faacf05f14856b8d"],
+							"optionalKeys": ["fdbc75686fda5a5b3c4c1e26d29441358a110eba3cde75d59ca17e7bbf09191e"],
 							"nonce": "0"
 						},
 						"address": "klye6ugzv2u2gxzmtdsohoqg2wacf75j4cec5g94x"
@@ -32879,9 +32359,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"341dc70f7c30bd2826b7fbc2ce4a8f81ce27608f0f2eca6842973382ac855047"
-							],
+							"mandatoryKeys": ["341dc70f7c30bd2826b7fbc2ce4a8f81ce27608f0f2eca6842973382ac855047"],
 							"optionalKeys": [
 								"239fc7fb133d4380a938e55f257ad226f368039f206d14eff9e968bbc6f6f68e",
 								"403712589f0fa414316bfd803a72c0dd2b701529fe288ae417b06c69c92882d3"
@@ -32893,12 +32371,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"f39ec2772f2350205a6de447ef4d68f761cbafbe69d51656231ffa2b60d5bf87"
-							],
-							"optionalKeys": [
-								"d1c08341408884d1ecab000e14b1f4688ad7f59640e5a257a10fcd2b8c779418"
-							],
+							"mandatoryKeys": ["f39ec2772f2350205a6de447ef4d68f761cbafbe69d51656231ffa2b60d5bf87"],
+							"optionalKeys": ["d1c08341408884d1ecab000e14b1f4688ad7f59640e5a257a10fcd2b8c779418"],
 							"nonce": "0"
 						},
 						"address": "klye9sx4swk84c7kvaddrauu3bpnm8htzzy3y4wug"
@@ -32924,9 +32398,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"011cc21cc5ac0fa83affe3cce1f01ec28a65d3f6f67160ee499ad553b008d986"
-							],
+							"mandatoryKeys": ["011cc21cc5ac0fa83affe3cce1f01ec28a65d3f6f67160ee499ad553b008d986"],
 							"optionalKeys": [
 								"782ac9d26b3f2f56d42a60bbe8e8cfd96be8bdb15030169505a5ad20bd00c7c8",
 								"ad555f5d68cc638e9d52a6a40a2f34f7c3d0969d07e96fd442390ac8aff1d33e"
@@ -32992,9 +32464,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"82b898fc9a5c5145333cc8f76ff0e1e0ccb3926633805f2b078ab3e69808225b"
-							],
+							"mandatoryKeys": ["82b898fc9a5c5145333cc8f76ff0e1e0ccb3926633805f2b078ab3e69808225b"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -33145,9 +32615,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"50b63f7018a867d57c47546235355f7f8d6b1b303c04e141d825650f4b685486"
-							],
+							"mandatoryKeys": ["50b63f7018a867d57c47546235355f7f8d6b1b303c04e141d825650f4b685486"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -33823,9 +33291,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"9b10132dbf8c100a2b573f2697b109d66ab392002d15f75a11c7946b748a24b0"
-							],
+							"mandatoryKeys": ["9b10132dbf8c100a2b573f2697b109d66ab392002d15f75a11c7946b748a24b0"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -33843,9 +33309,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"5a82f58bf35ef4bdfac9a371a64e91914519af31a5cf64a5b8b03ca7d32c15dc"
-							],
+							"mandatoryKeys": ["5a82f58bf35ef4bdfac9a371a64e91914519af31a5cf64a5b8b03ca7d32c15dc"],
 							"optionalKeys": [
 								"6beaa7c569c1000f4fcef4ce3133b18609aea52adf95d5992970ea5e0cedda87",
 								"71e1e34dd0529d920ee6c38497b028352c57b7130d55737c8a778ff3974ec29f",
@@ -33983,9 +33447,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 3,
-							"mandatoryKeys": [
-								"01655bbf6b03a010af269b0e20d8058b337cc5fdacece1ecc494727090004758"
-							],
+							"mandatoryKeys": ["01655bbf6b03a010af269b0e20d8058b337cc5fdacece1ecc494727090004758"],
 							"optionalKeys": [
 								"35a52459b8dd0222e899af5b129bf55d53403689acfd039909b65e3de9926c4c",
 								"f6622d4d8ce29d4e175cebaffcce3e4f28e957c308eaf204c1ec76e038a13734",
@@ -34124,9 +33586,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"33ce4e9fe034939405feebae2c757a2d925084e178bc862dcafbe28caead5ffd"
-							],
+							"mandatoryKeys": ["33ce4e9fe034939405feebae2c757a2d925084e178bc862dcafbe28caead5ffd"],
 							"optionalKeys": [
 								"6b4d5fa68d25d38400a55633736c0e776aef9280701152594c776fdd50f34b70",
 								"e1ccb24a0ec644f0cb907c2513aa950a0f22dce95044188006a6eeef1a5f9b78"
@@ -34489,9 +33949,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"60b9f4ff85a61e91a222ab703a5cc4c3bd62c5826374d5a909c9dcd8878df223"
-							],
+							"mandatoryKeys": ["60b9f4ff85a61e91a222ab703a5cc4c3bd62c5826374d5a909c9dcd8878df223"],
 							"optionalKeys": [
 								"6f60007ccd173b6f79d6551ca98cf9036f97c63f118dd6e366aa9c7b1480cc5f",
 								"ca38cb96991977b03251cf8d018f1e590b5d4283859369d24fa87743b7ae6f59"
@@ -34698,9 +34156,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"9e47acf7dfc784b24d7127f47a244a2614bc69e63ddb445416869e46a7a44bba"
-							],
+							"mandatoryKeys": ["9e47acf7dfc784b24d7127f47a244a2614bc69e63ddb445416869e46a7a44bba"],
 							"optionalKeys": [
 								"2088819c3943ec7d911c7bf2c1e1b5cd6dbd03c6dcd1bd9927db46021053bcd8",
 								"b27174333df80d88b3b0d966caa2567a3c382391bb835ad06d98d6c945f25e9e"
@@ -34760,9 +34216,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"1d065cd32ce1c9679102077f4ff137c60158328b04ee71249c43d1329f1a2254"
-							],
+							"mandatoryKeys": ["1d065cd32ce1c9679102077f4ff137c60158328b04ee71249c43d1329f1a2254"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -35089,9 +34543,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"3680e97da0b32ae2489fdf8f3934cba535692c38580f37391d508fd5d3a564a3"
-							],
+							"mandatoryKeys": ["3680e97da0b32ae2489fdf8f3934cba535692c38580f37391d508fd5d3a564a3"],
 							"optionalKeys": [
 								"3b16001d7ad5f189001b690e046f99236849ed2804ad27de392cb3bc993560d7",
 								"e457771bb3db33b257a2fa2e6d84f752f243136439ef2aaa9a5bf909086d009a"
@@ -35103,9 +34555,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"8ef6869bf6ac52b62bbdbf621dd4c7453722971edd83c5f64dce07c0810d80d7"
-							],
+							"mandatoryKeys": ["8ef6869bf6ac52b62bbdbf621dd4c7453722971edd83c5f64dce07c0810d80d7"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -35276,9 +34726,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"167221bdf0af9f83fd9f0cda0aff264a836f4b85a0cf7ee5f6bec6029bb6d517"
-							],
+							"mandatoryKeys": ["167221bdf0af9f83fd9f0cda0aff264a836f4b85a0cf7ee5f6bec6029bb6d517"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -35395,9 +34843,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"93cfa13322234620c12306db869025ce3bee86002b3afe780398f1d5265132bd"
-							],
+							"mandatoryKeys": ["93cfa13322234620c12306db869025ce3bee86002b3afe780398f1d5265132bd"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -35415,9 +34861,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"e83708fd47fa419a0763ddf8edaaa6425c670ec60560070a77135d6f28b46a74"
-							],
+							"mandatoryKeys": ["e83708fd47fa419a0763ddf8edaaa6425c670ec60560070a77135d6f28b46a74"],
 							"optionalKeys": [
 								"42bb7479b754ccae32cd132c0d5629cd66d9d3adbe190e38fec6bd08d74a9db0",
 								"8c62098bd3b3a035121c1493d64464bf4ec05b67c440dfccc56f7d351d5b4475"
@@ -35522,12 +34966,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"e12bd46c89fd8fb8eff94db96d428621b541542441aa1d4f028438558c885e3f"
-							],
-							"optionalKeys": [
-								"5fad07394f787692972b44db3dceb6aa40b8f41e16fe75435781dbb704c8305e"
-							],
+							"mandatoryKeys": ["e12bd46c89fd8fb8eff94db96d428621b541542441aa1d4f028438558c885e3f"],
+							"optionalKeys": ["5fad07394f787692972b44db3dceb6aa40b8f41e16fe75435781dbb704c8305e"],
 							"nonce": "0"
 						},
 						"address": "kly2nesuopvx9hc5gs5gpbs46sxhznvuv7n9dqmph"
@@ -35627,9 +35067,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"5a545a075830f02efac011f1d8f5fa02fe4c5bd9b557a44eb14451da0219438a"
-							],
+							"mandatoryKeys": ["5a545a075830f02efac011f1d8f5fa02fe4c5bd9b557a44eb14451da0219438a"],
 							"optionalKeys": [
 								"129ba011dfd29d1808ee1b90b9b04f4b046524936813bde28f8b1f171e5d8b8f",
 								"46431a9e083c0138725f0f837a2691f6b520f2f6587ace8f34d3e0d1847d9d98"
@@ -35843,12 +35281,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"ca160202e4210851170abeb91088637ddfa14b235c241b5070a5e06bde5b856c"
-							],
-							"optionalKeys": [
-								"d8ca6d03e85f4caa4beb15774cf1cd97413577f1560fd50e007df82f96ca0ada"
-							],
+							"mandatoryKeys": ["ca160202e4210851170abeb91088637ddfa14b235c241b5070a5e06bde5b856c"],
+							"optionalKeys": ["d8ca6d03e85f4caa4beb15774cf1cd97413577f1560fd50e007df82f96ca0ada"],
 							"nonce": "0"
 						},
 						"address": "kly25er8w2nm6f6rz5z3gkoohm2ghp5prnurhx2at"
@@ -35856,9 +35290,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"13cfce4d7480cd748af3126b73ee323606629f7b8c3be49519cf720e69c8dbd5"
-							],
+							"mandatoryKeys": ["13cfce4d7480cd748af3126b73ee323606629f7b8c3be49519cf720e69c8dbd5"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -35903,12 +35335,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"a50be6d2164f0f37a900a16fcd58fe47911ae8f84ee06421d68691f63fee3132"
-							],
-							"optionalKeys": [
-								"903bfcab8745accb572b6ebe266929e753dd936c921a94d1121fedb9e7e63850"
-							],
+							"mandatoryKeys": ["a50be6d2164f0f37a900a16fcd58fe47911ae8f84ee06421d68691f63fee3132"],
+							"optionalKeys": ["903bfcab8745accb572b6ebe266929e753dd936c921a94d1121fedb9e7e63850"],
 							"nonce": "0"
 						},
 						"address": "kly2o4ze8mcz6tpupjkumeq6jnm2hmqj2qafr8wwe"
@@ -36009,9 +35437,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"c4fbe7dbc9cc52dd33b2b10cddd8d023c1ff30e1bcbb45fc813550540668295c"
-							],
+							"mandatoryKeys": ["c4fbe7dbc9cc52dd33b2b10cddd8d023c1ff30e1bcbb45fc813550540668295c"],
 							"optionalKeys": [
 								"2c07dbd321182a76eb63d7a95f9b741b24f0b888090972da80534794c87d3ace",
 								"414934d5c70dec65c4c01ddef4cb131913cc53b18e0c1c375857a5e7db52484b"
@@ -36081,9 +35507,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"5c0479fb964ef609041d0d07ea33448cea69f71bb50cf87476dc05d6b8ff331c"
-							],
+							"mandatoryKeys": ["5c0479fb964ef609041d0d07ea33448cea69f71bb50cf87476dc05d6b8ff331c"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -36264,9 +35688,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"91beb88cebbcb77453b8be4d49f25d84e22d5111e6d82d4c7fbe65b216de1dec"
-							],
+							"mandatoryKeys": ["91beb88cebbcb77453b8be4d49f25d84e22d5111e6d82d4c7fbe65b216de1dec"],
 							"optionalKeys": [
 								"3ed99cc78f5d87a7f87359e104cd2de53b8ebd0071087813cc0065e720e9094f",
 								"7e94fe5ff3ee89f6af0709fed84fe40e32bae505cb0f5a30ced85bddaf824303"
@@ -36287,9 +35709,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"05cbd7d75851f6ab60b1485c8d57119ec6750d0cf6444ff7603751e590dd3058"
-							],
+							"mandatoryKeys": ["05cbd7d75851f6ab60b1485c8d57119ec6750d0cf6444ff7603751e590dd3058"],
 							"optionalKeys": [
 								"0f32aa6f60c3e84d09fce66c2f6bee4dc5689f5c13148abf914e3e730e6420f2",
 								"f711635fc73c4604a0be82e62bce2be603aefc51e0baad0a32c37e376b2ef6fa"
@@ -36346,9 +35766,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"48f2826bd7ce3b690f84e6fad4962768f7aaab61bfde9ab064205983cb690170"
-							],
+							"mandatoryKeys": ["48f2826bd7ce3b690f84e6fad4962768f7aaab61bfde9ab064205983cb690170"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -36375,9 +35793,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"498ab6794afaa9b412844d71a5e13d57d3e99465719bcb854488c352904dd69d"
-							],
+							"mandatoryKeys": ["498ab6794afaa9b412844d71a5e13d57d3e99465719bcb854488c352904dd69d"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -36467,12 +35883,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"9ee431e517c721159a6a5b3ec48a2c9951b07ad443ad56e3452c61faf396cc2c"
-							],
-							"optionalKeys": [
-								"c7ddd7ca296b431c4bce77e7561473bb93913659264c0394a9957cc7f6ee390b"
-							],
+							"mandatoryKeys": ["9ee431e517c721159a6a5b3ec48a2c9951b07ad443ad56e3452c61faf396cc2c"],
+							"optionalKeys": ["c7ddd7ca296b431c4bce77e7561473bb93913659264c0394a9957cc7f6ee390b"],
 							"nonce": "0"
 						},
 						"address": "kly2edxff8y7ag6zqaftncd4oej8cjc2u32z4u7vn"
@@ -36564,12 +35976,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"92c112c9b3830c395ae05fd2a8308fdb4542886720cc15c8fac9d3cb108a1f7b"
-							],
-							"optionalKeys": [
-								"04a665a9c1008c53cdf854360c612a208bb4db4d8ba5d1e430408f5c2e9e0558"
-							],
+							"mandatoryKeys": ["92c112c9b3830c395ae05fd2a8308fdb4542886720cc15c8fac9d3cb108a1f7b"],
+							"optionalKeys": ["04a665a9c1008c53cdf854360c612a208bb4db4d8ba5d1e430408f5c2e9e0558"],
 							"nonce": "0"
 						},
 						"address": "kly2aysymezxjnf669n8rt4e4ryo2r3zojezyf5rp"
@@ -36739,9 +36147,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"d19d484df0ae6bf5d1fb7f98bd11028ab30f4de0440e5818e4ff8bd5181ac848"
-							],
+							"mandatoryKeys": ["d19d484df0ae6bf5d1fb7f98bd11028ab30f4de0440e5818e4ff8bd5181ac848"],
 							"optionalKeys": [
 								"730267d8204b872f4b8765b4ab94dbcae6f02c33e7598808f38c718b226ae40d",
 								"c99b279bee356245ac4bdc860784e1ed9e4a56d63179fe5ab88115e53fa054c5"
@@ -36780,9 +36186,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 3,
-							"mandatoryKeys": [
-								"e3859349135529a8c26f5bf2ef5fa73db5e701a4273394f3598bf73595c70f60"
-							],
+							"mandatoryKeys": ["e3859349135529a8c26f5bf2ef5fa73db5e701a4273394f3598bf73595c70f60"],
 							"optionalKeys": [
 								"35a52459b8dd0222e899af5b129bf55d53403689acfd039909b65e3de9926c4c",
 								"b7499602dda56ffebe0a0135590a21e72ccce9a59727a8812f8bbfdefb6a9972",
@@ -36831,12 +36235,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"8c21c3c15d9a16357e5634ef74b7be9ca1cf11c4d89825e1aba2e48d3407b25b"
-							],
-							"optionalKeys": [
-								"e457a07aed257d980d9c5dce26c27bc088ffd16244379832c55bb51ec7066352"
-							],
+							"mandatoryKeys": ["8c21c3c15d9a16357e5634ef74b7be9ca1cf11c4d89825e1aba2e48d3407b25b"],
+							"optionalKeys": ["e457a07aed257d980d9c5dce26c27bc088ffd16244379832c55bb51ec7066352"],
 							"nonce": "0"
 						},
 						"address": "kly2f4thqprc6gtggjdn75cvkxsgmj7yhwr6hdh8n"
@@ -37018,9 +36418,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"f11c6627436351e5a4dfc5818c87c701fffeebe4efa51e306929f38bd0e897fb"
-							],
+							"mandatoryKeys": ["f11c6627436351e5a4dfc5818c87c701fffeebe4efa51e306929f38bd0e897fb"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -37099,12 +36497,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"d7daf01bae5d3caf8845467dc538574df1bdec7c2a85598433955fcb8502afbd"
-							],
-							"optionalKeys": [
-								"14492edd6e152fa7cc49bab144ba1129e160d941b1bbe7154fd633ca3363fa1b"
-							],
+							"mandatoryKeys": ["d7daf01bae5d3caf8845467dc538574df1bdec7c2a85598433955fcb8502afbd"],
+							"optionalKeys": ["14492edd6e152fa7cc49bab144ba1129e160d941b1bbe7154fd633ca3363fa1b"],
 							"nonce": "0"
 						},
 						"address": "klyabmtyzp74h6jjw5yqct88a75zaayyx7g8fyd4w"
@@ -37784,12 +37178,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"431c062547eb3c2edd2972024f47310b209178ddcba4f55ed168619a2631870d"
-							],
-							"optionalKeys": [
-								"9ee431e517c721159a6a5b3ec48a2c9951b07ad443ad56e3452c61faf396cc2c"
-							],
+							"mandatoryKeys": ["431c062547eb3c2edd2972024f47310b209178ddcba4f55ed168619a2631870d"],
+							"optionalKeys": ["9ee431e517c721159a6a5b3ec48a2c9951b07ad443ad56e3452c61faf396cc2c"],
 							"nonce": "0"
 						},
 						"address": "klyatsr69b37gwwws59br22syvnt7t82ebcvvm934"
@@ -38015,9 +37405,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"b959428e6f6faf015d1722591109a8bd38a1a96ffff56ec0abdb3da0dc82f917"
-							],
+							"mandatoryKeys": ["b959428e6f6faf015d1722591109a8bd38a1a96ffff56ec0abdb3da0dc82f917"],
 							"optionalKeys": [
 								"51a8886dd171324d02d30e1bc56eccc244b7c76ab2be57939a5a5ccec6c70cc1",
 								"93f26f0b02a67b6c4c386ccef8cf9ad33909ca311eacabd33d55afde999ce496"
@@ -38074,9 +37462,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"2ea31332fedd7b52f671573e136c84d7961abe395f82ba82a98aff460790d255"
-							],
+							"mandatoryKeys": ["2ea31332fedd7b52f671573e136c84d7961abe395f82ba82a98aff460790d255"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -38239,9 +37625,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"fd061b9146691f3c56504be051175d5b76d1b1d0179c5c4370e18534c5882122"
-							],
+							"mandatoryKeys": ["fd061b9146691f3c56504be051175d5b76d1b1d0179c5c4370e18534c5882122"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -38295,9 +37679,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 3,
-							"mandatoryKeys": [
-								"0e88b1ca1414078f51a5f173356dfbf48a95b941764b894594c54f211c636941"
-							],
+							"mandatoryKeys": ["0e88b1ca1414078f51a5f173356dfbf48a95b941764b894594c54f211c636941"],
 							"optionalKeys": [
 								"02e229bc194aa90ef80cc8461eccc830b52d01678add6e0426252f3a0aa7f14f",
 								"1f2bc9022d0440254c33b5a9c09abfb864623ac9c9ea3285d79bc25d4de430f7"
@@ -38358,12 +37740,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"b2ecdfb6e052889728c2a117cf19a90965c0daf993888f6ad20dcaff5d7212cd"
-							],
-							"optionalKeys": [
-								"78b5f8ccfc70d1e0e3421f4af0380ee9b4e3f3fef2b1005d904b736558e525ca"
-							],
+							"mandatoryKeys": ["b2ecdfb6e052889728c2a117cf19a90965c0daf993888f6ad20dcaff5d7212cd"],
+							"optionalKeys": ["78b5f8ccfc70d1e0e3421f4af0380ee9b4e3f3fef2b1005d904b736558e525ca"],
 							"nonce": "0"
 						},
 						"address": "klyah7qnb7nusf4yqrq45ntkoq93qxqtu5qo4afmq"
@@ -38425,9 +37803,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"2c1f2c2a92f8b8e1c9b6348304d2dffe90306489075f78bde436877b648f8446"
-							],
+							"mandatoryKeys": ["2c1f2c2a92f8b8e1c9b6348304d2dffe90306489075f78bde436877b648f8446"],
 							"optionalKeys": [
 								"1b1c82c3d46ca17beb2b10b984a0023c8dc8abaf40631c942df09e19a472a5a9",
 								"4a51c5b8416a5dad57913939d91df5923f52fb08884c6e80c1c8ba7be443dde6"
@@ -38529,9 +37905,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"e003fd442b860d4acd4c47456e187f9b8062120d3f4c96b730f828d300f92073"
-							],
+							"mandatoryKeys": ["e003fd442b860d4acd4c47456e187f9b8062120d3f4c96b730f828d300f92073"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -39212,9 +38586,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"005af001e687a8e8f41e36754be966d30aa07b070e93dfbfb4b2007c3b13cafb"
-							],
+							"mandatoryKeys": ["005af001e687a8e8f41e36754be966d30aa07b070e93dfbfb4b2007c3b13cafb"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -39500,12 +38872,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"32bff2174e0a33f743b06fb038ee10fecd1e588de6db34acd7711eddfe94e97b"
-							],
-							"optionalKeys": [
-								"1b32707784c9c9614a3f0417a4ac4a26c2372a97c1e0ff2c1feaf4bca75c029b"
-							],
+							"mandatoryKeys": ["32bff2174e0a33f743b06fb038ee10fecd1e588de6db34acd7711eddfe94e97b"],
+							"optionalKeys": ["1b32707784c9c9614a3f0417a4ac4a26c2372a97c1e0ff2c1feaf4bca75c029b"],
 							"nonce": "0"
 						},
 						"address": "klydq78zatc79s4j5eqxrtvro2vgr9hobv4q53a38"
@@ -39630,12 +38998,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"1742af69d3d965600c7624794e4fe05939d3b3ce99da3561ce4f9f59e760218a"
-							],
-							"optionalKeys": [
-								"551cbe22e27577432ed930ca327b5ad9bc594322b9eaca3eb19a0ed92dac24c3"
-							],
+							"mandatoryKeys": ["1742af69d3d965600c7624794e4fe05939d3b3ce99da3561ce4f9f59e760218a"],
+							"optionalKeys": ["551cbe22e27577432ed930ca327b5ad9bc594322b9eaca3eb19a0ed92dac24c3"],
 							"nonce": "0"
 						},
 						"address": "klydwhc5gygjrx6tq9hv8mx3644vdfjqzetaz45qc"
@@ -39682,9 +39046,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"44ae64a7f9b46b9669ee0115707a32ea43ddaa7aede132391c0781fc08ea2f1c"
-							],
+							"mandatoryKeys": ["44ae64a7f9b46b9669ee0115707a32ea43ddaa7aede132391c0781fc08ea2f1c"],
 							"optionalKeys": [
 								"3784da92f39aa82b1c1354fe53b23fec1e08e970afbe81dc8790ae4632a57880",
 								"49c6224c96096d2e1e981d7e45c6166a48903df96c41afe18216258dc5136cb6",
@@ -39814,9 +39176,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"c2161e7a8fdab6b7d48376107175877d1114fd291a9e860097cf55082f50ad1f"
-							],
+							"mandatoryKeys": ["c2161e7a8fdab6b7d48376107175877d1114fd291a9e860097cf55082f50ad1f"],
 							"optionalKeys": [
 								"1ce9b441e240224a0f9c9e94970a0521e8f6afe7a713a3e4f626465942e5881a",
 								"68e89cfc45c0388baf8848e2cea6ea460f0fd1e629c16b846c17f8b4fa2ae8d8"
@@ -39828,9 +39188,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"03f1f6b3a61a8dafefd19069e2bc0b59fc5d81ff9e5eff6fcd9efabb36faa40b"
-							],
+							"mandatoryKeys": ["03f1f6b3a61a8dafefd19069e2bc0b59fc5d81ff9e5eff6fcd9efabb36faa40b"],
 							"optionalKeys": [
 								"54b2a6467dd2f7a6f131b15b324521506650e15b47bdc94f790fd3bba6abc8ce",
 								"afb75936a88aed8925ec71dad0f8a5010fbecbcfe639257a0de30e1d3eb47247"
@@ -39887,12 +39245,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"51319c7e1b3b244f6a43843fe3391f34f3e0fd7843c8d6d1f70b7b06d70d04cb"
-							],
-							"optionalKeys": [
-								"de75a9dcb496ec93ed4ac971705f0ea57699e5f2bf41eebc2afb02b789a97350"
-							],
+							"mandatoryKeys": ["51319c7e1b3b244f6a43843fe3391f34f3e0fd7843c8d6d1f70b7b06d70d04cb"],
+							"optionalKeys": ["de75a9dcb496ec93ed4ac971705f0ea57699e5f2bf41eebc2afb02b789a97350"],
 							"nonce": "0"
 						},
 						"address": "klydfc2s4tnb2vqyoas3gwpc6jrywbnh6c59bg5d9"
@@ -39936,9 +39290,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"484d49389f121e39e30b0a8cd9b48f9e117b9243e8c5336d258a64f8cc9b41ca"
-							],
+							"mandatoryKeys": ["484d49389f121e39e30b0a8cd9b48f9e117b9243e8c5336d258a64f8cc9b41ca"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -40043,9 +39395,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"109df1f3a7fcf7a46499599206065303d133ce530d6dec44d833fc295fe5c3d9"
-							],
+							"mandatoryKeys": ["109df1f3a7fcf7a46499599206065303d133ce530d6dec44d833fc295fe5c3d9"],
 							"optionalKeys": [
 								"20bd0369be7639745c30eb00a9dcd8cfbe5ad0e09845876635b922ab3efaa5b3",
 								"6cf69002783e6a3ce2f19e053d2022c06cea5636fb3bac802c2eced595a42c93"
@@ -40141,12 +39491,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"9f1703d3ad9e07f7c878f34459a87e1f7f1e9c0d2eaba3e7ce572193e53794e1"
-							],
-							"optionalKeys": [
-								"2d15ffbf64856e57ea9013a298684dbaf236ae0225c7d262faacf05f14856b8d"
-							],
+							"mandatoryKeys": ["9f1703d3ad9e07f7c878f34459a87e1f7f1e9c0d2eaba3e7ce572193e53794e1"],
+							"optionalKeys": ["2d15ffbf64856e57ea9013a298684dbaf236ae0225c7d262faacf05f14856b8d"],
 							"nonce": "0"
 						},
 						"address": "klyscegoxmcwo2c9zkjvby7zxrx23bs6oxntba5cx"
@@ -40271,9 +39617,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"500660b67a2ade1e2528b7f648feef8f3b46e2f4f90ca7f5439101b5119f309d"
-							],
+							"mandatoryKeys": ["500660b67a2ade1e2528b7f648feef8f3b46e2f4f90ca7f5439101b5119f309d"],
 							"optionalKeys": [
 								"40af643265a718844f3dac56ce17ae1d7d47d0a24a35a277a0a6cb0baaa1939f",
 								"542fdc008964eacc580089271353268d655ab5ec2829687aadc278653fad33cf",
@@ -40454,9 +39798,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"82aa330c65349d570f11eee38d586ae45bc3baf72bd2750eb43d584cfa32ba70"
-							],
+							"mandatoryKeys": ["82aa330c65349d570f11eee38d586ae45bc3baf72bd2750eb43d584cfa32ba70"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -40474,9 +39816,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"50409d80853b58034e2886c50592d70a23c3cba50ba7b47ac9a846d7e20578c6"
-							],
+							"mandatoryKeys": ["50409d80853b58034e2886c50592d70a23c3cba50ba7b47ac9a846d7e20578c6"],
 							"optionalKeys": [
 								"823dcce7d7e84e73100b6eaf46a05db4163a164218825f7603943ae6e66ec1ea",
 								"f0ba007f65754b49b0061b074d6697253fe395dcd3c37d82ffec07a9060fb13c"
@@ -40524,12 +39864,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"63c7bf2a3d03d13bdfb75173472f3989c13c0a7aee0a9dc0fab2c3b7136801cf"
-							],
-							"optionalKeys": [
-								"35a388295339d2477cfb86bd2355b140ce3c8e4ea0281ceb6f61d0df95e707dc"
-							],
+							"mandatoryKeys": ["63c7bf2a3d03d13bdfb75173472f3989c13c0a7aee0a9dc0fab2c3b7136801cf"],
+							"optionalKeys": ["35a388295339d2477cfb86bd2355b140ce3c8e4ea0281ceb6f61d0df95e707dc"],
 							"nonce": "0"
 						},
 						"address": "klys94w2m2ywaq58fogd5y7xyfbzf2496r2x476jw"
@@ -40582,9 +39918,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 3,
-							"mandatoryKeys": [
-								"5fa9654a582fcf107549900e842a7f4405738d6a4d32e895d24b9d2ee6072dfb"
-							],
+							"mandatoryKeys": ["5fa9654a582fcf107549900e842a7f4405738d6a4d32e895d24b9d2ee6072dfb"],
 							"optionalKeys": [
 								"4328c9aa0b21e2a56c31c6b51357374b25d7cb88ca216a2891f07931a80d8038",
 								"4e4f34a8222e3c184ebde2f5e390f18874b8a84091f79352066bca34f25e9729",
@@ -40741,9 +40075,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"97083949c0a4e6883cb1c5a170984dfdff9f71e859cfa5ca41df13a7c017fd1e"
-							],
+							"mandatoryKeys": ["97083949c0a4e6883cb1c5a170984dfdff9f71e859cfa5ca41df13a7c017fd1e"],
 							"optionalKeys": [
 								"1ff66cd8ccf9524128042e62178f62f2e549038e1ecde3a89657bfd75cd239aa",
 								"5762a615ada2e0ce36a67d0e6f84133be7a510b4acd4ec418bcee7b60aa481a4"
@@ -40755,9 +40087,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"a8e7ecc264453228c27ef6909387025bedd86be23c21d9bc8de7e6341800b5ed"
-							],
+							"mandatoryKeys": ["a8e7ecc264453228c27ef6909387025bedd86be23c21d9bc8de7e6341800b5ed"],
 							"optionalKeys": [
 								"35bad729478b87d71d6ca5c237da224fee0f14f2e255107ed88e945fd822400b",
 								"75a7dea2772928add8d08d511e9574953a7c287c06c630cfad2e9cbfe9f258ce"
@@ -40832,12 +40162,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"493bae897dae345480f07817082f07e28351b968ba7e3c2aec2e5ea4bd2f375b"
-							],
-							"optionalKeys": [
-								"3a29d2f23991f7b9bf8430534356c41be612d6c804dcddd635024e732e8dcdde"
-							],
+							"mandatoryKeys": ["493bae897dae345480f07817082f07e28351b968ba7e3c2aec2e5ea4bd2f375b"],
+							"optionalKeys": ["3a29d2f23991f7b9bf8430534356c41be612d6c804dcddd635024e732e8dcdde"],
 							"nonce": "0"
 						},
 						"address": "klyste6o4bkvwg2xynj2msjcynfucoj9oco6u59n5"
@@ -40965,9 +40291,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"b0541140b52197618bdc5ddf7388c989e986bb1b0d7f9221308e1595f6b2850c"
-							],
+							"mandatoryKeys": ["b0541140b52197618bdc5ddf7388c989e986bb1b0d7f9221308e1595f6b2850c"],
 							"optionalKeys": [
 								"b9a4b3891726ca0efcde0a06c3028be72645bb2b18d423d450dcb4b09057638c",
 								"bf178a8a68461036ac41fc88a49e3b533b8a2f8c7c7e734baccc26472ead5fb5",
@@ -41003,12 +40327,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"2f32ac80f04dd167173ae666886dc5295e88cbacde5c336f4e66f2a204655028"
-							],
-							"optionalKeys": [
-								"ecf576b7a3c6d9ac8fc50c5ea7103fe4597710e5089ed3d8b316b4572aa4876e"
-							],
+							"mandatoryKeys": ["2f32ac80f04dd167173ae666886dc5295e88cbacde5c336f4e66f2a204655028"],
+							"optionalKeys": ["ecf576b7a3c6d9ac8fc50c5ea7103fe4597710e5089ed3d8b316b4572aa4876e"],
 							"nonce": "0"
 						},
 						"address": "klysww2pddfkxj3xgs9zmmw6jzkhue734w9ux7vtg"
@@ -41034,12 +40354,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"1f91ad76e3fbb72ae90dc17fb4e45a9ebff02b896fe17350500f0f23d0920a24"
-							],
-							"optionalKeys": [
-								"efd157d175cadcd2857b5748439e093d976ccd892ebccf53334e5a45425e08e2"
-							],
+							"mandatoryKeys": ["1f91ad76e3fbb72ae90dc17fb4e45a9ebff02b896fe17350500f0f23d0920a24"],
+							"optionalKeys": ["efd157d175cadcd2857b5748439e093d976ccd892ebccf53334e5a45425e08e2"],
 							"nonce": "0"
 						},
 						"address": "klys2amhpt22ebtw7g2nbhqdmh2b7x5876ut4mckn"
@@ -41114,9 +40430,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"48ce18e775934d51da8cb8f222646d95d8ac7dcdd5fd9c98d445069ddb940807"
-							],
+							"mandatoryKeys": ["48ce18e775934d51da8cb8f222646d95d8ac7dcdd5fd9c98d445069ddb940807"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -41414,12 +40728,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"ef5c868b8e9164b620f6523761433b84424dca7368db1216bb279a6ebdf02cff"
-							],
-							"optionalKeys": [
-								"6cdf7eb034aadd3ba6cf70960f9bfc083445c5961423b050d831b3c385ce4042"
-							],
+							"mandatoryKeys": ["ef5c868b8e9164b620f6523761433b84424dca7368db1216bb279a6ebdf02cff"],
+							"optionalKeys": ["6cdf7eb034aadd3ba6cf70960f9bfc083445c5961423b050d831b3c385ce4042"],
 							"nonce": "0"
 						},
 						"address": "klyjzjsgpp38djqtvg9r9qpmbnhxbe8zj85mwyvjw"
@@ -41517,9 +40827,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"3e2e8265df4726fe9b3504b6255680710faa2ec4fdbf9cc5cad3ce81829622b4"
-							],
+							"mandatoryKeys": ["3e2e8265df4726fe9b3504b6255680710faa2ec4fdbf9cc5cad3ce81829622b4"],
 							"optionalKeys": [
 								"5d4974cfebea7030a26ee2dd71a3eda888d061502de75cf854b3c97cc314a6a6",
 								"ad3356a95472978c61cdf2772fea1232ff2c7cbd572f8528da1ec554a4a2e732"
@@ -41688,9 +40996,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"cbf7ce882a8229f282aa6ed13631050c7f7022c742ded35f0b0573449941e6fa"
-							],
+							"mandatoryKeys": ["cbf7ce882a8229f282aa6ed13631050c7f7022c742ded35f0b0573449941e6fa"],
 							"optionalKeys": [
 								"8c8de8b88213f434fe7f3170f4980dcdf27f15785b82d10b73c263a14c32ab94",
 								"d3ea94c5180f940a4786a684ac3590312d6ccb0f89b278da8bb4ac0fe71af79b"
@@ -41729,9 +41035,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"1e448ed81e0fdcc48ad6e98579772ad5f7a3a8cb551d76a4b92bdb64a558dab9"
-							],
+							"mandatoryKeys": ["1e448ed81e0fdcc48ad6e98579772ad5f7a3a8cb551d76a4b92bdb64a558dab9"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -41902,12 +41206,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"f844f1fd2df6d13a920af1fd0a4698dbb90d8f16814a7f3496f3bb915028c489"
-							],
-							"optionalKeys": [
-								"333ff7501ca34a9bea8aa9f6c26a88adff16db78aebef0974254a3bb6ee5b96c"
-							],
+							"mandatoryKeys": ["f844f1fd2df6d13a920af1fd0a4698dbb90d8f16814a7f3496f3bb915028c489"],
+							"optionalKeys": ["333ff7501ca34a9bea8aa9f6c26a88adff16db78aebef0974254a3bb6ee5b96c"],
 							"nonce": "0"
 						},
 						"address": "klyj682ducgb3xfzv777yq89srqby6nuvmknn9wtf"
@@ -41987,9 +41287,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"f54f63c5dd3f35c42db97729e49b542eca288e3fca658d967a188afad2f4a062"
-							],
+							"mandatoryKeys": ["f54f63c5dd3f35c42db97729e49b542eca288e3fca658d967a188afad2f4a062"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -42158,9 +41456,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"3e5fd795651ffe2e8be26dc18d073e373272b783989aac823fa806b0da067095"
-							],
+							"mandatoryKeys": ["3e5fd795651ffe2e8be26dc18d073e373272b783989aac823fa806b0da067095"],
 							"optionalKeys": [
 								"01bd2f9b618070f50ee809764bac230fc6db63c96f3ac8a2ec38fdfc75d2bbb5",
 								"347998a874256a5fe5ca5ec89b96aaaefbd12641d1d1f2138204d9a131f3c90c"
@@ -42461,9 +41757,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"e66a6c03c8b8b1e11a6d6bd9927494e890afcb7db1f1e079e0fc3babda873d7c"
-							],
+							"mandatoryKeys": ["e66a6c03c8b8b1e11a6d6bd9927494e890afcb7db1f1e079e0fc3babda873d7c"],
 							"optionalKeys": [
 								"414934d5c70dec65c4c01ddef4cb131913cc53b18e0c1c375857a5e7db52484b",
 								"ae7e1085bb9fb3e3a33d698ef2e03e2ce973a436c7940464f5ba9c81fb2bc99e"
@@ -42695,9 +41989,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"d209e7090b4a28f29a3b8c13b4edb58b4683c0f198046a4a73f4daf38367978e"
-							],
+							"mandatoryKeys": ["d209e7090b4a28f29a3b8c13b4edb58b4683c0f198046a4a73f4daf38367978e"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -42724,9 +42016,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"1e02d9f3ad03f724c1ff066bf78cbfdcb92b52b68b821476901189d0ffad6a4c"
-							],
+							"mandatoryKeys": ["1e02d9f3ad03f724c1ff066bf78cbfdcb92b52b68b821476901189d0ffad6a4c"],
 							"optionalKeys": [
 								"20faf14ef477c7534ca93162a2ea4fb3f05d34f22ccdb2ed8cab41ddf7bf1048",
 								"2b60d291bf75829bfafc2ea70926265c05a5daf7c83120a264f72e1c93b2c412",
@@ -42854,9 +42144,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"5af85b4f4ae0757db4ced0a8088383cfe40caddcef2098c777085a2cc03cc60c"
-							],
+							"mandatoryKeys": ["5af85b4f4ae0757db4ced0a8088383cfe40caddcef2098c777085a2cc03cc60c"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -43007,9 +42295,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"c7279cb47d21c2f305f3131b33f18b3b6a95ce003dfd28b1a5c417e3bf98b3ba"
-							],
+							"mandatoryKeys": ["c7279cb47d21c2f305f3131b33f18b3b6a95ce003dfd28b1a5c417e3bf98b3ba"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -43424,12 +42710,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"832b02de6275f5c9da31f1106576060a2284a9efdda4db242fc17e245dc5267a"
-							],
-							"optionalKeys": [
-								"993ad8c442c40d1d9d6f52af947614e8d80ae9e11b616c5010916dfe5a29c18b"
-							],
+							"mandatoryKeys": ["832b02de6275f5c9da31f1106576060a2284a9efdda4db242fc17e245dc5267a"],
+							"optionalKeys": ["993ad8c442c40d1d9d6f52af947614e8d80ae9e11b616c5010916dfe5a29c18b"],
 							"nonce": "0"
 						},
 						"address": "klyh5whemmmscsevbegztsm4zfun8hauyhzvghzqc"
@@ -43782,9 +43064,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"94f21a025d5ae6301947dc7ffb2cfcdaa7b4e9d9309ec0740c237e3bccd2d66c"
-							],
+							"mandatoryKeys": ["94f21a025d5ae6301947dc7ffb2cfcdaa7b4e9d9309ec0740c237e3bccd2d66c"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -43874,12 +43154,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"14492edd6e152fa7cc49bab144ba1129e160d941b1bbe7154fd633ca3363fa1b"
-							],
-							"optionalKeys": [
-								"f5f48420c882e99c83fbae3388b7222b6b8199c1022a13629e445f0b5f2bd1da"
-							],
+							"mandatoryKeys": ["14492edd6e152fa7cc49bab144ba1129e160d941b1bbe7154fd633ca3363fa1b"],
+							"optionalKeys": ["f5f48420c882e99c83fbae3388b7222b6b8199c1022a13629e445f0b5f2bd1da"],
 							"nonce": "0"
 						},
 						"address": "klyhwmqff9oxsyphmnvcpr5rsysztsrujyzqvv2ra"
@@ -43948,12 +43224,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"8fe529a846e121ce466bd74a3258ebbda059cf78abcf8d864faf666af9929ae2"
-							],
-							"optionalKeys": [
-								"a50be6d2164f0f37a900a16fcd58fe47911ae8f84ee06421d68691f63fee3132"
-							],
+							"mandatoryKeys": ["8fe529a846e121ce466bd74a3258ebbda059cf78abcf8d864faf666af9929ae2"],
+							"optionalKeys": ["a50be6d2164f0f37a900a16fcd58fe47911ae8f84ee06421d68691f63fee3132"],
 							"nonce": "0"
 						},
 						"address": "klyhwwuvnzc5hca5ayb86qzzfdymzg4euwpnzvdzb"
@@ -44126,9 +43398,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"e413c0c34bd1100810723a41583d618c07569df01cd10d50a66b3da33de4a2c4"
-							],
+							"mandatoryKeys": ["e413c0c34bd1100810723a41583d618c07569df01cd10d50a66b3da33de4a2c4"],
 							"optionalKeys": [
 								"35a52459b8dd0222e899af5b129bf55d53403689acfd039909b65e3de9926c4c",
 								"fcd28ca37dda8b785b8aff591e82f4ab8695652f5a27e6458ea65993f38edf8a"
@@ -44425,9 +43695,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"0ad8d371f1174d7422b4879071a763acdabd16f646289132fadbdd8cc8bc13f1"
-							],
+							"mandatoryKeys": ["0ad8d371f1174d7422b4879071a763acdabd16f646289132fadbdd8cc8bc13f1"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -44647,9 +43915,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"95d3eebbdd2f39b08c443d04703fae234dd1778f9c2abfc818b4a337e1a49145"
-							],
+							"mandatoryKeys": ["95d3eebbdd2f39b08c443d04703fae234dd1778f9c2abfc818b4a337e1a49145"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -44733,12 +43999,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"0ca475cbce2a0907e5b2ff9b4a61f61259ff74c71ce121685520575543e55fac"
-							],
-							"optionalKeys": [
-								"63c7bf2a3d03d13bdfb75173472f3989c13c0a7aee0a9dc0fab2c3b7136801cf"
-							],
+							"mandatoryKeys": ["0ca475cbce2a0907e5b2ff9b4a61f61259ff74c71ce121685520575543e55fac"],
+							"optionalKeys": ["63c7bf2a3d03d13bdfb75173472f3989c13c0a7aee0a9dc0fab2c3b7136801cf"],
 							"nonce": "0"
 						},
 						"address": "klyf473bkax978uudqnwtvbv5dyqnxt36pqe35ffc"
@@ -44966,9 +44228,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"e4e2a1172c6384c5f231fa1eaa58aaac27585108f790853790d83d4c3288a667"
-							],
+							"mandatoryKeys": ["e4e2a1172c6384c5f231fa1eaa58aaac27585108f790853790d83d4c3288a667"],
 							"optionalKeys": [
 								"4cd1992e0649ef0656961a6b3f4a007b6043a5e8756e90a776933d47b38758f1",
 								"ae2d09b8c64b211a80db6b470c9c793e126127f436a297d981b3f5de6b00a781"
@@ -45108,12 +44368,8 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"9e5afa5c73021a45ba0d1fd86f18cd9e3a4e6bd4f985bf2769f86ddb9a3a88b3"
-							],
-							"optionalKeys": [
-								"cf3734f17689809c0f34963147234fb2cc7a3d9c4933e654d7390fa56d1adfb1"
-							],
+							"mandatoryKeys": ["9e5afa5c73021a45ba0d1fd86f18cd9e3a4e6bd4f985bf2769f86ddb9a3a88b3"],
+							"optionalKeys": ["cf3734f17689809c0f34963147234fb2cc7a3d9c4933e654d7390fa56d1adfb1"],
 							"nonce": "0"
 						},
 						"address": "klyf8hpwapwqpuzna4s2ya5k53f2exs5fftennc95"
@@ -45125,9 +44381,7 @@
 								"351916eb6023013c29999edf8d3cbe9ef832827a2e727c1775068efa743a5d76",
 								"d5dce13b6044486fc5561e7a8f481dd918ed7bdfeeb52dc81af9f283d98add45"
 							],
-							"optionalKeys": [
-								"167221bdf0af9f83fd9f0cda0aff264a836f4b85a0cf7ee5f6bec6029bb6d517"
-							],
+							"optionalKeys": ["167221bdf0af9f83fd9f0cda0aff264a836f4b85a0cf7ee5f6bec6029bb6d517"],
 							"nonce": "0"
 						},
 						"address": "klyfuzqt9u66c2xcczct9kuj2tmy984o8n3nr2kog"
@@ -45405,9 +44659,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"52bea4c760e6e1aaf347f1c8b92641ea6f6942532512ff809041deb735441862"
-							],
+							"mandatoryKeys": ["52bea4c760e6e1aaf347f1c8b92641ea6f6942532512ff809041deb735441862"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -45434,9 +44686,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"cd609c4d8b8b3944c2001960d4dce24589410a496143fe025e1b792e11afe8aa"
-							],
+							"mandatoryKeys": ["cd609c4d8b8b3944c2001960d4dce24589410a496143fe025e1b792e11afe8aa"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -46180,9 +45430,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 1,
-							"mandatoryKeys": [
-								"c755cf550b5c72cba26fbbcbd1a7354da6ed3540cde07a3f88fb19207c69065f"
-							],
+							"mandatoryKeys": ["c755cf550b5c72cba26fbbcbd1a7354da6ed3540cde07a3f88fb19207c69065f"],
 							"optionalKeys": [],
 							"nonce": "0"
 						},
@@ -46227,9 +45475,7 @@
 					{
 						"authAccount": {
 							"numberOfSignatures": 2,
-							"mandatoryKeys": [
-								"877d655bc61b00f060849cf66ce45331594479810d2a7ca7ce0b60639d494618"
-							],
+							"mandatoryKeys": ["877d655bc61b00f060849cf66ce45331594479810d2a7ca7ce0b60639d494618"],
 							"optionalKeys": [
 								"00157e5ec5ecda4e598ae47d84c0d89aead0665913a68c908f071418d037d6b0",
 								"1f3566c77f19fd487482d4771d79ed11548d85acc2c1fc26418cd63d03fc7d2d"
@@ -47232,19 +46478,14 @@
 			"schema": {
 				"$id": "/auth/module/genesis",
 				"type": "object",
-				"required": [
-					"authDataSubstore"
-				],
+				"required": ["authDataSubstore"],
 				"properties": {
 					"authDataSubstore": {
 						"type": "array",
 						"fieldNumber": 1,
 						"items": {
 							"type": "object",
-							"required": [
-								"address",
-								"authAccount"
-							],
+							"required": ["address", "authAccount"],
 							"properties": {
 								"address": {
 									"dataType": "bytes",
@@ -47254,12 +46495,7 @@
 								"authAccount": {
 									"type": "object",
 									"fieldNumber": 2,
-									"required": [
-										"nonce",
-										"numberOfSignatures",
-										"mandatoryKeys",
-										"optionalKeys"
-									],
+									"required": ["nonce", "numberOfSignatures", "mandatoryKeys", "optionalKeys"],
 									"properties": {
 										"nonce": {
 											"dataType": "uint64",
@@ -47325,12 +46561,7 @@
 						"fieldNumber": 3,
 						"items": {
 							"type": "object",
-							"required": [
-								"chainID",
-								"chainData",
-								"channelData",
-								"chainValidators"
-							],
+							"required": ["chainID", "chainData", "channelData", "chainValidators"],
 							"properties": {
 								"chainID": {
 									"dataType": "bytes",
@@ -47341,11 +46572,7 @@
 								"chainData": {
 									"$id": "/modules/interoperability/chainData",
 									"type": "object",
-									"required": [
-										"name",
-										"lastCertificate",
-										"status"
-									],
+									"required": ["name", "lastCertificate", "status"],
 									"properties": {
 										"name": {
 											"dataType": "string",
@@ -47356,12 +46583,7 @@
 										"lastCertificate": {
 											"type": "object",
 											"fieldNumber": 2,
-											"required": [
-												"height",
-												"timestamp",
-												"stateRoot",
-												"validatorsHash"
-											],
+											"required": ["height", "timestamp", "stateRoot", "validatorsHash"],
 											"properties": {
 												"height": {
 													"dataType": "uint32",
@@ -47406,11 +46628,7 @@
 										"inbox": {
 											"type": "object",
 											"fieldNumber": 1,
-											"required": [
-												"appendPath",
-												"size",
-												"root"
-											],
+											"required": ["appendPath", "size", "root"],
 											"properties": {
 												"appendPath": {
 													"type": "array",
@@ -47436,11 +46654,7 @@
 										"outbox": {
 											"type": "object",
 											"fieldNumber": 2,
-											"required": [
-												"appendPath",
-												"size",
-												"root"
-											],
+											"required": ["appendPath", "size", "root"],
 											"properties": {
 												"appendPath": {
 													"type": "array",
@@ -47485,10 +46699,7 @@
 								"chainValidators": {
 									"$id": "/modules/interoperability/chainValidators",
 									"type": "object",
-									"required": [
-										"activeValidators",
-										"certificateThreshold"
-									],
+									"required": ["activeValidators", "certificateThreshold"],
 									"properties": {
 										"activeValidators": {
 											"type": "array",
@@ -47497,10 +46708,7 @@
 											"maxItems": 199,
 											"items": {
 												"type": "object",
-												"required": [
-													"blsKey",
-													"bftWeight"
-												],
+												"required": ["blsKey", "bftWeight"],
 												"properties": {
 													"blsKey": {
 														"dataType": "bytes",
@@ -47530,10 +46738,7 @@
 						"fieldNumber": 4,
 						"items": {
 							"type": "object",
-							"required": [
-								"chainID",
-								"terminatedStateAccount"
-							],
+							"required": ["chainID", "terminatedStateAccount"],
 							"properties": {
 								"chainID": {
 									"dataType": "bytes",
@@ -47544,11 +46749,7 @@
 								"terminatedStateAccount": {
 									"$id": "/modules/interoperability/terminatedState",
 									"type": "object",
-									"required": [
-										"stateRoot",
-										"mainchainStateRoot",
-										"initialized"
-									],
+									"required": ["stateRoot", "mainchainStateRoot", "initialized"],
 									"properties": {
 										"stateRoot": {
 											"dataType": "bytes",
@@ -47577,10 +46778,7 @@
 						"fieldNumber": 5,
 						"items": {
 							"type": "object",
-							"required": [
-								"chainID",
-								"terminatedOutboxAccount"
-							],
+							"required": ["chainID", "terminatedOutboxAccount"],
 							"properties": {
 								"chainID": {
 									"dataType": "bytes",
@@ -47591,11 +46789,7 @@
 								"terminatedOutboxAccount": {
 									"$id": "/modules/interoperability/terminatedOutbox",
 									"type": "object",
-									"required": [
-										"outboxRoot",
-										"outboxSize",
-										"partnerChainInboxSize"
-									],
+									"required": ["outboxRoot", "outboxSize", "partnerChainInboxSize"],
 									"properties": {
 										"outboxRoot": {
 											"dataType": "bytes",
@@ -51739,11 +50933,7 @@
 			"schema": {
 				"$id": "/pos/module/genesis",
 				"type": "object",
-				"required": [
-					"validators",
-					"stakers",
-					"genesisData"
-				],
+				"required": ["validators", "stakers", "genesisData"],
 				"properties": {
 					"validators": {
 						"type": "array",
@@ -51827,10 +51017,7 @@
 									"fieldNumber": 12,
 									"items": {
 										"type": "object",
-										"required": [
-											"tokenID",
-											"coefficient"
-										],
+										"required": ["tokenID", "coefficient"],
 										"properties": {
 											"tokenID": {
 												"dataType": "bytes",
@@ -51854,11 +51041,7 @@
 						"fieldNumber": 2,
 						"items": {
 							"type": "object",
-							"required": [
-								"address",
-								"stakes",
-								"pendingUnlocks"
-							],
+							"required": ["address", "stakes", "pendingUnlocks"],
 							"properties": {
 								"address": {
 									"dataType": "bytes",
@@ -51870,11 +51053,7 @@
 									"fieldNumber": 2,
 									"items": {
 										"type": "object",
-										"required": [
-											"validatorAddress",
-											"amount",
-											"sharingCoefficients"
-										],
+										"required": ["validatorAddress", "amount", "sharingCoefficients"],
 										"properties": {
 											"validatorAddress": {
 												"dataType": "bytes",
@@ -51890,10 +51069,7 @@
 												"fieldNumber": 3,
 												"items": {
 													"type": "object",
-													"required": [
-														"tokenID",
-														"coefficient"
-													],
+													"required": ["tokenID", "coefficient"],
 													"properties": {
 														"tokenID": {
 															"dataType": "bytes",
@@ -51917,11 +51093,7 @@
 									"fieldNumber": 3,
 									"items": {
 										"type": "object",
-										"required": [
-											"validatorAddress",
-											"amount",
-											"unstakeHeight"
-										],
+										"required": ["validatorAddress", "amount", "unstakeHeight"],
 										"properties": {
 											"validatorAddress": {
 												"dataType": "bytes",
@@ -51945,10 +51117,7 @@
 					"genesisData": {
 						"type": "object",
 						"fieldNumber": 3,
-						"required": [
-							"initRounds",
-							"initValidators"
-						],
+						"required": ["initRounds", "initValidators"],
 						"properties": {
 							"initRounds": {
 								"dataType": "uint32",
@@ -86628,24 +85797,14 @@
 			"schema": {
 				"$id": "/token/module/genesis",
 				"type": "object",
-				"required": [
-					"userSubstore",
-					"supplySubstore",
-					"escrowSubstore",
-					"supportedTokensSubstore"
-				],
+				"required": ["userSubstore", "supplySubstore", "escrowSubstore", "supportedTokensSubstore"],
 				"properties": {
 					"userSubstore": {
 						"type": "array",
 						"fieldNumber": 1,
 						"items": {
 							"type": "object",
-							"required": [
-								"address",
-								"tokenID",
-								"availableBalance",
-								"lockedBalances"
-							],
+							"required": ["address", "tokenID", "availableBalance", "lockedBalances"],
 							"properties": {
 								"address": {
 									"dataType": "bytes",
@@ -86667,10 +85826,7 @@
 									"fieldNumber": 4,
 									"items": {
 										"type": "object",
-										"required": [
-											"module",
-											"amount"
-										],
+										"required": ["module", "amount"],
 										"properties": {
 											"module": {
 												"dataType": "string",
@@ -86693,10 +85849,7 @@
 						"fieldNumber": 2,
 						"items": {
 							"type": "object",
-							"required": [
-								"tokenID",
-								"totalSupply"
-							],
+							"required": ["tokenID", "totalSupply"],
 							"properties": {
 								"tokenID": {
 									"dataType": "bytes",
@@ -86716,11 +85869,7 @@
 						"fieldNumber": 3,
 						"items": {
 							"type": "object",
-							"required": [
-								"escrowChainID",
-								"tokenID",
-								"amount"
-							],
+							"required": ["escrowChainID", "tokenID", "amount"],
 							"properties": {
 								"escrowChainID": {
 									"dataType": "bytes",
@@ -86746,10 +85895,7 @@
 						"fieldNumber": 4,
 						"items": {
 							"type": "object",
-							"required": [
-								"chainID",
-								"supportedTokenIDs"
-							],
+							"required": ["chainID", "supportedTokenIDs"],
 							"properties": {
 								"chainID": {
 									"dataType": "bytes",

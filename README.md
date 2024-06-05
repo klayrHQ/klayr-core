@@ -54,6 +54,7 @@ npm run build
 ### From NPM
 
 <!-- usage -->
+
 ```sh-session
 $ npm install -g klayr-core
 $ klayr-core COMMAND
@@ -65,15 +66,17 @@ USAGE
   $ klayr-core COMMAND
 ...
 ```
+
 <!-- usagestop -->
 
 <!-- commands -->
+
 # Command Topics
 
-* [`klayr-core autocomplete`](docs/commands/autocomplete.md) - display autocomplete installation instructions
-* [`klayr-core help`](docs/commands/help.md) - Display help for klayr-core.
-* [`klayr-core sdk`](docs/commands/sdk.md) - Commands relating to Klayr SDK development.
-* [`klayr-core version`](docs/commands/version.md)
+- [`klayr-core autocomplete`](docs/commands/autocomplete.md) - display autocomplete installation instructions
+- [`klayr-core help`](docs/commands/help.md) - Display help for klayr-core.
+- [`klayr-core sdk`](docs/commands/sdk.md) - Commands relating to Klayr SDK development.
+- [`klayr-core version`](docs/commands/version.md)
 
 <!-- commandsstop -->
 
