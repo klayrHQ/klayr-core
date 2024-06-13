@@ -110,7 +110,7 @@ cd klayr-core
 .Check out the latest release tag
 [source,bash]
 ----
-git checkout v4.0.0
+git checkout v4.1.1
 ----
 
 .Build the docker image
@@ -144,7 +144,7 @@ Mainnet::
 docker run --volume klayr-data:/home/klayr/.klayr \
            --publish 7887:7887 \
            --name klayr-core \
-           klayr/core:4.0.0 \
+           klayr/core:4.1.1 \
            start --network=mainnet
 ----
 
@@ -184,7 +184,7 @@ Testnet::
 docker run --volume klayr-data:/home/klayr/.klayr \
            --publish 7887:7887 \
            --name klayr-core \
-           klayr/core:4.0.0 \
+           klayr/core:4.1.1 \
            start --network=testnet
 ----
 
@@ -197,7 +197,7 @@ Devnet::
 docker run --volume klayr-data:/home/klayr/.klayr \
            --publish 7887:7887 \
            --name klayr-core \
-           klayr/core:4.0.0 \
+           klayr/core:4.1.1 \
            start --network=devnet
 ----
 --
@@ -214,7 +214,7 @@ docker run --volume klayr-data:/home/klayr/.klayr \
            --publish 7667:7667 \
            --publish 127.0.0.1:7887:7887 \
            --name klayr-core \
-           klayr/core:4.0.0 \
+           klayr/core:4.1.1 \
            start --network=testnet --api-ws --api-http --log=debug
 ----
 
@@ -226,7 +226,7 @@ docker run --volume klayr-data:/home/klayr/.klayr \
            --publish 7667:7667 \
            --env KLAYR_CONSOLE_LOG_LEVEL=debug \
            --name klayr-core \
-           klayr/core:4.0.0 \
+           klayr/core:4.1.1 \
            start --network=mainnet
 ----
 
@@ -239,9 +239,9 @@ docker run --volume klayr-data:/home/klayr/.klayr \
 
 [source,bash]
 ----
-docker run --volume klayr-data:/home/klayr/.klayr -it --rm klayr/core:4.0.0 blockchain download --network=betanet --output=/home/klayr/.klayr/tmp/
-docker run --volume klayr-data:/home/klayr/.klayr -it --rm klayr/core:4.0.0 blockchain import /home/klayr/.klayr/tmp/blockchain.db.tar.gz
-docker run --volume klayr-data:/home/klayr/.klayr -it --rm --entrypoint rm klayr/core:4.0.0 -f /home/klayr/.klayr/tmp/blockchain.db.tar.gz
+docker run --volume klayr-data:/home/klayr/.klayr -it --rm klayr/core:4.1.1 blockchain download --network=betanet --output=/home/klayr/.klayr/tmp/
+docker run --volume klayr-data:/home/klayr/.klayr -it --rm klayr/core:4.1.1 blockchain import /home/klayr/.klayr/tmp/blockchain.db.tar.gz
+docker run --volume klayr-data:/home/klayr/.klayr -it --rm --entrypoint rm klayr/core:4.1.1 -f /home/klayr/.klayr/tmp/blockchain.db.tar.gz
 docker start klayr-core
 docker logs -f klayr-core
 ----

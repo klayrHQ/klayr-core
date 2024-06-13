@@ -1,7 +1,7 @@
 name: klayr-core
 title: Klayr Core
 version: 'master'
-display_version: '4.0 (latest)'
+display_version: '4.1 (latest)'
 #prerelease: -beta.0
 start_page: ROOT:index.adoc
 nav:

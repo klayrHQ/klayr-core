@@ -32,7 +32,7 @@ make stop
 ----
 docker image pull klayr-core
 ----
-NOTE: To download a specific version of Klayr Core, please include the tag after `klayr-core` in the above command. For example, `klayr-core:4.0.0`
+NOTE: To download a specific version of Klayr Core, please include the tag after `klayr-core` in the above command. For example, `klayr-core:4.1.1`
 
 . Start Klayr Core in the containers.
 +
@@ -56,7 +56,7 @@ make stop
 . Checkout the version with *`git checkout <tag>`*
 +
 ----
-git checkout v4.0.0
+git checkout v4.1.1
 ----
 
 . Build the required updated Docker image
