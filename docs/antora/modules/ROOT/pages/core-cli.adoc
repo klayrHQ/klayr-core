@@ -405,7 +405,7 @@ OPTIONS
 EXAMPLES
   download
   download --network betanet
-  download --url https://snapshots.klayr.com/mainnet/blockchain.db.tar.gz --output ./downloads
+  download --url https://snapshots.klayr.xyz/mainnet/blockchain.db.tar.gz --output ./downloads
 ----
 
 .Example
@@ -417,7 +417,7 @@ klayr-core blockchain:download
 ----
 .Response
 ----
-Downloading snapshot from https://snapshots.klayr.com/mainnet/blockchain.db.tar.gz to /Users/XYZ
+Downloading snapshot from https://snapshots.klayr.xyz/mainnet/blockchain.db.tar.gz to /Users/XYZ
 Downloaded to path: /Users/XYZ
 ----
 ====
@@ -1230,7 +1230,7 @@ klayr-core genesis-block:download --network mainnet -f
 ----
 .Response
 ----
-Downloading genesis block from https://downloads.klayr.com/klayr/mainnet/genesis_block.blob.tar.gz
+Downloading genesis block from https://downloads.klayr.xyz/klayr/mainnet/genesis_block.blob.tar.gz
 Downloaded to path: /Users/XYZ/.klayr/klayr-core/config/mainnet/genesis_block.blob.tar.gz.
 Verified checksum: a69fe85969ce8727b6490a07ced612bbc36a5c377a54f2b6fab58c058d1663b5.
 Extracting genesis block file.

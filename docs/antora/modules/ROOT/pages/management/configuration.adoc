@@ -17,7 +17,7 @@ Mona Bärenfänger <mona@lightcurve.io>
 :url_enable_pom: management/enabling-misbehavior-report.adoc
 :url_management_forging: management/forging.adoc
 :url_pm2_restart: management/pm2.adoc#refreshing-restarting-klayr-core
-:url_config_options: https://klayr.com/documentation/klayr-sdk/v6/references/typedoc/modules/_klayrhq_klayr_framework_report_misbehavior_plugin.html#$config-options
+:url_config_options: https://klayr.xyz/documentation/klayr-sdk/references/typedoc/modules/_klayr_report_misbehavior_plugin.html#$config-options
 
 
 :url_enable_misbehavior: {docs_general}run-blockchain/enabling-misbehavior-report.adoc

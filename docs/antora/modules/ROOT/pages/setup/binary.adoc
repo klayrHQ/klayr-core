@@ -200,14 +200,14 @@ Mainnet::
 
 [source,bash,subs="attributes"]
 ----
-curl -o klayr-core.tar.gz https://downloads.klayr.com/klayr/mainnet/{klayr_core_latest_version}/klayr-core-v{klayr_core_latest_version}-linux-x64.tar.gz
+curl -o klayr-core.tar.gz https://downloads.klayr.xyz/klayr/mainnet/{klayr_core_latest_version}/klayr-core-v{klayr_core_latest_version}-linux-x64.tar.gz
 ----
 
 *MacOS:*
 
 [source,bash,subs="attributes"]
 ----
-curl -o klayr-core.tar.gz https://downloads.klayr.com/klayr/mainnet/{klayr_core_latest_version}/klayr-core-v{klayr_core_latest_version}-darwin-x64.tar.gz
+curl -o klayr-core.tar.gz https://downloads.klayr.xyz/klayr/mainnet/{klayr_core_latest_version}/klayr-core-v{klayr_core_latest_version}-darwin-x64.tar.gz
 ----
 --
 ////
@@ -219,14 +219,14 @@ Testnet::
 
 [source,bash,subs="attributes"]
 ----
-curl -o klayr-core.tar.gz https://downloads.klayr.com/klayr/testnet/{klayr_core_latest_version}/klayr-core-v{klayr_core_latest_version}-linux-x64.tar.gz
+curl -o klayr-core.tar.gz https://downloads.klayr.xyz/klayr/testnet/{klayr_core_latest_version}/klayr-core-v{klayr_core_latest_version}-linux-x64.tar.gz
 ----
 
 *MacOS:*
 
 [source,bash,subs="attributes"]
 ----
-curl -o klayr-core.tar.gz https://downloads.klayr.com/klayr/testnet/{klayr_core_latest_version}/klayr-core-v{klayr_core_latest_version}-darwin-x64.tar.gz
+curl -o klayr-core.tar.gz https://downloads.klayr.xyz/klayr/testnet/{klayr_core_latest_version}/klayr-core-v{klayr_core_latest_version}-darwin-x64.tar.gz
 ----
 --
 ====
