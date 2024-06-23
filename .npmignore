@@ -17,3 +17,5 @@ Jenkins*
 *.tgz
 tsconfig.json
 tslint.json
+genesis_assets.json
+genesis_block.json
