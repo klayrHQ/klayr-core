@@ -23,5 +23,3 @@ EXAMPLES
   hash-onion --count=1000000 --distance=2000 --pretty
   hash-onion --count=1000000 --distance=2000 --output ~/my_onion.json
 ```
-
-_See code: [dist/commands/hash-onion.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.2/dist/commands/hash-onion.ts)_

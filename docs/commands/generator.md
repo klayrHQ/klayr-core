@@ -37,8 +37,6 @@ EXAMPLES
   generator:disable kly ycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz --data-path ./data --password your_password
 ```
 
-_See code: [dist/commands/generator/disable.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.2/dist/commands/generator/disable.ts)_
-
 ## `klayr-core generator:enable ADDRESS`
 
 Enable block generation for given validator address.
@@ -80,8 +78,6 @@ EXAMPLES
   --max-height-prevoted=10 --data-path ./data --password your_password
 ```
 
-_See code: [dist/commands/generator/enable.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.2/dist/commands/generator/enable.ts)_
-
 ## `klayr-core generator:export`
 
 Export to <FILE>.
@@ -104,8 +100,6 @@ EXAMPLES
   generator:export --output /mypath/generator_info.json --data-path ./data
 ```
 
-_See code: [dist/commands/generator/export.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.2/dist/commands/generator/export.ts)_
-
 ## `klayr-core generator:import`
 
 Import from <FILE>.
@@ -127,8 +121,6 @@ EXAMPLES
   generator:import --file-path ./my/path/genInfo.json --data-path ./data
 ```
 
-_See code: [dist/commands/generator/import.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.2/dist/commands/generator/import.ts)_
-
 ## `klayr-core generator:status`
 
 Get forging information for the locally running node.
@@ -147,5 +139,3 @@ EXAMPLES
   generator:status
   generator:status --data-path ./sample --pretty
 ```
-
-_See code: [dist/commands/generator/status.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.2/dist/commands/generator/status.ts)_

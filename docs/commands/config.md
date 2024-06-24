@@ -27,8 +27,6 @@ EXAMPLES
   config:create --output mydir --label beta-sdk-app --community-identifier sdk
 ```
 
-_See code: [dist/commands/config/create.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.2/dist/commands/config/create.ts)_
-
 ## `klayr-core config:show`
 
 Show application config.
@@ -50,5 +48,3 @@ EXAMPLES
   config:show --pretty
   config:show --config ./custom-config.json --data-path ./data
 ```
-
-_See code: [dist/commands/config/show.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.2/dist/commands/config/show.ts)_

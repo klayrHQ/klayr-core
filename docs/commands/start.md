@@ -100,5 +100,3 @@ EXAMPLES
   start --network testnet --overwrite-config
   start --network testnet --config ~/my_custom_config.json
 ```
-
-_See code: [dist/commands/start.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.2/dist/commands/start.ts)_

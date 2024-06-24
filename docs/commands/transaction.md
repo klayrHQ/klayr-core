@@ -70,8 +70,6 @@ EXAMPLES
   transaction:create token transfer 100000000 --file=/txn_params.json --json
 ```
 
-_See code: [dist/commands/transaction/create.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.2/dist/commands/transaction/create.ts)_
-
 ## `klayr-core transaction:get ID`
 
 Get transaction from local node by ID.
@@ -92,8 +90,6 @@ OPTIONS
 EXAMPLE
   transaction:get eab06c6a22e88bca7150e0347a7d976acd070cb9284423e6eabecd657acc1263
 ```
-
-_See code: [dist/commands/transaction/get.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.2/dist/commands/transaction/get.ts)_
 
 ## `klayr-core transaction:send TRANSACTION`
 
@@ -117,8 +113,6 @@ EXAMPLE
   b0041a7d3f7b2c290b5b834d46bdc7b7eb858151a0a73656e6420746f6b656e324028edd3601cdc35a41bb23415a0d9f3c3e9cf188d9971adf1874
   2cea39d58aa84809aa87bcfe6feaac46211c80472ad9297fd87727709f5d7e7b4134caf106b02
 ```
-
-_See code: [dist/commands/transaction/send.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.2/dist/commands/transaction/send.ts)_
 
 ## `klayr-core transaction:sign TRANSACTION`
 
@@ -160,5 +154,3 @@ EXAMPLES
   transaction:sign <hex-encoded-binary-transaction>
   transaction:sign <hex-encoded-binary-transaction> --network testnet
 ```
-
-_See code: [dist/commands/transaction/sign.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.2/dist/commands/transaction/sign.ts)_

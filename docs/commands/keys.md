@@ -48,8 +48,6 @@ EXAMPLES
   /mypath/keys.json
 ```
 
-_See code: [dist/commands/keys/create.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.2/dist/commands/keys/create.ts)_
-
 ## `klayr-core keys:encrypt`
 
 Encrypt keys from a file and overwrite the file
@@ -70,8 +68,6 @@ EXAMPLES
   keys:encrypt --file-path ./my/path/keys.json
   keys:encrypt --file-path ./my/path/keys.json --password mypass
 ```
-
-_See code: [dist/commands/keys/encrypt.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.2/dist/commands/keys/encrypt.ts)_
 
 ## `klayr-core keys:export`
 
@@ -94,8 +90,6 @@ EXAMPLES
   keys:export --output /mypath/keys.json --data-path ./data
 ```
 
-_See code: [dist/commands/keys/export.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.2/dist/commands/keys/export.ts)_
-
 ## `klayr-core keys:import`
 
 Import from <FILE>.
@@ -116,5 +110,3 @@ EXAMPLES
   keys:import --file-path ./my/path/keys.json
   keys:import --file-path ./my/path/keys.json --data-path ./data
 ```
-
-_See code: [dist/commands/keys/import.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.2/dist/commands/keys/import.ts)_
