@@ -12,7 +12,7 @@ Run a "klayr-core" container against the mainnet:
 docker run --volume klayr-data:/home/klayr/.klayr \
            --publish 7667:7667 \
            --name klayr-core \
-           klayr/core:4.1.1 \
+           klayr/core:4.1.3 \
            start --network=mainnet
 ```
 
@@ -25,7 +25,7 @@ docker run --volume klayr-data:/home/klayr/.klayr \
            --publish 7667:7667 \
            --publish 127.0.0.1:7887:7887 \
            --name klayr-core \
-           klayr/core:4.1.1 \
+           klayr/core:4.1.3 \
            start --network=mainnet --api-ws --api-http --log=debug
 ```
 
@@ -36,7 +36,7 @@ docker run --volume klayr-data:/home/klayr/.klayr \
            --publish 7667:7667 \
            --env KLAYR_LOG_LEVEL=debug \
            --name klayr-core \
-           klayr/core:4.1.1 \
+           klayr/core:4.1.3 \
            start --network=mainnet
 ```
 
@@ -45,11 +45,11 @@ See https://klayr.xyz/documentation/klayr-core/management/configuration.html for
 ## Import blockchain snapshot
 
 ```
-docker run --volume klayr-data:/home/klayr/.klayr -it --rm klayr/core:4.1.1 blockchain:download --network=mainnet --output=/home/klayr/.klayr/tmp/
+docker run --volume klayr-data:/home/klayr/.klayr -it --rm klayr/core:4.1.3 blockchain:download --network=mainnet --output=/home/klayr/.klayr/tmp/
 
-docker run --volume klayr-data:/home/klayr/.klayr -it --rm klayr/core:4.1.1 blockchain:import /home/klayr/.klayr/tmp/blockchain.db.tar.gz
+docker run --volume klayr-data:/home/klayr/.klayr -it --rm klayr/core:4.1.3 blockchain:import /home/klayr/.klayr/tmp/blockchain.db.tar.gz
 
-docker run --volume klayr-data:/home/klayr/.klayr -it --rm --entrypoint rm klayr/core:4.1.1 -f /home/klayr/.klayr/tmp/blockchain.db.tar.gz
+docker run --volume klayr-data:/home/klayr/.klayr -it --rm --entrypoint rm klayr/core:4.1.3 -f /home/klayr/.klayr/tmp/blockchain.db.tar.gz
 
 docker start klayr-core
 
