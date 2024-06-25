@@ -26,3 +26,5 @@ EXAMPLES
   block:get e082e79d01016632c451c9df9276e486cb7f460dc793ff5b10d8f71eecec28b4
   block:get 2
 ```
+
+_See code: [dist/commands/block/get.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.3/dist/commands/block/get.ts)_

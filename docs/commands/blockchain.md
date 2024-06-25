@@ -32,6 +32,8 @@ EXAMPLES
   download --url https://snapshots.klayr.xyz/mainnet/blockchain.db.tar.gz --output ./downloads
 ```
 
+_See code: [dist/commands/blockchain/download.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.3/dist/commands/blockchain/download.ts)_
+
 ## `klayr-core blockchain:export`
 
 Export to <FILE>.
@@ -51,6 +53,8 @@ EXAMPLES
   blockchain:export --data-path ./data --output ./my/path/
 ```
 
+_See code: [dist/commands/blockchain/export.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.3/dist/commands/blockchain/export.ts)_
+
 ## `klayr-core blockchain:hash`
 
 Generate SHA256 hash from <PATH>.
@@ -67,6 +71,8 @@ EXAMPLES
   blockchain:hash
   blockchain:hash --data-path ./data
 ```
+
+_See code: [dist/commands/blockchain/hash.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.3/dist/commands/blockchain/hash.ts)_
 
 ## `klayr-core blockchain:import FILEPATH`
 
@@ -91,6 +97,8 @@ EXAMPLES
   blockchain:import ./path/to/blockchain.tar.gz --data-path ./klayr/ --force
 ```
 
+_See code: [dist/commands/blockchain/import.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.3/dist/commands/blockchain/import.ts)_
+
 ## `klayr-core blockchain:reset`
 
 Reset the blockchain data.
@@ -110,3 +118,5 @@ EXAMPLES
   blockchain:reset --data-path ./klayr
   blockchain:reset --yes
 ```
+
+_See code: [dist/commands/blockchain/reset.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.3/dist/commands/blockchain/reset.ts)_

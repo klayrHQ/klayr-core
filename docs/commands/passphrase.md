@@ -23,6 +23,8 @@ EXAMPLES
   passphrase:create --output /mypath/passphrase.json
 ```
 
+_See code: [dist/commands/passphrase/create.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.3/dist/commands/passphrase/create.ts)_
+
 ## `klayr-core passphrase:decrypt`
 
 Decrypt secret passphrase using the password provided at the time of encryption.
@@ -43,6 +45,8 @@ EXAMPLES
   passphrase:decrypt --file-path ./my/path/output.json
   passphrase:decrypt --file-path ./my/path/output.json --password your-password
 ```
+
+_See code: [dist/commands/passphrase/decrypt.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.3/dist/commands/passphrase/decrypt.ts)_
 
 ## `klayr-core passphrase:encrypt`
 
@@ -76,3 +80,5 @@ EXAMPLES
   passphrase:encrypt --password your-password --passphrase your-passphrase --output /mypath/keys.json
   passphrase:encrypt --output-public-key --output /mypath/keys.json
 ```
+
+_See code: [dist/commands/passphrase/encrypt.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.3/dist/commands/passphrase/encrypt.ts)_

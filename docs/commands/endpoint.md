@@ -34,6 +34,8 @@ EXAMPLES
   endpoint:invoke consensus_getBFTParameters -f ./input.json
 ```
 
+_See code: [dist/commands/endpoint/invoke.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.3/dist/commands/endpoint/invoke.ts)_
+
 ## `klayr-core endpoint:list [ENDPOINT]`
 
 Lists registered endpoints.
@@ -65,3 +67,5 @@ EXAMPLES
   endpoint:list getBalances -m token -i --pretty
   endpoint:list getBalances -m token -d ~/.klayr/pos-mainchain
 ```
+
+_See code: [dist/commands/endpoint/list.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.3/dist/commands/endpoint/list.ts)_

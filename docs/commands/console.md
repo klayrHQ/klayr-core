@@ -22,3 +22,5 @@ EXAMPLES
   console --api-ws=ws://localhost:8080
   console --api-ipc=/path/to/server
 ```
+
+_See code: [dist/commands/console.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.3/dist/commands/console.ts)_
