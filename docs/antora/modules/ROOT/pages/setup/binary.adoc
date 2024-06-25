@@ -14,7 +14,7 @@ Christopher Braithwaite <christopher.braithwaite@lightcurve.io> Mona Bärenfäng
 // Project URLs
 :url_run_logging: klayr-docs::run-blockchain/logging.adoc
 :fn: footnote:hdd[These recommendations are derived from the log level settings, in the event that the user needs to increase storage to prevent limited memory access and potential memory-related problems with a node. Furthermore, as more transactions are processed and added to the blockchain, the size of the blockchain increases over time and this directly affects the HDD storage requirements for a blockchain node. Hence, adhering to the above listed requirements is highly recommended.]
-:klayr_core_latest_version: 4.1.3
+:klayr_core_latest_version: 4.1.4
 
 The binary installation offers an easy and automated approach to setting up Klayr Core.
 

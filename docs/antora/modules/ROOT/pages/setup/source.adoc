@@ -178,7 +178,7 @@ cd klayr-core
 .Check out the latest release tag
 [source,bash]
 ----
-git checkout v4.1.3
+git checkout v4.1.4
 ----
 NOTE: Please check for the latest release in {url_core_releases}[Klayr Core releases^].
 
