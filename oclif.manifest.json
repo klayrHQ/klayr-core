@@ -1,1 +1,1444 @@
-{"version":"4.1.3","commands":{"console":{"id":"console","description":"Klayr interactive REPL session to run commands.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["console","console --api-ws=ws://localhost:8080","console --api-ipc=/path/to/server"],"flags":{"api-ipc":{"name":"api-ipc","type":"option","description":"Enable api-client with IPC communication."},"api-ws":{"name":"api-ws","type":"option","description":"Enable api-client with Websocket communication."}},"args":[]},"hash-onion":{"id":"hash-onion","description":"Create hash onions to be used by the forger.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["hash-onion --count=1000000 --distance=2000 --pretty","hash-onion --count=1000000 --distance=2000 --output ~/my_onion.json"],"flags":{"output":{"name":"output","type":"option","char":"o","description":"Output file path"},"count":{"name":"count","type":"option","char":"c","description":"Total number of hashes to produce","default":1000000},"distance":{"name":"distance","type":"option","char":"d","description":"Distance between each hash","default":1000},"pretty":{"name":"pretty","type":"boolean","description":"Prints JSON in pretty format rather than condensed.","allowNo":false}},"args":[]},"start":{"id":"start","description":"Start Blockchain Node.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["start","start --network devnet --data-path /path/to/data-dir --log debug","start --network devnet --api-ws","start --network devnet --api-ws --api-port 8888","start --network devnet --port 9000","start --network devnet --port 9002 --seed-peers 127.0.0.1:9001,127.0.0.1:9000","start --network testnet --overwrite-config","start --network testnet --config ~/my_custom_config.json"],"flags":{"data-path":{"name":"data-path","type":"option","char":"d","description":"Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."},"network":{"name":"network","type":"option","char":"n","description":"Default network config to use. Environment variable \"KLAYR_NETWORK\" can also be used.","default":"mainnet"},"config":{"name":"config","type":"option","char":"c","description":"File path to a custom config. Environment variable \"KLAYR_CONFIG_FILE\" can also be used."},"overwrite-config":{"name":"overwrite-config","type":"boolean","description":"Overwrite network configs if they exist already","allowNo":false},"port":{"name":"port","type":"option","char":"p","description":"Open port for the peer to peer incoming connections. Environment variable \"KLAYR_PORT\" can also be used."},"api-ipc":{"name":"api-ipc","type":"boolean","description":"Enable IPC communication. This will load plugins as a child process and communicate over IPC. Environment variable \"KLAYR_API_IPC\" can also be used.","allowNo":false},"api-ws":{"name":"api-ws","type":"boolean","description":"Enable websocket communication for api-client. Environment variable \"KLAYR_API_WS\" can also be used.","allowNo":false},"api-http":{"name":"api-http","type":"boolean","description":"Enable HTTP communication for api-client. Environment variable \"KLAYR_API_HTTP\" can also be used.","allowNo":false},"api-port":{"name":"api-port","type":"option","description":"Port to be used for api-client. Environment variable \"KLAYR_API_PORT\" can also be used."},"api-host":{"name":"api-host","type":"option","description":"Host to be used for api-client. Environment variable \"KLAYR_API_HOST\" can also be used."},"log":{"name":"log","type":"option","char":"l","description":"Log level. Environment variable \"KLAYR_LOG_LEVEL\" can also be used.","options":["trace","debug","info","warn","error","fatal"]},"seed-peers":{"name":"seed-peers","type":"option","description":"Seed peers to initially connect to in format of comma separated \"ip:port\". IP can be DNS name or IPV4 format. Environment variable \"KLAYR_SEED_PEERS\" can also be used."},"enable-forger-plugin":{"name":"enable-forger-plugin","type":"boolean","description":"Enable Forger Plugin. Environment variable \"KLAYR_ENABLE_FORGER_PLUGIN\" can also be used.","allowNo":false},"enable-monitor-plugin":{"name":"enable-monitor-plugin","type":"boolean","description":"Enable Monitor Plugin. Environment variable \"KLAYR_ENABLE_MONITOR_PLUGIN\" can also be used.","allowNo":false},"monitor-plugin-port":{"name":"monitor-plugin-port","type":"option","description":"Port to be used for Monitor Plugin. Environment variable \"KLAYR_MONITOR_PLUGIN_PORT\" can also be used."},"monitor-plugin-whitelist":{"name":"monitor-plugin-whitelist","type":"option","description":"List of IPs in comma separated value to allow the connection. Environment variable \"KLAYR_MONITOR_PLUGIN_WHITELIST\" can also be used."},"enable-report-misbehavior-plugin":{"name":"enable-report-misbehavior-plugin","type":"boolean","description":"Enable ReportMisbehavior Plugin. Environment variable \"KLAYR_ENABLE_REPORT_MISBEHAVIOR_PLUGIN\" can also be used.","allowNo":false},"enable-faucet-plugin":{"name":"enable-faucet-plugin","type":"boolean","description":"Enable Faucet Plugin. Environment variable \"KLAYR_ENABLE_FAUCET_PLUGIN\" can also be used.","allowNo":false},"faucet-plugin-port":{"name":"faucet-plugin-port","type":"option","description":"Port to be used for Faucet Plugin. Environment variable \"KLAYR_FAUCET_PLUGIN_PORT\" can also be used."},"enable-dashboard-plugin":{"name":"enable-dashboard-plugin","type":"boolean","description":"Enable Dashboard Plugin. Environment variable \"KLAYR_ENABLE_DASHBOARD_PLUGIN\" can also be used.","allowNo":false},"dashboard-plugin-port":{"name":"dashboard-plugin-port","type":"option","description":"Port to be used for Dashboard Plugin. Environment variable \"KLAYR_DASHBOARD_PLUGIN_PORT\" can also be used."},"enable-chain-connector-plugin":{"name":"enable-chain-connector-plugin","type":"boolean","description":"Enable Chain Connector Plugin. Environment variable \"KLAYR_ENABLE_CHAIN_CONNECTOR_PLUGIN\" can also be used.","allowNo":false},"genesis-block-url":{"name":"genesis-block-url","type":"option","char":"u","description":"The URL to download the genesis block. Environment variable \"KLAYR_GENESIS_BLOCK_URL\" can also be used. Kindly ensure that the provided URL downloads the genesis block 'blob' in the tarball format."},"overwrite-genesis-block":{"name":"overwrite-genesis-block","type":"boolean","description":"Download and overwrite existing genesis block. Environment variable \"KLAYR_GENESIS_BLOCK_OVERWRITE\" can also be used.","allowNo":false}},"args":[]},"block:get":{"id":"block:get","description":"Get block information for a given id or height.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["block:get e082e79d01016632c451c9df9276e486cb7f460dc793ff5b10d8f71eecec28b4","block:get 2"],"flags":{"data-path":{"name":"data-path","type":"option","char":"d","description":"Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."},"pretty":{"name":"pretty","type":"boolean","description":"Prints JSON in pretty format rather than condensed.","allowNo":false}},"args":[{"name":"input","description":"Height in number or block id in hex format.","required":true}]},"blockchain:download":{"id":"blockchain:download","description":"Download snapshot from <URL>.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["download","download --network betanet","download --url https://snapshots.klayr.xyz/mainnet/blockchain.db.tar.gz --output ./downloads"],"flags":{"network":{"name":"network","type":"option","char":"n","description":"Default network config to use. Environment variable \"KLAYR_NETWORK\" can also be used.","default":"mainnet"},"output":{"name":"output","type":"option","char":"o","description":"Directory path to specify where snapshot is downloaded. By default outputs the files to current working directory."},"url":{"name":"url","type":"option","char":"u","description":"The url to the snapshot."}},"args":[]},"blockchain:export":{"id":"blockchain:export","description":"Export to <FILE>.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["blockchain:export","blockchain:export --data-path ./data --output ./my/path/"],"flags":{"data-path":{"name":"data-path","type":"option","char":"d","description":"Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."},"output":{"name":"output","type":"option","char":"o","description":"The output directory. Default will set to current working directory."}},"args":[]},"blockchain:hash":{"id":"blockchain:hash","description":"Generate SHA256 hash from <PATH>.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["blockchain:hash","blockchain:hash --data-path ./data"],"flags":{"data-path":{"name":"data-path","type":"option","char":"d","description":"Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."}},"args":[]},"blockchain:import":{"id":"blockchain:import","description":"Import from <FILE>.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["blockchain:import ./path/to/blockchain.tar.gz","blockchain:import ./path/to/blockchain.tar.gz --data-path ./klayr/","blockchain:import ./path/to/blockchain.tar.gz --data-path ./klayr/ --force"],"flags":{"data-path":{"name":"data-path","type":"option","char":"d","description":"Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."},"force":{"name":"force","type":"boolean","char":"f","description":"Delete and overwrite existing blockchain data","allowNo":false}},"args":[{"name":"filepath","description":"Path to the gzipped blockchain data.","required":true}]},"blockchain:reset":{"id":"blockchain:reset","description":"Reset the blockchain data.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["blockchain:reset","blockchain:reset --data-path ./klayr","blockchain:reset --yes"],"flags":{"data-path":{"name":"data-path","type":"option","char":"d","description":"Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."},"yes":{"name":"yes","type":"boolean","char":"y","description":"Skip confirmation prompt.","allowNo":false}},"args":[]},"config:create":{"id":"config:create","description":"Creates network configuration file.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["config:create --output mydir","config:create --output mydir --label beta-sdk-app","config:create --output mydir --label beta-sdk-app --community-identifier sdk"],"flags":{"output":{"name":"output","type":"option","char":"o","description":"Directory where the config file is saved","default":"/Users/corbifex/Developer/klayr-hq/temp/klayr-core"},"label":{"name":"label","type":"option","char":"l","description":"App Label","default":"beta-sdk-app"},"chain-id":{"name":"chain-id","type":"option","char":"i","description":"ChainID in hex format. For example, Klayr mainnet mainchain is 00000000","required":true}},"args":[]},"config:show":{"id":"config:show","description":"Show application config.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["config:show","config:show --pretty","config:show --config ./custom-config.json --data-path ./data"],"flags":{"data-path":{"name":"data-path","type":"option","char":"d","description":"Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."},"config":{"name":"config","type":"option","char":"c","description":"File path to a custom config. Environment variable \"KLAYR_CONFIG_FILE\" can also be used."},"pretty":{"name":"pretty","type":"boolean","description":"Prints JSON in pretty format rather than condensed.","allowNo":false}},"args":[]},"endpoint:invoke":{"id":"endpoint:invoke","description":"Invokes the provided endpoint.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["endpoint:invoke {endpoint} {parameters}","endpoint:invoke --data-path --file","endpoint:invoke generator_getAllKeys","endpoint:invoke consensus_getBFTParameters '{\"height\": 2}' -d ~/.klayr/pos-mainchain --pretty","endpoint:invoke consensus_getBFTParameters -f ./input.json"],"flags":{"data-path":{"name":"data-path","type":"option","char":"d","description":"Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."},"pretty":{"name":"pretty","type":"boolean","description":"Prints JSON in pretty format rather than condensed.","allowNo":false},"file":{"name":"file","type":"option","char":"f","description":"Input file."}},"args":[{"name":"endpoint","description":"Endpoint to invoke","required":true},{"name":"params","description":"Endpoint parameters (Optional)","required":false}]},"endpoint:list":{"id":"endpoint:list","description":"Lists registered endpoints.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["endpoint:list","endpoint:list {endpoint} -m {module}","endpoint:list {endpoint} -m {module} -i","endpoint:list -m validator","endopint:list getBalance","endpoint:list get -m token ","endpoint:list getBalances -m token -i --pretty","endpoint:list getBalances -m token -d ~/.klayr/pos-mainchain"],"flags":{"data-path":{"name":"data-path","type":"option","char":"d","description":"Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."},"pretty":{"name":"pretty","type":"boolean","description":"Prints JSON in pretty format rather than condensed.","allowNo":false},"module":{"name":"module","type":"option","char":"m","description":"Parent module."},"info":{"name":"info","type":"boolean","char":"i","description":"Prints additional info; Request and Response objects.","allowNo":false}},"args":[{"name":"endpoint","description":"Endpoint name (Optional)","required":false}]},"generator:disable":{"id":"generator:disable","description":"Disable block generation for given validator address.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["generator:disable kly ycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz","generator:disable kly ycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz --data-path ./data","generator:disable kly ycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz --data-path ./data --password your_password"],"flags":{"data-path":{"name":"data-path","type":"option","char":"d","description":"Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."},"pretty":{"name":"pretty","type":"boolean","description":"Prints JSON in pretty format rather than condensed.","allowNo":false},"password":{"name":"password","type":"option","char":"w","description":"Specifies a source for your secret password. Command will prompt you for input if this option is not set.\n\tExamples:\n\t- --password=pass:password123 (should only be used where security is not important)\n"}},"args":[{"name":"address","description":"Address of an account in a klayr32 format.","required":true}]},"generator:enable":{"id":"generator:enable","description":"Enable block generation for given validator address.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["generator:enable kly 24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu --use-status-value","generator:enable kly 24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu --height=100 --max-height-generated=30 --max-height-prevoted=10","generator:enable kly 24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu --height=100 --max-height-generated=30 --max-height-prevoted=10 --data-path ./data","generator:enable kly 24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu --height=100 --max-height-generated=30 --max-height-prevoted=10 --data-path ./data --password your_password"],"flags":{"data-path":{"name":"data-path","type":"option","char":"d","description":"Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."},"pretty":{"name":"pretty","type":"boolean","description":"Prints JSON in pretty format rather than condensed.","allowNo":false},"password":{"name":"password","type":"option","char":"w","description":"Specifies a source for your secret password. Command will prompt you for input if this option is not set.\n\tExamples:\n\t- --password=pass:password123 (should only be used where security is not important)\n"},"height":{"name":"height","type":"option","description":"Last generated block height."},"max-height-generated":{"name":"max-height-generated","type":"option","description":"Validator's largest previously generated height."},"max-height-prevoted":{"name":"max-height-prevoted","type":"option","description":"Validator's largest prevoted height for a block."},"use-status-value":{"name":"use-status-value","type":"boolean","description":"Use status value from the connected node","allowNo":false}},"args":[{"name":"address","description":"Address of an account in a klayr32 format.","required":true}]},"generator:export":{"id":"generator:export","description":"Export to <FILE>.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["generator:export","generator:export --output /mypath/generator_info.json","generator:export --output /mypath/generator_info.json --data-path ./data "],"flags":{"data-path":{"name":"data-path","type":"option","char":"d","description":"Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."},"pretty":{"name":"pretty","type":"boolean","description":"Prints JSON in pretty format rather than condensed.","allowNo":false},"output":{"name":"output","type":"option","char":"o","description":"The output directory. Default will set to current working directory."}},"args":[]},"generator:import":{"id":"generator:import","description":"Import from <FILE>.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["generator:import --file-path ./my/path/genInfo.json","generator:import --file-path ./my/path/genInfo.json --data-path ./data "],"flags":{"data-path":{"name":"data-path","type":"option","char":"d","description":"Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."},"pretty":{"name":"pretty","type":"boolean","description":"Prints JSON in pretty format rather than condensed.","allowNo":false},"file-path":{"name":"file-path","type":"option","char":"f","description":"Path of the file to import from","required":true}},"args":[]},"generator:status":{"id":"generator:status","description":"Get forging information for the locally running node.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["generator:status","generator:status --data-path ./sample --pretty"],"flags":{"data-path":{"name":"data-path","type":"option","char":"d","description":"Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."},"pretty":{"name":"pretty","type":"boolean","description":"Prints JSON in pretty format rather than condensed.","allowNo":false}},"args":[]},"genesis-block:create":{"id":"genesis-block:create","description":"Creates genesis block file.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["genesis-block:create --output mydir","genesis-block:create --output mydir --assets-file ./assets.json","genesis-block:create --output mydir --assets-file ./assets.json --height 2 --timestamp 1592924699 --previous-block-id 085d7c9b7bddc8052be9eefe185f407682a495f1b4498677df1480026b74f2e9"],"flags":{"network":{"name":"network","type":"option","char":"n","description":"Default network config to use. Environment variable \"KLAYR_NETWORK\" can also be used.","default":"default"},"config":{"name":"config","type":"option","char":"c","description":"File path to a custom config. Environment variable \"KLAYR_CONFIG_FILE\" can also be used."},"output":{"name":"output","type":"option","char":"o","description":"Output folder path of the generated genesis block","default":"config"},"assets-file":{"name":"assets-file","type":"option","char":"f","description":"Path to file which contains genesis block asset in JSON format","required":true},"export-json":{"name":"export-json","type":"boolean","description":"Export genesis block as JSON format along with blob","allowNo":false},"height":{"name":"height","type":"option","char":"h","description":"Genesis block height","required":false},"timestamp":{"name":"timestamp","type":"option","char":"t","description":"Timestamp","required":false},"previous-block-id":{"name":"previous-block-id","type":"option","char":"p","description":"Previous block id","required":false}},"args":[]},"genesis-block:download":{"id":"genesis-block:download","description":"Download genesis block.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["genesis-block:download --network mainnet -f","genesis-block:download --network --data-path ./klayr/","genesis-block:download --url http://mydomain.com/genesis_block.blob.tar.gz --data-path ./lisk/ --force"],"flags":{"data-path":{"name":"data-path","type":"option","char":"d","description":"Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."},"network":{"name":"network","type":"option","char":"n","description":"Default network config to use. Environment variable \"KLAYR_NETWORK\" can also be used."},"url":{"name":"url","type":"option","char":"u","description":"The url to download the genesis block from."},"force":{"name":"force","type":"boolean","char":"f","description":"Delete and overwrite existing genesis block.","allowNo":false}},"args":[]},"keys:create":{"id":"keys:create","description":"Return keys corresponding to the given passphrase.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["keys:create","keys:create --passphrase your-passphrase","keys:create --passphrase your-passphrase --no-encrypt","keys:create --passphrase your-passphrase --password your-password","keys:create --passphrase your-passphrase --password your-password --count 2","keys:create --passphrase your-passphrase --no-encrypt --count 2 --offset 1","keys:create --passphrase your-passphrase --no-encrypt --count 2 --offset 1 --chainid 1","keys:create --passphrase your-passphrase --password your-password --count 2 --offset 1 --chainid 1 --output /mypath/keys.json"],"flags":{"output":{"name":"output","type":"option","char":"o","description":"The output directory. Default will set to current working directory."},"passphrase":{"name":"passphrase","type":"option","char":"p","description":"Specifies a source for your secret passphrase. Command will prompt you for input if this option is not set.\n\tExamples:\n\t- --passphrase='my secret passphrase' (should only be used where security is not important)\n"},"no-encrypt":{"name":"no-encrypt","type":"boolean","char":"n","description":"No encrypted message object to be created","allowNo":false},"password":{"name":"password","type":"option","char":"w","description":"Specifies a source for your secret password. Command will prompt you for input if this option is not set.\n\tExamples:\n\t- --password=pass:password123 (should only be used where security is not important)\n"},"count":{"name":"count","type":"option","char":"c","description":"Number of keys to create","default":1},"offset":{"name":"offset","type":"option","char":"f","description":"Offset for the key derivation path","default":0},"chainid":{"name":"chainid","type":"option","char":"i","description":"Chain id","default":0},"add-legacy":{"name":"add-legacy","type":"boolean","description":"Add legacy key derivation path to the result","allowNo":false}},"args":[]},"keys:encrypt":{"id":"keys:encrypt","description":"Encrypt keys from a file and overwrite the file","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["keys:encrypt --file-path ./my/path/keys.json","keys:encrypt --file-path ./my/path/keys.json --password mypass"],"flags":{"file-path":{"name":"file-path","type":"option","char":"f","description":"Path of the file to encrypt from","required":true},"password":{"name":"password","type":"option","char":"w","description":"Specifies a source for your secret password. Command will prompt you for input if this option is not set.\n\tExamples:\n\t- --password=pass:password123 (should only be used where security is not important)\n"}},"args":[]},"keys:export":{"id":"keys:export","description":"Export to <FILE>.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["keys:export --output /mypath/keys.json","keys:export --output /mypath/keys.json --data-path ./data "],"flags":{"data-path":{"name":"data-path","type":"option","char":"d","description":"Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."},"pretty":{"name":"pretty","type":"boolean","description":"Prints JSON in pretty format rather than condensed.","allowNo":false},"output":{"name":"output","type":"option","char":"o","description":"The output directory. Default will set to current working directory.","required":true}},"args":[]},"keys:import":{"id":"keys:import","description":"Import from <FILE>.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["keys:import --file-path ./my/path/keys.json","keys:import --file-path ./my/path/keys.json --data-path ./data "],"flags":{"data-path":{"name":"data-path","type":"option","char":"d","description":"Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."},"pretty":{"name":"pretty","type":"boolean","description":"Prints JSON in pretty format rather than condensed.","allowNo":false},"file-path":{"name":"file-path","type":"option","char":"f","description":"Path of the file to import from","required":true}},"args":[]},"passphrase:create":{"id":"passphrase:create","description":"Returns a randomly generated 24 words mnemonic passphrase.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["passphrase:create","passphrase:create --output /mypath/passphrase.json"],"flags":{"output":{"name":"output","type":"option","char":"o","description":"The output directory. Default will set to current working directory."}},"args":[]},"passphrase:decrypt":{"id":"passphrase:decrypt","description":"Decrypt secret passphrase using the password provided at the time of encryption.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["passphrase:decrypt --file-path ./my/path/output.json","passphrase:decrypt --file-path ./my/path/output.json --password your-password"],"flags":{"password":{"name":"password","type":"option","char":"w","description":"Specifies a source for your secret password. Command will prompt you for input if this option is not set.\n\tExamples:\n\t- --password=pass:password123 (should only be used where security is not important)\n"},"file-path":{"name":"file-path","type":"option","char":"f","description":"Path of the file to import from","required":true}},"args":[]},"passphrase:encrypt":{"id":"passphrase:encrypt","description":"Encrypt secret passphrase using password.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["passphrase:encrypt","passphrase:encrypt --passphrase your-passphrase --output /mypath/keys.json","passphrase:encrypt --password your-password","passphrase:encrypt --password your-password --passphrase your-passphrase --output /mypath/keys.json","passphrase:encrypt --output-public-key --output /mypath/keys.json"],"flags":{"password":{"name":"password","type":"option","char":"w","description":"Specifies a source for your secret password. Command will prompt you for input if this option is not set.\n\tExamples:\n\t- --password=pass:password123 (should only be used where security is not important)\n"},"passphrase":{"name":"passphrase","type":"option","char":"p","description":"Specifies a source for your secret passphrase. Command will prompt you for input if this option is not set.\n\tExamples:\n\t- --passphrase='my secret passphrase' (should only be used where security is not important)\n"},"output-public-key":{"name":"output-public-key","type":"boolean","description":"Includes the public key in the output. This option is provided for the convenience of node operators.","allowNo":false},"output":{"name":"output","type":"option","char":"o","description":"The output directory. Default will set to current working directory."}},"args":[]},"sdk:link":{"id":"sdk:link","description":"Symlink specific SDK folder during development.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["sdk:link /path/to/klayr-sdk/sdk"],"flags":{},"args":[{"name":"targetSDKFolder","description":"The path to the klayr SDK folder","required":true}]},"system:metadata":{"id":"system:metadata","description":"Get node metadata from a running application.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["system:metadata","system:metadata --data-path ./klayr"],"flags":{"data-path":{"name":"data-path","type":"option","char":"d","description":"Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."},"pretty":{"name":"pretty","type":"boolean","description":"Prints JSON in pretty format rather than condensed.","allowNo":false}},"args":[]},"system:node-info":{"id":"system:node-info","description":"Get node information from a running application.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["system:node-info","system:node-info --data-path ./klayr"],"flags":{"data-path":{"name":"data-path","type":"option","char":"d","description":"Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."},"pretty":{"name":"pretty","type":"boolean","description":"Prints JSON in pretty format rather than condensed.","allowNo":false}},"args":[]},"transaction:create":{"id":"transaction:create","description":"Create transaction which can be broadcasted to the network. Note: fee and amount should be in Beddows!!","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["transaction:create token transfer 100000000 --params='{\"amount\":100000000,\"tokenID\":\"0400000000000000\",\"recipientAddress\":\"klyycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz\",\"data\":\"send token\"}'","transaction:create token transfer 100000000 --params='{\"amount\":100000000,\"tokenID\":\"0400000000000000\",\"recipientAddress\":\"klyycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz\",\"data\":\"send token\"}' --json","transaction:create token transfer 100000000 --offline --network mainnet --chain-id 10000000 --nonce 1 --params='{\"amount\":100000000,\"tokenID\":\"0400000000000000\",\"recipientAddress\":\"klyycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz\",\"data\":\"send token\"}'","transaction:create token transfer 100000000 --file=/txn_params.json","transaction:create token transfer 100000000 --file=/txn_params.json --json"],"flags":{"passphrase":{"name":"passphrase","type":"option","char":"p","description":"Specifies a source for your secret passphrase. Command will prompt you for input if this option is not set.\n\tExamples:\n\t- --passphrase='my secret passphrase' (should only be used where security is not important)\n"},"params":{"name":"params","type":"option","char":"a","description":"Creates transaction with specific params information"},"json":{"name":"json","type":"boolean","char":"j","description":"Print the transaction in JSON format.","allowNo":false},"offline":{"name":"offline","type":"boolean","description":"Specify whether to connect to a local node or not.","allowNo":false},"send":{"name":"send","type":"boolean","description":"Create and immediately send transaction to a node","allowNo":false},"no-signature":{"name":"no-signature","type":"boolean","description":"Creates the transaction without a signature. Your passphrase will therefore not be required","allowNo":false},"chain-id":{"name":"chain-id","type":"option"},"nonce":{"name":"nonce","type":"option","description":"Nonce of the transaction."},"sender-public-key":{"name":"sender-public-key","type":"option","char":"s","description":"Set a custom senderPublicKey property for the transaction, to be used when account address does not correspond to signer's private key"},"data-path":{"name":"data-path","type":"option","char":"d","description":"Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."},"key-derivation-path":{"name":"key-derivation-path","type":"option","char":"k","description":"Key derivation path to use to derive keypair from passphrase","default":"m/44'/134'/0'"},"pretty":{"name":"pretty","type":"boolean","description":"Prints JSON in pretty format rather than condensed.","allowNo":false},"file":{"name":"file","type":"option","char":"f","description":"The file to upload.\n\tExample:\n\t\t--file=./myfile.json\n"}},"args":[{"name":"module","description":"Registered transaction module.","required":true},{"name":"command","description":"Registered transaction command.","required":true},{"name":"fee","description":"Transaction fee in Beddows.","required":true}]},"transaction:get":{"id":"transaction:get","description":"Get transaction from local node by ID.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["transaction:get eab06c6a22e88bca7150e0347a7d976acd070cb9284423e6eabecd657acc1263"],"flags":{"data-path":{"name":"data-path","type":"option","char":"d","description":"Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."},"pretty":{"name":"pretty","type":"boolean","description":"Prints JSON in pretty format rather than condensed.","allowNo":false}},"args":[{"name":"id","description":"Transaction ID in hex format.","required":true}]},"transaction:send":{"id":"transaction:send","description":"Send transaction to the local node.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["transaction:send 080810011880cab5ee012220fd061b9146691f3c56504be051175d5b76d1b1d0179c5c4370e18534c58821222a2408641214ab0041a7d3f7b2c290b5b834d46bdc7b7eb858151a0a73656e6420746f6b656e324028edd3601cdc35a41bb23415a0d9f3c3e9cf188d9971adf18742cea39d58aa84809aa87bcfe6feaac46211c80472ad9297fd87727709f5d7e7b4134caf106b02"],"flags":{"data-path":{"name":"data-path","type":"option","char":"d","description":"Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."},"pretty":{"name":"pretty","type":"boolean","description":"Prints JSON in pretty format rather than condensed.","allowNo":false}},"args":[{"name":"transaction","description":"A transaction to be sent to the node encoded as hex string","required":true}]},"transaction:sign":{"id":"transaction:sign","description":"Sign encoded transaction.","pluginName":"klayr-core","pluginType":"core","aliases":[],"examples":["transaction:sign <hex-encoded-binary-transaction>","transaction:sign <hex-encoded-binary-transaction> --network testnet"],"flags":{"passphrase":{"name":"passphrase","type":"option","char":"p","description":"Specifies a source for your secret passphrase. Command will prompt you for input if this option is not set.\n\tExamples:\n\t- --passphrase='my secret passphrase' (should only be used where security is not important)\n"},"json":{"name":"json","type":"boolean","char":"j","description":"Print the transaction in JSON format.","allowNo":false},"offline":{"name":"offline","type":"boolean","description":"Specify whether to connect to a local node or not.","allowNo":false},"mandatory-keys":{"name":"mandatory-keys","type":"option","description":"Mandatory publicKey string in hex format."},"optional-keys":{"name":"optional-keys","type":"option","description":"Optional publicKey string in hex format."},"chain-id":{"name":"chain-id","type":"option"},"data-path":{"name":"data-path","type":"option","char":"d","description":"Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."},"key-derivation-path":{"name":"key-derivation-path","type":"option","char":"k","description":"Key derivation path to use to derive keypair from passphrase","default":"m/44'/134'/0'"},"pretty":{"name":"pretty","type":"boolean","description":"Prints JSON in pretty format rather than condensed.","allowNo":false}},"args":[{"name":"transaction","description":"The transaction to be signed encoded as hex string","required":true}]}}}
+{
+  "version": "4.1.4",
+  "commands": {
+    "console": {
+      "id": "console",
+      "description": "Klayr interactive REPL session to run commands.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "console",
+        "console --api-ws=ws://localhost:8080",
+        "console --api-ipc=/path/to/server"
+      ],
+      "flags": {
+        "api-ipc": {
+          "name": "api-ipc",
+          "type": "option",
+          "description": "Enable api-client with IPC communication."
+        },
+        "api-ws": {
+          "name": "api-ws",
+          "type": "option",
+          "description": "Enable api-client with Websocket communication."
+        }
+      },
+      "args": []
+    },
+    "hash-onion": {
+      "id": "hash-onion",
+      "description": "Create hash onions to be used by the forger.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "hash-onion --count=1000000 --distance=2000 --pretty",
+        "hash-onion --count=1000000 --distance=2000 --output ~/my_onion.json"
+      ],
+      "flags": {
+        "output": {
+          "name": "output",
+          "type": "option",
+          "char": "o",
+          "description": "Output file path"
+        },
+        "count": {
+          "name": "count",
+          "type": "option",
+          "char": "c",
+          "description": "Total number of hashes to produce",
+          "default": 1000000
+        },
+        "distance": {
+          "name": "distance",
+          "type": "option",
+          "char": "d",
+          "description": "Distance between each hash",
+          "default": 1000
+        },
+        "pretty": {
+          "name": "pretty",
+          "type": "boolean",
+          "description": "Prints JSON in pretty format rather than condensed.",
+          "allowNo": false
+        }
+      },
+      "args": []
+    },
+    "start": {
+      "id": "start",
+      "description": "Start Blockchain Node.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "start",
+        "start --network devnet --data-path /path/to/data-dir --log debug",
+        "start --network devnet --api-ws",
+        "start --network devnet --api-ws --api-port 8888",
+        "start --network devnet --port 9000",
+        "start --network devnet --port 9002 --seed-peers 127.0.0.1:9001,127.0.0.1:9000",
+        "start --network testnet --overwrite-config",
+        "start --network testnet --config ~/my_custom_config.json"
+      ],
+      "flags": {
+        "data-path": {
+          "name": "data-path",
+          "type": "option",
+          "char": "d",
+          "description": "Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."
+        },
+        "network": {
+          "name": "network",
+          "type": "option",
+          "char": "n",
+          "description": "Default network config to use. Environment variable \"KLAYR_NETWORK\" can also be used.",
+          "default": "mainnet"
+        },
+        "config": {
+          "name": "config",
+          "type": "option",
+          "char": "c",
+          "description": "File path to a custom config. Environment variable \"KLAYR_CONFIG_FILE\" can also be used."
+        },
+        "overwrite-config": {
+          "name": "overwrite-config",
+          "type": "boolean",
+          "description": "Overwrite network configs if they exist already",
+          "allowNo": false
+        },
+        "port": {
+          "name": "port",
+          "type": "option",
+          "char": "p",
+          "description": "Open port for the peer to peer incoming connections. Environment variable \"KLAYR_PORT\" can also be used."
+        },
+        "api-ipc": {
+          "name": "api-ipc",
+          "type": "boolean",
+          "description": "Enable IPC communication. This will load plugins as a child process and communicate over IPC. Environment variable \"KLAYR_API_IPC\" can also be used.",
+          "allowNo": false
+        },
+        "api-ws": {
+          "name": "api-ws",
+          "type": "boolean",
+          "description": "Enable websocket communication for api-client. Environment variable \"KLAYR_API_WS\" can also be used.",
+          "allowNo": false
+        },
+        "api-http": {
+          "name": "api-http",
+          "type": "boolean",
+          "description": "Enable HTTP communication for api-client. Environment variable \"KLAYR_API_HTTP\" can also be used.",
+          "allowNo": false
+        },
+        "api-port": {
+          "name": "api-port",
+          "type": "option",
+          "description": "Port to be used for api-client. Environment variable \"KLAYR_API_PORT\" can also be used."
+        },
+        "api-host": {
+          "name": "api-host",
+          "type": "option",
+          "description": "Host to be used for api-client. Environment variable \"KLAYR_API_HOST\" can also be used."
+        },
+        "log": {
+          "name": "log",
+          "type": "option",
+          "char": "l",
+          "description": "Log level. Environment variable \"KLAYR_LOG_LEVEL\" can also be used.",
+          "options": [
+            "trace",
+            "debug",
+            "info",
+            "warn",
+            "error",
+            "fatal"
+          ]
+        },
+        "seed-peers": {
+          "name": "seed-peers",
+          "type": "option",
+          "description": "Seed peers to initially connect to in format of comma separated \"ip:port\". IP can be DNS name or IPV4 format. Environment variable \"KLAYR_SEED_PEERS\" can also be used."
+        },
+        "enable-forger-plugin": {
+          "name": "enable-forger-plugin",
+          "type": "boolean",
+          "description": "Enable Forger Plugin. Environment variable \"KLAYR_ENABLE_FORGER_PLUGIN\" can also be used.",
+          "allowNo": false
+        },
+        "enable-monitor-plugin": {
+          "name": "enable-monitor-plugin",
+          "type": "boolean",
+          "description": "Enable Monitor Plugin. Environment variable \"KLAYR_ENABLE_MONITOR_PLUGIN\" can also be used.",
+          "allowNo": false
+        },
+        "monitor-plugin-port": {
+          "name": "monitor-plugin-port",
+          "type": "option",
+          "description": "Port to be used for Monitor Plugin. Environment variable \"KLAYR_MONITOR_PLUGIN_PORT\" can also be used."
+        },
+        "monitor-plugin-whitelist": {
+          "name": "monitor-plugin-whitelist",
+          "type": "option",
+          "description": "List of IPs in comma separated value to allow the connection. Environment variable \"KLAYR_MONITOR_PLUGIN_WHITELIST\" can also be used."
+        },
+        "enable-report-misbehavior-plugin": {
+          "name": "enable-report-misbehavior-plugin",
+          "type": "boolean",
+          "description": "Enable ReportMisbehavior Plugin. Environment variable \"KLAYR_ENABLE_REPORT_MISBEHAVIOR_PLUGIN\" can also be used.",
+          "allowNo": false
+        },
+        "enable-faucet-plugin": {
+          "name": "enable-faucet-plugin",
+          "type": "boolean",
+          "description": "Enable Faucet Plugin. Environment variable \"KLAYR_ENABLE_FAUCET_PLUGIN\" can also be used.",
+          "allowNo": false
+        },
+        "faucet-plugin-port": {
+          "name": "faucet-plugin-port",
+          "type": "option",
+          "description": "Port to be used for Faucet Plugin. Environment variable \"KLAYR_FAUCET_PLUGIN_PORT\" can also be used."
+        },
+        "enable-dashboard-plugin": {
+          "name": "enable-dashboard-plugin",
+          "type": "boolean",
+          "description": "Enable Dashboard Plugin. Environment variable \"KLAYR_ENABLE_DASHBOARD_PLUGIN\" can also be used.",
+          "allowNo": false
+        },
+        "dashboard-plugin-port": {
+          "name": "dashboard-plugin-port",
+          "type": "option",
+          "description": "Port to be used for Dashboard Plugin. Environment variable \"KLAYR_DASHBOARD_PLUGIN_PORT\" can also be used."
+        },
+        "enable-chain-connector-plugin": {
+          "name": "enable-chain-connector-plugin",
+          "type": "boolean",
+          "description": "Enable Chain Connector Plugin. Environment variable \"KLAYR_ENABLE_CHAIN_CONNECTOR_PLUGIN\" can also be used.",
+          "allowNo": false
+        },
+        "genesis-block-url": {
+          "name": "genesis-block-url",
+          "type": "option",
+          "char": "u",
+          "description": "The URL to download the genesis block. Environment variable \"KLAYR_GENESIS_BLOCK_URL\" can also be used. Kindly ensure that the provided URL downloads the genesis block 'blob' in the tarball format."
+        },
+        "overwrite-genesis-block": {
+          "name": "overwrite-genesis-block",
+          "type": "boolean",
+          "description": "Download and overwrite existing genesis block. Environment variable \"KLAYR_GENESIS_BLOCK_OVERWRITE\" can also be used.",
+          "allowNo": false
+        }
+      },
+      "args": []
+    },
+    "block:get": {
+      "id": "block:get",
+      "description": "Get block information for a given id or height.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "block:get e082e79d01016632c451c9df9276e486cb7f460dc793ff5b10d8f71eecec28b4",
+        "block:get 2"
+      ],
+      "flags": {
+        "data-path": {
+          "name": "data-path",
+          "type": "option",
+          "char": "d",
+          "description": "Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."
+        },
+        "pretty": {
+          "name": "pretty",
+          "type": "boolean",
+          "description": "Prints JSON in pretty format rather than condensed.",
+          "allowNo": false
+        }
+      },
+      "args": [
+        {
+          "name": "input",
+          "description": "Height in number or block id in hex format.",
+          "required": true
+        }
+      ]
+    },
+    "blockchain:download": {
+      "id": "blockchain:download",
+      "description": "Download snapshot from <URL>.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "download",
+        "download --network betanet",
+        "download --url https://snapshots.klayr.xyz/mainnet/blockchain.db.tar.gz --output ./downloads"
+      ],
+      "flags": {
+        "network": {
+          "name": "network",
+          "type": "option",
+          "char": "n",
+          "description": "Default network config to use. Environment variable \"KLAYR_NETWORK\" can also be used.",
+          "default": "mainnet"
+        },
+        "output": {
+          "name": "output",
+          "type": "option",
+          "char": "o",
+          "description": "Directory path to specify where snapshot is downloaded. By default outputs the files to current working directory."
+        },
+        "url": {
+          "name": "url",
+          "type": "option",
+          "char": "u",
+          "description": "The url to the snapshot."
+        }
+      },
+      "args": []
+    },
+    "blockchain:export": {
+      "id": "blockchain:export",
+      "description": "Export to <FILE>.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "blockchain:export",
+        "blockchain:export --data-path ./data --output ./my/path/"
+      ],
+      "flags": {
+        "data-path": {
+          "name": "data-path",
+          "type": "option",
+          "char": "d",
+          "description": "Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."
+        },
+        "output": {
+          "name": "output",
+          "type": "option",
+          "char": "o",
+          "description": "The output directory. Default will set to current working directory."
+        }
+      },
+      "args": []
+    },
+    "blockchain:hash": {
+      "id": "blockchain:hash",
+      "description": "Generate SHA256 hash from <PATH>.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "blockchain:hash",
+        "blockchain:hash --data-path ./data"
+      ],
+      "flags": {
+        "data-path": {
+          "name": "data-path",
+          "type": "option",
+          "char": "d",
+          "description": "Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."
+        }
+      },
+      "args": []
+    },
+    "blockchain:import": {
+      "id": "blockchain:import",
+      "description": "Import from <FILE>.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "blockchain:import ./path/to/blockchain.tar.gz",
+        "blockchain:import ./path/to/blockchain.tar.gz --data-path ./klayr/",
+        "blockchain:import ./path/to/blockchain.tar.gz --data-path ./klayr/ --force"
+      ],
+      "flags": {
+        "data-path": {
+          "name": "data-path",
+          "type": "option",
+          "char": "d",
+          "description": "Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."
+        },
+        "force": {
+          "name": "force",
+          "type": "boolean",
+          "char": "f",
+          "description": "Delete and overwrite existing blockchain data",
+          "allowNo": false
+        }
+      },
+      "args": [
+        {
+          "name": "filepath",
+          "description": "Path to the gzipped blockchain data.",
+          "required": true
+        }
+      ]
+    },
+    "blockchain:reset": {
+      "id": "blockchain:reset",
+      "description": "Reset the blockchain data.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "blockchain:reset",
+        "blockchain:reset --data-path ./klayr",
+        "blockchain:reset --yes"
+      ],
+      "flags": {
+        "data-path": {
+          "name": "data-path",
+          "type": "option",
+          "char": "d",
+          "description": "Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."
+        },
+        "yes": {
+          "name": "yes",
+          "type": "boolean",
+          "char": "y",
+          "description": "Skip confirmation prompt.",
+          "allowNo": false
+        }
+      },
+      "args": []
+    },
+    "config:create": {
+      "id": "config:create",
+      "description": "Creates network configuration file.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "config:create --output mydir",
+        "config:create --output mydir --label beta-sdk-app",
+        "config:create --output mydir --label beta-sdk-app --community-identifier sdk"
+      ],
+      "flags": {
+        "output": {
+          "name": "output",
+          "type": "option",
+          "char": "o",
+          "description": "Directory where the config file is saved",
+          "default": "/Users/corbifex/Developer/klayr-hq/temp/klayr-core"
+        },
+        "label": {
+          "name": "label",
+          "type": "option",
+          "char": "l",
+          "description": "App Label",
+          "default": "beta-sdk-app"
+        },
+        "chain-id": {
+          "name": "chain-id",
+          "type": "option",
+          "char": "i",
+          "description": "ChainID in hex format. For example, Klayr mainnet mainchain is 00000000",
+          "required": true
+        }
+      },
+      "args": []
+    },
+    "config:show": {
+      "id": "config:show",
+      "description": "Show application config.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "config:show",
+        "config:show --pretty",
+        "config:show --config ./custom-config.json --data-path ./data"
+      ],
+      "flags": {
+        "data-path": {
+          "name": "data-path",
+          "type": "option",
+          "char": "d",
+          "description": "Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."
+        },
+        "config": {
+          "name": "config",
+          "type": "option",
+          "char": "c",
+          "description": "File path to a custom config. Environment variable \"KLAYR_CONFIG_FILE\" can also be used."
+        },
+        "pretty": {
+          "name": "pretty",
+          "type": "boolean",
+          "description": "Prints JSON in pretty format rather than condensed.",
+          "allowNo": false
+        }
+      },
+      "args": []
+    },
+    "endpoint:invoke": {
+      "id": "endpoint:invoke",
+      "description": "Invokes the provided endpoint.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "endpoint:invoke {endpoint} {parameters}",
+        "endpoint:invoke --data-path --file",
+        "endpoint:invoke generator_getAllKeys",
+        "endpoint:invoke consensus_getBFTParameters '{\"height\": 2}' -d ~/.klayr/pos-mainchain --pretty",
+        "endpoint:invoke consensus_getBFTParameters -f ./input.json"
+      ],
+      "flags": {
+        "data-path": {
+          "name": "data-path",
+          "type": "option",
+          "char": "d",
+          "description": "Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."
+        },
+        "pretty": {
+          "name": "pretty",
+          "type": "boolean",
+          "description": "Prints JSON in pretty format rather than condensed.",
+          "allowNo": false
+        },
+        "file": {
+          "name": "file",
+          "type": "option",
+          "char": "f",
+          "description": "Input file."
+        }
+      },
+      "args": [
+        {
+          "name": "endpoint",
+          "description": "Endpoint to invoke",
+          "required": true
+        },
+        {
+          "name": "params",
+          "description": "Endpoint parameters (Optional)",
+          "required": false
+        }
+      ]
+    },
+    "endpoint:list": {
+      "id": "endpoint:list",
+      "description": "Lists registered endpoints.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "endpoint:list",
+        "endpoint:list {endpoint} -m {module}",
+        "endpoint:list {endpoint} -m {module} -i",
+        "endpoint:list -m validator",
+        "endopint:list getBalance",
+        "endpoint:list get -m token ",
+        "endpoint:list getBalances -m token -i --pretty",
+        "endpoint:list getBalances -m token -d ~/.klayr/pos-mainchain"
+      ],
+      "flags": {
+        "data-path": {
+          "name": "data-path",
+          "type": "option",
+          "char": "d",
+          "description": "Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."
+        },
+        "pretty": {
+          "name": "pretty",
+          "type": "boolean",
+          "description": "Prints JSON in pretty format rather than condensed.",
+          "allowNo": false
+        },
+        "module": {
+          "name": "module",
+          "type": "option",
+          "char": "m",
+          "description": "Parent module."
+        },
+        "info": {
+          "name": "info",
+          "type": "boolean",
+          "char": "i",
+          "description": "Prints additional info; Request and Response objects.",
+          "allowNo": false
+        }
+      },
+      "args": [
+        {
+          "name": "endpoint",
+          "description": "Endpoint name (Optional)",
+          "required": false
+        }
+      ]
+    },
+    "generator:disable": {
+      "id": "generator:disable",
+      "description": "Disable block generation for given validator address.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "generator:disable kly ycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz",
+        "generator:disable kly ycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz --data-path ./data",
+        "generator:disable kly ycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz --data-path ./data --password your_password"
+      ],
+      "flags": {
+        "data-path": {
+          "name": "data-path",
+          "type": "option",
+          "char": "d",
+          "description": "Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."
+        },
+        "pretty": {
+          "name": "pretty",
+          "type": "boolean",
+          "description": "Prints JSON in pretty format rather than condensed.",
+          "allowNo": false
+        },
+        "password": {
+          "name": "password",
+          "type": "option",
+          "char": "w",
+          "description": "Specifies a source for your secret password. Command will prompt you for input if this option is not set.\n\tExamples:\n\t- --password=pass:password123 (should only be used where security is not important)\n"
+        }
+      },
+      "args": [
+        {
+          "name": "address",
+          "description": "Address of an account in a klayr32 format.",
+          "required": true
+        }
+      ]
+    },
+    "generator:enable": {
+      "id": "generator:enable",
+      "description": "Enable block generation for given validator address.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "generator:enable kly 24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu --use-status-value",
+        "generator:enable kly 24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu --height=100 --max-height-generated=30 --max-height-prevoted=10",
+        "generator:enable kly 24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu --height=100 --max-height-generated=30 --max-height-prevoted=10 --data-path ./data",
+        "generator:enable kly 24cd35u4jdq8szo3pnsqe5dsxwrnazyqqqg5eu --height=100 --max-height-generated=30 --max-height-prevoted=10 --data-path ./data --password your_password"
+      ],
+      "flags": {
+        "data-path": {
+          "name": "data-path",
+          "type": "option",
+          "char": "d",
+          "description": "Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."
+        },
+        "pretty": {
+          "name": "pretty",
+          "type": "boolean",
+          "description": "Prints JSON in pretty format rather than condensed.",
+          "allowNo": false
+        },
+        "password": {
+          "name": "password",
+          "type": "option",
+          "char": "w",
+          "description": "Specifies a source for your secret password. Command will prompt you for input if this option is not set.\n\tExamples:\n\t- --password=pass:password123 (should only be used where security is not important)\n"
+        },
+        "height": {
+          "name": "height",
+          "type": "option",
+          "description": "Last generated block height."
+        },
+        "max-height-generated": {
+          "name": "max-height-generated",
+          "type": "option",
+          "description": "Validator's largest previously generated height."
+        },
+        "max-height-prevoted": {
+          "name": "max-height-prevoted",
+          "type": "option",
+          "description": "Validator's largest prevoted height for a block."
+        },
+        "use-status-value": {
+          "name": "use-status-value",
+          "type": "boolean",
+          "description": "Use status value from the connected node",
+          "allowNo": false
+        }
+      },
+      "args": [
+        {
+          "name": "address",
+          "description": "Address of an account in a klayr32 format.",
+          "required": true
+        }
+      ]
+    },
+    "generator:export": {
+      "id": "generator:export",
+      "description": "Export to <FILE>.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "generator:export",
+        "generator:export --output /mypath/generator_info.json",
+        "generator:export --output /mypath/generator_info.json --data-path ./data "
+      ],
+      "flags": {
+        "data-path": {
+          "name": "data-path",
+          "type": "option",
+          "char": "d",
+          "description": "Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."
+        },
+        "pretty": {
+          "name": "pretty",
+          "type": "boolean",
+          "description": "Prints JSON in pretty format rather than condensed.",
+          "allowNo": false
+        },
+        "output": {
+          "name": "output",
+          "type": "option",
+          "char": "o",
+          "description": "The output directory. Default will set to current working directory."
+        }
+      },
+      "args": []
+    },
+    "generator:import": {
+      "id": "generator:import",
+      "description": "Import from <FILE>.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "generator:import --file-path ./my/path/genInfo.json",
+        "generator:import --file-path ./my/path/genInfo.json --data-path ./data "
+      ],
+      "flags": {
+        "data-path": {
+          "name": "data-path",
+          "type": "option",
+          "char": "d",
+          "description": "Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."
+        },
+        "pretty": {
+          "name": "pretty",
+          "type": "boolean",
+          "description": "Prints JSON in pretty format rather than condensed.",
+          "allowNo": false
+        },
+        "file-path": {
+          "name": "file-path",
+          "type": "option",
+          "char": "f",
+          "description": "Path of the file to import from",
+          "required": true
+        }
+      },
+      "args": []
+    },
+    "generator:status": {
+      "id": "generator:status",
+      "description": "Get forging information for the locally running node.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "generator:status",
+        "generator:status --data-path ./sample --pretty"
+      ],
+      "flags": {
+        "data-path": {
+          "name": "data-path",
+          "type": "option",
+          "char": "d",
+          "description": "Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."
+        },
+        "pretty": {
+          "name": "pretty",
+          "type": "boolean",
+          "description": "Prints JSON in pretty format rather than condensed.",
+          "allowNo": false
+        }
+      },
+      "args": []
+    },
+    "genesis-block:create": {
+      "id": "genesis-block:create",
+      "description": "Creates genesis block file.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "genesis-block:create --output mydir",
+        "genesis-block:create --output mydir --assets-file ./assets.json",
+        "genesis-block:create --output mydir --assets-file ./assets.json --height 2 --timestamp 1592924699 --previous-block-id 085d7c9b7bddc8052be9eefe185f407682a495f1b4498677df1480026b74f2e9"
+      ],
+      "flags": {
+        "network": {
+          "name": "network",
+          "type": "option",
+          "char": "n",
+          "description": "Default network config to use. Environment variable \"KLAYR_NETWORK\" can also be used.",
+          "default": "default"
+        },
+        "config": {
+          "name": "config",
+          "type": "option",
+          "char": "c",
+          "description": "File path to a custom config. Environment variable \"KLAYR_CONFIG_FILE\" can also be used."
+        },
+        "output": {
+          "name": "output",
+          "type": "option",
+          "char": "o",
+          "description": "Output folder path of the generated genesis block",
+          "default": "config"
+        },
+        "assets-file": {
+          "name": "assets-file",
+          "type": "option",
+          "char": "f",
+          "description": "Path to file which contains genesis block asset in JSON format",
+          "required": true
+        },
+        "export-json": {
+          "name": "export-json",
+          "type": "boolean",
+          "description": "Export genesis block as JSON format along with blob",
+          "allowNo": false
+        },
+        "height": {
+          "name": "height",
+          "type": "option",
+          "char": "h",
+          "description": "Genesis block height",
+          "required": false
+        },
+        "timestamp": {
+          "name": "timestamp",
+          "type": "option",
+          "char": "t",
+          "description": "Timestamp",
+          "required": false
+        },
+        "previous-block-id": {
+          "name": "previous-block-id",
+          "type": "option",
+          "char": "p",
+          "description": "Previous block id",
+          "required": false
+        }
+      },
+      "args": []
+    },
+    "genesis-block:download": {
+      "id": "genesis-block:download",
+      "description": "Download genesis block.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "genesis-block:download --network mainnet -f",
+        "genesis-block:download --network --data-path ./klayr/",
+        "genesis-block:download --url http://mydomain.com/genesis_block.blob.tar.gz --data-path ./lisk/ --force"
+      ],
+      "flags": {
+        "data-path": {
+          "name": "data-path",
+          "type": "option",
+          "char": "d",
+          "description": "Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."
+        },
+        "network": {
+          "name": "network",
+          "type": "option",
+          "char": "n",
+          "description": "Default network config to use. Environment variable \"KLAYR_NETWORK\" can also be used."
+        },
+        "url": {
+          "name": "url",
+          "type": "option",
+          "char": "u",
+          "description": "The url to download the genesis block from."
+        },
+        "force": {
+          "name": "force",
+          "type": "boolean",
+          "char": "f",
+          "description": "Delete and overwrite existing genesis block.",
+          "allowNo": false
+        }
+      },
+      "args": []
+    },
+    "keys:create": {
+      "id": "keys:create",
+      "description": "Return keys corresponding to the given passphrase.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "keys:create",
+        "keys:create --passphrase your-passphrase",
+        "keys:create --passphrase your-passphrase --no-encrypt",
+        "keys:create --passphrase your-passphrase --password your-password",
+        "keys:create --passphrase your-passphrase --password your-password --count 2",
+        "keys:create --passphrase your-passphrase --no-encrypt --count 2 --offset 1",
+        "keys:create --passphrase your-passphrase --no-encrypt --count 2 --offset 1 --chainid 1",
+        "keys:create --passphrase your-passphrase --password your-password --count 2 --offset 1 --chainid 1 --output /mypath/keys.json"
+      ],
+      "flags": {
+        "output": {
+          "name": "output",
+          "type": "option",
+          "char": "o",
+          "description": "The output directory. Default will set to current working directory."
+        },
+        "passphrase": {
+          "name": "passphrase",
+          "type": "option",
+          "char": "p",
+          "description": "Specifies a source for your secret passphrase. Command will prompt you for input if this option is not set.\n\tExamples:\n\t- --passphrase='my secret passphrase' (should only be used where security is not important)\n"
+        },
+        "no-encrypt": {
+          "name": "no-encrypt",
+          "type": "boolean",
+          "char": "n",
+          "description": "No encrypted message object to be created",
+          "allowNo": false
+        },
+        "password": {
+          "name": "password",
+          "type": "option",
+          "char": "w",
+          "description": "Specifies a source for your secret password. Command will prompt you for input if this option is not set.\n\tExamples:\n\t- --password=pass:password123 (should only be used where security is not important)\n"
+        },
+        "count": {
+          "name": "count",
+          "type": "option",
+          "char": "c",
+          "description": "Number of keys to create",
+          "default": 1
+        },
+        "offset": {
+          "name": "offset",
+          "type": "option",
+          "char": "f",
+          "description": "Offset for the key derivation path",
+          "default": 0
+        },
+        "chainid": {
+          "name": "chainid",
+          "type": "option",
+          "char": "i",
+          "description": "Chain id",
+          "default": 0
+        },
+        "add-legacy": {
+          "name": "add-legacy",
+          "type": "boolean",
+          "description": "Add legacy key derivation path to the result",
+          "allowNo": false
+        }
+      },
+      "args": []
+    },
+    "keys:encrypt": {
+      "id": "keys:encrypt",
+      "description": "Encrypt keys from a file and overwrite the file",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "keys:encrypt --file-path ./my/path/keys.json",
+        "keys:encrypt --file-path ./my/path/keys.json --password mypass"
+      ],
+      "flags": {
+        "file-path": {
+          "name": "file-path",
+          "type": "option",
+          "char": "f",
+          "description": "Path of the file to encrypt from",
+          "required": true
+        },
+        "password": {
+          "name": "password",
+          "type": "option",
+          "char": "w",
+          "description": "Specifies a source for your secret password. Command will prompt you for input if this option is not set.\n\tExamples:\n\t- --password=pass:password123 (should only be used where security is not important)\n"
+        }
+      },
+      "args": []
+    },
+    "keys:export": {
+      "id": "keys:export",
+      "description": "Export to <FILE>.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "keys:export --output /mypath/keys.json",
+        "keys:export --output /mypath/keys.json --data-path ./data "
+      ],
+      "flags": {
+        "data-path": {
+          "name": "data-path",
+          "type": "option",
+          "char": "d",
+          "description": "Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."
+        },
+        "pretty": {
+          "name": "pretty",
+          "type": "boolean",
+          "description": "Prints JSON in pretty format rather than condensed.",
+          "allowNo": false
+        },
+        "output": {
+          "name": "output",
+          "type": "option",
+          "char": "o",
+          "description": "The output directory. Default will set to current working directory.",
+          "required": true
+        }
+      },
+      "args": []
+    },
+    "keys:import": {
+      "id": "keys:import",
+      "description": "Import from <FILE>.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "keys:import --file-path ./my/path/keys.json",
+        "keys:import --file-path ./my/path/keys.json --data-path ./data "
+      ],
+      "flags": {
+        "data-path": {
+          "name": "data-path",
+          "type": "option",
+          "char": "d",
+          "description": "Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."
+        },
+        "pretty": {
+          "name": "pretty",
+          "type": "boolean",
+          "description": "Prints JSON in pretty format rather than condensed.",
+          "allowNo": false
+        },
+        "file-path": {
+          "name": "file-path",
+          "type": "option",
+          "char": "f",
+          "description": "Path of the file to import from",
+          "required": true
+        }
+      },
+      "args": []
+    },
+    "passphrase:create": {
+      "id": "passphrase:create",
+      "description": "Returns a randomly generated 24 words mnemonic passphrase.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "passphrase:create",
+        "passphrase:create --output /mypath/passphrase.json"
+      ],
+      "flags": {
+        "output": {
+          "name": "output",
+          "type": "option",
+          "char": "o",
+          "description": "The output directory. Default will set to current working directory."
+        }
+      },
+      "args": []
+    },
+    "passphrase:decrypt": {
+      "id": "passphrase:decrypt",
+      "description": "Decrypt secret passphrase using the password provided at the time of encryption.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "passphrase:decrypt --file-path ./my/path/output.json",
+        "passphrase:decrypt --file-path ./my/path/output.json --password your-password"
+      ],
+      "flags": {
+        "password": {
+          "name": "password",
+          "type": "option",
+          "char": "w",
+          "description": "Specifies a source for your secret password. Command will prompt you for input if this option is not set.\n\tExamples:\n\t- --password=pass:password123 (should only be used where security is not important)\n"
+        },
+        "file-path": {
+          "name": "file-path",
+          "type": "option",
+          "char": "f",
+          "description": "Path of the file to import from",
+          "required": true
+        }
+      },
+      "args": []
+    },
+    "passphrase:encrypt": {
+      "id": "passphrase:encrypt",
+      "description": "Encrypt secret passphrase using password.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "passphrase:encrypt",
+        "passphrase:encrypt --passphrase your-passphrase --output /mypath/keys.json",
+        "passphrase:encrypt --password your-password",
+        "passphrase:encrypt --password your-password --passphrase your-passphrase --output /mypath/keys.json",
+        "passphrase:encrypt --output-public-key --output /mypath/keys.json"
+      ],
+      "flags": {
+        "password": {
+          "name": "password",
+          "type": "option",
+          "char": "w",
+          "description": "Specifies a source for your secret password. Command will prompt you for input if this option is not set.\n\tExamples:\n\t- --password=pass:password123 (should only be used where security is not important)\n"
+        },
+        "passphrase": {
+          "name": "passphrase",
+          "type": "option",
+          "char": "p",
+          "description": "Specifies a source for your secret passphrase. Command will prompt you for input if this option is not set.\n\tExamples:\n\t- --passphrase='my secret passphrase' (should only be used where security is not important)\n"
+        },
+        "output-public-key": {
+          "name": "output-public-key",
+          "type": "boolean",
+          "description": "Includes the public key in the output. This option is provided for the convenience of node operators.",
+          "allowNo": false
+        },
+        "output": {
+          "name": "output",
+          "type": "option",
+          "char": "o",
+          "description": "The output directory. Default will set to current working directory."
+        }
+      },
+      "args": []
+    },
+    "sdk:link": {
+      "id": "sdk:link",
+      "description": "Symlink specific SDK folder during development.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "sdk:link /path/to/klayr-sdk/sdk"
+      ],
+      "flags": {},
+      "args": [
+        {
+          "name": "targetSDKFolder",
+          "description": "The path to the klayr SDK folder",
+          "required": true
+        }
+      ]
+    },
+    "system:metadata": {
+      "id": "system:metadata",
+      "description": "Get node metadata from a running application.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "system:metadata",
+        "system:metadata --data-path ./klayr"
+      ],
+      "flags": {
+        "data-path": {
+          "name": "data-path",
+          "type": "option",
+          "char": "d",
+          "description": "Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."
+        },
+        "pretty": {
+          "name": "pretty",
+          "type": "boolean",
+          "description": "Prints JSON in pretty format rather than condensed.",
+          "allowNo": false
+        }
+      },
+      "args": []
+    },
+    "system:node-info": {
+      "id": "system:node-info",
+      "description": "Get node information from a running application.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "system:node-info",
+        "system:node-info --data-path ./klayr"
+      ],
+      "flags": {
+        "data-path": {
+          "name": "data-path",
+          "type": "option",
+          "char": "d",
+          "description": "Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."
+        },
+        "pretty": {
+          "name": "pretty",
+          "type": "boolean",
+          "description": "Prints JSON in pretty format rather than condensed.",
+          "allowNo": false
+        }
+      },
+      "args": []
+    },
+    "transaction:create": {
+      "id": "transaction:create",
+      "description": "Create transaction which can be broadcasted to the network. Note: fee and amount should be in Beddows!!",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "transaction:create token transfer 100000000 --params='{\"amount\":100000000,\"tokenID\":\"0400000000000000\",\"recipientAddress\":\"klyycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz\",\"data\":\"send token\"}'",
+        "transaction:create token transfer 100000000 --params='{\"amount\":100000000,\"tokenID\":\"0400000000000000\",\"recipientAddress\":\"klyycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz\",\"data\":\"send token\"}' --json",
+        "transaction:create token transfer 100000000 --offline --network mainnet --chain-id 10000000 --nonce 1 --params='{\"amount\":100000000,\"tokenID\":\"0400000000000000\",\"recipientAddress\":\"klyycz7hvr8yfu74bcwxy2n4mopfmjancgdvxq8xz\",\"data\":\"send token\"}'",
+        "transaction:create token transfer 100000000 --file=/txn_params.json",
+        "transaction:create token transfer 100000000 --file=/txn_params.json --json"
+      ],
+      "flags": {
+        "passphrase": {
+          "name": "passphrase",
+          "type": "option",
+          "char": "p",
+          "description": "Specifies a source for your secret passphrase. Command will prompt you for input if this option is not set.\n\tExamples:\n\t- --passphrase='my secret passphrase' (should only be used where security is not important)\n"
+        },
+        "params": {
+          "name": "params",
+          "type": "option",
+          "char": "a",
+          "description": "Creates transaction with specific params information"
+        },
+        "json": {
+          "name": "json",
+          "type": "boolean",
+          "char": "j",
+          "description": "Print the transaction in JSON format.",
+          "allowNo": false
+        },
+        "offline": {
+          "name": "offline",
+          "type": "boolean",
+          "description": "Specify whether to connect to a local node or not.",
+          "allowNo": false
+        },
+        "send": {
+          "name": "send",
+          "type": "boolean",
+          "description": "Create and immediately send transaction to a node",
+          "allowNo": false
+        },
+        "no-signature": {
+          "name": "no-signature",
+          "type": "boolean",
+          "description": "Creates the transaction without a signature. Your passphrase will therefore not be required",
+          "allowNo": false
+        },
+        "chain-id": {
+          "name": "chain-id",
+          "type": "option"
+        },
+        "nonce": {
+          "name": "nonce",
+          "type": "option",
+          "description": "Nonce of the transaction."
+        },
+        "sender-public-key": {
+          "name": "sender-public-key",
+          "type": "option",
+          "char": "s",
+          "description": "Set a custom senderPublicKey property for the transaction, to be used when account address does not correspond to signer's private key"
+        },
+        "data-path": {
+          "name": "data-path",
+          "type": "option",
+          "char": "d",
+          "description": "Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."
+        },
+        "key-derivation-path": {
+          "name": "key-derivation-path",
+          "type": "option",
+          "char": "k",
+          "description": "Key derivation path to use to derive keypair from passphrase",
+          "default": "m/44'/134'/0'"
+        },
+        "pretty": {
+          "name": "pretty",
+          "type": "boolean",
+          "description": "Prints JSON in pretty format rather than condensed.",
+          "allowNo": false
+        },
+        "file": {
+          "name": "file",
+          "type": "option",
+          "char": "f",
+          "description": "The file to upload.\n\tExample:\n\t\t--file=./myfile.json\n"
+        }
+      },
+      "args": [
+        {
+          "name": "module",
+          "description": "Registered transaction module.",
+          "required": true
+        },
+        {
+          "name": "command",
+          "description": "Registered transaction command.",
+          "required": true
+        },
+        {
+          "name": "fee",
+          "description": "Transaction fee in Beddows.",
+          "required": true
+        }
+      ]
+    },
+    "transaction:get": {
+      "id": "transaction:get",
+      "description": "Get transaction from local node by ID.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "transaction:get eab06c6a22e88bca7150e0347a7d976acd070cb9284423e6eabecd657acc1263"
+      ],
+      "flags": {
+        "data-path": {
+          "name": "data-path",
+          "type": "option",
+          "char": "d",
+          "description": "Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."
+        },
+        "pretty": {
+          "name": "pretty",
+          "type": "boolean",
+          "description": "Prints JSON in pretty format rather than condensed.",
+          "allowNo": false
+        }
+      },
+      "args": [
+        {
+          "name": "id",
+          "description": "Transaction ID in hex format.",
+          "required": true
+        }
+      ]
+    },
+    "transaction:send": {
+      "id": "transaction:send",
+      "description": "Send transaction to the local node.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "transaction:send 080810011880cab5ee012220fd061b9146691f3c56504be051175d5b76d1b1d0179c5c4370e18534c58821222a2408641214ab0041a7d3f7b2c290b5b834d46bdc7b7eb858151a0a73656e6420746f6b656e324028edd3601cdc35a41bb23415a0d9f3c3e9cf188d9971adf18742cea39d58aa84809aa87bcfe6feaac46211c80472ad9297fd87727709f5d7e7b4134caf106b02"
+      ],
+      "flags": {
+        "data-path": {
+          "name": "data-path",
+          "type": "option",
+          "char": "d",
+          "description": "Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."
+        },
+        "pretty": {
+          "name": "pretty",
+          "type": "boolean",
+          "description": "Prints JSON in pretty format rather than condensed.",
+          "allowNo": false
+        }
+      },
+      "args": [
+        {
+          "name": "transaction",
+          "description": "A transaction to be sent to the node encoded as hex string",
+          "required": true
+        }
+      ]
+    },
+    "transaction:sign": {
+      "id": "transaction:sign",
+      "description": "Sign encoded transaction.",
+      "pluginName": "klayr-core",
+      "pluginType": "core",
+      "aliases": [],
+      "examples": [
+        "transaction:sign <hex-encoded-binary-transaction>",
+        "transaction:sign <hex-encoded-binary-transaction> --network testnet"
+      ],
+      "flags": {
+        "passphrase": {
+          "name": "passphrase",
+          "type": "option",
+          "char": "p",
+          "description": "Specifies a source for your secret passphrase. Command will prompt you for input if this option is not set.\n\tExamples:\n\t- --passphrase='my secret passphrase' (should only be used where security is not important)\n"
+        },
+        "json": {
+          "name": "json",
+          "type": "boolean",
+          "char": "j",
+          "description": "Print the transaction in JSON format.",
+          "allowNo": false
+        },
+        "offline": {
+          "name": "offline",
+          "type": "boolean",
+          "description": "Specify whether to connect to a local node or not.",
+          "allowNo": false
+        },
+        "mandatory-keys": {
+          "name": "mandatory-keys",
+          "type": "option",
+          "description": "Mandatory publicKey string in hex format."
+        },
+        "optional-keys": {
+          "name": "optional-keys",
+          "type": "option",
+          "description": "Optional publicKey string in hex format."
+        },
+        "chain-id": {
+          "name": "chain-id",
+          "type": "option"
+        },
+        "data-path": {
+          "name": "data-path",
+          "type": "option",
+          "char": "d",
+          "description": "Directory path to specify where node data is stored. Environment variable \"KLAYR_DATA_PATH\" can also be used."
+        },
+        "key-derivation-path": {
+          "name": "key-derivation-path",
+          "type": "option",
+          "char": "k",
+          "description": "Key derivation path to use to derive keypair from passphrase",
+          "default": "m/44'/134'/0'"
+        },
+        "pretty": {
+          "name": "pretty",
+          "type": "boolean",
+          "description": "Prints JSON in pretty format rather than condensed.",
+          "allowNo": false
+        }
+      },
+      "args": [
+        {
+          "name": "transaction",
+          "description": "The transaction to be signed encoded as hex string",
+          "required": true
+        }
+      ]
+    }
+  }
+}
