@@ -23,4 +23,4 @@ EXAMPLES
   console --api-ipc=/path/to/server
 ```
 
-_See code: [dist/commands/console.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.4/dist/commands/console.ts)_
+_See code: [dist/commands/console.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.4-alpha.3/dist/commands/console.ts)_

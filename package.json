@@ -1,6 +1,6 @@
 {
 	"name": "klayr-core",
-	"version": "4.1.4",
+	"version": "4.1.5",
 	"description": "Klayr blockchain application platform",
 	"author": "Klayr Holding B.V. <admin@klayr.xyz>, Lisk Foundation <admin@lisk.com>, lightcurve GmbH <admin@lightcurve.io>",
 	"license": "Apache-2.0",
@@ -107,7 +107,7 @@
 		}
 	},
 	"dependencies": {
-		"@klayr/chain-connector-plugin": "0.1.4",
+		"@klayr/chain-connector-plugin": "0.1.6",
 		"@klayr/faucet-plugin": "0.3.4",
 		"@klayr/generator-plugin": "0.4.4",
 		"@klayr/monitor-plugin": "0.4.4",

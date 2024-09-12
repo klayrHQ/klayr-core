@@ -55,3 +55,5 @@ data
 
 # Personal files
 scripts
+genesis_assets.json
+genesis_block.json
