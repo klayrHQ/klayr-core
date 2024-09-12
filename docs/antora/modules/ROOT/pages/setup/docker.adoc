@@ -110,7 +110,7 @@ cd klayr-core
 .Check out the latest release tag
 [source,bash]
 ----
-git checkout v4.1.4
+git checkout v4.1.5
 ----
 
 .Build the docker image
@@ -144,7 +144,7 @@ Mainnet::
 docker run --volume klayr-data:/home/klayr/.klayr \
            --publish 7887:7887 \
            --name klayr-core \
-           klayr/core:4.1.4 \
+           klayr/core:4.1.5 \
            start --network=mainnet
 ----
 
@@ -184,7 +184,7 @@ Testnet::
 docker run --volume klayr-data:/home/klayr/.klayr \
            --publish 7887:7887 \
            --name klayr-core \
-           klayr/core:4.1.4 \
+           klayr/core:4.1.5 \
            start --network=testnet
 ----
 
@@ -197,7 +197,7 @@ Devnet::
 docker run --volume klayr-data:/home/klayr/.klayr \
            --publish 7887:7887 \
            --name klayr-core \
-           klayr/core:4.1.4 \
+           klayr/core:4.1.5 \
            start --network=devnet
 ----
 --
@@ -214,7 +214,7 @@ docker run --volume klayr-data:/home/klayr/.klayr \
            --publish 7667:7667 \
            --publish 127.0.0.1:7887:7887 \
            --name klayr-core \
-           klayr/core:4.1.4 \
+           klayr/core:4.1.5 \
            start --network=testnet --api-ws --api-http --log=debug
 ----
 

@@ -54,42 +54,39 @@ npm run build
 ### From NPM
 
 <!-- usage -->
-
 ```sh-session
 $ npm install -g klayr-core
 $ klayr-core COMMAND
 running command...
 $ klayr-core (-v|--version|version)
-klayr-core/4.1.4-alpha.3 darwin-x64 node-v18.20.2
+klayr-core/4.1.5 darwin-x64 node-v18.20.2
 $ klayr-core --help [COMMAND]
 USAGE
   $ klayr-core COMMAND
 ...
 ```
-
 <!-- usagestop -->
 
 <!-- commands -->
-
 # Command Topics
 
-- [`klayr-core autocomplete`](docs/commands/autocomplete.md) - display autocomplete installation instructions
-- [`klayr-core block`](docs/commands/block.md) - Commands relating to Klayr Core blocks.
-- [`klayr-core blockchain`](docs/commands/blockchain.md) - Commands relating to Klayr Core blockchain data.
-- [`klayr-core config`](docs/commands/config.md) - Commands relating to Klayr Core node configuration.
-- [`klayr-core console`](docs/commands/console.md) - Klayr interactive REPL session to run commands.
-- [`klayr-core endpoint`](docs/commands/endpoint.md) - Invokes the provided endpoint.
-- [`klayr-core generator`](docs/commands/generator.md) - Disable block generation for given validator address.
-- [`klayr-core genesis-block`](docs/commands/genesis-block.md) - Creates genesis block file.
-- [`klayr-core hash-onion`](docs/commands/hash-onion.md) - Create hash onions to be used by the forger.
-- [`klayr-core help`](docs/commands/help.md) - Display help for klayr-core.
-- [`klayr-core keys`](docs/commands/keys.md) - Return keys corresponding to the given passphrase.
-- [`klayr-core passphrase`](docs/commands/passphrase.md) - Commands relating to Klayr Core passphrases.
-- [`klayr-core sdk`](docs/commands/sdk.md) - Commands relating to Klayr SDK development.
-- [`klayr-core start`](docs/commands/start.md) - Start Blockchain Node.
-- [`klayr-core system`](docs/commands/system.md) - Commands relating to Klayr Core node.
-- [`klayr-core transaction`](docs/commands/transaction.md) - Commands relating to Klayr Core transactions.
-- [`klayr-core version`](docs/commands/version.md)
+* [`klayr-core autocomplete`](docs/commands/autocomplete.md) - display autocomplete installation instructions
+* [`klayr-core block`](docs/commands/block.md) - Commands relating to Klayr Core blocks.
+* [`klayr-core blockchain`](docs/commands/blockchain.md) - Commands relating to Klayr Core blockchain data.
+* [`klayr-core config`](docs/commands/config.md) - Commands relating to Klayr Core node configuration.
+* [`klayr-core console`](docs/commands/console.md) - Klayr interactive REPL session to run commands.
+* [`klayr-core endpoint`](docs/commands/endpoint.md) - Invokes the provided endpoint.
+* [`klayr-core generator`](docs/commands/generator.md) - Disable block generation for given validator address.
+* [`klayr-core genesis-block`](docs/commands/genesis-block.md) - Creates genesis block file.
+* [`klayr-core hash-onion`](docs/commands/hash-onion.md) - Create hash onions to be used by the forger.
+* [`klayr-core help`](docs/commands/help.md) - Display help for klayr-core.
+* [`klayr-core keys`](docs/commands/keys.md) - Return keys corresponding to the given passphrase.
+* [`klayr-core passphrase`](docs/commands/passphrase.md) - Commands relating to Klayr Core passphrases.
+* [`klayr-core sdk`](docs/commands/sdk.md) - Commands relating to Klayr SDK development.
+* [`klayr-core start`](docs/commands/start.md) - Start Blockchain Node.
+* [`klayr-core system`](docs/commands/system.md) - Commands relating to Klayr Core node.
+* [`klayr-core transaction`](docs/commands/transaction.md) - Commands relating to Klayr Core transactions.
+* [`klayr-core version`](docs/commands/version.md)
 
 <!-- commandsstop -->
 

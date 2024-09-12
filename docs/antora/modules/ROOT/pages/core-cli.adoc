@@ -24,7 +24,7 @@ Displays a summary of all available CLI commands of Klayr Core.
 Klayr blockchain application platform
 
 VERSION
-  klayr-core/4.1.4 darwin-arm64 node-v18.20.2
+  klayr-core/4.1.5 darwin-arm64 node-v18.20.2
 
 USAGE
   $ klayr-core [COMMAND]
@@ -757,7 +757,7 @@ klayr-core endpoint:invoke system_getNodeInfo --pretty
 .Response
 ----
 {
-  "version": "4.1.4",
+  "version": "4.1.5",
   "networkVersion": "1.0",
   "chainID": "04000000",
   "lastBlockID": "dd207c37a76c453e4b718f2bf238b84186f6e673679915b197ce1fdf94d3c180",
