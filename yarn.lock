@@ -653,10 +653,10 @@
     ws "8.11.0"
     zeromq "6.0.0-beta.6"
 
-"@klayr/chain-connector-plugin@0.1.4":
-  version "0.1.4"
-  resolved "https://registry.npmjs.org/@klayr/chain-connector-plugin/-/chain-connector-plugin-0.1.4.tgz"
-  integrity sha512-ysQO5Gs7jFwRAimcquHiL+66eTIWcj+/lBvC/D/5s0CXJrvGiMSJbSddgh6gdIrqoRvD1uWgXbxdb+t1TGuPNw==
+"@klayr/chain-connector-plugin@0.1.6":
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/@klayr/chain-connector-plugin/-/chain-connector-plugin-0.1.6.tgz#963d6804718fc571be821a0ffbff6f2faa480902"
+  integrity sha512-izrFV/oNDNg1WKcR202reTZTzGHssrqZynmnvUswYFdEjtx9nGEaql9YLY7wnWg7K6pA3VwPbLNv3XwCIYoe5Q==
   dependencies:
     debug "4.3.4"
     fs-extra "11.1.0"
@@ -1549,9 +1549,9 @@
   integrity sha512-qjd88DrCxupx/kJD5yQgZdcYKZKSIGBVDIBE1/LTGcNm3d2Np/jxojkdePDdfnBHJc5W7vSMpbJ1aB7p/Py69A==
 
 "@types/node@^16 || ^18":
-  version "18.19.31"
-  resolved "https://registry.npmjs.org/@types/node/-/node-18.19.31.tgz"
-  integrity sha512-ArgCD39YpyyrtFKIqMDvjz79jto5fcI/SVUs2HwB+f0dAzq68yqOdyaSivLiLugSziTpNXLQrVb7RZFmdZzbhA==
+  version "18.19.48"
+  resolved "https://npm.klayr.one/@types/node/-/node-18.19.48.tgz#3a1696f4a7298d8831ed9ce47db62bf4c62c8880"
+  integrity sha512-7WevbG4ekUcRQSZzOwxWgi5dZmTak7FaxXDoW7xVxPBmKx1rTzfmRLkeCgJzcbBnOV2dkhAPc8cCeT6agocpjg==
   dependencies:
     undici-types "~5.26.4"
 
@@ -2414,9 +2414,9 @@ cardinal@^2.1.1:
     redeyed "~2.1.0"
 
 cargo-cp-artifact@^0.1:
-  version "0.1.8"
-  resolved "https://registry.npmjs.org/cargo-cp-artifact/-/cargo-cp-artifact-0.1.8.tgz"
-  integrity sha512-3j4DaoTrsCD1MRkTF2Soacii0Nx7UHCce0EwUf4fHnggwiE4fbmF2AbnfzayR36DF8KGadfh7M/Yfy625kgPlA==
+  version "0.1.9"
+  resolved "https://npm.klayr.one/cargo-cp-artifact/-/cargo-cp-artifact-0.1.9.tgz#32264a0a48109e26c48da334daff9a1da9d9b7c8"
+  integrity sha512-6F+UYzTaGB+awsTXg0uSJA1/b/B3DDJzpKVRu0UmyI7DmNeaAl2RFHuTGIN6fEgpadRxoXGb7gbC1xo4C3IdyA==
 
 chalk@4.1.0:
   version "4.1.0"
