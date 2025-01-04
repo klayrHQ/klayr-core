@@ -59,7 +59,7 @@ $ npm install -g klayr-core
 $ klayr-core COMMAND
 running command...
 $ klayr-core (-v|--version|version)
-klayr-core/4.1.5 darwin-x64 node-v18.20.2
+klayr-core/4.1.6 darwin-x64 node-v18.20.2
 $ klayr-core --help [COMMAND]
 USAGE
   $ klayr-core COMMAND

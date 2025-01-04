@@ -18,7 +18,7 @@ OPTIONS
   -i, --chain-id=chain-id  (required) ChainID in hex format. For example, Klayr mainnet mainchain is 00000000
   -l, --label=label        [default: beta-sdk-app] App Label
 
-  -o, --output=output      [default: /Users/corbifex/Developer/klayr-hq/temp/klayr-core] Directory where the config file
+  -o, --output=output      [default: /Users/corbifex/Developer/klayr/v6.0.2/klayr-core] Directory where the config file
                            is saved
 
 EXAMPLES
@@ -27,7 +27,7 @@ EXAMPLES
   config:create --output mydir --label beta-sdk-app --community-identifier sdk
 ```
 
-_See code: [dist/commands/config/create.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.5/dist/commands/config/create.ts)_
+_See code: [dist/commands/config/create.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.6/dist/commands/config/create.ts)_
 
 ## `klayr-core config:show`
 
@@ -51,4 +51,4 @@ EXAMPLES
   config:show --config ./custom-config.json --data-path ./data
 ```
 
-_See code: [dist/commands/config/show.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.5/dist/commands/config/show.ts)_
+_See code: [dist/commands/config/show.ts](https://github.com/klayrhq/klayr-core/blob/v4.1.6/dist/commands/config/show.ts)_

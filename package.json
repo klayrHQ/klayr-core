@@ -1,6 +1,6 @@
 {
 	"name": "klayr-core",
-	"version": "4.1.5",
+	"version": "4.1.6",
 	"description": "Klayr blockchain application platform",
 	"author": "Klayr Holding B.V. <admin@klayr.xyz>, Lisk Foundation <admin@lisk.com>, lightcurve GmbH <admin@lightcurve.io>",
 	"license": "Apache-2.0",
@@ -107,11 +107,11 @@
 		}
 	},
 	"dependencies": {
-		"@klayr/chain-connector-plugin": "0.1.6",
-		"@klayr/faucet-plugin": "0.3.4",
-		"@klayr/generator-plugin": "0.4.4",
-		"@klayr/monitor-plugin": "0.4.4",
-		"@klayr/report-misbehavior-plugin": "0.4.4",
+		"@klayr/chain-connector-plugin": "0.1.5",
+		"@klayr/faucet-plugin": "0.3.6",
+		"@klayr/generator-plugin": "0.4.5",
+		"@klayr/monitor-plugin": "0.4.5",
+		"@klayr/report-misbehavior-plugin": "0.4.5",
 		"@liskhq/lisk-db": "0.3.10",
 		"@oclif/core": "1.20.4",
 		"@oclif/plugin-autocomplete": "1.3.6",
@@ -120,9 +120,9 @@
 		"axios": "1.6.0",
 		"fs-extra": "11.1.0",
 		"inquirer": "8.2.5",
-		"klayr-commander": "6.0.5",
-		"klayr-framework": "0.11.4",
-		"klayr-sdk": "6.0.4",
+		"klayr-commander": "6.0.6",
+		"klayr-framework": "0.11.5",
+		"klayr-sdk": "6.0.5",
 		"tar": "6.1.11",
 		"tslib": "2.4.1"
 	},
@@ -148,5 +148,8 @@
 		"ts-jest": "29.1.2",
 		"ts-node": "10.9.1",
 		"typescript": "5.0.2"
+	},
+	"resolutions": {
+		"klayr-framework": "0.11.5"
 	}
 }
